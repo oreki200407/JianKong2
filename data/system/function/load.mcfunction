@@ -1,0 +1,2 @@
+tellraw @a [{"text":">> ","color":"gold"},{"translate":"資料包載入成功"}]
+execute unless entity @e[tag=lobby] run tellraw @a [{"text":">> ","color":"gold"},{"translate":"點擊 "},{"translate":"此處","clickEvent": {"action": "run_command","value": "/function system:activate"},"color": "aqua", "underlined": true},{"translate":" 生成大廳"}]
