@@ -29,6 +29,7 @@ scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 
 scoreboard objectives add front_distance dummy
+scoreboard objectives add reloading dummy
 scoreboard objectives add ammo_smg dummy
 
 scoreboard objectives add revive_time dummy "復活時間"

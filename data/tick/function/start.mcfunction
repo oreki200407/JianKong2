@@ -1,0 +1,1 @@
+execute as @a[team=survivor,scores={reloading=0..}] run function gun:smg/reload/reloading
