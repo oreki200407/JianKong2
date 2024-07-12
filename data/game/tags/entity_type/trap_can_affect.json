@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:blaze",
+		"minecraft:creeper",
+		"minecraft:enderman",
+		"minecraft:player",
+		"minecraft:skeleton",
+		"minecraft:spider",
+		"minecraft:zombie"
+	]
+}

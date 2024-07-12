@@ -32,8 +32,13 @@ scoreboard objectives add front_distance dummy
 scoreboard objectives add reloading dummy
 scoreboard objectives add ammo_smg dummy
 
+#死亡
 scoreboard objectives add revive_time dummy "復活時間"
-scoreboard objectives add uuid0 dummy
+scoreboard objectives add uuid0 dummy "UUID[0]"
+
+#捕獸夾
+scoreboard objectives add trap dummy "陷阱"
+scoreboard objectives add jump custom:jump "跳躍"
 
 team add survivor
 team add monitor
