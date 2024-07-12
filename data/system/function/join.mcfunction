@@ -8,8 +8,8 @@ effect give @s blindness 3 0 true
 
 gamemode adventure @s
 title @s times 10 40 10
-tp @s @n[type=marker,tag=lobby]
-execute at @n[type=marker,tag=lobby] run spawnpoint @s ~ ~ ~
+tp @s @e[type=marker, tag=lobby, limit=1]
+execute at @e[type=marker, tag=lobby] run spawnpoint @s ~ ~ ~
 
 title @s title {"text":"監控圍城 II", "color": "red", "bold": true}
 title @s subtitle ["", {"text": "作者: 惡靈", "bold": true, "color": "green"}]
