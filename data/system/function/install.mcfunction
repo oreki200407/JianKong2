@@ -21,7 +21,7 @@ gamerule reducedDebugInfo false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
 
-scoreboard objectives add lobby dummy {"translate": "監控圍城 II", "color": "red"}
+scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "red"}
 scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add system dummy
