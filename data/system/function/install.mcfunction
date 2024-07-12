@@ -31,6 +31,12 @@ scoreboard objectives add death deathCount
 scoreboard objectives add front_distance dummy
 scoreboard objectives add ammo_smg dummy
 
+scoreboard objectives add revive_time dummy "復活時間"
+scoreboard objectives add uuid0 dummy
+scoreboard objectives add uuid1 dummy
+scoreboard objectives add uuid2 dummy
+scoreboard objectives add uuid3 dummy
+
 team add survivor
 team add monitor
 team add spec

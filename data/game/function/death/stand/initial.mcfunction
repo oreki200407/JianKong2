@@ -1,0 +1,1 @@
+$data merge entity @s {ArmorItems: [{}, {}, {}, {id: "player_head", components: {"profile": {id: $(uuid)}}}], Invisible: true, Invulnerable: true, NoGravity: true, NoBasePlate: true, Marker: true, Small: true, DisabledSlots: 4144959, Tags: ["death_stand"]}
