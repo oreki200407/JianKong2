@@ -1,2 +1,2 @@
-*.mcfunction text=CRLF
-*.json text=CRLF
+*.mcfunction text=lf
+*.json text=lf
