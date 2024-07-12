@@ -28,6 +28,9 @@ scoreboard objectives add system dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 
+scoreboard objectives add front_distance dummy
+scoreboard objectives add ammo_smg dummy
+
 team add survivor
 team add monitor
 team add spec

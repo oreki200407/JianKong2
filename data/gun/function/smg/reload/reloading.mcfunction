@@ -1,0 +1,12 @@
+tag @s add reloading
+title @s actionbar ["",{"text":"裝彈中: ","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬","color":"gold","bold": true},{"text":"▬▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬","color":"gold","bold": true},{"text":"▬▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬","color":"gray","bold": true}]
+title @s actionbar ["",{"text":"裝彈中: ▬▬▬▬▬▬▬▬▬▬","color":"gold","bold": true}]

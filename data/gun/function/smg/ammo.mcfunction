@@ -1,0 +1,1 @@
+$execute if score @s ammo_smg matches $(ammo_smg) run item modify entity @s weapon.mainhand {"function": "minecraft:set_components","components": {"minecraft:damage": $(ammo_smg)}}
