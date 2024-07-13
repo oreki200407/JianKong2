@@ -7,7 +7,7 @@ execute at @e[type=snowball] run summon area_effect_cloud ~ ~ ~ {Duration:2,Tags
 execute as @e[type=item,tag=grenade,nbt={PortalCooldown:0}] at @s run function gadget:grenade/explode
 
 #死亡盔甲座
-execute as @e[type=armor_stand, tag=death_stand] at @s if entity @a[team=survivor, gamemode=adventure, predicate=game:sneak, distance=..3] run function game:death/stand/saving
+execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=armor_stand, tag=death_stand, distance=..3] run function game:death/stand/saving
 
 #捕獸夾
 execute as @e[type=block_display, tag=trap] run function gadget:trap/trap_working
@@ -17,4 +17,4 @@ execute as @e[tag=trapped] run function gadget:trap/trapped/root
 #噴火器
 execute as @e[type=marker, tag=flame] at @s run function ranged_weapon:flamethrower/flame/flying
 
-execute as @a[team=survivor, scores={reloading=1..}] run function gun:reloading
+execute as @a[team=survivor, scores={reload_time=1..}] run function gun:reloading

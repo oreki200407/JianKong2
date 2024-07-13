@@ -3,9 +3,12 @@ scoreboard players reset @s death
 
 #還沒進入3 就結束
 execute unless score @e[type=marker, tag=lobby, limit=1] mode matches 3 run return fail
+execute if entity @s[team=!survivor] run return fail
 
 #轉旁觀
 gamemode spectator @s
+title @s title {"text":"你倒地了","bold": true,"color": "red"}
+tellraw @a ["",{"text":"◎ "},{"selector":"@s"},{"text":" 倒地了"}]
 
 #儲存UUID
 execute store result score @s uuid0 run data get entity @s UUID[0]

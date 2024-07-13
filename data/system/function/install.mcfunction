@@ -29,12 +29,13 @@ scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 
 scoreboard objectives add front_distance dummy
-scoreboard objectives add reloading dummy
+scoreboard objectives add reload_time dummy
 scoreboard objectives add ammo_smg dummy
 scoreboard objectives add ammo_pistol dummy
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
+scoreboard objectives add death_time dummy "復活時間"
 scoreboard objectives add uuid0 dummy "UUID[0]"
 
 #捕獸夾
