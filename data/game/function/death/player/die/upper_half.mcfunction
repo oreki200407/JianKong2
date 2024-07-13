@@ -1,0 +1,5 @@
+execute if score @s death_time matches 1..120 run return run title @s actionbar [{"text": "死亡中：", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬▬▬▬▬▬", "color": "gray"}]
+execute if score @s death_time matches 121..240 run return run title @s actionbar [{"text": "死亡中：▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬▬▬▬▬", "color": "gray"}]
+execute if score @s death_time matches 241..360 run return run title @s actionbar [{"text": "死亡中：▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬▬▬▬", "color": "gray"}]
+execute if score @s death_time matches 361..480 run return run title @s actionbar [{"text": "死亡中：▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬▬▬", "color": "gray"}]
+title @s actionbar [{"text": "死亡中：▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬▬", "color": "gray"}]

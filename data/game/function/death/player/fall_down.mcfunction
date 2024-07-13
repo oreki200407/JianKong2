@@ -1,3 +1,4 @@
+#倒地
 advancement revoke @s only game:death
 scoreboard players reset @s death
 
@@ -7,8 +8,8 @@ execute if entity @s[team=!survivor] run return fail
 
 #轉旁觀
 gamemode spectator @s
-title @s title {"text":"你倒地了","bold": true,"color": "red"}
-tellraw @a ["",{"text":"◎ "},{"selector":"@s"},{"text":" 倒地了"}]
+title @s title {"text": "你倒地了", "color": "red", "bold": true}
+tellraw @a ["◎ ", {"selector": "@s"}, " 倒地了"]
 
 #儲存UUID
 execute store result score @s uuid0 run data get entity @s UUID[0]
