@@ -1,1 +1,0 @@
-$function game:trap/attribute/give_back with storage jk2:data root.game.trap.$(uuid0)
