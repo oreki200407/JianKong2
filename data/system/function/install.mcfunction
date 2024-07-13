@@ -41,6 +41,9 @@ scoreboard objectives add uuid0 dummy "UUID[0]"
 scoreboard objectives add trap dummy "陷阱"
 scoreboard objectives add jump custom:jump "跳躍"
 
+#噴火器
+scoreboard objectives add flame_fly dummy "火焰飛行"
+
 team add survivor
 team add monitor
 team add spec

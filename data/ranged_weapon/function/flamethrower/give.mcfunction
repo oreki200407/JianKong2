@@ -1,0 +1,1 @@
+give @s diamond_axe[custom_name='[{"text": "噴火器"}]', custom_data={flamethrower: true}, food={can_always_eat: true, eat_seconds: 86400, nutrition: 1, saturation: 1}]

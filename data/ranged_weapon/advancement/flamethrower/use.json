@@ -1,0 +1,27 @@
+{
+	"criteria":
+	{
+		"use_flamethrower":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:diamond_axe",
+					"predicates":
+					{
+						"custom_data":
+						{
+							"flamethrower": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "ranged_weapon:flamethrower/using/use"
+	}
+}
