@@ -1,2 +1,0 @@
-$item modify entity @s weapon.$(hand) {"function": "set_damage", "add": true, damage: -0.001}
-$execute if items entity @s weapon.$(hand) diamond_axe[damage=1561] run function ranged_weapon:flamethrower/item_damage/break

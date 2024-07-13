@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"use_flamethrower":
+		"flamethrower":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
@@ -22,6 +22,6 @@
 	},
 	"rewards":
 	{
-		"function": "ranged_weapon:flamethrower/using/use"
+		"function": "gun:flamethrower/using/use"
 	}
 }
