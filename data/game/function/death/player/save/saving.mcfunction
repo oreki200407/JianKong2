@@ -1,3 +1,14 @@
+###################################################
+# 當玩家倒地的時候執行
+# 
+# Name   : saving.mcfunction
+# Path   : game:death/player/save/
+# As     : 蹲在盔甲座附近的玩家
+# At     : As
+# Loop   : 是
+# Author : Alex Cai
+###################################################
+
 #3秒復活
 scoreboard players add @s revive_time 1
 

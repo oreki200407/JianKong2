@@ -1,3 +1,14 @@
+###################################################
+# 當玩家治療骨折的時候執行
+# 
+# Name   : heal.mcfunction
+# Path   : game:fracture/
+# As     : 摔傷的玩家
+# At     : As
+# Loop   : 否
+# Author : Alex Cai
+###################################################
+
 #沒有骨折
 execute if entity @s[tag=!fractured] run return fail
 

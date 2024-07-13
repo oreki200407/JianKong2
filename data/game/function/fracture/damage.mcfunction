@@ -1,3 +1,14 @@
+###################################################
+# 當玩家摔傷的時候執行
+# 
+# Name   : damage.mcfunction
+# Path   : game:fracture/
+# As     : 摔傷的玩家
+# At     : As
+# Loop   : 否
+# Author : Alex Cai
+###################################################
+
 advancement revoke @s only game:fall_damage
 
 #還沒進入3 就結束

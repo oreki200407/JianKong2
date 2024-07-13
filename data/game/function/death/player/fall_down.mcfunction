@@ -1,3 +1,14 @@
+###################################################
+# 當玩家倒地的時候執行
+# 
+# Name   : fall_down.mcfunction
+# Path   : game:death/player/
+# As     : 血量歸零倒地的玩家
+# At     : As
+# Loop   : 否
+# Author : Alex Cai
+###################################################
+
 #倒地
 advancement revoke @s only game:death
 scoreboard players reset @s death
