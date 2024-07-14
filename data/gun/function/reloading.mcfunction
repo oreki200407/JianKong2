@@ -1,3 +1,5 @@
+execute unless items entity @s container.* nether_brick run return run function gun:reload_fail
+
 scoreboard players add @s reload_time 1
 
 title @s[scores={reload_time=1..6}] actionbar ["",{"text":"裝彈中：","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬▬▬▬","color":"gray","bold": true}]
