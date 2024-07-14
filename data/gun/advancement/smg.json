@@ -13,5 +13,5 @@
 			}
 		}
 	},
-	"rewards": { "function": "gun:smg/check" }
+	"rewards": { "function": "gun:smg/use" }
 }

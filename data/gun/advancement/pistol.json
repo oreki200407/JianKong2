@@ -13,5 +13,5 @@
 			}
 		}
 	},
-	"rewards": { "function": "gun:pistol/check" }
+	"rewards": { "function": "gun:pistol/use" }
 }

@@ -9,5 +9,5 @@
 # Author : Alex Cai
 ###################################################
 
-scoreboard players reset #touch flame_fly
+scoreboard players reset #flame front_distance
 kill

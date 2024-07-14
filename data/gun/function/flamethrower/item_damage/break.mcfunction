@@ -9,5 +9,5 @@
 # Author : Alex Cai
 ###################################################
 
-$item replace entity @s weapon.$(hand) with air
+item replace entity @s weapon.mainhand with air
 playsound entity.item.break
