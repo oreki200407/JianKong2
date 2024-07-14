@@ -1,3 +1,14 @@
+###################################################
+# 捕獸夾偵測到實體時執行的函數
+# 
+# Name   : root.mcfunction
+# Path   : gadget:trap/detected/
+# As     : 捕獸夾偵測到的實體
+# At     : 捕獸夾方塊展示實體 align xyz
+# Loop   : 否
+# Author : Alex Cai
+###################################################
+
 #是旁觀者就算了
 execute if entity @s[gamemode=spectator] run return fail
 

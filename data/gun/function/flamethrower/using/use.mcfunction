@@ -1,5 +1,17 @@
+###################################################
+# 使用噴火器的時候執行
+# 
+# Name   : use.mcfunction
+# Path   : gun:flamethrower/using/
+# As     : 使用噴火器的玩家
+# At     : As
+# Loop   : 否
+# Author : Alex Cai
+###################################################
+
 advancement revoke @s only gun:flamethrower
 
+#召喚火marker
 execute anchored eyes positioned ^ ^ ^.5 summon marker run function gun:flamethrower/using/shoot
 
 #主手或副手拿
