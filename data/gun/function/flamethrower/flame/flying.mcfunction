@@ -1,3 +1,14 @@
+###################################################
+# 火焰標記飛行中
+# 
+# Name   : flying.mcfunction
+# Path   : gun:flamethrower/flame/
+# As     : 噴火器噴出的火
+# At     : As
+# Loop   : 是
+# Author : Alex Cai
+###################################################
+
 execute unless block ~ ~ ~ #air run return run kill
 scoreboard players add @s flame_fly 1
 execute if score @s flame_fly matches 20 run return run kill
