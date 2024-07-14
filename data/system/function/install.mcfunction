@@ -1,5 +1,3 @@
-difficulty hard
-
 gamerule announceAdvancements false
 gamerule commandBlockOutput false
 gamerule doDaylightCycle false
@@ -58,3 +56,5 @@ team modify monitor prefix "[監控者]"
 team modify spec prefix "[旁觀者]"
 
 scoreboard players set 更新 system 1
+
+tellraw @a ["","◎ ", {"text": "資料包","color":"gold"},"已更新至", {"text": "最新版","color":"gold"}]

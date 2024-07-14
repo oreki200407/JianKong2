@@ -5,7 +5,9 @@
 			"conditions": {
 				 "item": {
 					 "predicates": {
-						"minecraft:custom_data": {"gun":"smg"}
+						"custom_data": {
+							"gun":"smg"
+						}
 					}
 				}
 			}
