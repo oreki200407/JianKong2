@@ -1,0 +1,25 @@
+{
+	"criteria":
+	{
+		"obtain_any":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions":
+			{
+				"items":
+				[
+					{
+						"items": "minecraft:enchanted_book",
+						"predicates":
+						{
+							"minecraft:custom_data":
+							{
+								"upgrade_book": true
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

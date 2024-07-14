@@ -1,0 +1,22 @@
+{
+	"criteria":
+	{
+		"armor_changed":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions":
+			{
+				"items":
+				[
+					{
+						"items": "#upgrade:armor"
+					}
+				]
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "upgrade:player/armor_changed"
+	}
+}
