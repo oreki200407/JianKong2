@@ -6,7 +6,7 @@
 # As     : 噴火器噴出的火
 # At     : 使用噴火器的玩家
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 tag @s add flame

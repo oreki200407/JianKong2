@@ -6,7 +6,7 @@
 # As     : 物品變動的玩家
 # At     : As
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 advancement revoke @s only upgrade:armor_changed

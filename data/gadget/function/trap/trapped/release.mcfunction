@@ -6,7 +6,7 @@
 # As     : 被捕獸夾抓到的實體
 # At     : 世界重生點
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 tag @s remove trapped

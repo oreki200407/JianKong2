@@ -3,18 +3,18 @@
 # 
 # Name   : use.mcfunction
 # Path   : gadget:hammer/
-# As     : 求生者
+# As     : 使用錘子的玩家
 # At     : 玻璃的Position，As的Rotation和Dimension
-# Loop   : 否
-# Author : Alex Cai
+# Loop   : 是
+# Author : Alex_Cai
 ###################################################
 
 #要放告示牌的地方沒有空位
-$execute unless block $(put_sign) #air run return run tellraw @s "沒有空間"
+$execute unless block $(put_sign) #air run return run title @s actionbar {"text": "沒有空間", "color": "red"}
 
 #要使用三秒
 scoreboard players add @s hammer 1
-execute unless score @s hammer matches 60 run return run function gadget:hammer/time/root
+execute unless score @s hammer matches 60 run return run function gadget:hammer/process/root
 
 #三秒到了
 title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}]
@@ -28,4 +28,4 @@ execute unless items entity @s weapon iron_axe[damage=10] run return fail
 
 #損壞
 item replace entity @s weapon with air
-playsound entity.item.break
+execute at @s run playsound entity.item.break

@@ -6,7 +6,7 @@
 # As     : 噴火器噴出的火
 # At     : As
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 scoreboard players reset #flame front_distance

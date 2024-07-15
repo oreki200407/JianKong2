@@ -6,7 +6,7 @@
 # As     : 倒地的玩家
 # At     : As
 # Loop   : 是
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 execute if score @s death_time matches 601..720 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬", "color": "gray"}]

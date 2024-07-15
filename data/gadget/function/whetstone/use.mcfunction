@@ -6,7 +6,7 @@
 # As     : 輸入指令的人
 # At     : 世界重生點
 # Loop   : 是
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 #此處不宜用進度
@@ -21,4 +21,4 @@ item modify entity @s weapon.offhand {"function": "set_damage", "add": true, "da
 execute unless items entity @s weapon.offhand netherite_ingot[damage=50] run return fail
 
 item replace entity @s weapon.offhand with air
-playsound entity.item.break
+execute at @s run playsound block.grindstone.use block @s ~ ~ ~ .5

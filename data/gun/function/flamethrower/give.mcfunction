@@ -6,7 +6,7 @@
 # As     : 輸入指令的人
 # At     : As
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai, oreki20
 ###################################################
 
 give @s diamond_axe[custom_name='{"text": "噴火槍", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'], custom_data={"gun": "flamethrower"}, food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}, !attribute_modifiers]

@@ -6,7 +6,7 @@
 # As     : 正在救人的玩家
 # At     : As
 # Loop   : 是
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 execute if score @s revive_time matches 01..06 run return run title @s actionbar [{"text": "救援中：", "color": "gold", "bold": true},{"text": "▬▬▬▬▬▬▬▬▬▬", "color": "gray"}]

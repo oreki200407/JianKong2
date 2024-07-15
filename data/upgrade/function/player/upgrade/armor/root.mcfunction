@@ -6,7 +6,7 @@
 # As     : 放上裝備的玩家
 # At     : As
 # Loop   : 世界重生點
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 clear @s enchanted_book[custom_data~{upgrade_book: true}]

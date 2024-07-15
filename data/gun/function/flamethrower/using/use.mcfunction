@@ -6,7 +6,7 @@
 # As     : 使用噴火器的玩家
 # At     : As
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 advancement revoke @s only gun:flamethrower

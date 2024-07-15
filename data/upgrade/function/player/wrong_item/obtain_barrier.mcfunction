@@ -6,7 +6,7 @@
 # As     : 求生者
 # At     : 世界重生點
 # Loop   : 否
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 execute if items entity @s contents barrier[custom_data~{upgrade: true}] run function upgrade:player/wrong_item/clear_barrier

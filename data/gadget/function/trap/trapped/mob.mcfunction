@@ -6,7 +6,7 @@
 # As     : 被捕獸夾抓到的怪物
 # At     : 世界重生點
 # Loop   : 是
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 scoreboard players add @s trap 1

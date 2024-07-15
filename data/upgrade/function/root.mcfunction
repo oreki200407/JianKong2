@@ -6,7 +6,7 @@
 # As     : 求生者
 # At     : 世界重生點
 # Loop   : 是
-# Author : Alex Cai
+# Author : Alex_Cai
 ###################################################
 
 #https://bugs.mojang.com/browse/MC-187281
