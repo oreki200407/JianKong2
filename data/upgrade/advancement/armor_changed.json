@@ -9,7 +9,7 @@
 				"items":
 				[
 					{
-						"items": "#upgrade:armor"
+						"items": "#upgrade:armor/all"
 					}
 				]
 			}

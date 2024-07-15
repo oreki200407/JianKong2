@@ -21,4 +21,4 @@ execute as @a[team=survivor, scores={reload=2}] run function gun:pistol/reloadin
 execute as @a[team=survivor, scores={reload=3}] run function gun:shotgun/reloading
 
 #升級
-execute as @a[team=survivor] run function upgrade:root
+execute as @a[team=survivor] at @s run function upgrade:root

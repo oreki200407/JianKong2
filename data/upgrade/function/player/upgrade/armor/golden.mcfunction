@@ -1,4 +1,4 @@
-execute unless entity @s[level=40..] run return run tellraw @s "你的等級不夠！"
+execute unless entity @s[level=40..] run return run function upgrade:player/upgrade/armor/fail
 
 xp add @s -40 levels
 execute if items entity @s enderchest.10 golden_helmet run return run item modify entity @s enderchest.10 {"function": "set_item", "item": "iron_helmet"}
