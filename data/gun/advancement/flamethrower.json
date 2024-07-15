@@ -6,14 +6,20 @@
 			"trigger": "minecraft:using_item",
 			"conditions":
 			{
-				"item":
+				"player":
 				{
-					"items": "minecraft:diamond_axe",
-					"predicates":
+					"equipment": 
 					{
-						"custom_data":
+						"mainhand":
 						{
-							"gun": "flamethrower"
+							"items": "minecraft:diamond_axe",
+							"predicates":
+							{
+								"custom_data":
+								{
+									"gun": "flamethrower"
+								}
+							}
 						}
 					}
 				}
