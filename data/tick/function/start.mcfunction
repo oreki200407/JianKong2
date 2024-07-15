@@ -25,6 +25,7 @@ execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/
 execute as @a[team=survivor, scores={reload=1}] run function gun:smg/reloading
 execute as @a[team=survivor, scores={reload=2}] run function gun:pistol/reloading
 execute as @a[team=survivor, scores={reload=3}] run function gun:shotgun/reloading
+scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 
 #升級
 execute as @a[team=survivor] at @s run function upgrade:root

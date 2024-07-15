@@ -15,4 +15,4 @@ execute if entity @s[scores={reload_time=17..18}] run return run title @s action
 execute if entity @s[scores={reload_time=19..20}] run return run title @s actionbar ["",{"text":"裝彈中：▬▬▬▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬","color":"gray","bold": true}]
 execute if entity @s[scores={reload_time=21}] run return run title @s actionbar ["",{"text":"裝彈中：▬▬▬▬▬▬▬▬▬▬","color":"gold","bold": true}]
 
-execute as @s[scores={reload_time=22}] run function gun:shotgun/reloaded
+execute as @s[scores={reload_time=22}] at @s run function gun:shotgun/reloaded
