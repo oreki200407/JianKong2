@@ -17,6 +17,9 @@ execute as @e[type=block_display, tag=trap] run function gadget:trap/trap_workin
 #被捕獸夾抓到的生物
 execute as @e[tag=trapped] run function gadget:trap/trapped/root
 
+#磨刀石
+execute as @a[team=survivor] if items entity @s weapon iron_sword unless items entity @s weapon iron_sword[damage=0] if items entity @s weapon.offhand netherite_ingot[custom_data~{gadget: "whetstone"}] run function gadget:whetstone/use
+
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying
 execute as @a[team=survivor, scores={reload=1}] run function gun:smg/reloading
