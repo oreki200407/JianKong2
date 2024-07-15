@@ -1,5 +1,8 @@
 #遊戲進行中的tick
 
+#中途加入
+execute as @a[tag=!start] run function game:spectate
+
 #鞭炮
 execute at @e[type=snowball] run kill @n[type=area_effect_cloud,tag=grenade_cloud]
 execute as @e[type=area_effect_cloud,tag=grenade_cloud] at @s run function gadget:grenade/summon

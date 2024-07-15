@@ -25,9 +25,12 @@ gamerule spectatorsGenerateChunks true
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "red"}
 scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
+scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
+scoreboard objectives add money dummy
+scoreboard objectives add kill totalKillCount
 
 scoreboard objectives add front_distance dummy
 scoreboard objectives add reload_time dummy
@@ -57,6 +60,12 @@ team modify survivor prefix "[求生者]"
 team modify monitor prefix "[監控者]"
 team modify spec prefix "[旁觀者]"
 
+team modify survivor seeFriendlyInvisibles true
+team modify monitor seeFriendlyInvisibles true
+team modify survivor friendlyFire false
+team modify monitor friendlyFire false
+
+scoreboard objectives setdisplay sidebar edit
 scoreboard players set 更新 system 1
 
 tellraw @a ["","◎ ", {"text": "資料包","color":"gold"},"已更新至", {"text": "最新版","color":"gold"}]
