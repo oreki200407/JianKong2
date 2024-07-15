@@ -17,9 +17,6 @@ execute as @e[type=block_display, tag=trap] run function gadget:trap/trap_workin
 #被捕獸夾抓到的生物
 execute as @e[tag=trapped] run function gadget:trap/trapped/root
 
-#錘子
-execute as @a[team=survivor] run function gadget:hammer/root
-
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying
 execute as @a[team=survivor, scores={reload=1}] run function gun:smg/reloading

@@ -14,9 +14,10 @@ $execute unless block $(put_sign) #air run return run tellraw @s "沒有空間"
 
 #要使用三秒
 scoreboard players add @s hammer 1
-execute unless score @s hammer matches 60 run return fail
+execute unless score @s hammer matches 60 run return run function gadget:hammer/time/root
 
 #三秒到了
+title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}]
 scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 

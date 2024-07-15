@@ -19,5 +19,9 @@
 				}
 			}
 		}
+	},
+	"rewards":
+	{
+		"function": "gadget:hammer/root"
 	}
 }
