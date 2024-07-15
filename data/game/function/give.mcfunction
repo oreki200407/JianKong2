@@ -1,5 +1,5 @@
 ###################################################
-# 給予噴火器
+# 給予物品
 # 
 # Name   : give.mcfunction
 # Path   : gadget:flamethrower/
@@ -18,3 +18,5 @@ give @s golden_axe[custom_name='{"text": "手槍", "color": "aqua", "bold": true
 give @s golden_axe[custom_name='{"text": "散彈槍", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'],custom_data={"gun": "shotgun"},food={nutrition:1,saturation:1,can_always_eat:true,eat_seconds:999999}, !attribute_modifiers]
 
 give @s iron_axe[custom_name='{"text": "錘子", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'], custom_data={"gadget": "hammer"}, food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}, max_damage=10, !attribute_modifiers]
+
+give @s netherite_ingot[max_damage=50, max_stack_size=1, custom_name='{"text": "磨刀石", "color": "aqua", "bold": true, "italic": false}', food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}, custom_data={gadget: "whetstone"}]
