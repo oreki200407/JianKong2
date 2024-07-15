@@ -16,7 +16,9 @@ execute as @e[tag=trapped] run function gadget:trap/trapped/root
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying
-execute as @a[team=survivor, scores={reload_time=1..}] run function gun:reloading
+execute as @a[team=survivor, scores={reload=1}] run function gun:smg/reloading
+execute as @a[team=survivor, scores={reload=2}] run function gun:pistol/reloading
+execute as @a[team=survivor, scores={reload=3}] run function gun:shotgun/reloading
 
 #升級
 execute as @a[team=survivor] run function upgrade:root

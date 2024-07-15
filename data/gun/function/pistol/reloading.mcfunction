@@ -1,5 +1,6 @@
-execute unless items entity @s container.* nether_brick run return run function gun:reload_fail
+execute unless items entity @s container.* nether_brick[custom_data~{"ammo": "pistol"}] run return run function gun:reload_fail
 
+scoreboard players set @s reload 2
 scoreboard players add @s reload_time 1
 
 execute if entity @s[scores={reload_time=1..6}] run return run title @s actionbar ["",{"text":"裝彈中：","color":"gold","bold": true},{"text":"▬▬▬▬▬▬▬▬▬▬","color":"gray","bold": true}]
@@ -14,4 +15,4 @@ execute if entity @s[scores={reload_time=49..54}] run return run title @s action
 execute if entity @s[scores={reload_time=55..60}] run return run title @s actionbar ["",{"text":"裝彈中：▬▬▬▬▬▬▬▬▬","color":"gold","bold": true},{"text":"▬","color":"gray","bold": true}]
 execute if entity @s[scores={reload_time=61}] run return run title @s actionbar ["",{"text":"裝彈中：▬▬▬▬▬▬▬▬▬▬","color":"gold","bold": true}]
 
-execute as @s[scores={reload_time=62}] run function gun:reloaded
+execute as @s[scores={reload_time=62}] run function gun:pistol/reloaded
