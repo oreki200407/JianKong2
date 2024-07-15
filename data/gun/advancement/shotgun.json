@@ -1,0 +1,17 @@
+{
+	"criteria": { 
+		"use_item": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				 "item": {
+					 "predicates": {
+						"custom_data": {
+							"gun":"shotgun"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": { "function": "gun:shotgun/use" }
+}
