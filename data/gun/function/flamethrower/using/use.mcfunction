@@ -19,4 +19,7 @@ execute anchored eyes positioned ^ ^ ^.5 summon marker run function gun:flamethr
 
 #物品損壞
 item modify entity @s weapon {"function": "set_damage", "add": true, damage: -0.001}
-execute if items entity @s weapon diamond_axe[damage=1561] run function gun:flamethrower/item_damage/break
+execute unless items entity @s weapon diamond_axe[damage=1561] run return fail
+
+item replace entity @s weapon with air
+playsound entity.item.break

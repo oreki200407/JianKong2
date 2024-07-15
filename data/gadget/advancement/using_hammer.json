@@ -1,0 +1,23 @@
+{
+	"criteria":
+	{
+		"using_hammer":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:iron_axe",
+					"predicates":
+					{
+						"custom_data":
+						{
+							"gadget": "hammer"
+						}
+					}
+				}
+			}
+		}
+	}
+}
