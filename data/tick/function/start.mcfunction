@@ -26,3 +26,6 @@ scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 
 #升級
 execute as @a[team=survivor] at @s run function upgrade:root
+
+#監控者與終界箱
+execute as @a[team=monitor] run function summon:root

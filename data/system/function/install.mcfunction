@@ -37,6 +37,7 @@ scoreboard objectives add front_distance dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
+scoreboard objectives add open_ender_chest custom:open_enderchest
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
