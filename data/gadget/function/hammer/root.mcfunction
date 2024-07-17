@@ -18,6 +18,8 @@ execute if entity @s[advancements={gadget:using_hammer=false}] run return run sc
 #正常使用
 advancement revoke @s only gadget:using_hammer
 
+execute if score @s stamina matches ..49 run return run tellraw @s ["","◎ 你的", {"text": "體力","color":"gold"},"不足, 無法釘木板"]
+
 #是玻璃
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ glass run return run function gadget:hammer/at_glass
 

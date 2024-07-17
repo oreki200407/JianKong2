@@ -11,6 +11,8 @@
 
 advancement revoke @s only gadget:fixing_sword
 
+execute if score @s stamina matches ..49 run return run tellraw @s ["","◎ 你的", {"text": "體力","color":"gold"},"不足, 無法磨刀"]
+
 #鐵劍耐久度250
 #這個不可以加0.000001
 item modify entity @s weapon {"function": "set_damage", "add": true, "damage": 0.004}

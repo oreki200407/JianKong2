@@ -31,6 +31,7 @@ scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
 scoreboard objectives add kill totalKillCount
+scoreboard objectives add stamina dummy "體力值"
 
 scoreboard objectives add front_distance dummy
 scoreboard objectives add reload_time dummy

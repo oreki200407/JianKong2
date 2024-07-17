@@ -24,3 +24,4 @@ scoreboard objectives setdisplay list money
 
 scoreboard players reset @a
 scoreboard players set @e[type=marker, tag=lobby] mode 3
+scoreboard players set @a[team=survivor] stamina 100
