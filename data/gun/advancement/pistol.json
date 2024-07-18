@@ -1,6 +1,6 @@
 {
 	"criteria": { 
-		"use_item": {
+		"pistol": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
 				"player":

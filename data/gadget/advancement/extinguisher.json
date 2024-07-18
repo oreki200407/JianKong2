@@ -1,20 +1,23 @@
 {
-	"criteria": { 
-		"smg": {
+	"criteria":
+	{
+		"extinguisher":
+		{
 			"trigger": "minecraft:using_item",
-			"conditions": {
+			"conditions":
+			{
 				"player":
 				{
 					"equipment": 
 					{
 						"mainhand":
 						{
-							"items": "minecraft:golden_axe",
+							"items": "minecraft:iron_axe",
 							"predicates":
 							{
 								"custom_data":
 								{
-									"gun": "smg"
+									"gadget": "extinguisher"
 								}
 							}
 						}
@@ -23,5 +26,8 @@
 			}
 		}
 	},
-	"rewards": { "function": "gun:smg/use" }
+	"rewards":
+	{
+		"function": "gadget:extinguisher/use"
+	}
 }
