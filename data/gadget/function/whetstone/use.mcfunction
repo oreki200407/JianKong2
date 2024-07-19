@@ -15,10 +15,10 @@ execute if score @s stamina matches ..49 run return run tellraw @s ["","◎ 你�
 
 #鐵劍耐久度250
 #這個不可以加0.000001
-item modify entity @s weapon {"function": "set_damage", "add": true, "damage": 0.004}
+item modify entity @s weapon {function: "set_damage", add: true, damage: 0.004}
 #磨刀石耐久度50
 #https://medium.com/starbugs/see-why-floating-point-error-can-not-be-avoided-from-ieee-754-809720b32175
-item modify entity @s weapon.offhand {"function": "set_damage", "add": true, "damage": -0.02001}
+item modify entity @s weapon.offhand {function: "set_damage", add: true, damage: -0.02001}
 
 #還有耐久度
 execute unless items entity @s weapon.offhand netherite_ingot[damage=50] run return fail

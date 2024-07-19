@@ -23,7 +23,7 @@ $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 
 #減少耐久度
 #IEEE-754 floating point error, 用-0.1會導致卡在3耐久度
-item modify entity @s weapon {"function": "set_damage", "add": true, damage: -0.11}
+item modify entity @s weapon {function: "set_damage", add: true, damage: -0.11}
 execute unless items entity @s weapon iron_axe[damage=10] run return fail
 
 #損壞

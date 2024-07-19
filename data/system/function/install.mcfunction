@@ -51,6 +51,11 @@ scoreboard objectives add jump custom:jump "跳躍"
 #錘子
 scoreboard objectives add hammer dummy "錘子"
 
+#開鎖器
+scoreboard objectives add unlock_progess dummy "開鎖進度"
+scoreboard objectives add unlock_slot dummy "開鎖欄位"
+scoreboard objectives add selected_slot dummy
+
 team add survivor
 team add monitor
 team add spec
