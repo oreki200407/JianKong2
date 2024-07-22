@@ -1,0 +1,411 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:slime_ball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        },
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "limit": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {  
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.4
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:cooked_beef",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        },
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:bread",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        },
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,  
+                                "max": 3  
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:cookie",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        },
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:brick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"text\":\"散彈槍子彈\",\"italic\":false}'}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:nether_brick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"text\":\"手槍彈夾\",\"italic\":false}'}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:4,display:{Name:'{\"text\":\"繃帶\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"立即治療\",\"color\":\"blue\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:7,display:{Name:'{\"text\":\"醫療箱\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"周圍四格內回復 III (0:04)\",\"color\":\"blue\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:6,display:{Name:'{\"text\":\"夾板\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"治療骨折\",\"color\":\"blue\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:5,display:{Name:'{\"text\":\"止痛藥\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"無敵 (0:06)\",\"color\":\"blue\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"text\":\"鞭炮\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:lingering_potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomPotionColor:5723991,HideFlags:32,Potion:\"minecraft:long_water_breathing\",display:{Name:'{\"text\":\"燃燒瓶\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": 1,
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:armor_stand",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Tags:[\"beast\"],Invisible:1b},CustomModelData:2,HideFlags:16,CanPlaceOn:[\"#game:place\"],display:{Name:'{\"text\":\"捕獸夾\",\"italic\":false}',Lore:['{\"text\":\"對地板點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:3,display:{Name:'{\"text\":\"開鎖器\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:2,display:{Name:'{\"text\":\"火柴\",\"italic\":false}',Lore:['{\"text\":\"點擊右鍵使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:spruce_pressure_plate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        },
+                        {
+							"function": "minecraft:set_nbt",
+							"tag": "{display:{Name:'{\"text\":\"木板\",\"italic\":false}',Lore:['{\"text\":\"放在副手使用\",\"color\":\"gray\",\"italic\":false}']}}"
+						},
+						{  
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "limit": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

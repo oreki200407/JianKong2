@@ -39,6 +39,10 @@ scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
 scoreboard objectives add open_ender_chest custom:open_enderchest
 
+#召唤
+scoreboard objectives add summon_count dummy
+scoreboard objectives add summon_monster dummy
+
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
 scoreboard objectives add death_time dummy "復活時間"

@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if items entity @s contents barrier[custom_data~{upgrade: true}] run function upgrade:player/wrong_item/clear_barrier
+execute if items entity @s container.* barrier[custom_data~{upgrade: true}] run function upgrade:player/wrong_item/clear_barrier
 advancement revoke @s only upgrade:obtain_barrier

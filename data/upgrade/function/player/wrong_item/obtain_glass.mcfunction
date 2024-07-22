@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if items entity @s contents light_gray_stained_glass_pane[custom_data~{upgrade: true}] run function upgrade:player/wrong_item/clear_glass
+execute if items entity @s container.* light_gray_stained_glass_pane[custom_data~{upgrade: true}] run function upgrade:player/wrong_item/clear_glass
 advancement revoke @s only upgrade:obtain_glass
