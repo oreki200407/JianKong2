@@ -31,3 +31,6 @@ execute as @a[team=survivor] at @s run function upgrade:root
 
 #監控者與終界箱
 execute as @a[team=monitor] run function summon:root
+
+#使用監視器
+execute as @a[scores={camera_interface=1..}] run function monitor:camera/camera_interface/root

@@ -60,6 +60,10 @@ scoreboard objectives add unlock_progess dummy "開鎖進度"
 scoreboard objectives add unlock_slot dummy "開鎖欄位"
 scoreboard objectives add selected_slot dummy
 
+#監視器
+scoreboard objectives add camera dummy "監視器"
+scoreboard objectives add camera_interface trigger "使用監視器"
+
 team add survivor
 team add monitor
 team add spec

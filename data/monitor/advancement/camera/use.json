@@ -1,0 +1,30 @@
+{
+	"criteria":
+	{
+		"camera":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:black_dye"
+				},
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:black_dye"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "monitor:camera/use"
+	}
+}
