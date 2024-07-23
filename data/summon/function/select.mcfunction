@@ -1,7 +1,7 @@
 function summon:reset
 $execute unless items entity @s enderchest.$(head) player_head run return run data remove storage jk2:data root.summon.head
 
-kill @e[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1.5]
+execute as @e[type=item, distance=..1.5] if items entity @s contents player_head run kill
 clear @s player_head
 playsound block.piston.extend ambient @s ~ ~ ~ 1 2
 

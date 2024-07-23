@@ -1,3 +1,14 @@
+###################################################
+# 開啟終界箱
+# 
+# Name   : open_ender_chest.mcfunction
+# Path   : summon:
+# As     : 開啟終界箱的玩家
+# At     : 世界重生點
+# Loop   : 否
+# Author : Alex_Cai, oreki20
+###################################################
+
 function summon:reset
 item replace entity @s enderchest.0 with white_stained_glass_pane[custom_name='""']
 item replace entity @s enderchest.8 with white_stained_glass_pane[custom_name='""']
