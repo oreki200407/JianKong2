@@ -14,3 +14,6 @@ gamemode adventure @s
 effect give @s resistance 10 100 true
 title @s title {"text":"你已被救起了", "color": "red", "bold": true}
 tellraw @a ["◎ ", {"selector": "@s"}, " 已被救起了"]
+
+#有骨折的救起來後後繼續骨折
+execute if entity @s[tag=fractured] run attribute @s generic.movement_speed modifier add jk2:fracture -0.3 add_multiplied_total

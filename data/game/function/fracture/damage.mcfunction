@@ -20,4 +20,4 @@ execute if entity @s[tag=fractured] run return fail
 #骨折
 attribute @s generic.movement_speed modifier add jk2:fracture -0.3 add_multiplied_total
 tag @s add fractured
-tellraw @s ["","◎ 你", {"text": "骨折","color":"gold"},"了, 請使用夾板治療"]
+tellraw @s ["◎ 你", {"text": "骨折", "color": "gold"}, "了, 請使用夾板治療"]
