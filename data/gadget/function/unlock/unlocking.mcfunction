@@ -10,7 +10,7 @@
 ###################################################
 
 #移動了就失敗
-execute if predicate {condition: "entity_properties", entity: "this", predicate: {movement: {speed: {min: 0.1}}}} run return run function gadget:unlock/fail
+execute if predicate game:moving run return run function gadget:unlock/fail
 
 #沒有在移動 就可以繼續
 execute store result score @s selected_slot run data get entity @s SelectedItemSlot

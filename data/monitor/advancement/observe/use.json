@@ -1,0 +1,30 @@
+{
+	"criteria":
+	{
+		"observe":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:white_dye"
+				},
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:white_dye"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "monitor:observe/use"
+	}
+}

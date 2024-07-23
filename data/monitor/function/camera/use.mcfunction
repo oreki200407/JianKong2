@@ -17,6 +17,7 @@ function monitor:camera/decide
 execute unless score @s camera = @s camera run return fail
 
 #允許使用監視器介面
+gamemode spectator
 scoreboard players enable @s camera_interface
 tp @s @e[type=marker, tag=spawn_survivor, limit=1]
 tellraw @s ["監視器(", {"score": {"name": "@s", "objective": "camera"}}, ")\n", {"text": "✅", "clickEvent": {"action": "run_command", "value": "/trigger camera_interface set 1"}}, "        ", {"text": "❎", "clickEvent": {"action": "run_command", "value": "/trigger camera_interface set 2"}}]
