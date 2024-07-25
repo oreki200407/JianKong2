@@ -50,7 +50,7 @@ scoreboard objectives add uuid0 dummy "UUID[0]"
 
 #捕獸夾
 scoreboard objectives add trap dummy "陷阱"
-scoreboard objectives add jump custom:jump "跳躍"
+scoreboard objectives add jump_break custom:jump "跳躍掙脫"
 
 #錘子
 scoreboard objectives add hammer dummy "錘子"
@@ -63,6 +63,12 @@ scoreboard objectives add selected_slot dummy
 #監視器
 scoreboard objectives add camera dummy "監視器"
 scoreboard objectives add camera_interface trigger "使用監視器"
+
+#修理
+scoreboard objectives add jump_fix custom:jump "跳躍修理"
+scoreboard objectives add fix_progress dummy "修理進度"
+scoreboard objectives add fix_slot dummy "修理欄位"
+scoreboard objectives add fix_time dummy "檢定時間"
 
 team add survivor
 team add monitor

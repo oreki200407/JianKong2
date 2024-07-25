@@ -1,0 +1,11 @@
+#正在檢定
+scoreboard players remove @s fix_time 5
+
+#還有兩位數
+execute if score @s fix_time matches 10.. run return run title @s subtitle [{"text": "0: "}, {"score": {"name": "@s", "objective": "fix_time"}}]
+
+#只剩個位數
+title @s subtitle [{"text": "0: 0"}, {"score": {"name": "@s", "objective": "fix_time"}}]
+
+#0秒
+execute if score @s fix_time matches 0 run function power:fix/check_mode/check

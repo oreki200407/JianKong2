@@ -1,0 +1,1 @@
+$title @s title {"keybind": "key.hotbar.$(slot_keybind)"}
