@@ -24,3 +24,6 @@ give @s iron_axe[custom_name='{"text": "滅火器", "color": "aqua", "bold": tru
 give @s netherite_ingot[custom_name='{"text": "磨刀石", "color": "aqua", "bold": true, "italic": false}', custom_data={gadget: "whetstone"}, damage=0, max_damage=50, max_stack_size=1]
 
 give @s iron_axe[custom_name='{"text": "開鎖器", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'], custom_data={"gadget": "unlock"}, food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}, max_damage=10, !attribute_modifiers]
+
+#盔甲不能使用!attribute_modifiers
+give @s iron_helmet[custom_name='{"text": "防毒面具", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "戴上後可以防毒", "color": "gray", "italic": false}]', '[{"text": "但會消耗耐久度", "color": "gray", "italic": false}]'], custom_data={"gadget": "mask"}, max_damage=2400, attribute_modifiers={modifiers: [{id: "jk2:mask", slot: "head", amount: 0, operation: "add_value", type: "generic.armor"}], show_in_tooltip: false}]
