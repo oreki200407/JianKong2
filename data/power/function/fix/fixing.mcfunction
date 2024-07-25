@@ -1,3 +1,14 @@
+###################################################
+# 正在修理發電機
+# 
+# Name   : fixing.mcfunction
+# Path   : power:fix/
+# As     : 正在修理的玩家
+# At     : 世界重生點
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
 title @s actionbar ["修理進度:", {"score": {"name": "@s", "objective": "fix_progress"}}]
 
 #水平移動了就失敗
@@ -11,11 +22,11 @@ execute unless score @s jump_fix matches 1.. run return fail
 
 scoreboard players set @s jump_fix 0
 
-#10%機率直接+10% 5%機率進入檢定 剩下85%什麼都不會發生
+#25%機率直接+10% 10%機率進入檢定 剩下65%什麼都不會發生
 execute store result score #chance fix_progress run random value 0..19
 
 #直接+10%
-execute if score #chance fix_progress matches ..1 run return run scoreboard players add @s fix_progress 1
+execute if score #chance fix_progress matches ..4 run return run scoreboard players add @s fix_progress 1
 
 #檢定
-execute if score #chance fix_progress matches 2 run function power:fix/check_mode/start
+execute if score #chance fix_progress matches 18.. run function power:fix/check_mode/start

@@ -1,3 +1,14 @@
+###################################################
+# 正在修理發電機
+# 
+# Name   : fixing.mcfunction
+# Path   : power:fix/
+# As     : 正在修理的玩家
+# At     : 世界重生點
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #進入檢定狀態
 tag @s add fixing_power_check
 

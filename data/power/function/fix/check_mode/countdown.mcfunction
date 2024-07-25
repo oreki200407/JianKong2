@@ -1,3 +1,14 @@
+###################################################
+# 檢定時間倒數
+# 
+# Name   : countdown.mcfunction
+# Path   : power:fix/check_mode/
+# As     : 正在檢定的玩家
+# At     : 世界重生點
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
 #正在檢定
 scoreboard players remove @s fix_time 5
 
