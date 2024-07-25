@@ -10,7 +10,9 @@
 ###################################################
 
 #只要戴著 耐久度就-1
-execute unless items entity @s armor.head iron_helmet[damage=2400] run return run item modify entity @s armor.head {function: "set_damage", add: true, damage: -0.00042}
+item modify entity @s armor.head {function: "set_damage", add: true, damage: -0.00042}
+stopsound @s player item.armor.equip_iron
+execute unless items entity @s armor.head iron_helmet[damage=2400] run return fail
 
 #沒有耐久度了
 item replace entity @s armor.head with air
