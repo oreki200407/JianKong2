@@ -8,6 +8,10 @@ execute as @e[type=snowball, tag=!checked] run function gadget:grenade/snowball
 execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadget:grenade/summon
 execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadget:grenade/explode
 
+#燃燒瓶
+execute as @e[type=potion, tag=!checked] run function gadget:molotov_cocktail/potion
+execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadget:molotov_cocktail/set_fire
+
 #死亡盔甲座
 execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=armor_stand, tag=death_stand, distance=..3] run function game:death/player/save/saving
 
