@@ -27,3 +27,6 @@ give @s iron_axe[custom_name='{"text": "開鎖器", "color": "aqua", "bold": tru
 
 #盔甲不能使用!attribute_modifiers
 give @s iron_helmet[custom_name='{"text": "防毒面具", "color": "aqua", "bold": true, "italic": false}', lore=['[{"text": "戴上後可以防毒", "color": "gray", "italic": false}]', '[{"text": "但會消耗耐久度", "color": "gray", "italic": false}]'], custom_data={"gadget": "mask"}, max_damage=2400, attribute_modifiers={modifiers: [{id: "jk2:mask", slot: "head", amount: 0, operation: "add_value", type: "generic.armor"}], show_in_tooltip: false}]
+
+#燃燒瓶
+give @s lingering_potion[custom_name='{"text": "燃燒瓶", "color": "aqua", "bold": true, "italic": false}', potion_contents={"custom_color": 4144959}, max_stack_size=64, hide_additional_tooltip={}, custom_data={"gadget": "molotov_cocktail"}]
