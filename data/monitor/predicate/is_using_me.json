@@ -1,0 +1,30 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores":
+	{
+		"camera":
+		{
+			"min":
+			{
+				"type": "minecraft:score",
+				"target":
+				{
+					"type": "minecraft:fixed",
+					"name": "#camera_id"
+				},
+				"score": "camera"
+			},
+			"max":
+			{
+				"type": "minecraft:score",
+				"target":
+				{
+					"type": "minecraft:fixed",
+					"name": "#camera_id"
+				},
+				"score": "camera"
+			}
+		}
+	}
+}

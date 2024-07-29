@@ -2,11 +2,13 @@
 # 傳送到監視器
 # 
 # Name   : to_marker.mcfunction
-# Path   : monitor:observe/
-# As     : 使用監視器的人
-# At     : As
+# Path   : monitor:observe/player/
+# As     : 使用監視器的玩家
+# At     : 監視器
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
-$tp @s @e[type=marker, scores={camera=$(destination)}, limit=1]
+tp @s ~ ~ ~ ~ ~
+
+tag @s add using_camera

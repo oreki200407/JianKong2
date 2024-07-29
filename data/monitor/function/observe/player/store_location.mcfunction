@@ -2,8 +2,8 @@
 # 儲存使用前的位置
 # 
 # Name   : store_location.mcfunction
-# Path   : monitor:observe/
-# As     : 使用監視器的人
+# Path   : monitor:observe/player/
+# As     : 使用監視器的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai

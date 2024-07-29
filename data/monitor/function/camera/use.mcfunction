@@ -3,7 +3,7 @@
 # 
 # Name   : use.mcfunction
 # Path   : monitor:camera/
-# As     : 使用監視器的人
+# As     : 安裝監視器的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai

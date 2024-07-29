@@ -63,6 +63,9 @@ scoreboard objectives add selected_slot dummy
 #監視器
 scoreboard objectives add camera dummy "監視器"
 scoreboard objectives add camera_interface trigger "使用監視器"
+scoreboard objectives add camera_level dummy "監視器等級"
+scoreboard objectives add level dummy "電力"
+scoreboard objectives add heat dummy "過熱"
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"
@@ -90,4 +93,4 @@ team modify monitor friendlyFire false
 scoreboard objectives setdisplay sidebar edit
 scoreboard players set 更新 system 1
 
-tellraw @a ["","◎ ", {"text": "資料包","color":"gold"},"已更新至", {"text": "最新版","color":"gold"}]
+tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]

@@ -43,7 +43,10 @@ execute as @a[team=monitor] run function summon:root
 execute as @a[scores={camera_interface=1..}] run function monitor:camera/camera_interface/root
 
 #使用監視器中
-execute as @a[tag=using_monitor, predicate=game:moving/generic] run function monitor:observe/back/root
+execute as @a[tag=using_camera] run function monitor:observe/player/watching
+
+#監視器
+execute as @e[type=marker, tag=camera] run function monitor:observe/camera/tick
 
 #修理發電機中
 execute as @a[tag=fixing_power] run function power:fix/fixing

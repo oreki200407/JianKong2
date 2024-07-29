@@ -3,7 +3,7 @@
 # 
 # Name   : root.mcfunction
 # Path   : monitor:camera/camera_interface/summon/
-# As     : 使用監視器的人
+# As     : 安裝監視器的玩家
 # At     : 世界重生點
 # Loop   : 否
 # Author : Alex_Cai
