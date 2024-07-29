@@ -2,7 +2,7 @@
 # 選擇監視器，如果都被佔用了就維持reset
 # 
 # Name   : decide.mcfunction
-# Path   : monitor:camera/
+# Path   : monitor:install/
 # As     : 使用監視器的人
 # At     : As
 # Loop   : 否

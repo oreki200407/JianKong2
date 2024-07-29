@@ -2,17 +2,17 @@
 # 右鍵監視器
 # 
 # Name   : use.mcfunction
-# Path   : monitor:camera/
+# Path   : monitor:install/
 # As     : 安裝監視器的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only monitor:camera/use
+advancement revoke @s only monitor:install/use
 
 scoreboard players reset @s camera
-function monitor:camera/decide
+function monitor:install/decide
 #如果沒有分數就結束
 execute unless score @s camera = @s camera run return fail
 

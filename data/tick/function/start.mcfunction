@@ -40,7 +40,7 @@ execute as @a[team=survivor] at @s run function upgrade:root
 execute as @a[team=monitor] run function summon:root
 
 #使用監視器介面
-execute as @a[scores={camera_interface=1..}] run function monitor:camera/camera_interface/root
+execute as @a[scores={camera_interface=1..}] run function monitor:install/camera_interface/root
 
 #使用監視器中
 execute as @a[tag=using_camera] run function monitor:observe/player/watching

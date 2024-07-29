@@ -25,6 +25,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:camera/use"
+		"function": "monitor:install/use"
 	}
 }

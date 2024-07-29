@@ -2,7 +2,7 @@
 # 初始化被召喚的監視器
 # 
 # Name   : marker.mcfunction
-# Path   : monitor:camera/camera_interface/
+# Path   : monitor:install/camera_interface/
 # As     : 被安裝的監視器
 # At     : 安裝監視器的玩家
 # Loop   : 否
