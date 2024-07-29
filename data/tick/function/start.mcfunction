@@ -50,3 +50,8 @@ execute as @e[type=marker, tag=camera] run function monitor:observe/camera/tick
 
 #修理發電機中
 execute as @a[tag=fixing_power] run function power:fix/fixing
+
+#怪物看著未受保護的玻璃會裂開
+tag @e[type=marker, tag=being_watched] remove being_watched
+execute as @e[type=!player, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
+scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break

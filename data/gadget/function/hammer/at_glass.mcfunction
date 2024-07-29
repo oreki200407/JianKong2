@@ -9,12 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if entity @s[y_rotation=-45..45] run data modify storage jk2:data root.gadget.hammer set value {put_sign: "~ ~ ~-1", sign_facing: "north"}
+execute if entity @s[y_rotation=-45..45] run return run function gadget:hammer/use {put_sign: "~ ~ ~-1", sign_facing: "north"}
 
-execute if entity @s[y_rotation=45..135] run data modify storage jk2:data root.gadget.hammer set value {put_sign: "~1 ~ ~", sign_facing: "east"}
+execute if entity @s[y_rotation=45..135] run return run function gadget:hammer/use {put_sign: "~1 ~ ~", sign_facing: "east"}
 
-execute if entity @s[y_rotation=135..-135] run data modify storage jk2:data root.gadget.hammer set value {put_sign: "~ ~ ~1", sign_facing: "south"}
+execute if entity @s[y_rotation=135..-135] run return run function gadget:hammer/use {put_sign: "~ ~ ~1", sign_facing: "south"}
 
-execute if entity @s[y_rotation=-135..-45] run data modify storage jk2:data root.gadget.hammer set value {put_sign: "~-1 ~ ~", sign_facing: "west"}
-
-function gadget:hammer/use with storage jk2:data root.gadget.hammer
+execute if entity @s[y_rotation=-135..-45] run return run function gadget:hammer/use {put_sign: "~-1 ~ ~", sign_facing: "west"}

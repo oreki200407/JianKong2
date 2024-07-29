@@ -73,6 +73,9 @@ scoreboard objectives add fix_progress dummy "修理進度"
 scoreboard objectives add fix_slot dummy "修理欄位"
 scoreboard objectives add fix_time dummy "檢定時間"
 
+#玻璃裂開
+scoreboard objectives add glass_break dummy
+
 team add survivor
 team add monitor
 team add spec
