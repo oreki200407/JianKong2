@@ -1,3 +1,14 @@
+###################################################
+# 位在玻璃的標記
+# 
+# Name   : glass_marker.mcfunction
+# Path   : monster:break_glass/
+# As     : 位在玻璃的標記實體
+# At     : As
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
 tag @s add being_watched
 scoreboard players add @s glass_break 1
 

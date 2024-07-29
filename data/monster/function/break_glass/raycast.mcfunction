@@ -1,3 +1,14 @@
+###################################################
+# 視線偵測
+# 
+# Name   : raycast.mcfunction
+# Path   : monster:break_glass/
+# As     : 非玩家的監控者實體
+# At     : As
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
 #超出範圍
 execute unless entity @s[distance=..2.5] run return fail
 
