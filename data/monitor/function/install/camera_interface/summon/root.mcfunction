@@ -10,7 +10,7 @@
 ###################################################
 
 scoreboard players operation #summon_camera camera = @s camera
-execute at @s summon marker run function monitor:install/camera_interface/summon/marker
+execute at @s summon area_effect_cloud run function monitor:install/camera_interface/summon/marker
 gamemode adventure @s
 tp @s @e[type=marker, tag=spawn_monitor, limit=1]
 scoreboard players reset @s camera

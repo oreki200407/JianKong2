@@ -11,4 +11,3 @@
 
 tp @s ~ ~ ~ ~ ~
 
-tag @s add using_camera

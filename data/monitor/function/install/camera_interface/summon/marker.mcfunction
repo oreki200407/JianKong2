@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-tag @s add camera
+data merge entity @s {Duration:2147483647,Tags:["camera"]}
 scoreboard players operation @s camera = #summon_camera camera
 tp @s ~ ~ ~ ~ ~
 scoreboard players set @s camera_level 1
