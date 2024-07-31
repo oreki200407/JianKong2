@@ -22,5 +22,7 @@ function monitor:observe/player/store_location with storage jk2:data root.monito
 
 #傳送到目標監視器
 tag @s add using_camera
+clear @s white_dye
+effect give @s invisibility infinite 0 true
 ride @s mount @e[type=area_effect_cloud,tag=camera_destination,limit=1]
 tag @e[type=area_effect_cloud, tag=camera_destination] remove camera_destination
