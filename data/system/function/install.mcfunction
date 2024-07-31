@@ -42,6 +42,7 @@ scoreboard objectives add open_ender_chest custom:open_enderchest
 #召唤
 scoreboard objectives add summon_count dummy
 scoreboard objectives add summon_monster dummy
+scoreboard objectives add summon_choose dummy
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
