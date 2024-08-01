@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only monitor:observe/use
+advancement revoke @s only monitor:observe/use/white_dye
 
 #尋找目標監視器
 execute store result score @s camera store result score #teleport_camera camera run data get entity @s SelectedItem.components."minecraft:custom_model_data"
@@ -24,5 +24,5 @@ function monitor:observe/player/store_location with storage jk2:data root.monito
 tag @s add using_camera
 clear @s white_dye
 effect give @s invisibility infinite 0 true
-ride @s mount @e[type=area_effect_cloud,tag=camera_destination,limit=1]
+ride @s mount @e[type=area_effect_cloud, tag=camera_destination, limit=1]
 tag @e[type=area_effect_cloud, tag=camera_destination] remove camera_destination

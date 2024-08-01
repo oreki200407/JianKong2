@@ -1,7 +1,7 @@
 ###################################################
 # 找到玻璃了
 # 
-# Name   : break_glass.mcfunction
+# Name   : looking_at_glass.mcfunction
 # Path   : monster:break_glass/
 # As     : 非玩家的監控者實體
 # At     : 玻璃的位置

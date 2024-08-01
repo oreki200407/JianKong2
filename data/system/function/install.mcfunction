@@ -67,6 +67,7 @@ scoreboard objectives add camera_interface trigger "使用監視器"
 scoreboard objectives add camera_level dummy "監視器等級"
 scoreboard objectives add level dummy "電力"
 scoreboard objectives add heat dummy "過熱"
+scoreboard objectives add camera_trap dummy
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"

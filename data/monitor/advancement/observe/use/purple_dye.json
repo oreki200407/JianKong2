@@ -1,14 +1,14 @@
 {
 	"criteria":
 	{
-		"observe":
+		"purple_dye":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
 			{
 				"item":
 				{
-					"items": "minecraft:white_dye"
+					"items": "minecraft:purple_dye"
 				},
 				"player":
 				{
@@ -16,7 +16,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:white_dye"
+							"items": "minecraft:purple_dye"
 						}
 					}
 				}
@@ -25,6 +25,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:observe/player/use"
+		"function": "monitor:observe/player/summon_trap/use"
 	}
 }
