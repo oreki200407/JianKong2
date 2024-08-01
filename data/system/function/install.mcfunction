@@ -11,6 +11,7 @@ gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doTileDrops false
 gamerule doTraderSpawning false
+gamerule doVinesSpread false
 gamerule doWeatherCycle false
 gamerule fallDamage false
 gamerule keepInventory true
@@ -43,6 +44,7 @@ scoreboard objectives add open_ender_chest custom:open_enderchest
 scoreboard objectives add summon_count dummy "召喚數量"
 scoreboard objectives add summon_monster dummy "怪物編號"
 scoreboard objectives add summon_operate dummy "操作終界箱"
+scoreboard objectives add summon_power dummy "召喚電力"
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
@@ -82,8 +84,8 @@ team add survivor
 team add monitor
 team add spec
 
-team modify survivor color gold
-team modify monitor color aqua
+team modify survivor color red
+team modify monitor color blue
 team modify spec color gray
 
 team modify survivor prefix "[求生者]"

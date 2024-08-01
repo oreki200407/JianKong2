@@ -1,4 +1,3 @@
-execute if items entity @s enderchest.18 air run return run function summon:reset
 execute if items entity @s enderchest.1 air run data modify storage jk2:data root.summon.head set value 1
 execute if items entity @s enderchest.2 air run data modify storage jk2:data root.summon.head set value 2
 execute if items entity @s enderchest.3 air run data modify storage jk2:data root.summon.head set value 3
