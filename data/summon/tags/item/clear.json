@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:player_head",
+		"minecraft:white_stained_glass_pane",
+		"minecraft:glowstone"
+	]
+}
