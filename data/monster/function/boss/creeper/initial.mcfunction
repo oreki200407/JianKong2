@@ -9,7 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-#30秒到90秒隨機切換一次
-execute store result score @s boss_time run random value 600..1800
-
+function monster:boss/bossbar
 execute store result score @s boss_status run random value 0..1
+function monster:boss/creeper/change_status

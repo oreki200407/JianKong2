@@ -12,3 +12,4 @@
 execute on passengers run kill
 scoreboard players set @s boss_status 2
 data modify entity @s ignited set value true
+data modify entity @s Invulnerable set value true
