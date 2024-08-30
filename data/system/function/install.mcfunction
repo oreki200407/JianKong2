@@ -80,6 +80,9 @@ scoreboard objectives add fix_time dummy "檢定時間"
 #玻璃裂開
 scoreboard objectives add glass_break dummy
 
+#人體變形
+scoreboard objectives add morph dummy
+
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
 scoreboard objectives add boss_status dummy "Boss狀態"
@@ -105,5 +108,8 @@ scoreboard objectives setdisplay sidebar edit
 scoreboard players set 更新 system 1
 
 bossbar add jk2:boss "Boss血條"
+
+#可供變形的怪物
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper"]
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]

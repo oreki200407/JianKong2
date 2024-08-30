@@ -2,7 +2,7 @@
 # 死透倒數的下半部
 # 
 # Name   : lower_half.mcfunction
-# Path   : game:death/player/die/
+# Path   : game:death/survivor/die/
 # As     : 倒地的玩家
 # At     : As
 # Loop   : 是

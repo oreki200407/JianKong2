@@ -4,7 +4,7 @@
 execute as @a[tag=!start] run function game:spectate
 
 #死亡盔甲座
-execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=armor_stand, tag=death_stand, distance=..3] run function game:death/player/save/saving
+execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=armor_stand, tag=death_stand, distance=..3] run function game:death/survivor/save/saving
 
 #-----------------------道具-----------------------
 #鞭炮
@@ -50,6 +50,9 @@ execute as @a[scores={camera_interface=1..}] run function monitor:install/camera
 execute as @a[tag=using_camera] run function monitor:observe/player/watching
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
+
+#人體變形
+execute as @a[tag=morph] at @s run function morph:tick/root
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched

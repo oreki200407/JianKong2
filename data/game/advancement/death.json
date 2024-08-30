@@ -22,6 +22,6 @@
 	},
 	"rewards":
 	{
-		"function": "game:death/player/fall_down"
+		"function": "game:death/root"
 	}
 }

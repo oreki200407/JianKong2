@@ -2,7 +2,7 @@
 # 救人倒數的上半部
 # 
 # Name   : upper_half.mcfunction
-# Path   : game:death/player/save/
+# Path   : game:death/survivor/save/
 # As     : 正在救人的玩家
 # At     : As
 # Loop   : 是

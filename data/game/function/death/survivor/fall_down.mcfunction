@@ -2,20 +2,12 @@
 # 當玩家倒地的時候執行
 # 
 # Name   : fall_down.mcfunction
-# Path   : game:death/player/
+# Path   : game:death/survivor/
 # As     : 血量歸零倒地的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
-
-#倒地
-advancement revoke @s only game:death
-scoreboard players reset @s death
-
-#還沒進入3 就結束
-execute unless score @e[type=marker, tag=lobby, limit=1] mode matches 3 run return fail
-execute if entity @s[team=!survivor] run return fail
 
 #轉旁觀
 gamemode spectator @s

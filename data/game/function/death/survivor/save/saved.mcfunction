@@ -2,7 +2,7 @@
 # 玩家被救起來時執行
 # 
 # Name   : saved.mcfunction
-# Path   : game:death/player/save/
+# Path   : game:death/survivor/save/
 # As     : 被救起來的玩家
 # At     : 代表倒地玩家的盔甲座
 # Loop   : 否
