@@ -10,9 +10,7 @@
 ###################################################
 
 scoreboard players remove @s morph 1
-execute if score @s morph matches 0 run return run function morph:player/end/root
+execute if score @s morph matches 0 run return run function morph:player/end
 
-#找到應該執行的tick函數
-function morph:tick/find_function with entity @s
-#執行該執行的tick函數
-function morph:tick/run_function with storage jk2:data root.morph.player
+#執行怪物的tick函數
+$function morph:$(monster)/tick

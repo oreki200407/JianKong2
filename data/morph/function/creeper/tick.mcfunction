@@ -1,5 +1,5 @@
 ###################################################
-# 身為骷髏的tick
+# 身為苦力怕的tick
 # 
 # Name   : tick.mcfunction
 # Path   : morph:player/creeper/

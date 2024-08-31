@@ -9,9 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-#等一下要執行的函數
-$data modify storage jk2:data root.morph.player.start_function set from storage jk2:data root.morph.monsters[$(index)]
 #記錄下變了什麼怪物
-$data modify storage jk2:data root.morph.occupied."$(uuid)" set from storage jk2:data root.morph.player.start_function
+$item modify entity @s armor.head {function: "copy_custom_data", ops: [{op: "replace", source: "root.morph.monsters[$(index)]", target: "monster"}], source: {type: "storage", source: "jk2:data"}}
+
 #將這種怪物從可變清單中移除
 $data remove storage jk2:data root.morph.monsters[$(index)]

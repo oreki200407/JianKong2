@@ -10,4 +10,4 @@
 ###################################################
 
 #剛剛choose已經紀錄了要變成什麼怪物了
-$function morph:$(start_function)/start
+$function morph:$(monster)/start

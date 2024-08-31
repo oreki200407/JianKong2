@@ -10,4 +10,4 @@
 ###################################################
 
 #如果處在變形狀態
-execute if entity @s[tag=morph] run function morph:player/end/root
+execute if entity @s[tag=morph] run function morph:player/end

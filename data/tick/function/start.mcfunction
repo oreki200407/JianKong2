@@ -52,7 +52,7 @@ execute as @a[tag=using_camera] run function monitor:observe/player/watching
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
 
 #人體變形
-execute as @a[tag=morph] at @s run function morph:tick/root
+execute as @a[tag=morph] at @s run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched
