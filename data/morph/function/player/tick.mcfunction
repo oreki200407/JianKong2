@@ -1,8 +1,8 @@
 ###################################################
 # 人體變形
 # 
-# Name   : root.mcfunction
-# Path   : morph:tick/
+# Name   : tick.mcfunction
+# Path   : morph:player/
 # As     : 變形的玩家
 # At     : As
 # Loop   : 是
