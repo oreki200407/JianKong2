@@ -1,0 +1,48 @@
+{
+	"description": "音爆保護",
+	"effects":
+	{
+		"minecraft:damage_protection":
+		[
+			{
+				"effect":
+				{
+					"type": "minecraft:set",
+					"value": 20
+				},
+				"requirements":
+				{
+					"condition": "minecraft:damage_source_properties",
+					"predicate":
+					{
+						"tags":
+						[
+							{
+								"expected": true,
+								"id": "game:is_sonic_boom"
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+	"slots":
+	[
+		"armor"
+	],
+	"supported_items": "#minecraft:enchantable/armor",
+	"max_level": 1,
+	"weight": 5,
+	"anvil_cost": 0,
+	"min_cost":
+	{
+		"base": 1,
+		"per_level_above_first": 0
+	},
+	"max_cost":
+	{
+		"base": 1,
+		"per_level_above_first": 0
+	}
+}

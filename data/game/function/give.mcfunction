@@ -30,3 +30,6 @@ give @s iron_helmet[custom_name='{"text": "防毒面具", "color": "aqua", "bold
 
 #燃燒瓶
 give @s lingering_potion[custom_name='{"text": "燃燒瓶", "color": "aqua", "bold": true, "italic": false}', potion_contents={"custom_color": 4144959}, max_stack_size=64, hide_additional_tooltip={}, custom_data={"gadget": "molotov_cocktail"}]
+
+#抗音爆攻擊裝備
+give @s leather_chestplate[enchantments={"game:sonic_boom_protection": 1}]
