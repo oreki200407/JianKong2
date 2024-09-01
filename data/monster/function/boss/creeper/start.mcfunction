@@ -6,7 +6,7 @@
 # As     : 打指令的玩家
 # At     : 打指令的玩家
 # Loop   : 否
-# Author : Alex_Cai
+# Author : Alex_Cai, oreki20
 ###################################################
 
 execute unless entity c2ee9e2-b-0-5-5 run summon creeper ~ ~ ~ {Fuse: 40, PersistenceRequired: true, powered: true, ignited: false, Health: 200, ArmorItems: [{}, {}, {}, {id: "creeper_head", components: {custom_data: {health: 200, rotate: 0.0, range: 5.0}, enchantments: {levels: {vanishing_curse: 1}}}}], attributes: [{id: "generic.scale", base: 2}, {id: "generic.max_health", base: 200}], Passengers: [{id: "husk", PersistenceRequired: true, Invulnerable: true, Silent: true, IsBaby: true, active_effects: [{id: "invisibility", duration: -1, show_particles: false}], attributes: [{id: "generic.attack_damage", base: 0}, {id: "generic.scale", base: 0.0625}], DeathLootTable: "empty", Team: "monitor", Tags: ["riding_boss"]}], CustomName: '"閃電苦力怕"', CustomNameVisible: false, Team: "monitor", UUID: [I; 204401122, 720896, 327680, 5], Tags: ["boss"]}

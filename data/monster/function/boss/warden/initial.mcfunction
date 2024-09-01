@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute store result entity @s attributes[{id: "generic.max_health"}].base float 50 store result entity @s Health float 50 if entity @a[team=survivor]
+execute store result entity @s attributes[{id: "minecraft:generic.max_health"}].base float 50 store result entity @s Health float 50 if entity @a[team=survivor]
 function monster:boss/bossbar
