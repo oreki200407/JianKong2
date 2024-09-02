@@ -1,0 +1,5 @@
+$execute unless score #monster$(head) summon_cooldown matches 1.. run return fail
+tag @s add summon_fail
+tellraw @s ["","◎ 此怪物還在", {"text": "冷卻中","color":"gold"}]
+playsound entity.villager.no ambient @s
+data remove storage jk2:data root.summon.head

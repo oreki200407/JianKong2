@@ -45,6 +45,7 @@ scoreboard objectives add summon_count dummy "召喚數量"
 scoreboard objectives add summon_monster dummy "怪物編號"
 scoreboard objectives add summon_operate dummy "操作終界箱"
 scoreboard objectives add summon_power dummy "召喚電力"
+scoreboard objectives add summon_cooldown dummy "冷卻"
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
