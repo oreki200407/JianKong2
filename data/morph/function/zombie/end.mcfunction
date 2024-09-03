@@ -1,10 +1,10 @@
 ###################################################
-# 身為殭屍的tick
+# 變形成殭屍結束
 # 
-# Name   : tick.mcfunction
+# Name   : end.mcfunction
 # Path   : morph:zombie/
-# As     : 變形的玩家
+# As     : 變形成殭屍的玩家
 # At     : As
-# Loop   : 是
+# Loop   : 否
 # Author : Alex_Cai
 ###################################################

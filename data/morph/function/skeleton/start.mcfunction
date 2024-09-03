@@ -1,10 +1,10 @@
 ###################################################
-# 變形成骷髏
+# 變形成骷髏開始
 # 
 # Name   : start.mcfunction
-# Path   : morph:player/skeleton/
-# As     : 變形的玩家
-# At     : As
+# Path   : morph:skeleton/
+# As     : 變形成骷髏的玩家
+# At     : 世界重生點
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################

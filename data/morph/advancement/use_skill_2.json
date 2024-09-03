@@ -27,6 +27,6 @@
 	},
 	"rewards":
 	{
-		"function": "morph:player/use_skill_2/root"
+		"function": "morph:player/use_skill/root"
 	}
 }

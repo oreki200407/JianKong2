@@ -1,10 +1,10 @@
 ###################################################
-# 變形成殭屍
+# 變形成殭屍開始
 # 
 # Name   : start.mcfunction
-# Path   : morph:player/zombie/
-# As     : 變形的玩家
-# At     : As
+# Path   : morph:zombie/
+# As     : 變形成殭屍的玩家
+# At     : 世界重生點
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################

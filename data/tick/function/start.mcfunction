@@ -52,7 +52,9 @@ execute as @a[tag=using_camera] run function monitor:observe/player/watching
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
 
 #人體變形
-execute as @a[tag=morph] at @s run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
+#清除所有失去騎乘者的坐騎蜘蛛
+execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "entity_properties", entity: "this", predicate: {passenger: {}}} run kill
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched

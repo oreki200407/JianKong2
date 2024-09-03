@@ -9,9 +9,11 @@
 # Author : Alex_Cai
 ###################################################
 
+$function morph:$(monster)/end
+
 scoreboard players reset @s morph
-tag @s remove morph
 
 #將怪物歸還給可供變形的怪物陣列
-data modify storage jk2:data root.morph.monsters append from entity @s ArmorItems[3].components."minecraft:custom_data".monster
+$data modify storage jk2:data root.morph.monsters append value "$(monster)"
+
 clear @s

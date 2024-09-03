@@ -4,7 +4,7 @@
 # Name   : root.mcfunction
 # Path   : morph:player/start/
 # As     : 變形的玩家
-# At     : As
+# At     : 世界重生點
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
@@ -25,4 +25,3 @@ function morph:player/start/to with entity @s ArmorItems[3].components."minecraf
 
 #變形維持180秒 = 3600刻
 scoreboard players set @s morph 3600
-tag @s add morph

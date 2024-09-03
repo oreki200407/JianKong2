@@ -4,7 +4,7 @@
 # Name   : random.mcfunction
 # Path   : morph:player/start/
 # As     : 變形的玩家
-# At     : As
+# At     : 世界重生點
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
