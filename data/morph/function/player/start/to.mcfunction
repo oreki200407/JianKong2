@@ -11,3 +11,6 @@
 
 #剛剛choose已經紀錄了要變成什麼怪物了
 $function morph:$(monster)/start
+
+#複製冷卻到頭顱
+item modify entity @s armor.head {function: "copy_custom_data", source: {type: "storage", source: "jk2:data"}, ops: [{op: "merge", source: "root.morph.cooldown", target: "{}"}]}

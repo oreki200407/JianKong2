@@ -83,6 +83,8 @@ scoreboard objectives add glass_break dummy
 
 #人體變形
 scoreboard objectives add morph dummy
+scoreboard objectives add morph_skill_1 dummy
+scoreboard objectives add morph_skill_2 dummy
 
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"

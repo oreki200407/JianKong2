@@ -1,0 +1,32 @@
+{
+	"criteria":
+	{
+		"use_skill_1":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"predicates":
+							{
+								"custom_data":
+								{
+									"skill": 1
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "morph:player/use_skill_1/root"
+	}
+}
