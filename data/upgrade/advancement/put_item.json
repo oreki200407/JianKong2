@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"armor_changed":
+		"put_item":
 		{
 			"trigger": "minecraft:inventory_changed",
 			"conditions":
@@ -17,6 +17,6 @@
 	},
 	"rewards":
 	{
-		"function": "upgrade:player/armor_changed"
+		"function": "upgrade:ender_chest/put_item"
 	}
 }

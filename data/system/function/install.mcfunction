@@ -40,6 +40,9 @@ scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
 scoreboard objectives add open_ender_chest custom:open_enderchest
 
+#升級台
+scoreboard objectives add upgrade_operate dummy
+
 #召唤
 scoreboard objectives add summon_number dummy "初始編號"
 scoreboard objectives add summon_count dummy "召喚數量"

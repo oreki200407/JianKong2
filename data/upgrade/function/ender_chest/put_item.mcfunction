@@ -1,15 +1,15 @@
 ###################################################
 # 身上的裝備有所變動
 # 
-# Name   : armor_changed.mcfunction
+# Name   : put_item.mcfunction
 # Path   : upgrade:player/
 # As     : 物品變動的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
-
-advancement revoke @s only upgrade:armor_changed
+say 1
+advancement revoke @s only upgrade:put_item
 
 #放上物品
 execute if items entity @s enderchest.10 #upgrade:armor/all run return run function upgrade:ender_chest/root

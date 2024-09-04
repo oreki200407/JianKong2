@@ -9,9 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
-#https://bugs.mojang.com/browse/MC-187281
-execute if entity @s[advancements={upgrade:obtain_glass=true}] run function upgrade:player/wrong_item/obtain_glass
-
 execute if items entity @e[type=item, distance=..1.5] contents white_stained_glass_pane run function upgrade:kill_item
 
-execute if entity @s[advancements={upgrade:upgrade_book/obtain_any=true}] run function upgrade:player/upgrade/root
+execute store success score @s upgrade_operate run clear @s white_stained_glass_pane
+execute as @a[scores={upgrade_operate=1}] run return run function upgrade:wrong_item/check
+
+execute store success score @s upgrade_operate run clear @s enchanted_book 0
+execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/upgrade/root
