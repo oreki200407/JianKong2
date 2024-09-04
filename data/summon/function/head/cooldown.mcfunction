@@ -1,4 +1,4 @@
-$execute unless score #monster$(head) summon_cooldown matches 1.. run return fail
+$execute unless score @e[type=armor_stand,tag=summon_pick,scores={summon_number=$(head)}] summon_cooldown matches 1.. run return fail
 tag @s add summon_fail
 tellraw @s ["","◎ 此怪物還在", {"text": "冷卻中","color":"gold"}]
 playsound entity.villager.no ambient @s

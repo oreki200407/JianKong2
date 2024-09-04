@@ -41,6 +41,7 @@ scoreboard objectives add gun_cooldown dummy
 scoreboard objectives add open_ender_chest custom:open_enderchest
 
 #召唤
+scoreboard objectives add summon_number dummy "初始編號"
 scoreboard objectives add summon_count dummy "召喚數量"
 scoreboard objectives add summon_monster dummy "怪物編號"
 scoreboard objectives add summon_operate dummy "操作終界箱"

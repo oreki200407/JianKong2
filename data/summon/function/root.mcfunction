@@ -16,7 +16,7 @@ execute store success score @s summon_operate run clear @s white_stained_glass_p
 execute as @a[scores={summon_operate=1}] run return run function summon:reset
 
 execute store success score @s summon_operate run clear @s player_head 0
-execute as @a[scores={summon_operate=1}] run return run function summon:select
+execute as @a[scores={summon_operate=1}] run return run function summon:head/select
 
 execute store success score @s summon_operate run clear @s glowstone_dust 0
 execute as @a[scores={summon_operate=1}] run return run function summon:operation/select
