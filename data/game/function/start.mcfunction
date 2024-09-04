@@ -27,6 +27,7 @@ scoreboard players set @e[type=marker, tag=lobby] mode 3
 scoreboard players set @a[team=survivor] stamina 100
 
 #抽怪物
-execute store result score @e[type=armor_stand,tag=summon_pick_easy,limit=3,sort=random] summon_number run scoreboard players add #number summon_number 1
-execute store result score @e[type=armor_stand,tag=summon_pick_medium,limit=2,sort=random] summon_number run scoreboard players add #number summon_number 1
-execute store result score @e[type=armor_stand,tag=summon_pick_hard,limit=2,sort=random] summon_number run scoreboard players add #number summon_number 1
+function summon:pick/armor_stand
+execute as @e[type=armor_stand,tag=summon_pick_easy,limit=3,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1
+execute as @e[type=armor_stand,tag=summon_pick_medium,limit=2,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1
+execute as @e[type=armor_stand,tag=summon_pick_hard,limit=2,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1

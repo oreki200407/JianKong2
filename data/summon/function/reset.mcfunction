@@ -33,6 +33,7 @@ item replace entity @s enderchest.26 with white_stained_glass_pane[custom_name='
 function summon:head/reset
 
 execute unless score @s summon_monster matches 1..7 run return fail
+
 execute store result storage jk2:data root.summon.head int 1 run scoreboard players get @s summon_monster
 function summon:head/set with storage jk2:data root.summon
 function summon:operation/reset
