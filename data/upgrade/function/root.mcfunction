@@ -15,7 +15,7 @@ execute store success score @s upgrade_operate run clear @s white_stained_glass_
 execute as @a[scores={upgrade_operate=1}] run return run function upgrade:wrong_item/check
 
 execute store success score @s upgrade_operate run clear @s enchanted_book 0
-execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/upgrade/root
+execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/root
 
 #放上物品
 execute if items entity @s enderchest.10 #upgrade:all run return run function upgrade:ender_chest/root

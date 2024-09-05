@@ -1,0 +1,3 @@
+execute if items entity @s enderchest.10 #upgrade:armor/all[attribute_modifiers=[{id:"max_health",type:"generic.max_health",amount:6,operation:"add_value"}]] run return run function upgrade:player/armor/health/3
+execute if items entity @s enderchest.10 #upgrade:armor/all[attribute_modifiers=[{id:"max_health",type:"generic.max_health",amount:3,operation:"add_value"}]] run return run function upgrade:player/armor/health/2
+function upgrade:player/armor/health/1
