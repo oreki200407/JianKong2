@@ -5,6 +5,7 @@
 		"#upgrade:armor/leather",
 		"#upgrade:armor/golden",
 		"#upgrade:armor/iron",
-		"#upgrade:armor/diamond"
+		"#upgrade:armor/diamond",
+		"iron_sword"
 	]
 }

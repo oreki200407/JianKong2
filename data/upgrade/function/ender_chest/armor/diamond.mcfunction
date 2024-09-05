@@ -1,0 +1,3 @@
+item replace entity @s enderchest.25 with white_stained_glass_pane[custom_model_data=1,custom_name='{"text": "你已無法再升級", "color": "red", "italic": false}']
+function upgrade:ender_chest/armor/health
+function upgrade:ender_chest/armor/fire

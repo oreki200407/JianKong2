@@ -16,3 +16,9 @@ execute as @a[scores={upgrade_operate=1}] run return run function upgrade:wrong_
 
 execute store success score @s upgrade_operate run clear @s enchanted_book 0
 execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/upgrade/root
+
+#放上物品
+execute if items entity @s enderchest.10 #upgrade:all run return run function upgrade:ender_chest/root
+
+#拿下物品 或者是穿上、丟出等等的
+execute if items entity @s enderchest.13 white_stained_glass_pane[custom_name='""',custom_model_data=2] run function upgrade:reset
