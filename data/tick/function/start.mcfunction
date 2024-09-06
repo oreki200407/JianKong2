@@ -55,6 +55,8 @@ execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/c
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
 #清除所有失去騎乘者的坐騎蜘蛛
 execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "entity_properties", entity: "this", predicate: {passenger: {}}} run kill
+#清除所有失去界伏蚌的草方塊展示實體
+execute as @e[type=block_display, tag=grass_block] run function morph:enderman/block_display
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched

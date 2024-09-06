@@ -13,6 +13,7 @@ gamerule doTileDrops false
 gamerule doTraderSpawning false
 gamerule doVinesSpread false
 gamerule doWeatherCycle false
+gamerule enderPearlsVanishOnDeath true
 gamerule fallDamage false
 gamerule keepInventory true
 gamerule logAdminCommands false
@@ -117,12 +118,14 @@ scoreboard players set 更新 system 1
 bossbar add jk2:boss "Boss血條"
 
 #可供變形的怪物 以及技能冷卻
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper", "enderman", "evoker"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 0, 2: 0},\
 	skeleton: {1: 60, 2: 200},\
-	creeper: {1: 200, 2: 260}\
+	creeper: {1: 200, 2: 260},\
+	enderman: {1: 120, 2: 200},\
+	evoker: {1: 140, 2: 220}\
 }
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]
