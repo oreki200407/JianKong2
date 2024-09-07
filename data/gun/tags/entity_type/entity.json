@@ -2,14 +2,7 @@
 	"replace": false,
 	"values":
 	[
-		"minecraft:blaze",
-		"minecraft:creeper",
-		"minecraft:enderman",
-		"minecraft:magma_cube",
-		"minecraft:player",
-		"minecraft:skeleton",
-		"minecraft:spider",
-		"minecraft:strider",
-		"minecraft:zombie"
+		"#morph:monster",
+		"minecraft:player"
 	]
 }

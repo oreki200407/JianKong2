@@ -10,7 +10,7 @@
 ###################################################
 
 #每tick 3%
-execute unless predicate monster:chance/3 run return fail
+execute unless predicate game:chance/3 run return fail
 
 execute store result entity @s ArmorItems[3].components."minecraft:custom_data".rotate double 0.01 run random value 0..36000
 execute store result entity @s ArmorItems[3].components."minecraft:custom_data".range double 0.01 run random value 300..700
