@@ -28,7 +28,7 @@ scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "red"
 scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
-scoreboard objectives add system dummy
+scoreboard objectives add system dummy {"text": "隱藏資訊", "color": "gold"}
 scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
@@ -98,6 +98,7 @@ scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
 scoreboard objectives add boss_status dummy "Boss狀態"
 
+#隊伍
 team add survivor
 team add monitor
 team add spec
@@ -115,8 +116,9 @@ team modify monitor seeFriendlyInvisibles true
 team modify survivor friendlyFire false
 team modify monitor friendlyFire false
 
-scoreboard objectives setdisplay sidebar edit
+#記分板設定
 scoreboard players set 更新 system 1
+scoreboard players set #200 summon_cooldown 200
 
 bossbar add jk2:boss "Boss血條"
 

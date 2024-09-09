@@ -1,5 +1,7 @@
 #交換隊伍
 
+schedule clear summon:natural
+
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster
 execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset

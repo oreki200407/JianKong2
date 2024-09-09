@@ -3,7 +3,7 @@ setworldspawn ~ ~ ~
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 scoreboard players set @e[type=marker, tag=lobby] mode 1
 function system:install
-
+scoreboard objectives setdisplay sidebar edit
 difficulty hard
 time set day
 clear @a

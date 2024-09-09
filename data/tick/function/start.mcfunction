@@ -43,6 +43,7 @@ execute as @a[team=survivor] at @s run function upgrade:root
 #-----------------------監控者-----------------------
 #監控者與終界箱
 execute as @a[team=monitor] at @s run function summon:root
+scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_cooldown=1..}] summon_cooldown 1
 
 #使用監視器介面
 execute as @a[scores={camera_interface=1..}] run function monitor:install/camera_interface/root
