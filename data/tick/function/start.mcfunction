@@ -17,9 +17,9 @@ execute as @e[type=potion, tag=!checked] run function gadget:molotov_cocktail/po
 execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadget:molotov_cocktail/set_fire
 
 #捕獸夾
-execute as @e[type=block_display, tag=trap] run function gadget:trap/trap_working
+execute as @e[type=block_display, tag=bear_trap] run function gadget:bear_trap/trap_working
 #被捕獸夾抓到的生物
-execute as @e[tag=trapped] run function gadget:trap/trapped/root
+execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 
 #開鎖器
 execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
@@ -51,6 +51,7 @@ execute as @a[scores={camera_interface=1..}] run function monitor:install/camera
 execute as @a[tag=using_camera] run function monitor:observe/player/watching
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
+scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"

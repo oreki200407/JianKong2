@@ -2,7 +2,7 @@
 # 捕獸夾偵測到實體時執行的函數
 # 
 # Name   : root.mcfunction
-# Path   : gadget:trap/detected/
+# Path   : gadget:bear_trap/detected/
 # As     : 捕獸夾偵測到的實體
 # At     : 捕獸夾方塊展示實體 align xyz
 # Loop   : 否
@@ -16,8 +16,8 @@ execute if entity @s[gamemode=spectator] run return fail
 tag @s add trapped
 
 #禁止移動和跳躍
-attribute @s generic.movement_speed modifier add jk2:trap -1 add_multiplied_base
-execute if entity @s[type=player] run function gadget:trap/detected/player
-execute if entity @s[type=!player] run function gadget:trap/detected/mob
+attribute @s generic.movement_speed modifier add jk2:bear_trap -1 add_multiplied_base
+execute if entity @s[type=player] run function gadget:bear_trap/detected/player
+execute if entity @s[type=!player] run function gadget:bear_trap/detected/mob
 
 return 1

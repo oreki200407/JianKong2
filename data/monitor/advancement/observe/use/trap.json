@@ -25,6 +25,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:observe/player/summon_trap/use"
+		"function": "monitor:observe/player/summon/use"
 	}
 }

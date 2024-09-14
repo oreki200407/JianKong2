@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-scoreboard players reset #flame front_distance
+scoreboard players reset #flame flamethrower
 kill

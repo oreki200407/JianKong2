@@ -1,0 +1,30 @@
+{
+	"criteria":
+	{
+		"player_head":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:player_head"
+				},
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:player_head"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "monitor:observe/player/summon/use"
+	}
+}

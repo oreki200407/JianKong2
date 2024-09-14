@@ -35,7 +35,7 @@ scoreboard objectives add money dummy
 scoreboard objectives add kill totalKillCount
 scoreboard objectives add stamina dummy "體力值"
 
-scoreboard objectives add front_distance dummy
+scoreboard objectives add flamethrower dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
@@ -61,7 +61,7 @@ scoreboard objectives add death_time dummy "復活時間"
 scoreboard objectives add uuid0 dummy "UUID[0]"
 
 #捕獸夾
-scoreboard objectives add trap dummy "陷阱"
+scoreboard objectives add bear_trap dummy "捕獸夾"
 scoreboard objectives add jump_break custom:jump "跳躍掙脫"
 
 #錘子
@@ -78,7 +78,9 @@ scoreboard objectives add camera_interface trigger "使用監視器"
 scoreboard objectives add camera_level dummy "監視器等級"
 scoreboard objectives add level dummy "電力"
 scoreboard objectives add heat dummy "過熱"
-scoreboard objectives add camera_trap dummy
+scoreboard objectives add trap dummy
+scoreboard objectives add trap_cooldown dummy
+
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"
