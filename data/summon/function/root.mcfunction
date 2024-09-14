@@ -15,7 +15,7 @@ execute if score @s open_ender_chest matches 1.. run function summon:open_ender_
 execute store success score @s summon_operate run clear @s white_stained_glass_pane
 execute as @a[scores={summon_operate=1}] run return run function summon:reset
 
-execute store success score @s summon_operate run clear @s player_head 0
+execute store success score @s summon_operate run clear @s player_head[custom_data~{type:"operation"}] 0
 execute as @a[scores={summon_operate=1}] run return run function summon:head/select
 
 execute store success score @s summon_operate run clear @s glowstone_dust 0

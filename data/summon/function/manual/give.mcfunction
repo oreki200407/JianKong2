@@ -1,0 +1,1 @@
+$give @s player_head[custom_name='$(name)',lore=$(lore),profile=$(profile),food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}] $(count)

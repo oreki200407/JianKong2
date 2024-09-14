@@ -12,4 +12,4 @@ execute if score @e[type=armor_stand,tag=natural,limit=1] summon_count < 目前�
 
 schedule function summon:natural 40s
 tag @e[tag=point,distance=..10] add summon_point
-execute as @e[type=armor_stand,tag=natural,limit=1] run function summon:summon
+execute as @e[type=armor_stand,tag=natural,limit=1] run function summon:monster
