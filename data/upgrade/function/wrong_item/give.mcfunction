@@ -1,1 +1,2 @@
-$execute unless items entity @s enderchest.$(Slot) air run summon item ~ ~ ~ {Item: {id: "$(id)", count: $(count), components: $(components)}}
+$execute if data entity @s EnderItems[{Slot: $(Slot)b}].components unless items entity @s enderchest.$(Slot) air run return run summon item ~ ~ ~ {Item: {id: "$(id)", count: $(count)}}
+$execute unless items entity @s enderchest.$(Slot) air run summon item ~ ~ ~ {Item: {id: "$(id)", count: $(count)}}

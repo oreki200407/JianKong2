@@ -27,3 +27,4 @@ item replace entity @s enderchest.23 with white_stained_glass_pane[custom_data={
 item replace entity @s enderchest.24 with white_stained_glass_pane[custom_data={"upgrade": true},custom_name='""']
 item replace entity @s enderchest.25 with white_stained_glass_pane[custom_model_data=1,custom_data={"upgrade": true},custom_name='""']
 item replace entity @s enderchest.26 with white_stained_glass_pane[custom_data={"upgrade": true},custom_name='""']
+scoreboard players reset @s open_ender_chest

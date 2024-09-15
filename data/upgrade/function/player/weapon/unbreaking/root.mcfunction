@@ -1,3 +1,3 @@
-execute if items entity @s enderchest.10 iron_sword[enchantments={levels:{"unbreaking":2}}] run return run function upgrade:player/weapon/unbreaking/3
-execute if items entity @s enderchest.10 iron_sword[enchantments={levels:{"unbreaking":1}}] run return run function upgrade:player/weapon/unbreaking/2
+execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:enchantments":{levels:{"minecraft:unbreaking":2}}}}]}] run return run function upgrade:player/weapon/unbreaking/3
+execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:enchantments":{levels:{"minecraft:unbreaking":1}}}}]}] run return run function upgrade:player/weapon/unbreaking/2
 function upgrade:player/weapon/unbreaking/1

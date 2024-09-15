@@ -1,7 +1,7 @@
 execute store success score @s upgrade_operate run clear @s enchanted_book[custom_data~{upgrade_book: "fire"}]
 execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/armor/fire/root
 
-execute store success score @s upgrade_operate run clear @s enchanted_book[custom_data~{upgrade_book: "blood"}]
+execute store success score @s upgrade_operate run clear @s enchanted_book[custom_data~{upgrade_book: "health"}]
 execute as @a[scores={upgrade_operate=1}] run return run function upgrade:player/armor/health/root
 
 execute store success score @s upgrade_operate run clear @s enchanted_book[custom_data~{upgrade_book: "armor"}]

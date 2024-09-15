@@ -1,3 +1,3 @@
-execute if items entity @s enderchest.10 #upgrade:armor/all[attribute_modifiers=[{id:"max_health",type:"generic.max_health",amount:6,operation:"add_value"}]] run return run function upgrade:player/armor/health/3
-execute if items entity @s enderchest.10 #upgrade:armor/all[attribute_modifiers=[{id:"max_health",type:"generic.max_health",amount:3,operation:"add_value"}]] run return run function upgrade:player/armor/health/2
+execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:attribute_modifiers":{modifiers:[{id:"minecraft:max_health",type:"minecraft:generic.max_health",amount:6d}]}}}]}] run return run function upgrade:player/armor/health/3
+execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:attribute_modifiers":{modifiers:[{id:"minecraft:max_health",type:"minecraft:generic.max_health",amount:3d}]}}}]}] run return run function upgrade:player/armor/health/2
 function upgrade:player/armor/health/1

@@ -6,7 +6,7 @@ execute as @a[team=survivor] at @s run playsound block.beacon.power_select ambie
 execute at @a[team=survivor] run tag @e[type=marker,tag=point,distance=..10] add summon_point
 
 tag @s add summoner
-execute as @e[type=armor_stand,tag=summon_pick] if score @s summon_monster = @a[tag=summoner,limit=1] summon_monster run function summon:cooldown
+execute as @e[type=armor_stand,tag=summon_pick] if score @s summon_monster = @a[tag=summoner,limit=1] summon_monster run function summon:auto
 tag @s remove summoner
 
 function summon:operation/summon/success
