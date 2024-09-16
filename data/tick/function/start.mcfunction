@@ -59,6 +59,8 @@ execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s 
 execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "entity_properties", entity: "this", predicate: {passenger: {}}} run kill
 #清除所有失去界伏蚌的草方塊展示實體
 execute as @e[type=block_display, tag=grass_block] run function morph:enderman/block_display
+#讓所有火焰標記產生火焰
+execute as @e[type=marker, tag=blaze_fire] run function morph:blaze/fire
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched
