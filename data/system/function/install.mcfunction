@@ -97,6 +97,7 @@ scoreboard objectives add glass_break dummy
 scoreboard objectives add morph dummy
 scoreboard objectives add morph_skill_1 dummy
 scoreboard objectives add morph_skill_2 dummy
+scoreboard objectives add morph_skill_2_duration dummy
 
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
@@ -127,14 +128,15 @@ scoreboard players set #200 summon_cooldown 200
 bossbar add jk2:boss "Boss血條"
 
 #可供變形的怪物 以及技能冷卻
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper", "enderman", "evoker"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper", "enderman", "evoker", "blaze"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 0, 2: 0},\
 	skeleton: {1: 60, 2: 200},\
 	creeper: {1: 200, 2: 260},\
 	enderman: {1: 120, 2: 200},\
-	evoker: {1: 140, 2: 220}\
+	evoker: {1: 140, 2: 220},\
+	blaze: {1: 120, 2: 280}\
 }
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]
