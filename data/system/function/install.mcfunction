@@ -81,6 +81,8 @@ scoreboard objectives add heat dummy "過熱"
 scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
 
+#商店
+scoreboard objectives add shop_operate dummy
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"
