@@ -1,2 +1,2 @@
-$execute if data entity @s EnderItems[{Slot: $(Slot)b}].components unless items entity @s enderchest.$(Slot) air run return run summon item ~ ~ ~ {Item: {id: "$(id)", count: $(count)}}
-$execute unless items entity @s enderchest.$(Slot) air run summon item ~ ~ ~ {Item: {id: "$(id)", count: $(count)}}
+$execute unless data entity @s EnderItems[{Slot:$(Slot)b}].components unless items entity @s enderchest.$(Slot) air run return run loot give @s loot {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","weight": 1,"name": "$(id)","functions": [{"function": "minecraft:set_count","count": $(count)}]}]}]}
+$execute if data entity @s EnderItems[{Slot:$(Slot)b}].components unless items entity @s enderchest.$(Slot) air run function upgrade:wrong_item/give_component with entity @s EnderItems[{Slot:$(Slot)b}]

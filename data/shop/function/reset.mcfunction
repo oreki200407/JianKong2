@@ -1,1 +1,1 @@
-item replace entity @s enderchest.0 with white_stained_glass_pane[custom_name='""']
+item replace entity @s enderchest.0 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
