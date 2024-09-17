@@ -1,3 +1,5 @@
+execute at @e[tag=power] run function power:use/reset
+
 execute store success score @s power_operation run clear @s redstone[custom_model_data=1]
 execute as @a[scores={power_operation=1}] run return run function power:use/1
 execute store success score @s power_operation run clear @s redstone[custom_model_data=2]
@@ -13,6 +15,5 @@ execute as @a[scores={power_operation=1}] run return run function power:use/6
 execute store success score @s power_operation run clear @s redstone[custom_model_data=7]
 execute as @a[scores={power_operation=1}] run return run function power:use/7
 execute store success score @s power_operation run clear @s redstone[custom_model_data=8]
-execute as @a[scores={power_operation=1}] run return run function power:use/kill
-
-execute at @e[tag=power] run function power:use/reset
+execute as @a[scores={power_operation=1}] run return run function power:use/8
+clear @s redstone[custom_model_data=9]
