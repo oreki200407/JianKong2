@@ -9,5 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
+#計算向量
+function morph:player/motion_vector/root
+
 #召喚火焰彈
-summon fireball ~ ~1 ~
+execute anchored eyes positioned ^ ^ ^1 run function morph:blaze/skill/1/fireball with storage jk2:data root.morph.motion

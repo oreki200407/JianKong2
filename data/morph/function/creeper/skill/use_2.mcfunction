@@ -9,12 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-#考慮 https://home.gamer.com.tw/artwork.php?sn=4770295
-
-#儲存下目前的位置
-execute store result score #px morph_skill_2 run data get entity @s Pos[0] 1000
-execute store result score #py morph_skill_2 run data get entity @s Pos[1] 1000
-execute store result score #pz morph_skill_2 run data get entity @s Pos[2] 1000
+#計算向量
+function morph:player/motion_vector/root
 
 #如果直接execute summon tnt 會看不到
-execute anchored eyes positioned ^ ^ ^1 summon marker run function morph:creeper/skill/2/marker
+execute anchored eyes positioned ^ ^ ^1 run function morph:creeper/skill/2/tnt with storage jk2:data root.morph.motion
