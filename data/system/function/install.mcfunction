@@ -34,6 +34,7 @@ scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
 scoreboard objectives add kill totalKillCount
 scoreboard objectives add stamina dummy "體力值"
+scoreboard objectives add food food
 
 scoreboard objectives add flamethrower dummy
 scoreboard objectives add reload_time dummy
@@ -128,11 +129,12 @@ scoreboard players set #200 summon_cooldown 200
 bossbar add jk2:boss "Boss血條"
 
 #可供變形的怪物 以及技能冷卻
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "creeper", "enderman", "evoker", "blaze"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 0, 2: 0},\
 	skeleton: {1: 60, 2: 200},\
+	spider: {1: 120, 2: 200},\
 	creeper: {1: 200, 2: 260},\
 	enderman: {1: 120, 2: 200},\
 	evoker: {1: 140, 2: 220},\
