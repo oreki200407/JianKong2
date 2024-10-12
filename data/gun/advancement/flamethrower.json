@@ -12,7 +12,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:diamond_axe",
+							"items": "minecraft:golden_axe",
 							"predicates":
 							{
 								"custom_data":

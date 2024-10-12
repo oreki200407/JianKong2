@@ -1,2 +1,3 @@
 scoreboard players reset @s open_ender_chest
-function summon:reset
+scoreboard players set @s shop 0
+function shop:reset

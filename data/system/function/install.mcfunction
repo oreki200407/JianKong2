@@ -83,6 +83,7 @@ scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
 
 #商店
+scoreboard objectives add shop dummy
 scoreboard objectives add shop_operate dummy
 
 #修理

@@ -1,4 +1,4 @@
-execute unless items entity @s container.* nether_brick[custom_data~{"ammo": "shotgun"}] run return run function gun:reload_fail
+execute unless items entity @s container.* brick run return run function gun:reload_fail
 
 scoreboard players set @s reload 3
 scoreboard players add @s reload_time 1

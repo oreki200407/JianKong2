@@ -1,5 +1,7 @@
 #交換隊伍
 
+scoreboard players set @e[type=marker, tag=lobby] mode 3
+
 schedule clear summon:natural
 
 #重置怪物
