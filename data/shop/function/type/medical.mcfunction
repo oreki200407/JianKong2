@@ -25,4 +25,4 @@ item replace entity @s enderchest.22 with white_stained_glass_pane[custom_name='
 item replace entity @s enderchest.23 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
 item replace entity @s enderchest.24 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
 item replace entity @s enderchest.25 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
-item replace entity @s enderchest.26 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
+item replace entity @s enderchest.26 with compass[custom_name='{"text":"返回主選單","italic":false}',custom_data={price:0,type:"shop"}]
