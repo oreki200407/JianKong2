@@ -9,6 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
+execute at @e[tag=power_off] run setblock ~ ~ ~ dispenser[facing=down] destroy
 tag @s add fixing_power
 #禁止跳躍
 attribute @s generic.jump_strength modifier add jk2:fix_power -0.95 add_multiplied_base

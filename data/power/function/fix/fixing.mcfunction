@@ -11,6 +11,8 @@
 
 title @s actionbar ["修理進度:", {"score": {"name": "@s", "objective": "fix_progress"}}]
 
+execute if score @s fix_progress matches 10.. run function power:fix/success
+
 #水平移動了就失敗
 execute if predicate game:moving/horizontal run return run function power:fix/fix_mode/leave
 

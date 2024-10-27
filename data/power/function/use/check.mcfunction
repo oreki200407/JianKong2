@@ -1,4 +1,5 @@
 execute at @e[tag=power] run function power:use/reset
+execute at @e[tag=power_off] run function power:use/power_off
 
 execute store success score @s power_operation run clear @s redstone[custom_model_data=1]
 execute as @a[scores={power_operation=1}] run return run function power:use/1
@@ -16,4 +17,7 @@ execute store success score @s power_operation run clear @s redstone[custom_mode
 execute as @a[scores={power_operation=1}] run return run function power:use/7
 execute store success score @s power_operation run clear @s redstone[custom_model_data=8]
 execute as @a[scores={power_operation=1}] run return run function power:use/8
+execute store success score @s power_operation run clear @s redstone[custom_model_data=11]
+execute as @a[scores={power_operation=1}] run return run function power:fix/fix_mode/enter
 clear @s redstone[custom_model_data=9]
+clear @s redstone[custom_model_data=10]

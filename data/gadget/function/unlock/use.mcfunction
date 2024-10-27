@@ -12,9 +12,7 @@
 advancement revoke @s only gadget:unlock
 
 execute if entity @s[tag=using_unlock] run return fail
-
-#副手無效
-execute unless items entity @s weapon tripwire_hook[custom_data~{gadget: "unlock"}] run return fail
+execute unless block ~ ~ ~ #doors unless block ~1 ~ ~ #doors unless block ~-1 ~ ~ #doors unless block ~ ~ ~1 #doors unless block ~ ~ ~-1 #doors run return fail
 
 tag @s add using_unlock
 scoreboard players set @s unlock_progess 0
