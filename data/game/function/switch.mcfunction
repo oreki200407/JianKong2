@@ -5,9 +5,9 @@ scoreboard players set @e[type=marker, tag=lobby] mode 3
 schedule clear summon:natural
 
 #裝備
-item replace entity @a[team=survivor] armor.chest with leather_chestplate[enchantments={"game:sonic_boom_protection": 1}]
-item replace entity @a[team=survivor] armor.legs with leather_leggings[enchantments={"game:sonic_boom_protection": 1}]
-item replace entity @a[team=survivor] armor.feet with leather_boots[enchantments={"game:sonic_boom_protection": 1}]
+item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
+item replace entity @a[team=survivor] armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
+item replace entity @a[team=survivor] armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
 
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster
