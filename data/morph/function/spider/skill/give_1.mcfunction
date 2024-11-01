@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s spider_eye[custom_data={skill: 1}, food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}]
+give @s spider_eye[custom_data={skill: 1}, consumable={consume_seconds: 99999}]

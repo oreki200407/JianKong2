@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s grass_block[custom_data={skill: 2}, food={nutrition: 1, saturation: 1, can_always_eat: true, eat_seconds: 999999}]
+give @s grass_block[custom_data={skill: 2}, consumable={consume_seconds: 99999}]
