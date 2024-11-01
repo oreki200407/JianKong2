@@ -12,4 +12,4 @@
 tag @s remove fixing_power
 tag @s remove fixing_power_check
 #允許跳躍
-attribute @s generic.jump_strength modifier remove jk2:fix_power
+attribute @s jump_strength modifier remove jk2:fix_power

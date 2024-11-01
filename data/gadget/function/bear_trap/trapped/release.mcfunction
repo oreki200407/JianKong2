@@ -12,5 +12,5 @@
 tag @s remove trapped
 
 #釋放
-attribute @s generic.movement_speed modifier remove jk2:bear_trap
-attribute @s generic.jump_strength modifier remove jk2:bear_trap
+attribute @s movement_speed modifier remove jk2:bear_trap
+attribute @s jump_strength modifier remove jk2:bear_trap

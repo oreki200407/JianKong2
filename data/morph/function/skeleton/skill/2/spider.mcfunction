@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-attribute @s generic.movement_speed base set 0.6
+attribute @s movement_speed base set 0.6
 ride @a[tag=ride_spider, limit=1, distance=...5] mount @s
 tag @s add spider_vehicle

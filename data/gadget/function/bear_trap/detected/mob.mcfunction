@@ -10,5 +10,5 @@
 ###################################################
 
 #如果是怪物被抓到
-attribute @s generic.jump_strength modifier add jk2:bear_trap -1 add_multiplied_base
+attribute @s jump_strength modifier add jk2:bear_trap -1 add_multiplied_base
 scoreboard players set @s bear_trap 0

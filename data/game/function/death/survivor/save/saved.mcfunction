@@ -16,4 +16,4 @@ title @s title {"text":"你已被救起了", "color": "red", "bold": true}
 tellraw @a ["◎ ", {"selector": "@s"}, " 已被救起了"]
 
 #有骨折的玩家救起來後繼續骨折
-execute if entity @s[tag=fractured] run attribute @s generic.movement_speed modifier add jk2:fracture -0.3 add_multiplied_total
+execute if entity @s[tag=fractured] run attribute @s movement_speed modifier add jk2:fracture -0.3 add_multiplied_total

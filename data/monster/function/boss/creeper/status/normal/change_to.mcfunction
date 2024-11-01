@@ -11,4 +11,4 @@
 
 scoreboard players set @s boss_status 0
 data modify entity @s powered set value false
-attribute @s generic.movement_speed base set 0.25
+attribute @s movement_speed base set 0.25

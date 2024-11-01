@@ -12,6 +12,6 @@
 execute at @e[tag=power_off] run setblock ~ ~ ~ dispenser[facing=down] destroy
 tag @s add fixing_power
 #禁止跳躍
-attribute @s generic.jump_strength modifier add jk2:fix_power -0.95 add_multiplied_base
+attribute @s jump_strength modifier add jk2:fix_power -0.95 add_multiplied_base
 scoreboard players set @s jump_fix 0
 scoreboard players set @s fix_progress 0
