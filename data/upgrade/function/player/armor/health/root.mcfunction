@@ -1,3 +1,3 @@
-execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:attribute_modifiers":{modifiers:[{id:"minecraft:max_health",type:"minecraft:max_health",amount:6d}]}}}]}] run return run function upgrade:player/armor/health/3
-execute if entity @a[nbt={EnderItems:[{Slot:10b,components:{"minecraft:attribute_modifiers":{modifiers:[{id:"minecraft:max_health",type:"minecraft:max_health",amount:3d}]}}}]}] run return run function upgrade:player/armor/health/2
+execute if predicate upgrade:health/6 run return run function upgrade:player/armor/health/3
+execute if predicate upgrade:health/3 run return run function upgrade:player/armor/health/2
 function upgrade:player/armor/health/1

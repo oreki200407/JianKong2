@@ -1,0 +1,28 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate":
+	{
+		"slots":
+		{
+			"enderchest.10":
+			{
+				"components":
+				{
+					"minecraft:attribute_modifiers":
+					{
+						"modifiers":
+						[
+							{
+								"id": "minecraft:max_health",
+								"type": "minecraft:max_health",
+								"amount": 6,
+								"operation": "add_value"
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}
