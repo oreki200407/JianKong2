@@ -1,3 +1,14 @@
+###################################################
+# 清除玩家身上的白色玻璃片
+# 
+# Name   : check.mcfunction
+# Path   : upgrade:wrong_item
+# As     : 求生者
+# At     : As
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 execute unless items entity @s enderchest.0 #upgrade:upgrade_item[custom_data~{upgrade: true}] run function upgrade:wrong_item/give with entity @s EnderItems[{Slot: 0b}]
 execute unless items entity @s enderchest.1 #upgrade:upgrade_item[custom_data~{upgrade: true}] run function upgrade:wrong_item/give with entity @s EnderItems[{Slot: 1b}]
 execute unless items entity @s enderchest.2 #upgrade:upgrade_item[custom_data~{upgrade: true}] run function upgrade:wrong_item/give with entity @s EnderItems[{Slot: 2b}]

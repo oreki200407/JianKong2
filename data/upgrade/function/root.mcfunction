@@ -4,20 +4,23 @@
 # Name   : root.mcfunction
 # Path   : upgrade:
 # As     : 求生者
-# At     : 世界重生點
+# At     : As
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################
 
+#打開終界箱就重設升級台
 execute if score @s open_ender_chest matches 1.. run function upgrade:reset
 
+#清除附近的白色玻璃
 execute if items entity @e[type=item, distance=..1.5] contents white_stained_glass_pane run function upgrade:kill_item
 
+#清除白色玻璃
 execute store success score @s upgrade_operate run clear @s white_stained_glass_pane
-execute as @a[scores={upgrade_operate=1}] run function upgrade:wrong_item/check
+execute if score @s upgrade_operate matches 1 run function upgrade:wrong_item/check
 
 execute store success score @s upgrade_operate run clear @s enchanted_book 0
-execute as @a[scores={upgrade_operate=1}] run function upgrade:player/root
+execute if score @s upgrade_operate matches 1 run function upgrade:player/root
 
 #放上物品
 execute if items entity @s enderchest.10 #upgrade:all run return run function upgrade:ender_chest/root
