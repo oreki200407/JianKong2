@@ -5,6 +5,6 @@ execute if score @s gun_cooldown matches 1.. run return fail
 scoreboard players set @s gun_cooldown 5
 item modify entity @s weapon.mainhand {"function": "set_damage", "add": true, damage: -0.20}
 tag @s[tag=!shooter] add shooter
-tp @s ~ ~ ~ ~ ~-8
+rotate @s ~ ~-8
 playsound entity.generic.explode ambient @a ~ ~ ~
 execute anchored eyes positioned ^ ^ ^1 run function gun:shotgun/shoot
