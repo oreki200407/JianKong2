@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"spider":{
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:spider",
+							"nbt": "{Tags:[\"spider\"]}"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "monster:effect/spider"
+	}
+}
