@@ -6,10 +6,8 @@ kill @e[type=arrow,nbt={inGround:1b}]
 execute as @e[tag=enderman,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run tp @s @e[type=armor_stand,tag=point,limit=1,sort=random,distance=..7]
 
 #史萊姆
-execute as @e[tag=slimeman] at @s unless entity @e[tag=slime,distance=..1.5] run function monster:effect/slime2
-scoreboard players add @e[tag=slimehead,type=slime] slime 1
-execute at @e[tag=slimehead,type=slime,scores={slime=120..}] run summon zombie ~ ~ ~ {Team:"monitor",Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["monster","undead","slime"],CustomName:'{"translate":"entity.minecraft.slime"}',ArmorItems:[{id:"minecraft:leather_boots",count:1b,components:{"dyed_color":{rgb:6595413}}},{id:"minecraft:leather_leggings",count:1b,components:{"dyed_color":{rgb:4684350}}},{id:"minecraft:leather_chestplate",count:1b,components:{"dyed_color":{rgb:10277771}}},{id:"minecraft:player_head",count:1b,components:{"profile":{id:[I;2131429491,-546682343,-1681000759,251135175],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="}]}}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],attributes:[{base:0.16d,id:"movement_speed"},{base:2,id:"attack_damage"},{base:15,id:"attack_knockback"}]}
-execute as @e[tag=slimehead,type=slime,scores={slime=120..}] at @s run tp @s ~ ~-999 ~
+execute as @e[tag=slimeman] at @s unless entity @e[tag=slime,distance=..1.5] run function monster:effect/slime/split
+execute as @e[tag=slimehead,type=slime] at @s run function monster:effect/slime/splited
 
 #熾足獸
 execute as @e[tag=strider,type=strider] at @s run effect give @a[team=survivor,distance=..2] wither 3 1 true
