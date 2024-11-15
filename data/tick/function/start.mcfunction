@@ -63,8 +63,3 @@ execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "ent
 execute as @e[type=block_display, tag=grass_block] run function morph:enderman/block_display
 #變形的標記
 execute as @e[type=marker, tag=morph_product] run function morph:marker
-
-#怪物看著未受保護的玻璃會裂開
-tag @e[type=marker, tag=being_watched] remove being_watched
-execute as @e[type=!player, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
-scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break

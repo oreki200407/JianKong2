@@ -2,6 +2,11 @@
 execute as @e[tag=passengerby] unless data entity @s Passengers run kill @s
 kill @e[type=arrow,nbt={inGround:1b}]
 
+#怪物看著未受保護的玻璃會裂開
+tag @e[type=marker, tag=being_watched] remove being_watched
+execute as @e[type=!player, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
+scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break
+
 #終界使者
 execute as @e[tag=enderman,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run tp @s @e[type=armor_stand,tag=point,limit=1,sort=random,distance=..7]
 
@@ -19,11 +24,8 @@ execute as @e[type=wolf,team=monitor] at @s unless data entity @s AngryAt run da
 #鐵巨人
 execute as @a[scores={hitfly=1..}] run function monster:effect/golem/fly
 
-#衛道士
-execute as @e[tag=vindicator] at @s positioned ^ ^1 ^1 if block ~ ~ ~ glass align xyz unless entity @e[tag=windowB,distance=..0.89] run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2000000000,Tags:["windowB"]}
-
 #喚魔者
-execute as @e[tag=!vexS,type=vex] run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1b},{}],HandDropChances:[0.000F,0.085F],Team:"monitor",DeathLootTable:"minecraft:empty",PersistenceRequired:1b,Tags:["monster","vexS"],LifeTicks:100}
+execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1b},{}],HandDropChances:[0.000F,0.085F],Team:"monitor",DeathLootTable:"minecraft:empty",PersistenceRequired:1b,Tags:["monster","vex_summon"],LifeTicks:100}
 
 #蜘蛛
 execute as @e[tag=sticky,nbt={Age:60}] at @s run function monster:effect/spider/web
