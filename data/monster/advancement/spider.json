@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "monster:effect/spider"
+		"function": "monster:effect/spider/hit"
 	}
 }

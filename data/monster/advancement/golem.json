@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "monster:effect/golem"
+		"function": "monster:effect/golem/hit"
 	}
 }
