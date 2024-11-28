@@ -19,3 +19,12 @@ execute unless score @e[type=marker, tag=lobby, limit=1] mode matches 3 run retu
 scoreboard players set #is_evoker morph 0
 execute on attacker if entity @s[tag=evoker] run scoreboard players set #is_evoker morph 1
 execute if score #is_evoker morph matches 1 if predicate game:chance/5 run summon evoker_fangs
+
+scoreboard players set #is_zombie morph 0
+execute on attacker if entity @s[tag=morph_zombie] run scoreboard players set #is_zombie morph 1
+execute if score #is_zombie morph matches 1 run damage @s 3 player_attack by @a[tag=morph_zombie,limit=1]
+execute if score #is_zombie morph matches 1 run tag @a[tag=morph_zombie,limit=1] remove morph_zombie
+
+scoreboard players set #is_golem morph 0
+execute on attacker if entity @s[tag=golem] run scoreboard players set #is_golem morph 1
+execute if score #is_golem morph matches 1 run function monster:effect/golem/hit

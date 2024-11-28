@@ -8,3 +8,5 @@
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
+
+give @s red_dye[custom_name='{"text":"增援","color":"gold"}',lore=['{"text":"召喚一隻殭屍","color":"white","italic":false}','{"text":"冷卻9秒","color":"aqua","italic":false}'],custom_data={skill: 2}, consumable={consume_seconds: 99999}]

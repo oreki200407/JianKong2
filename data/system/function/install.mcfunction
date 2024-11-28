@@ -95,6 +95,10 @@ scoreboard objectives add fix_time dummy "檢定時間"
 #玻璃裂開
 scoreboard objectives add glass_break dummy
 
+#怪物
+scoreboard objectives add monster_slime dummy
+scoreboard objectives add monster_golem dummy
+
 #人體變形
 scoreboard objectives add morph dummy
 scoreboard objectives add morph_skill_1 dummy
@@ -133,13 +137,14 @@ bossbar add jk2:boss "Boss血條"
 data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
-	zombie: {1: 0, 2: 0},\
+	zombie: {1: 120, 2: 280},\
 	skeleton: {1: 60, 2: 200},\
 	spider: {1: 120, 2: 200},\
 	creeper: {1: 200, 2: 260},\
 	enderman: {1: 120, 2: 200},\
 	evoker: {1: 140, 2: 220},\
-	blaze: {1: 120, 2: 280}\
+	blaze: {1: 120, 2: 280},\
+	golem: {1: 140, 2: 240}\
 }
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]

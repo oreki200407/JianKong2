@@ -8,3 +8,5 @@
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
+
+tag @s remove morph_zombie

@@ -22,11 +22,11 @@ execute as @e[tag=striderman,nbt={OnGround:1b}] at @s run function monster:effec
 execute as @e[type=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
 
 #鐵巨人
-execute as @a[scores={hitfly=1..}] run function monster:effect/golem/fly
+execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
 
 #喚魔者
-execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1b},{}],HandDropChances:[0.000F,0.085F],Team:"monitor",DeathLootTable:"minecraft:empty",PersistenceRequired:1b,Tags:["monster","vex_summon"],LifeTicks:100}
+execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1b},{}],HandDropChances:[0.000F,0.085F],Team:"monitor",DeathLootTable:"game:empty",PersistenceRequired:1b,Tags:["monster","vex_summon"],LifeTicks:100}
 
 #蜘蛛
 execute as @e[tag=sticky,nbt={Age:60}] at @s run function monster:effect/spider/web
-execute as @e[tag=spider,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run summon cave_spider ~ ~ ~ {Team:"monitor",DeathLootTable:"minecraft:empty",PersistenceRequired:1b,Health:10f,Tags:["monster"],attributes:[{base:10,id:"max_health"},{base:2,id:"attack_damage"}]}
+execute as @e[tag=spider,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run summon cave_spider ~ ~ ~ {Team:"monitor",DeathLootTable:"game:empty",PersistenceRequired:1b,Health:10f,Tags:["monster"],attributes:[{base:10,id:"max_health"},{base:2,id:"attack_damage"}]}

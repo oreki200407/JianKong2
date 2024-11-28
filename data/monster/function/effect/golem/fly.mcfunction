@@ -1,3 +1,3 @@
-execute unless score @s hitfly matches 3 run return run scoreboard players add @s hitfly 1
+execute unless score @s monster_golem matches 3 run return run scoreboard players add @s monster_golem 1
 effect clear @s levitation
-scoreboard players reset @s hitfly
+scoreboard players reset @s monster_golem

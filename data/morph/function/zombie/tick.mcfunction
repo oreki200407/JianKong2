@@ -8,3 +8,5 @@
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################
+
+execute if entity @a[team=survivor, distance=..10] run effect give @s speed 1 0 true
