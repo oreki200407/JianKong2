@@ -1,0 +1,33 @@
+{
+	"criteria":
+	{
+		"extinguisher":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:iron_axe",
+							"predicates":
+							{
+								"custom_data":
+								{
+									"gadget": "extinguisher"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:extinguisher/use"
+	}
+}

@@ -10,27 +10,27 @@ execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if 
 
 #-----------------------道具-----------------------
 #鞭炮
-execute as @e[type=snowball, tag=!checked] run function gadgets:grenade/snowball
-execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadgets:grenade/summon
-execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadgets:grenade/explode
+execute as @e[type=snowball, tag=!checked] run function gadget:grenade/snowball
+execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadget:grenade/summon
+execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadget:grenade/explode
 
 #燃燒瓶
-execute as @e[type=potion, tag=!checked] run function gadgets:molotov_cocktail/potion
-execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadgets:molotov_cocktail/set_fire
+execute as @e[type=potion, tag=!checked] run function gadget:molotov_cocktail/potion
+execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadget:molotov_cocktail/set_fire
 
 #捕獸夾
-execute as @e[type=block_display, tag=bear_trap] run function gadgets:bear_trap/trap_working
+execute as @e[type=block_display, tag=bear_trap] run function gadget:bear_trap/trap_working
 #被捕獸夾抓到的生物
-execute as @e[tag=trapped] run function gadgets:bear_trap/trapped/root
+execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 
 #開鎖器
-execute as @a[tag=using_unlock] run function gadgets:unlock/unlocking
+execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
 
 #修理發電機中
 execute as @a[tag=fixing_power] run function power:fix/fixing
 
 #防毒面具
-execute as @a if items entity @s armor.head iron_helmet[custom_data~{gadgets: "mask"}] run function gadgets:mask/wearing
+execute as @a if items entity @s armor.head iron_helmet[custom_data~{gadget: "mask"}] run function gadget:mask/wearing
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying

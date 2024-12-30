@@ -1,0 +1,15 @@
+###################################################
+# 被捕獸夾抓到的怪物，會被困住10秒
+# 
+# Name   : mob.mcfunction
+# Path   : gadget:bear_trap/trapped/
+# As     : 被捕獸夾抓到的怪物
+# At     : 世界重生點
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
+scoreboard players add @s bear_trap 1
+
+#會被困住10秒
+execute if score @s bear_trap matches 200 run function gadget:bear_trap/trapped/release

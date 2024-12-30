@@ -1,0 +1,33 @@
+{
+	"criteria":
+	{
+		"unlock":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:tripwire_hook",
+							"predicates":
+							{
+								"custom_data":
+								{
+									"gadget": "unlock"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:unlock/use"
+	}
+}
