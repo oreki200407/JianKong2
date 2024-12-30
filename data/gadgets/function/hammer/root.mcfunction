@@ -1,0 +1,28 @@
+###################################################
+# 右鍵錘子時執行
+# 
+# Name   : root.mcfunction
+# Path   : gadgets:hammer/
+# As     : 使用錘子的玩家
+# At     : As
+# Loop   : 是
+# Author : Alex_Cai
+###################################################
+
+#副手無效 即使使用了也視為沒有在使用
+execute unless items entity @s weapon iron_axe[custom_data~{gadgets: "hammer"}] run advancement revoke @s only gadgets:using_hammer
+
+#沒有在使用
+execute if entity @s[advancements={gadgets:using_hammer=false}] run return run scoreboard players set @s[scores={hammer=1..}] hammer 0
+
+#正常使用
+advancement revoke @s only gadgets:using_hammer
+
+execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {"text": "體力", "color": "gold"}, "不足, 無法釘木板"]
+
+#是玻璃
+execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ #gadgets:glass run return run function gadgets:hammer/at_glass
+
+#不是玻璃
+scoreboard players set @s[scores={hammer=1..}] hammer 0
+title @s actionbar {"text": "請對玻璃使用！", "color": "red"}

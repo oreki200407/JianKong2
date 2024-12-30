@@ -1,14 +1,14 @@
 {
 	"criteria":
 	{
-		"black_dye":
+		"brown_dye":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
 			{
 				"item":
 				{
-					"items": "minecraft:black_dye"
+					"items": "minecraft:brown_dye"
 				},
 				"player":
 				{
@@ -16,7 +16,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:black_dye"
+							"items": "minecraft:brown_dye"
 						}
 					}
 				}
@@ -25,6 +25,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:install/use"
+		"function": "monitor:photo/use"
 	}
 }

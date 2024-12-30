@@ -81,6 +81,7 @@ scoreboard objectives add level dummy "電力"
 scoreboard objectives add heat dummy "過熱"
 scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
+scoreboard objectives add photo_cooldown dummy
 
 #商店
 scoreboard objectives add shop dummy

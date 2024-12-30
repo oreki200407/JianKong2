@@ -1,0 +1,58 @@
+{
+	"criteria":
+	{
+		"fixing_sword":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:iron_sword"
+				},
+				"player":
+				[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate":
+						{
+							"equipment":
+							{
+								"mainhand":
+								{
+									"items": "minecraft:iron_sword",
+									"predicates":
+									{
+										"damage":
+										{
+											"damage":
+											{
+												"min": 1
+											}
+										}
+									}
+								},
+								"offhand":
+								{
+									"items": "minecraft:netherite_ingot",
+									"predicates":
+									{
+										"custom_data":
+										{
+											"gadgets": "whetstone"
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadgets:whetstone/use"
+	}
+}

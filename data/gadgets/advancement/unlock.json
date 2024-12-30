@@ -1,22 +1,25 @@
 {
 	"criteria":
 	{
-		"black_dye":
+		"unlock":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
 			{
-				"item":
-				{
-					"items": "minecraft:black_dye"
-				},
 				"player":
 				{
 					"equipment": 
 					{
 						"mainhand":
 						{
-							"items": "minecraft:black_dye"
+							"items": "minecraft:tripwire_hook",
+							"predicates":
+							{
+								"custom_data":
+								{
+									"gadgets": "unlock"
+								}
+							}
 						}
 					}
 				}
@@ -25,6 +28,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:install/use"
+		"function": "gadgets:unlock/use"
 	}
 }
