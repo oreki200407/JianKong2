@@ -1,13 +1,14 @@
 scoreboard players set @s shop 1
-item replace entity @s enderchest.0 with iron_sword[custom_name='{"text":"匕首","italic":false}',lore=['[{"text": "價格：15", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:15},custom_model_data=1] 1
+
+item replace entity @s enderchest.0 with iron_sword[custom_name='{"text":"匕首","italic":false}',lore=['[{"text": "價格：15", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:15},custom_model_data={strings:["knife"]}] 1
 item replace entity @s enderchest.1 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
-item replace entity @s enderchest.2 with iron_sword[custom_name='{"text":"武士刀","italic":false}',lore=['[{"text": "價格：15", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:15},custom_model_data=2] 1
+item replace entity @s enderchest.2 with iron_sword[custom_name='{"text":"武士刀","italic":false}',lore=['[{"text": "價格：15", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:15},custom_model_data={strings:["samurai_sword"]}] 1
 item replace entity @s enderchest.3 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
-item replace entity @s enderchest.4 with iron_sword[custom_name='{"text":"開山刀","italic":false}',lore=['[{"text": "價格：16", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:16},custom_model_data=3] 1
+item replace entity @s enderchest.4 with iron_sword[custom_name='{"text":"開山刀","italic":false}',lore=['[{"text": "價格：16", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:16},custom_model_data={strings:["machete"]}] 1
 item replace entity @s enderchest.5 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
-item replace entity @s enderchest.6 with iron_sword[custom_name='{"text":"消防斧","italic":false}',lore=['[{"text": "價格：17", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:17},custom_model_data=4] 1
+item replace entity @s enderchest.6 with iron_sword[custom_name='{"text":"消防斧","italic":false}',lore=['[{"text": "價格：17", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:17},custom_model_data={strings:["fire_axe"]}] 1
 item replace entity @s enderchest.7 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
-item replace entity @s enderchest.8 with iron_sword[custom_name='{"text":"平底鍋","italic":false}',lore=['[{"text": "價格：17", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:17},custom_model_data=5] 1
+item replace entity @s enderchest.8 with iron_sword[custom_name='{"text":"平底鍋","italic":false}',lore=['[{"text": "價格：17", "color": "gold", "italic": false}]'],custom_data={type:"shop",price:17},custom_model_data={strings:["pan"]}] 1
 item replace entity @s enderchest.9 with golden_axe[custom_name='{"text":"噴火槍","italic":false}',lore=['[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'],custom_data={"gun": "flamethrower",type:"shop",price:25}, consumable={consume_seconds: 99999}, !attribute_modifiers,custom_model_data=4] 1
 item replace entity @s enderchest.10 with white_stained_glass_pane[custom_name='""',custom_data={type:"shop"}]
 item replace entity @s enderchest.11 with golden_axe[custom_name='{"text":"手槍","italic":false}',lore=['[{"text": "價格：20", "color": "gold", "italic": false}]','[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]'],custom_data={type:"shop",price:20,"gun": "pistol"}, consumable={consume_seconds: 99999}, !attribute_modifiers,custom_model_data=1] 1
