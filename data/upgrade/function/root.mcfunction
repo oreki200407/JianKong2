@@ -26,4 +26,4 @@ execute if score @s upgrade_operate matches 1 run function upgrade:player/root
 execute if items entity @s enderchest.10 #upgrade:all run return run function upgrade:ender_chest/root
 
 #拿下物品 或者是穿上、丟出等等的
-execute if items entity @s enderchest.13 white_stained_glass_pane[custom_model_data=2] run function upgrade:reset
+execute if items entity @s enderchest.13 white_stained_glass_pane[custom_model_data={strings:["enchant"]}] run function upgrade:reset

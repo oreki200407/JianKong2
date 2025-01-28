@@ -1,16 +1,16 @@
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data=1] 0
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["add"]}] 0
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/add
 
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data=2] 0
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["minus"]}] 0
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/minus
 
 function summon:operation/reset
 
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data=3]
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["shuffle"]}]
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/shuffle/check
 
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data=4]
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["auto"]}]
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/summon/auto
 
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data=5]
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["manual"]}]
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/summon/manual
