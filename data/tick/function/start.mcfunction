@@ -6,7 +6,8 @@ execute as @a[team=!spec] at @s if score 倒數 system matches 0..3 run function
 execute as @a[tag=!start] run function game:spectate
 
 #死亡盔甲座
-execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=armor_stand, tag=death_stand, distance=..3] run function game:death/survivor/save/saving
+execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=death_stand, distance=..3] run function game:death/survivor/save/saving
+execute as @a[team=survivor,gamemode=spectator,tag=fall_down] at @s run function game:death/survivor/die/dying
 
 #-----------------------道具-----------------------
 #鞭炮
@@ -54,6 +55,8 @@ execute as @a[tag=using_camera] run function monitor:observe/player/watching
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
 scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
+#拍攝
+scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
