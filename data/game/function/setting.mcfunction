@@ -23,7 +23,7 @@ scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list money
 
 scoreboard players reset @a
-scoreboard players set @e[type=marker, tag=lobby] mode 4
+scoreboard players set #mode system 4
 scoreboard players set @a[team=survivor] stamina 100
 
 #抽怪物

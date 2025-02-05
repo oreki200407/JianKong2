@@ -13,7 +13,7 @@
 advancement revoke @s only game:hurt_by_monitor
 
 #還沒進入3 就結束
-execute unless score @e[type=marker, tag=lobby, limit=1] mode matches 3 run return fail
+execute unless score #mode system matches 3 run return fail
 
 #檢查是不是喚魔者
 scoreboard players set #is_evoker morph 0

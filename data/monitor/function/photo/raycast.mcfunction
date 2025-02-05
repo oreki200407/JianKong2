@@ -13,6 +13,3 @@
 execute unless entity @s[distance=..50] run return run function monitor:photo/check
 
 function monitor:photo/check with storage jk2:data root.monitor.photo
-
-#還沒到 繼續往前
-execute positioned ^ ^ ^.5 run function monitor:photo/raycast

@@ -1,6 +1,6 @@
 #交換隊伍
 
-scoreboard players set @e[type=marker, tag=lobby] mode 3
+scoreboard players set #mode system 3
 
 schedule clear summon:natural
 

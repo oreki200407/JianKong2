@@ -29,13 +29,14 @@ scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy {"text": "隱藏資訊", "color": "gold"}
-scoreboard objectives add mode dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
 scoreboard objectives add kill totalKillCount
 scoreboard objectives add stamina dummy "體力值"
 scoreboard objectives add food food
+scoreboard objectives add score dummy "貢獻分數"
 
+#遠程武器
 scoreboard objectives add flamethrower dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
@@ -81,6 +82,7 @@ scoreboard objectives add level dummy "電力"
 scoreboard objectives add heat dummy "過熱"
 scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
+scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
 #商店

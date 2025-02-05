@@ -16,10 +16,14 @@ execute as @e[type=item_display, tag=death_stand] store result score @s uuid0 ru
 scoreboard players operation #stand uuid0 = @s uuid0
 
 #找到跟頭顱裡UUID相同的盔甲架
-execute as @e[type=item_display, tag=death_stand] if score @s uuid0 = #stand uuid0 run kill
+execute as @e[type=item_display, tag=death_stand] if score @s uuid0 = #stand uuid0 run tag @s add temp
+execute at @e[type=item_display,tag=death_stand,tag=temp] run tp @s ~ ~-0.5 ~
+kill @e[type=item_display,tag=death_stand,tag=temp]
 
 gamemode adventure @s
 effect give @s resistance 10 100 true
 effect give @s strength 10 1 true
 tag @s remove fall_down
 scoreboard players reset @s death_time
+scoreboard players add @s score 50
+playsound entity.zombie.death ambient @s

@@ -7,6 +7,7 @@ execute as @a[tag=!start] run function game:spectate
 
 #死亡盔甲座
 execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=death_stand, distance=..3] run function game:death/survivor/save/saving
+scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor,gamemode=spectator,tag=fall_down] at @s run function game:death/survivor/die/dying
 
 #-----------------------道具-----------------------
