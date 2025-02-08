@@ -1,7 +1,6 @@
 #交換隊伍
-
-scoreboard players set #mode system 3
-
+title @a title {"text":"交換隊伍","bold":true,"color":"blue"}
+schedule function game:prepare 2s
 schedule clear summon:natural
 
 #裝備

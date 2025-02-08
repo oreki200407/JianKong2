@@ -29,4 +29,4 @@ scoreboard players set @a[team=survivor] stamina 100
 #抽怪物
 function summon:pick/armor_stand
 
-schedule function game:start 2s
+schedule function game:prepare 2s

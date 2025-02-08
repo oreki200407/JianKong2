@@ -134,7 +134,16 @@ team modify monitor friendlyFire false
 scoreboard players set 更新 system 1
 scoreboard players set #200 summon_cooldown 200
 
-bossbar add jk2:boss "Boss血條"
+bossbar add jk2:boss "BOSS血條"
+bossbar add jk2:time "遊戲時間"
+bossbar add jk2:prepare "準備時間"
+
+bossbar set jk2:boss color red
+bossbar set jk2:time color yellow
+bossbar set jk2:prepare color purple
+
+bossbar set jk2:time max 1500
+bossbar set jk2:prepare max 180
 
 #可供變形的怪物 以及技能冷卻
 data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze"]
