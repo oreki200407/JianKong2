@@ -17,7 +17,7 @@ execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run
 execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadget:grenade/explode
 
 #燃燒瓶
-execute as @e[type=potion, tag=!checked] run function gadget:molotov_cocktail/potion
+execute as @e[type=lingering_potion, tag=!checked] run function gadget:molotov_cocktail/potion
 execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadget:molotov_cocktail/set_fire
 
 #捕獸夾
@@ -60,7 +60,7 @@ scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #人體變形
-execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
 #清除所有失去騎乘者的坐騎蜘蛛
 execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "entity_properties", entity: "this", predicate: {passenger: {}}} run kill
 #清除所有失去界伏蚌的草方塊展示實體

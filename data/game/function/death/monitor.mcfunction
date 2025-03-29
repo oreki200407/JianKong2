@@ -10,4 +10,4 @@
 ###################################################
 
 #如果處在變形狀態
-execute if score @s morph matches 1.. run function morph:player/end with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute if score @s morph matches 1.. run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"

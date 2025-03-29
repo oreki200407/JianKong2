@@ -13,7 +13,7 @@
 $clear @s *[custom_data~{skill: $(id)}]
 
 #開始冷卻
-$execute store result score @s morph_skill_$(id) run data get entity @s ArmorItems[3].components."minecraft:custom_data".cooldown.$(id)
+$execute store result score @s morph_skill_$(id) run data get entity @s equipment.head.components."minecraft:custom_data".cooldown.$(id)
 
 #清除進度
 $advancement revoke @s only morph:use_skill_$(id)

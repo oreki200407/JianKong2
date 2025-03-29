@@ -10,7 +10,7 @@
 ###################################################
 
 #找出玩家變形的怪物
-data modify storage jk2:data root.morph.use_skill.monster set from entity @s ArmorItems[3].components."minecraft:custom_data".monster
+data modify storage jk2:data root.morph.use_skill.monster set from entity @s equipment.head.components."minecraft:custom_data".monster
 #檢查是使用1或是2技能
 execute if entity @s[advancements={morph:use_skill_1=true}] run data modify storage jk2:data root.morph.use_skill.id set value 1
 execute if entity @s[advancements={morph:use_skill_2=true}] run data modify storage jk2:data root.morph.use_skill.id set value 2

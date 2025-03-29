@@ -10,4 +10,4 @@
 ###################################################
 
 tag @s add molotov_cocktail_marker
-ride @s mount @e[type=potion, tag=temp, limit=1, distance=..1]
+ride @s mount @e[type=lingering_potion, tag=temp, limit=1, distance=..1]

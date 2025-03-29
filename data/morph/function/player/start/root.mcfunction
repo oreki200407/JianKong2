@@ -21,7 +21,7 @@ execute store result storage jk2:data root.morph.index int 1 run function morph:
 #用來儲存變形怪物用的頭顱 以及裝飾用
 item replace entity @s armor.head with player_head[enchantments={binding_curse: 1}]
 function morph:player/start/choose with storage jk2:data root.morph
-function morph:player/start/to with entity @s ArmorItems[3].components."minecraft:custom_data"
+function morph:player/start/to with entity @s equipment.head.components."minecraft:custom_data"
 
 #變形維持180秒 = 3600刻
 scoreboard players set @s morph 3600
