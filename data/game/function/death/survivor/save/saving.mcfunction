@@ -3,7 +3,7 @@
 # 
 # Name   : saving.mcfunction
 # Path   : game:death/survivor/save/
-# As     : 蹲在盔甲座附近的玩家
+# As     : 蹲在展示實體附近的玩家
 # At     : As
 # Loop   : 是
 # Author : Alex_Cai
@@ -16,4 +16,4 @@ execute if score @s revive_time matches 1..30 run return run function game:death
 execute if score @s revive_time matches 31..61 run return run function game:death/survivor/save/lower_half
 
 title @s actionbar ""
-execute as @e[type=item_display, tag=death_stand, distance=..3] run function game:death/stand/revive
+execute as @e[type=item_display, tag=tomb, distance=..3] run function game:death/tomb/revive

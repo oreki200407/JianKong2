@@ -1,14 +1,23 @@
-#遊戲進行中的tick
+###################################################
+# 遊戲進行中的tick
+# 
+# Name   : start.mcfunction
+# Path   : tick:
+# As     : 世界重生點
+# At     : As
+# Loop   : 是
+# Author : oreki20, Alex_Cai
+###################################################
 
 execute as @a[team=!spec] at @s if score 倒數 system matches 0..3 run function game:teleport
 
 #中途加入
 execute as @a[tag=!start] run function game:spectate
 
-#死亡盔甲座
-execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=death_stand, distance=..3] run function game:death/survivor/save/saving
+#死亡展示實體
+execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..3] run function game:death/survivor/save/saving
 scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
-execute as @a[team=survivor,gamemode=spectator,tag=fall_down] at @s run function game:death/survivor/die/dying
+execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
 #-----------------------道具-----------------------
 #鞭炮

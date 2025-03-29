@@ -10,7 +10,7 @@
 ###################################################
 
 #60秒死透
-execute unless entity @e[type=item_display,tag=death_stand,distance=..0.01] run function game:death/survivor/die/teleport
+execute unless entity @e[type=item_display, tag=tomb, distance=..0.01] run function game:death/survivor/die/teleport
 
 scoreboard players add @s death_time 1
 

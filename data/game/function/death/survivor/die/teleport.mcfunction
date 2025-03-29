@@ -1,7 +1,8 @@
 #儲存的UUID
-execute as @e[type=item_display,tag=death_stand] store result score @s uuid0 run data get entity @s item.components."minecraft:profile".id[0]
-scoreboard players operation #stand uuid0 = @s uuid0
-#找到跟頭顱裡UUID相同的盔甲架
-execute as @e[type=item_display, tag=death_stand] if score @s uuid0 = #stand uuid0 run tag @s add temp
-execute at @e[type=item_display,tag=death_stand,tag=temp,limit=1] run tp @s ~ ~ ~
-tag @e[type=item_display,tag=death_stand,tag=temp,limit=1] remove temp
+execute as @e[type=item_display, tag=tomb] store result score @s uuid0 run data get entity @s data.player_uuid0
+scoreboard players operation #dying_player uuid0 = @s uuid0
+
+#找到儲存了玩家的UUID的展示實體
+tag @s add dying
+execute as @e[type=item_display, tag=tomb] if score @s uuid0 = #dying_player uuid0 at @s run tp @a[tag=dying] ~ ~ ~
+tag @s remove dying
