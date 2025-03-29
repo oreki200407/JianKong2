@@ -11,10 +11,11 @@
 
 title @s actionbar ["修理進度:", {"score": {"name": "@s", "objective": "fix_progress"}}]
 
+#進度達到10就修理成功
 execute if score @s fix_progress matches 10.. run function power:fix/success
 
 #水平移動了就失敗
-execute if predicate game:moving/horizontal run return run function power:fix/fix_mode/leave
+execute unless predicate game:keyboard/no_wasd run return run function power:fix/fix_mode/leave
 
 #如果是正在檢定的話 剩下的就不用管了
 execute if entity @s[tag=fixing_power_check] run function power:fix/check_mode/countdown

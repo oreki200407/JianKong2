@@ -10,4 +10,4 @@
 ###################################################
 
 #移動了就回去
-execute if predicate game:moving/generic run function monitor:observe/player/back/root
+execute unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
