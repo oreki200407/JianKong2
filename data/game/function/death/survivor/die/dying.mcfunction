@@ -3,8 +3,8 @@
 # 
 # Name   : dying.mcfunction
 # Path   : game:death/survivor/die/
-# As : 倒地的玩家
-# At : As
+# As     : 倒地的玩家
+# At     : As
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################

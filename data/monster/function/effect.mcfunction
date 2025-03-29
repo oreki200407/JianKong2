@@ -1,3 +1,14 @@
+###################################################
+# 所有怪物的效果
+# 
+# Name   : effect.mcfunction
+# Path   : monster:
+# As     : 世界重生點
+# At     : As
+# Loop   : 是
+# Author : Alex_Cai, oreki20
+###################################################
+
 #execute at @e[tag=monster] at @e[distance=..1.5,tag=door] if block ~ ~ ~ #wooden_doors[open=false] run 開門
 execute as @e[tag=passengerby] unless data entity @s Passengers run kill @s
 kill @e[type=arrow,nbt={inGround:1b}]
@@ -25,7 +36,7 @@ execute as @e[type=wolf,team=monitor] at @s unless data entity @s AngryAt run da
 execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
 
 #喚魔者
-execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {HandItems:[{id:"minecraft:wooden_sword",count:1b},{}],HandDropChances:[0.000F,0.085F],Team:"monitor",DeathLootTable:"game:empty",PersistenceRequired:1b,Tags:["monster","vex_summon"],LifeTicks:100}
+execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.085}, Team:"monitor",DeathLootTable: "game:empty", PersistenceRequired: 1b, Tags:["monster", "vex_summon"], life_ticks: 100}
 
 #蜘蛛
 execute as @e[tag=sticky,nbt={Age:60}] at @s run function monster:effect/spider/web
