@@ -1,2 +1,2 @@
 tellraw @a ["","◎ ", {"text": "資料包","color":"gold"},"載入成功"]
-execute unless entity @e[type=marker, tag=lobby] run tellraw @a ["","◎ 點擊 ", {"text": "此處", "clickEvent": {"action": "run_command", "value": "/function system:lobby"}, "color": "aqua", "underlined": true}," 生成大廳"]
+execute unless entity @e[type=marker, tag=lobby] run tellraw @a ["","◎ 點擊 ", {"text": "此處", "click_event": {"action": "run_command", "command": "function system:lobby"}, "color": "aqua", "underlined": true}," 生成大廳"]
