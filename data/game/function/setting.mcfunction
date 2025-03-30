@@ -1,3 +1,10 @@
+execute at @e[tag=door,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["door"]}
+execute at @e[tag=point,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["point"]}
+execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
+kill @e[tag=door,type=armor_stand]
+kill @e[tag=point,type=armor_stand]
+kill @e[tag=spawn_survivor,type=armor_stand]
+
 setblock ~ ~ ~ air
 difficulty hard
 time set midnight

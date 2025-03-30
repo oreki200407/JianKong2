@@ -1,4 +1,6 @@
 #交換隊伍
+scoreboard players set #switch system 1
+
 title @a title {"text":"交換隊伍","bold":true,"color":"blue"}
 schedule function game:prepare 2s
 schedule clear summon:natural

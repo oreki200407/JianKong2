@@ -1,7 +1,7 @@
 ###################################################
-# 取消召喚監視器
+# 退出監視器
 # 
-# Name   : cancel_summon.mcfunction
+# Name   : exit.mcfunction
 # Path   : monitor:install/camera_interface/
 # As     : 安裝監視器的玩家
 # At     : 世界重生點
@@ -10,5 +10,5 @@
 ###################################################
 
 gamemode adventure @s
-tp @s @e[type=armor_stand, tag=spawn_monitor, limit=1]
+tp @s @e[type=marker, tag=spawn_monitor, limit=1]
 scoreboard players reset @s camera

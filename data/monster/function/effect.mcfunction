@@ -19,7 +19,7 @@ execute as @e[type=!player, team=monitor] at @s anchored eyes run function monst
 scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break
 
 #終界使者
-execute as @e[tag=enderman,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run tp @s @e[type=armor_stand,tag=point,limit=1,sort=random,distance=..7]
+execute as @e[tag=enderman,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run tp @s @e[type=marker,tag=point,limit=1,sort=random,distance=..7]
 
 #史萊姆
 execute as @e[tag=slimeman] at @s unless entity @e[tag=slime,distance=..1.5] run function monster:effect/slime/split
