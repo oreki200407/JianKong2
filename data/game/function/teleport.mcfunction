@@ -1,3 +1,3 @@
-tp @a[team=survivor] @e[type=marker,tag=spawn_survivor,limit=1]
-tp @a[team=monitor] @e[type=marker,tag=spawn_monitor,limit=1]
-tp @a[team=spec] @e[type=marker,tag=spawn_survivor,limit=1]
+tp @a[team=survivor] @e[type=armor_stand,tag=spawn_survivor,limit=1]
+tp @a[team=monitor] @e[type=armor_stand,tag=spawn_monitor,limit=1]
+tp @a[team=spec] @e[type=armor_stand,tag=spawn_survivor,limit=1]

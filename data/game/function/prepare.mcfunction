@@ -5,8 +5,9 @@ schedule function game:time 1s
 schedule function game:start 3601t
 
 function game:teleport
-execute as @a[team=survivor] at @e[type=marker,tag=spawn_survivor,limit=1] run spawnpoint @s ~ ~ ~
-execute as @a[team=monitor] at @e[type=marker,tag=spawn_monitor,limit=1] run spawnpoint @s ~ ~ ~
+execute at @e[type=armor_stand,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ ender_chest
+execute as @a[team=survivor] at @e[type=armor_stand,tag=spawn_survivor,limit=1] run spawnpoint @s ~ ~ ~
+execute as @a[team=monitor] at @e[type=armor_stand,tag=spawn_monitor,limit=1] run spawnpoint @s ~ ~ ~
 
 gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
