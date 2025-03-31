@@ -1,1 +1,1 @@
-execute at @e[type=armor_stand,tag=power] unless block ~ ~1 ~ oak_sign run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}
+execute at @e[type=armor_stand,tag=power_point] unless block ~ ~1 ~ oak_sign run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}

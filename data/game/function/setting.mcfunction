@@ -33,6 +33,9 @@ scoreboard players reset @a
 scoreboard players set #mode system 4
 scoreboard players set @a[team=survivor] stamina 100
 
+#決定初始電箱
+tag @e[type=armor_stand,tag=power_point,sort=random,limit=1] add power_default
+
 #抽怪物
 function summon:pick/armor_stand
 

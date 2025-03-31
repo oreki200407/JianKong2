@@ -13,4 +13,8 @@ execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 
 title @a title {"text":"夜晚來臨","bold":true,"color":"blue"}
 schedule function game:time 1s
 schedule function game:dawn 1500s
-scoreboard players remove 倒數 system 1
+
+tag @e[type=armor_stand,tag=power] remove power
+tag @e[type=armor_stand,tag=power_default] add power
+tellraw @a[team=!monitor] ["◎ 初始電箱位置在", {"selector": "@e[type=armor_stand,tag=power_default]"}]
+execute at @e[type=armor_stand,tag=power] run function power:switch/set

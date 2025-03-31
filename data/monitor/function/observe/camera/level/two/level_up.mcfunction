@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-#scoreboard players remove # power 60
+scoreboard players remove 電力 info 60
 scoreboard players set @s camera_level 3
