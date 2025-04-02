@@ -1,5 +1,14 @@
+###################################################
+# 進入編輯模式
+# 
+# Name   : enter.mcfunction
+# Path   : edit:
+# As     : 打指令的玩家
+# At     : As
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 scoreboard players set #mode system 1
 execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:1b}
-execute at @e[type=armor_stand,tag=power_point] run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}
-execute as @e[type=armor_stand,tag=power_point] at @s run data modify block ~ ~1 ~ front_text.messages[0] set from entity @s CustomName
-execute as @e[type=armor_stand,tag=power_point] at @s run data modify block ~ ~1 ~ back_text.messages[0] set from entity @s CustomName
+execute as @e[type=armor_stand, tag=power_point] at @s run function edit:power_point/enter
