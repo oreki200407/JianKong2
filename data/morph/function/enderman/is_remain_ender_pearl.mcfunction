@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute on origin if score @s uuid0 = #pearl_thrower uuid0 run return 100
+execute on origin if entity @s[tag=enderman_end] run return 100
 
 return fail

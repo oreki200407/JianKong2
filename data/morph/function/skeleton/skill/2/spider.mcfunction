@@ -10,5 +10,6 @@
 ###################################################
 
 attribute @s movement_speed base set 0.6
+team join monitor
 ride @a[tag=ride_spider, limit=1, distance=...5] mount @s
 tag @s add spider_vehicle

@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-#技能結束了
+#技能效果結束了
 execute unless score @s morph_skill_2_duration matches 1.. run return fail
 
 #沒有標記就召喚標記

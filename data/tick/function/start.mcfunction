@@ -9,7 +9,7 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-execute as @a[team=!spec] at @s if score 倒數 system matches 0..3 run function game:teleport
+execute if score 倒數 system matches 0..3 run function game:teleport
 
 #中途加入
 execute as @a[tag=!start] run function game:spectate

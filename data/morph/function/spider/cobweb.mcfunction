@@ -10,8 +10,7 @@
 ###################################################
 
 #維持4秒
-scoreboard players add @s morph_skill_2_duration 1
-execute unless score @s morph_skill_2_duration matches 80 run return fail
+execute unless predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 80}} run return fail
 
 #清除蜘蛛網
 execute at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air

@@ -9,8 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-#還騎著蜘蛛就不減少cd
-execute if predicate {condition: "entity_properties", entity: "this", predicate: {vehicle: {type: "spider"}}} store result score @s morph_skill_2 run data get storage jk2:data root.morph.cooldown.skeleton.2
-
-#附近的狼攻擊力提升
-effect give @e[type=wolf, distance=..10] strength 1 0 true
+#爬牆
+execute if predicate game:sneak if function morph:spider/wall_near run effect give @s levitation 1 0 true

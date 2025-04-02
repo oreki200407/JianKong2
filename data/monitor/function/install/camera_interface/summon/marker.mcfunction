@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-data merge entity @s {Duration:2147483647, Tags:["camera"]}
+data merge entity @s {Duration: 2147483647, Tags: ["camera"]}
 scoreboard players operation @s camera = #summon_camera camera
 rotate @s ~ ~
 scoreboard players set @s camera_level 1
