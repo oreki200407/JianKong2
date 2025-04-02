@@ -1,15 +1,13 @@
 ###################################################
-# 放置電箱
+# 移除舊的電箱
 # 
-# Name   : set.mcfunction
+# Name   : remove_power.mcfunction
 # Path   : power:switch/
-# As     : 電箱點位盔甲座
+# As     : 舊的電箱點位盔甲座
 # At     : As
 # Loop   : 否
 # Author : oreki20, Alex_Cai
 ###################################################
 
-#更換電箱
-setblock ~ ~ ~ dispenser[facing=down]
-setblock ~ ~1 ~ ender_chest
-function power:use/reset
+fill ~ ~ ~ ~ ~1 ~ air
+tag @s remove power
