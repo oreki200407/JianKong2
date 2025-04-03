@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"hurt_by_player":
+		"hurt_by_monitor":
 		{
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions":
