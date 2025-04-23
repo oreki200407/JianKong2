@@ -8,7 +8,7 @@ item replace entity @s enderchest.5 with white_stained_glass_pane[custom_name=""
 item replace entity @s enderchest.6 with white_stained_glass_pane[custom_name="",custom_data={type:"shop"}]
 item replace entity @s enderchest.7 with white_stained_glass_pane[custom_name="",custom_data={type:"shop"}]
 item replace entity @s enderchest.8 with white_stained_glass_pane[custom_name="",custom_data={type:"shop"}]
-item replace entity @s enderchest.9 with paper[custom_name={"text":"繃帶","italic":false},lore=[[{"text": "價格：3", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:3}] 1
+item replace entity @s enderchest.9 with paper[custom_name={"text":"繃帶","italic":false},lore=[[{"text": "價格：3", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:3},custom_model_data={strings:["bandage"]}] 1
 item replace entity @s enderchest.10 with white_stained_glass_pane[custom_name="",custom_data={type:"shop"}]
 item replace entity @s enderchest.11 with paper[custom_name={"text":"止痛藥","italic":false},lore=[[{"text": "價格：5", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:5},custom_model_data={strings:["painkiller"]}] 1
 item replace entity @s enderchest.12 with white_stained_glass_pane[custom_name="",custom_data={type:"shop"}]

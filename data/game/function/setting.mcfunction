@@ -32,6 +32,7 @@ scoreboard objectives setdisplay list money
 scoreboard players reset @a
 scoreboard players set #mode system 4
 scoreboard players set @a[team=survivor] stamina 100
+scoreboard players operation @a[team=!spec] money = #start money
 
 #決定初始電箱
 tag @e[type=armor_stand,tag=power_point,sort=random,limit=1] add power_default

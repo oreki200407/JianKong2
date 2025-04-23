@@ -1,7 +1,8 @@
 kill @e[tag=lobby]
+kill @e[tag=lobby_text]
 forceload add ~ ~
-setworldspawn ~ ~ ~
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
+setworldspawn ~6 ~ ~5
+#setblock ~ ~ ~ structure_block
 scoreboard players set #mode system 1
 function system:install
 scoreboard objectives setdisplay sidebar edit
