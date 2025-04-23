@@ -7,8 +7,11 @@ execute as @e[type=interaction,tag=team_spec] on target run team join spec
 execute as @e[type=interaction,tag=team_blue] on target run team join monitor
 execute as @e[type=interaction,tag=team_leave] on target run team leave @s
 execute as @e[type=interaction,tag=team_random] on target at @s run function system:team
+execute as @e[type=interaction,tag=setting_easy] on target at @s run function system:difficulty/easy
+execute as @e[type=interaction,tag=setting_normal] on target at @s run function system:difficulty/normal
+execute as @e[type=interaction,tag=setting_hard] on target at @s run function system:difficulty/hard
 
-execute as @e[type=interaction,tag=money-] on target run function system:team
-execute as @e[type=interaction,tag=money+] on target run function system:team
+execute as @e[type=interaction,tag=money-] on target run function system:money/minus
+execute as @e[type=interaction,tag=money+] on target run function system:money/add
 
 execute as @e[type=interaction] if data entity @s interaction run data remove entity @s interaction
