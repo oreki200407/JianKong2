@@ -1,8 +1,0 @@
-playsound ui.button.click ambient @s
-execute if entity @s[gamemode=!creative] run return run tellraw @a ["","◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
-
-difficulty easy
-
-data merge entity @e[type=item_display,tag=setting_easy,limit=1] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;-232114097,-1876409202,-1463232328,724804809],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ViNGIzNDUxOWZlMTU4NDdkYmVhNzIyOTE3OWZlZWI2ZWE1NzcxMmQxNjVkY2M4ZmY2Yjc4NWJiNTg5MTFiMCJ9fX0="}]}}}}
-data merge entity @e[type=item_display,tag=setting_normal,limit=1] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;-1768556495,436030533,-1381399352,1211582856],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="}]}}}}
-data merge entity @e[type=item_display,tag=setting_hard,limit=1] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;-1768556495,436030533,-1381399352,1211582856],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="}]}}}}
