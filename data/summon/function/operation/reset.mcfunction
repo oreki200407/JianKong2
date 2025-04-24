@@ -2,9 +2,9 @@ item replace entity @s enderchest.11 with glowstone_dust[custom_model_data={stri
 item replace entity @s enderchest.12 with glowstone_dust[custom_model_data={strings:["add"]},custom_name={"text": "+5", "color": "green", "bold": true, "italic": false}]
 item replace entity @s enderchest.13 with glowstone_dust[custom_model_data={strings:["add"]},custom_name={"text": "+10", "color": "green", "bold": true, "italic": false}]
 item replace entity @s enderchest.17 with glowstone_dust[custom_model_data={strings:["manual"]},custom_name={"text": "手動召喚怪物", "color": "gold", "bold": true, "italic": false}]
-item replace entity @s enderchest.20 with glowstone_dust[custom_model_data={strings:["minus"]},custom_name={"text": "-1", "color": "red", "bold": true, "italic": false}]
-item replace entity @s enderchest.21 with glowstone_dust[custom_model_data={strings:["minus"]},custom_name={"text": "-5", "color": "red", "bold": true, "italic": false}]
-item replace entity @s enderchest.22 with glowstone_dust[custom_model_data={strings:["minus"]},custom_name={"text": "-10", "color": "red", "bold": true, "italic": false}]
+item replace entity @s enderchest.20 with glowstone_dust[custom_model_data={strings:["subtract"]},custom_name={"text": "-1", "color": "red", "bold": true, "italic": false}]
+item replace entity @s enderchest.21 with glowstone_dust[custom_model_data={strings:["subtract"]},custom_name={"text": "-5", "color": "red", "bold": true, "italic": false}]
+item replace entity @s enderchest.22 with glowstone_dust[custom_model_data={strings:["subtract"]},custom_name={"text": "-10", "color": "red", "bold": true, "italic": false}]
 item replace entity @s enderchest.24 with glowstone_dust[custom_model_data={strings:["shuffle"]},custom_name={"text": "刷新怪物", "color": "aqua", "bold": true, "italic": false},lore=[{"text": "消耗 10 電力", "color": "gray", "italic": false}]]
 item replace entity @s enderchest.26 with glowstone_dust[custom_model_data={strings:["auto"]},custom_name={"text": "自動召喚怪物", "color": "gold", "bold": true, "italic": false}]
 

@@ -9,7 +9,8 @@ time set midnight
 team join spec @a[team=]
 clear @a
 recipe take @a *
-experience add @a -999999 levels
+xp set @a 0 levels
+xp set @a 0 points
 tag @a add start
 execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
 title @a title {"text":"監控圍城 II","bold":true,"color":"red"}

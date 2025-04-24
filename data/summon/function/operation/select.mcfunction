@@ -1,8 +1,8 @@
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["add"]}] 0
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/add
 
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["minus"]}] 0
-execute as @s[scores={summon_operate=1}] at @s run function summon:operation/minus
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["subtract"]}] 0
+execute as @s[scores={summon_operate=1}] at @s run function summon:operation/subtract
 
 function summon:operation/reset
 

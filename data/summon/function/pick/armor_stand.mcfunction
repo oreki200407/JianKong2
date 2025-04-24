@@ -1,3 +1,4 @@
+#怪物流水號
 scoreboard players reset #number summon_number
 kill @e[type=armor_stand,tag=summon_pick]
 
@@ -35,6 +36,9 @@ summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisi
 
 summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["summon_pick","summon_pick_hard"],equipment: {chest: {id:"minecraft:player_head",count:1,components:{"minecraft:custom_data":{level:"hard",type:"operation"},"minecraft:custom_name":{"translate":"entity.minecraft.evoker","color":"red","italic":false}, "minecraft:lore":[{"text":"特點","color":"blue","italic":false},{"text":"●移動速度慢","color":"gray","italic":false},{"text":"●移動速度慢","color":"gray","italic":false},{"text":"●移動速度慢","color":"gray","italic":false}],"minecraft:profile":{id:[I;1662638663,828198224,-1833578565,-1912836640],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODA2YWMwMmZkOWRhYzk2NmI3ZTU4MDY3MzZiNmZlYjkwZTJmM2IwNTc3OTY5ZTY3MzI5MWI4MzA3YzFlZjhlNSJ9fX0="}]}}}}}
 
+#簡單的選3個 編為1 2 3號
 execute as @e[type=armor_stand,tag=summon_pick_easy,limit=3,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1
+#中等的選2個 編為4 5號
 execute as @e[type=armor_stand,tag=summon_pick_medium,limit=2,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1
+#困難的選1個 編為6 7號
 execute as @e[type=armor_stand,tag=summon_pick_hard,limit=2,sort=random] store result score @s summon_number run scoreboard players add #number summon_number 1

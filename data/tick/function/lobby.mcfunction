@@ -11,10 +11,10 @@ execute as @e[type=interaction,tag=setting_easy] on target at @s run function sy
 execute as @e[type=interaction,tag=setting_normal] on target at @s run function system:difficulty/normal
 execute as @e[type=interaction,tag=setting_hard] on target at @s run function system:difficulty/hard
 
-execute as @e[type=interaction,tag=money-] on target run function system:money/minus
+execute as @e[type=interaction,tag=money-] on target run function system:money/subtract
 execute as @e[type=interaction,tag=money+] on target run function system:money/add
 
-execute as @e[type=interaction,tag=power-] on target run function system:power/minus
+execute as @e[type=interaction,tag=power-] on target run function system:power/subtract
 execute as @e[type=interaction,tag=power+] on target run function system:power/add
 
 execute as @e[type=interaction,tag=edit_enter] on target at @e[tag=control_panel] run function edit:enter

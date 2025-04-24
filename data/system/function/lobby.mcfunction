@@ -3,8 +3,7 @@ kill @e[tag=lobby_text]
 forceload add ~ ~
 setworldspawn ~6 ~ ~5
 
-setblock ~ ~-1 ~ structure_block{name:"game:lobby",ignoreEntities:0b,mode:"LOAD",posX:-10,posY:0,posZ:-10,sizeX:21,sizeY:8,sizeZ:21,showair:0b,showboundingbox:1b}
-setblock ~ ~ ~ redstone_block
+place structure game:lobby ~-10 ~-1 ~-10
 
 scoreboard players set #mode system 1
 function system:install

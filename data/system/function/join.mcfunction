@@ -5,6 +5,8 @@ effect give @s saturation infinite 0 true
 effect give @s night_vision infinite 0 true
 effect give @s weakness infinite 100 true
 effect give @s blindness 3 0 true
+#讓health顯示
+effect give @s absorption 1 0 true
 
 gamemode adventure @s
 title @s times 10 40 10
