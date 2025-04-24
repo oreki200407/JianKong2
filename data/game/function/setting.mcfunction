@@ -5,8 +5,6 @@ kill @e[tag=door,type=armor_stand]
 kill @e[tag=point,type=armor_stand]
 kill @e[tag=spawn_survivor,type=armor_stand]
 
-setblock ~ ~ ~ air
-difficulty hard
 time set midnight
 team join spec @a[team=]
 clear @a
@@ -41,3 +39,5 @@ tag @e[type=armor_stand,tag=power_point,sort=random,limit=1] add power_default
 function summon:pick/armor_stand
 
 schedule function game:prepare 2s
+
+#清空大廳

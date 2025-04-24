@@ -24,11 +24,11 @@ gamerule showDeathMessages false
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
 
-scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "red"}
+scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue"}
 scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
-scoreboard objectives add system dummy {"text": "隱藏資訊", "color": "gold"}
+scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
 scoreboard objectives add kill totalKillCount
