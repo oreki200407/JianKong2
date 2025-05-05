@@ -121,10 +121,6 @@ team modify survivor color red
 team modify monitor color blue
 team modify spec color gray
 
-team modify survivor prefix "[求生者]"
-team modify monitor prefix "[監控者]"
-team modify spec prefix "[旁觀者]"
-
 team modify survivor seeFriendlyInvisibles true
 team modify monitor seeFriendlyInvisibles true
 team modify survivor friendlyFire false

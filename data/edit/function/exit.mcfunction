@@ -16,8 +16,8 @@ execute as @e[type=armor_stand,tag=power_point] at @s run function edit:power_po
 kill @e[tag=edit_setting]
 kill @e[tag=lobby_setting]
 
-scoreboard players set #start money 250
-scoreboard players set #power_switch system 5
+scoreboard players set 初始資金 lobby 250
+scoreboard players set 更換電箱 lobby 5
 
 summon item_display ~4 ~-2.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"red","text":"加入紅隊"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_red"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"player_head",count:1,components:{"minecraft:profile":{id:[I;-60129411,40914494,-1217801351,-1991160008],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNhMDNjMDZmZmUyMzU2Y2UwMGFlZjViNzA4ODc4ZDJmZTQzNjVhOTdiYzRkYWUxZTE1NDJjMjdiMmViMzBkZCJ9fX0="}]}}},Tags:["lobby_setting"]}
 summon item_display ~3 ~-2.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"gray","text":"加入旁觀者"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_spec"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;-661905852,-1569698821,-1181657770,995281686],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNkZTQ0ZThmODBlNTY2MTBjMGZmYzY0YzA4ZTE5NDM1MTdmZGFmODAwZjVlZTc1ZWY2OTg2YzVhODk2NmU5YyJ9fX0="}]}}},Tags:["lobby_setting"]}
