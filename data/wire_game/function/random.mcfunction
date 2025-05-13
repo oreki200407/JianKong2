@@ -1,0 +1,2 @@
+$execute unless data block ~ ~ ~ Items[{Slot:$(number)b}] run loot replace block ~ ~ ~ container.$(number) loot wire_game:random
+$data modify block ~ ~ ~ Items.[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)

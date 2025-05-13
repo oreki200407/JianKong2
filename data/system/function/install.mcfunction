@@ -85,6 +85,9 @@ scoreboard objectives add trap_cooldown dummy
 scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
+#發電機
+scoreboard objectives add wire_game dummy
+
 #商店
 scoreboard objectives add shop dummy
 scoreboard objectives add shop_operate dummy

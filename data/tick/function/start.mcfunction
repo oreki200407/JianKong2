@@ -58,8 +58,6 @@ execute as @a[team=survivor] at @s run function upgrade:root
 execute as @a[team=monitor] at @s run function summon:root
 scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_cooldown=1..}] summon_cooldown 1
 
-#使用監視器介面
-execute as @a[scores={camera_interface=1..}] run function monitor:install/camera_interface/root
 #使用監視器中
 execute as @a[tag=using_camera] run function monitor:observe/player/watching
 #監視器
@@ -67,6 +65,9 @@ execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/c
 scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 #拍攝
 scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
+
+#電線遊戲
+execute as @a[team=monitor] at @e[type=marker,tag=wire_game] run function wire_game:root
 
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
