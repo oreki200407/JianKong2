@@ -14,7 +14,7 @@ title @a title {"text":"夜晚來臨","bold":true,"color":"blue"}
 schedule function game:time 1s
 schedule function game:dawn 1500s
 
-tag @e[type=armor_stand,tag=power] remove power
-tag @e[type=armor_stand,tag=power_default] add power
-tellraw @a[team=!monitor] ["◎ 初始電箱位置在", {"selector": "@e[type=armor_stand,tag=power_default]"}]
-execute at @e[type=armor_stand,tag=power] run function power:switch/set
+tag @e[type=armor_stand,tag=box] remove box
+tag @e[type=armor_stand,tag=box_default] add box
+tellraw @a[team=!monitor] ["◎ 初始電箱位置在", {"selector": "@e[type=armor_stand,tag=box_default]"}]
+execute at @e[type=armor_stand,tag=box] run function box:switch/set

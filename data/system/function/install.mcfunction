@@ -44,7 +44,7 @@ scoreboard objectives add gun_cooldown dummy
 scoreboard objectives add open_ender_chest custom:open_enderchest
 
 #電箱
-scoreboard objectives add power_operation dummy
+scoreboard objectives add box_operation dummy
 
 #升級台
 scoreboard objectives add upgrade_operate dummy

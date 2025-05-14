@@ -14,7 +14,7 @@ execute if entity @s[gamemode=!creative] run return run tellraw @a ["","◎ 請�
 
 scoreboard players set #mode system 1
 execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:1b}
-execute as @e[type=armor_stand, tag=power_point] at @s run function edit:power_point/enter
+execute as @e[type=armor_stand, tag=box_point] at @s run function edit:box_point/enter
 
 kill @e[tag=edit_setting]
 kill @e[tag=lobby_setting]

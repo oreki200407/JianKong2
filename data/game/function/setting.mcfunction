@@ -34,7 +34,7 @@ scoreboard players set @a[team=survivor] stamina 100
 scoreboard players operation @a[team=!spec] money = 初始資金 lobby
 
 #決定初始電箱
-tag @e[type=armor_stand,tag=power_point,sort=random,limit=1] add power_default
+tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
 
 #抽怪物
 function summon:pick/armor_stand

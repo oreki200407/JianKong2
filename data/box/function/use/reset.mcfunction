@@ -1,0 +1,11 @@
+item replace block ~ ~ ~ container.0 with redstone[custom_name={"text":"還沒想到","color":"gold"},custom_model_data={strings:["1"]},custom_data={type:"box"},lore=[{"text":"還沒想到","color":"white","italic":false},{"text":"所需經驗: 50等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.1 with redstone[custom_name={"text":"電力破壞","color":"gold"},custom_model_data={strings:["2"]},custom_data={type:"box"},lore=[{"text":"監控者隨機一台發電機無法運作3分鐘","color":"white","italic":false},{"text":"所需經驗: 80等級","color":"white","italic":false}]]
+item replace block ~ ~ ~ container.2 with redstone[custom_name={"text":"禁止監控","color":"gold"},custom_model_data={strings:["3"]},custom_data={type:"box"},lore=[{"text":"監控者無法使用監視器3分鐘","color":"white","italic":false},{"text":"所需經驗: 110等級","color":"white","italic":false}]]
+item replace block ~ ~ ~ container.3 with redstone[custom_name={"text":"同歸於盡","color":"gold"},custom_model_data={strings:["4"]},custom_data={type:"box"},lore=[{"text":"複製電箱20格內的怪物到監控室內","color":"white","italic":false},{"text":"所需經驗: 140等級","color":"white","italic":false}]]
+
+item replace block ~ ~ ~ container.4 with redstone[custom_name="",custom_model_data=9,custom_data={type:"box"}]
+
+item replace block ~ ~ ~ container.5 with redstone[custom_name={"text":"鐵門解鎖","color":"gold"},custom_model_data={strings:["5"]},custom_data={type:"box"},lore=[{"text":"解開所有上鎖的鐵門","color":"white","italic":false},{"text":"所需經驗: 50等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.6 with redstone[custom_name={"text":"雙倍血量","color":"gold"},custom_model_data={strings:["6"]},custom_data={type:"box"},lore=[{"text":"所有求生者額外獲得20血量3分鐘","color":"white","italic":false},{"text":"所需經驗: 80等級","color":"white","italic":false}]]
+item replace block ~ ~ ~ container.7 with redstone[custom_name={"text":"立即救援","color":"gold"},custom_model_data={strings:["7"]},custom_data={type:"box"},lore=[{"text":"救起所有倒地的求生者","color":"white","italic":false},{"text":"所需經驗: 110等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.8 with redstone[custom_name={"text":"範圍清怪","color":"gold"},custom_model_data={strings:["8"]},custom_data={type:"box"},lore=[{"text":"殺死所有求生者周圍10格內的怪物","color":"white","italic":false},{"text":"所需經驗: 140等級","color":"aqua","italic":false}]]

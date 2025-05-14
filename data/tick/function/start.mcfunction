@@ -38,7 +38,7 @@ execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
 
 #修理發電機中
-execute as @a[tag=fixing_power] run function power:fix/fixing
+execute as @a[tag=fixing_box] run function box:fix/fixing
 
 #防毒面具
 execute as @a if items entity @s armor.head iron_helmet[custom_data~{gadget: "mask"}] run function gadget:mask/wearing
