@@ -1,0 +1,1 @@
+playsound entity.puffer_fish.blow_up ambient @s
