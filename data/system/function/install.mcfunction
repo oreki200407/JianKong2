@@ -87,6 +87,8 @@ scoreboard objectives add photo_cooldown dummy
 
 #發電機
 scoreboard objectives add wire_game dummy
+scoreboard objectives add light_game dummy
+scoreboard objectives add puzzle_game dummy
 
 #商店
 scoreboard objectives add shop dummy
