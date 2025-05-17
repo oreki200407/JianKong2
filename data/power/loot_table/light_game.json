@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:coal",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 1
+						},
+						{
+							"function": "minecraft:set_custom_model_data",
+							"strings": {
+								"values": [
+									"green"
+								],
+								"mode": "append"
+							}
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": ""
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
