@@ -11,7 +11,5 @@ execute if data storage jk2:data root.monitor.light_game.chest2 if score #random
 execute store result storage jk2:data root.monitor.light_game.switch int 1 run scoreboard players get #random light_game
 function power:light_game/switch/around
 
-function power:light_game/reset/switch
-
 scoreboard players add #random_count light_game 1
 execute if score #random_count light_game matches ..10 run function power:light_game/reset/random

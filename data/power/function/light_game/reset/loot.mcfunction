@@ -1,2 +1,1 @@
-$execute unless data block ~ ~ ~ Items[{Slot:$(number)b}] run loot replace block ~ ~ ~ container.$(number) loot power:light_game
-$data modify block ~ ~ ~ Items.[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
+$execute unless data block ~ ~ ~ Items[{Slot:$(number)b}] run loot replace block ~ ~ ~ container.$(number) loot {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","weight": 1,"name": "minecraft:coal","functions": [{"function": "minecraft:set_count","count": 1},{"function": "minecraft:set_custom_model_data","strings": {"values": ["green"],"mode": "append"}},{"function": "minecraft:set_name","name": {"text": ""}},{"function": "minecraft:set_custom_data","tag": "{number:$(number)}"}]}]}]}

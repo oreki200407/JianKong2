@@ -1,0 +1,1 @@
+$loot insert ~ ~ ~ loot {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","weight": 1,"name": "minecraft:echo_shard","functions": [{"function": "minecraft:set_count","count": 1},{"function": "minecraft:set_name","name": {"text": "$(number)","italic":false}},{"function": "minecraft:set_custom_model_data","strings": {"values": ["$(number)"],"mode": "append"}}]}]}]}

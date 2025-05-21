@@ -1,3 +1,6 @@
+data merge block ~ ~ ~ {Items:[]}
+data merge block ~1 ~ ~ {Items:[]}
+
 item replace block ~ ~ ~ container.0 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~ ~ ~ container.1 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~ ~ ~ container.2 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
@@ -34,6 +37,7 @@ item replace block ~1 ~ ~ container.24 with echo_shard[custom_model_data={string
 item replace block ~1 ~ ~ container.25 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~1 ~ ~ container.26 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 
-execute store result storage jk2:data root.monitor.puzzle_game.number int 1 run scoreboard players set #reset puzzle_game 0
+summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
+execute as @e[tag=puzzle,type=marker] store result entity @s data.number int 1 run scoreboard players add #puzzle puzzle_game 1
 
-function power:puzzle_game/insert
+execute as @e[sort=random,tag=puzzle,type=marker] run function power:puzzle_game/reset/insert
