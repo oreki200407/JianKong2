@@ -1,3 +1,8 @@
+scoreboard players reset #random_count light_game
+
+data merge block ~ ~ ~ {Items:[]}
+data merge block ~1 ~ ~ {Items:[]}
+
 item replace block ~ ~ ~ container.0 with coal[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~ ~ ~ container.1 with coal[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~ ~ ~ container.7 with coal[custom_model_data={strings:["none"]},custom_name=""]
@@ -31,4 +36,6 @@ item replace block ~1 ~ ~ container.26 with coal[custom_model_data={strings:["no
 
 execute store result storage jk2:data root.monitor.light_game.number int 1 run scoreboard players set #reset light_game 0
 
-function power:light_game/insert
+function power:light_game/reset/insert
+
+function power:light_game/reset/random
