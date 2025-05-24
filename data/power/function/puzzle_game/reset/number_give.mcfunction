@@ -1,0 +1,1 @@
+$execute if data block ~ ~ ~ Items[{Slot:$(number)b}] run data modify block ~ ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
