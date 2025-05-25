@@ -1,1 +1,2 @@
-$execute if data block ~ ~ ~ Items[{Slot:$(number)b}] run data modify block ~ ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
+$data modify block ~ ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
+$data modify block ~1 ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".chest2 set value 1

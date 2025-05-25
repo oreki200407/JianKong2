@@ -67,8 +67,7 @@ scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #電線遊戲
-execute as @a[team=monitor] at @e[type=marker,tag=wire_game] run function wire_game:root
-execute as @a[team=monitor] at @e[type=marker,tag=light_game] run function power:light_game/root
+execute as @a[team=monitor] run function power:root
 
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
