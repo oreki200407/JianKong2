@@ -1,4 +1,6 @@
 scoreboard players reset #puzzle puzzle_game
+scoreboard players reset #random_count puzzle_game
+
 data merge block ~ ~ ~ {Items:[]}
 data merge block ~1 ~ ~ {Items:[]}
 
@@ -38,8 +40,10 @@ item replace block ~1 ~ ~ container.24 with echo_shard[custom_model_data={string
 item replace block ~1 ~ ~ container.25 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 item replace block ~1 ~ ~ container.26 with echo_shard[custom_model_data={strings:["none"]},custom_name=""]
 
-summon area_effect_cloud ~ ~ ~ {Radius:0f,Duration:0,Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:0,Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
 
 execute as @e[tag=puzzle,type=marker] store result entity @s data.number int 1 run scoreboard players add #puzzle puzzle_game 1
 
-execute as @e[sort=random,tag=puzzle,type=marker,limit=1] run function power:puzzle_game/reset/insert
+execute as @e[tag=puzzle,type=marker,limit=1] run function power:puzzle_game/reset/insert
+
+function power:puzzle_game/reset/random/root
