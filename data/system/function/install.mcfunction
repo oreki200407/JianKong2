@@ -86,9 +86,9 @@ scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
 #發電機
-scoreboard objectives add wire_game dummy
 scoreboard objectives add light_game dummy
 scoreboard objectives add puzzle_game dummy
+scoreboard objectives add netwalk_game dummy
 
 #商店
 scoreboard objectives add shop dummy
@@ -159,5 +159,14 @@ data modify storage jk2:data root.morph.cooldown set value \
 	blaze: {1: 120, 2: 280},\
 	golem: {1: 140, 2: 240}\
 }
+
+#方向常數 上右下左
+data modify storage jk2:data root.monitor.netwalk_game.directions_vec2arr set value \
+[\
+	{row: -1, column: 0},\
+	{row: 0, column: 1},\
+	{row: 1, column: 0},\
+	{row: 0, column: -1}\
+]
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]

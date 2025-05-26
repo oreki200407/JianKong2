@@ -1,0 +1,2 @@
+data modify storage jk2:data root.monitor.netwalk_game.node_vec2 set from storage jk2:data root.monitor.netwalk_game.nodes_vec2arr[0]
+data modify storage jk2:data root.monitor.netwalk_game.macro.index set value 0
