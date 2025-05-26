@@ -1,0 +1,2 @@
+$execute if items block ~ ~ ~ container.$(switch) echo_shard[custom_model_data={strings:["none"]}] run return run scoreboard players set #random_fail puzzle_game 1
+$data modify storage jk2:data root.monitor.puzzle_game.piece set from block ~ ~ ~ Items[{Slot:$(switch)b}].components."minecraft:custom_model_data".strings[]

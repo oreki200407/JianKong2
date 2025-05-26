@@ -4,4 +4,4 @@ $execute as @a[scores={puzzle_game=1}] run data modify storage jk2:data root.mon
 execute as @a[scores={puzzle_game=1}] unless entity @e[tag=puzzle_game,distance=..0.1] run data modify storage jk2:data root.monitor.puzzle_game.chest2 set value 1
 
 $execute store success score @s puzzle_game run clear @s echo_shard[custom_model_data={strings:["$(check)"]}] 0
-$execute as @a[scores={puzzle_game=1}] run data modify storage jk2:data root.monitor.puzzle_game.piece set value $(check)
+$execute as @a[scores={puzzle_game=1}] run data modify storage jk2:data root.monitor.puzzle_game.piece set value "$(check)"
