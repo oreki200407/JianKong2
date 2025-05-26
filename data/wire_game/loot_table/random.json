@@ -1,190 +1,116 @@
 {
-	"type": "minecraft:entity",
-	"pools": [
+	"type": "minecraft:command",
+	"pools":
+	[
 		{
 			"rolls": 1,
-			"entries": [
+			"entries":
+			[
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_horizontal"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_horizontal"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_left_down"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_vertical"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_right_down"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_left_down"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_up_left"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_right_down"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_up_right"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_left_up"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"red_vertical"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:red_right_up"
 							}
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 1,
 					"name": "minecraft:string",
-					"functions": [
+					"functions":
+					[
 						{
-							"function": "minecraft:set_count",
-							"count": 1
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"values": [
-									"none"
-								],
-								"mode": "append"
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"name": {
-								"text": ""
+							"function": "minecraft:set_components",
+							"components":
+							{
+								"minecraft:item_model": "wire_game:none"
 							}
 						}
 					]
+				}
+			],
+			"functions":
+			[
+				{
+					"function": "minecraft:set_name",
+					"entity": "this",
+					"name": ""
 				}
 			]
 		}
