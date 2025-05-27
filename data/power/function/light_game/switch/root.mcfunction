@@ -1,4 +1,4 @@
-playsound entity.puffer_fish.blow_up ambient @s
+playsound item.lodestone_compass.lock ambient @s
 
 data remove storage jk2:data root.monitor.light_game.chest2
 data remove storage jk2:data root.monitor.light_game.switch

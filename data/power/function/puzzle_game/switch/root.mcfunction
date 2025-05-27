@@ -1,4 +1,4 @@
-playsound entity.puffer_fish.blow_up ambient @s
+playsound block.stone_button.click_on ambient @s
 
 data remove storage jk2:data root.monitor.puzzle_game.chest2
 data remove storage jk2:data root.monitor.puzzle_game.switch
