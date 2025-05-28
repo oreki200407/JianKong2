@@ -69,6 +69,8 @@ scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 #電線遊戲
 execute as @a[team=monitor] run function power:root
 
+execute as @e[type=area_effect_cloud, tag=power1_time] if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run setblock ~ ~ ~ redstone_block[lit=false]
+
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
 #清除所有失去騎乘者的坐騎蜘蛛

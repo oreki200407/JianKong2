@@ -86,6 +86,7 @@ scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
 #發電機
+scoreboard objectives add power dummy
 scoreboard objectives add light_game dummy
 scoreboard objectives add puzzle_game dummy
 scoreboard objectives add netwalk_game dummy
