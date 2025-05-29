@@ -35,6 +35,7 @@ scoreboard objectives add kill totalKillCount
 scoreboard objectives add stamina dummy "體力值"
 scoreboard objectives add food food
 scoreboard objectives add score dummy "貢獻分數"
+scoreboard objectives add constant dummy
 
 #遠程武器
 scoreboard objectives add flamethrower dummy
@@ -134,7 +135,9 @@ team modify monitor friendlyFire false
 
 #記分板設定
 scoreboard players set 更新 system 1
-scoreboard players set #200 summon_cooldown 200
+scoreboard players set #9 constant 9
+scoreboard players set #27 constant 27
+scoreboard players set #200 constant 200
 
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"
