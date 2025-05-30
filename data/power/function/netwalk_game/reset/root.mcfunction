@@ -65,4 +65,5 @@ item replace block ~1 ~ ~ container.25 with gray_stained_glass_pane[tooltip_disp
 item replace block ~1 ~ ~ container.26 with gray_stained_glass_pane[tooltip_display={hide_tooltip: true}]
 
 #生成
-function power:netwalk_game/reset/generate
+summon marker ~ ~ ~ {UUID: [I; 0, 0, 0, 94695]}
+execute as 0-0-0-0-171e7 at @s run function power:netwalk_game/reset/generate
