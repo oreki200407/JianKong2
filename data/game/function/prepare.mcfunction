@@ -1,6 +1,7 @@
 title @a title {"text":"準備時間","bold":true,"color":"gold"}
 
 scoreboard players reset #time system
+scoreboard players set @e[tag=power] power_level 1
 schedule function game:time 1s
 schedule function game:start 3601t
 

@@ -1,3 +1,3 @@
 execute store success score @s puzzle_game run clear @s echo_shard[custom_model_data={strings:["none"]}]
-$execute if data storage jk2:data root.monitor.puzzle_game.chest2 as @a[scores={puzzle_game=1}] run return run item replace block ~1 ~ ~ container.$(switch) with echo_shard[custom_data={number:$(switch),chest2:1},custom_model_data={strings:["none"]},custom_name=""]
-$execute as @a[scores={puzzle_game=1}] run item replace block ~ ~ ~ container.$(switch) with echo_shard[custom_data={number:$(switch)},custom_model_data={strings:["none"]},custom_name=""]
+$execute if data storage jk2:data root.monitor.puzzle_game.chest2 as @a[scores={puzzle_game=1}] run return run item replace block ~1 ~ ~ container.$(switch) with echo_shard[custom_data={number:$(switch),chest2:1},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+$execute as @a[scores={puzzle_game=1}] run item replace block ~ ~ ~ container.$(switch) with echo_shard[custom_data={number:$(switch)},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]

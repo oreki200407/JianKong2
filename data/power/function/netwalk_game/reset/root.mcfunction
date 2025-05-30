@@ -1,3 +1,5 @@
+tag @s add netwalk_game
+
 #隨機的第一項
 data modify storage jk2:data root.monitor.netwalk_game.nodes_vec2arr set value [{row: 0, column: 0}]
 execute store result storage jk2:data root.monitor.netwalk_game.nodes_vec2arr[0].row int 1 run random value 0..4

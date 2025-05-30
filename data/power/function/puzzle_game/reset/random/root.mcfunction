@@ -1,7 +1,6 @@
 #重置
 data remove storage jk2:data root.monitor.puzzle_game.chest2
 data remove storage jk2:data root.monitor.puzzle_game.piece
-scoreboard players reset #random_fail puzzle_game
 
 #找空白格
 execute store result score #random_move puzzle_game run data get block ~ ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["20"]}}}].Slot

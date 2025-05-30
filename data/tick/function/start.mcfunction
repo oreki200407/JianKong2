@@ -66,10 +66,10 @@ scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 #拍攝
 scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
-#電線遊戲
+#發電
 execute as @a[team=monitor] run function power:root
-
-execute as @e[type=area_effect_cloud, tag=power1_time] if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run setblock ~ ~ ~ redstone_block[lit=false]
+execute as @e[type=area_effect_cloud, tag=power1_time] if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run setblock ~ ~ ~ command_block[facing=down]{Command:"execute as @e[tag=power1] at @s run function power:success"}
+execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
 
 #人體變形
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"

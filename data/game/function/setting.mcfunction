@@ -42,3 +42,4 @@ function summon:pick/armor_stand
 schedule function game:prepare 2s
 
 #清空大廳
+execute at @e[tag=lobby] run place structure game:monitor ~-10 ~-1 ~-10
