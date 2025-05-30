@@ -1,0 +1,2 @@
+execute store result storage jk2:data root.monitor.netwalk_game.vector2.opposite_vec2.row int -1 run data get storage jk2:data root.monitor.netwalk_game.vector2.opposite_vec2.row
+execute store result storage jk2:data root.monitor.netwalk_game.vector2.opposite_vec2.column int -1 run data get storage jk2:data root.monitor.netwalk_game.vector2.opposite_vec2.column
