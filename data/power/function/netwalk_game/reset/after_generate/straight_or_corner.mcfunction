@@ -1,0 +1,1 @@
+$data modify block $(coords) Items[$(index)].components."minecraft:custom_data".type set value "corner"

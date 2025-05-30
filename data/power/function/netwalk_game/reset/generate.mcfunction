@@ -2,7 +2,7 @@ execute unless entity @s[type=marker] run return run execute as 0-0-0-0-171e7 at
 
 execute store result score #nodes_size netwalk_game if data storage jk2:data root.monitor.netwalk_game.nodes_vec2arr[]
 #已經滿了 不生成了
-execute if score #nodes_size netwalk_game matches 0 run return run function power:netwalk_game/reset/random/store_type
+execute if score #nodes_size netwalk_game matches 0 run return run function power:netwalk_game/reset/after_generate/root
 
 #隨機選一個vector2的座標位置
 function power:netwalk_game/reset/random/pick
