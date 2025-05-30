@@ -1,12 +1,14 @@
+#Eight Great Ideas in Computer Architecture: Make the Common Case Fast
 execute if score #nodes_size netwalk_game matches 1 run return run function power:netwalk_game/reset/random/common_case/1
-
 execute if score #nodes_size netwalk_game matches 2 run return run function power:netwalk_game/reset/random/common_case/2
-
 execute if score #nodes_size netwalk_game matches 3 run return run function power:netwalk_game/reset/random/common_case/3
-
 execute if score #nodes_size netwalk_game matches 4 run return run function power:netwalk_game/reset/random/common_case/4
-
 execute if score #nodes_size netwalk_game matches 5 run return run function power:netwalk_game/reset/random/common_case/5
+execute if score #nodes_size netwalk_game matches 6 run return run function power:netwalk_game/reset/random/common_case/6
+execute if score #nodes_size netwalk_game matches 7 run return run function power:netwalk_game/reset/random/common_case/7
+execute if score #nodes_size netwalk_game matches 8 run return run function power:netwalk_game/reset/random/common_case/8
+execute if score #nodes_size netwalk_game matches 9 run return run function power:netwalk_game/reset/random/common_case/9
+execute if score #nodes_size netwalk_game matches 10 run return run function power:netwalk_game/reset/random/common_case/10
 
 #其他的case
 scoreboard players operation #random_maximum netwalk_game = #nodes_size netwalk_game
