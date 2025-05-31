@@ -18,4 +18,4 @@ execute if score #connected_size netwalk_game matches 3 run function power:netwa
 
 
 #放回去
-$data modify block $(coord) Items[$(index)].components."minecraft:custom_data" set from storage jk2:data root.monitor.netwalk_game.custom_data
+$item modify block $(coord) container.$(index) {function: "copy_custom_data", ops: [{op: "merge", source: "root.monitor.netwalk_game.custom_data", target: "{}"}], source: {type: "storage", source: "jk2:data"}}

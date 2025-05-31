@@ -1,0 +1,16 @@
+{
+	"function": "minecraft:copy_custom_data",
+	"ops":
+	[
+		{
+			"op": "append",
+			"source": "root.monitor.netwalk_game.new_connected_vec2",
+			"target": "connected"
+		}
+	],
+	"source":
+	{
+		"type": "minecraft:storage",
+		"source": "jk2:data"
+	}
+}

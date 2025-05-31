@@ -16,30 +16,30 @@ execute store result score #cell_column netwalk_game run data get storage jk2:da
 #原本用macro的 想想還是這樣好了 反正也才25項
 
 #左邊的是~ ~ ~
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 0 run return run data modify block ~ ~ ~ Items[2].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 1 run return run data modify block ~ ~ ~ Items[3].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 2 run return run data modify block ~ ~ ~ Items[4].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 3 run return run data modify block ~ ~ ~ Items[5].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 4 run return run data modify block ~ ~ ~ Items[6].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 0 run return run data modify block ~ ~ ~ Items[11].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 1 run return run data modify block ~ ~ ~ Items[12].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 2 run return run data modify block ~ ~ ~ Items[13].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 3 run return run data modify block ~ ~ ~ Items[14].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 4 run return run data modify block ~ ~ ~ Items[15].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 0 run return run data modify block ~ ~ ~ Items[20].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 1 run return run data modify block ~ ~ ~ Items[21].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 2 run return run data modify block ~ ~ ~ Items[22].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 3 run return run data modify block ~ ~ ~ Items[23].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 4 run return run data modify block ~ ~ ~ Items[24].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 0 run return run item modify block ~ ~ ~ container.2 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 1 run return run item modify block ~ ~ ~ container.3 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 2 run return run item modify block ~ ~ ~ container.4 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 3 run return run item modify block ~ ~ ~ container.5 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 4 run return run item modify block ~ ~ ~ container.6 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 0 run return run item modify block ~ ~ ~ container.11 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 1 run return run item modify block ~ ~ ~ container.12 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 2 run return run item modify block ~ ~ ~ container.13 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 3 run return run item modify block ~ ~ ~ container.14 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 4 run return run item modify block ~ ~ ~ container.15 power:new_connected
+execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 0 run return run item modify block ~ ~ ~ container.20 power:new_connected
+execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 1 run return run item modify block ~ ~ ~ container.21 power:new_connected
+execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 2 run return run item modify block ~ ~ ~ container.22 power:new_connected
+execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 3 run return run item modify block ~ ~ ~ container.23 power:new_connected
+execute if score #cell_row netwalk_game matches 2 if score #cell_column netwalk_game matches 4 run return run item modify block ~ ~ ~ container.24 power:new_connected
 
 #右邊的是~1 ~ ~
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 0 run return run data modify block ~1 ~ ~ Items[2].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 1 run return run data modify block ~1 ~ ~ Items[3].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 2 run return run data modify block ~1 ~ ~ Items[4].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 3 run return run data modify block ~1 ~ ~ Items[5].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 4 run return run data modify block ~1 ~ ~ Items[6].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 0 run return run data modify block ~1 ~ ~ Items[11].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 1 run return run data modify block ~1 ~ ~ Items[12].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 2 run return run data modify block ~1 ~ ~ Items[13].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 3 run return run data modify block ~1 ~ ~ Items[14].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
-execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 4 run return run data modify block ~1 ~ ~ Items[15].components."minecraft:custom_data".connected append from storage jk2:data root.monitor.netwalk_game.new_connected_vec2
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 0 run return run item modify block ~1 ~ ~ container.2 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 1 run return run item modify block ~1 ~ ~ container.3 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 2 run return run item modify block ~1 ~ ~ container.4 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 3 run return run item modify block ~1 ~ ~ container.5 power:new_connected
+execute if score #cell_row netwalk_game matches 0 if score #cell_column netwalk_game matches 4 run return run item modify block ~1 ~ ~ container.6 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 0 run return run item modify block ~1 ~ ~ container.11 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 1 run return run item modify block ~1 ~ ~ container.12 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 2 run return run item modify block ~1 ~ ~ container.13 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 3 run return run item modify block ~1 ~ ~ container.14 power:new_connected
+execute if score #cell_row netwalk_game matches 1 if score #cell_column netwalk_game matches 4 run return run item modify block ~1 ~ ~ container.15 power:new_connected
