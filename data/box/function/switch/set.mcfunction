@@ -10,6 +10,6 @@
 ###################################################
 
 #更換電箱
-setblock ~ ~ ~ dispenser[facing=down]
+setblock ~ ~ ~ dispenser[facing=down]{CustomName:"電箱"}
 setblock ~ ~1 ~ ender_chest
 function box:use/reset

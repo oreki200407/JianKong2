@@ -1,23 +1,22 @@
 execute at @e[tag=box] run function box:use/reset
 execute at @e[tag=box_off] run function box:use/box_off
 
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["1"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/1
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["2"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/2
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["3"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/3
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["4"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/4
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["5"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/5
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["6"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/6
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["7"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/7
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["8"]}]
-execute as @a[scores={box_operation=1}] run return run function box:use/8
-execute store success score @s box_operation run clear @s redstone[custom_model_data={strings:["11"]}]
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"水管爆裂","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/water
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"電力破壞","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/power
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"禁止監控","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/monitor
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"轉移怪物","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/transfer
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"鐵門解鎖","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/door
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"雙倍血量","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/health
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"立即救援","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/rescue
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"範圍清怪","color":"gold"}]
+execute as @a[scores={box_operation=1}] run return run function box:use/success/clear
+execute store success score @s box_operation run clear @s redstone[custom_name={"text":"修復電源","color":"red"}]
 execute as @a[scores={box_operation=1}] run return run function box:fix/fix_mode/enter
-clear @s redstone[custom_model_data={strings:["9"]}]
-clear @s redstone[custom_model_data={strings:["10"]}]
+clear @s redstone[custom_data~{box:"none"}]

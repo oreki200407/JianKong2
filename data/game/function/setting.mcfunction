@@ -1,9 +1,7 @@
 execute at @e[tag=door,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["door"]}
 execute at @e[tag=point,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["point"]}
 execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
-kill @e[tag=door,type=armor_stand]
-kill @e[tag=point,type=armor_stand]
-kill @e[tag=spawn_survivor,type=armor_stand]
+kill @e[tag=edit_kill,type=armor_stand]
 
 time set midnight
 team join spec @a[team=]
@@ -35,6 +33,8 @@ scoreboard players operation @a[team=!spec] money = 初始資金 lobby
 
 #決定初始電箱
 tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
+#門
+execute as @e[type=marker,tag=door] at @s run function game:door
 
 #抽怪物
 function summon:pick/armor_stand

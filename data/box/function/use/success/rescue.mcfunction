@@ -1,6 +1,7 @@
 #救援
-execute if entity @s[level=..109] run return run function box:use/fail
-xp add @s -110
+execute if entity @s[level=..99] run return run function box:use/fail
+xp add @s -100
+
 execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
 
 tellraw @s ["◎ 你已成功使用電箱-", {"text": "立即救援", "color":"gold"}]
