@@ -28,6 +28,9 @@ scoreboard objectives setdisplay below_name health
 scoreboard players reset @a
 scoreboard players set @a[team=survivor] stamina 100
 scoreboard players operation @a[team=!spec] money = 初始資金 lobby
+scoreboard players operation #switch_box_second system = 更換電箱 lobby
+scoreboard players operation #switch_box_second system *= #60 constant
+scoreboard players operation #switch_box system = #switch_box_second system
 
 #決定初始電箱
 tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default

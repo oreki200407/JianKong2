@@ -143,6 +143,7 @@ team modify monitor friendlyFire false
 scoreboard players set 更新 system 1
 scoreboard players set #9 constant 9
 scoreboard players set #27 constant 27
+scoreboard players set #60 constant 60
 scoreboard players set #200 constant 200
 
 bossbar add jk2:boss "BOSS血條"

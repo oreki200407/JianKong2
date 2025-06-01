@@ -2,7 +2,7 @@
 # 電箱點位編輯
 # 
 # Name   : enter.mcfunction
-# Path   : edit:power_point/
+# Path   : edit:box_point/
 # As     : 電箱點位盔甲座
 # At     : As
 # Loop   : 否

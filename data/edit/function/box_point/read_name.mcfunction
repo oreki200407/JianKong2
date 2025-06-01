@@ -2,7 +2,7 @@
 # 電箱點位讀取名字
 # 
 # Name   : read_name.mcfunction
-# Path   : edit:power_point/
+# Path   : edit:box_point/
 # As     : 電箱點位盔甲座
 # At     : As
 # Loop   : 否

@@ -16,5 +16,5 @@ schedule function game:dawn 1500s
 
 tag @e[type=armor_stand,tag=box] remove box
 tag @e[type=armor_stand,tag=box_default] add box
-tellraw @a[team=!monitor] ["◎ 初始電箱位置在", {"selector": "@e[type=armor_stand,tag=box_default]"}]
+tellraw @a[team=!monitor] ["◎ 初始電箱在", {"selector": "@e[type=armor_stand,tag=box_default]"}]
 execute at @e[type=armor_stand,tag=box] run function box:switch/set

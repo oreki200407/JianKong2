@@ -10,4 +10,4 @@
 ###################################################
 
 fill ~ ~ ~ ~ ~1 ~ air
-tag @s remove power
+tag @s remove box
