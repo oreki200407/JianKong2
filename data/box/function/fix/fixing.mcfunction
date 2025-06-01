@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-title @s actionbar ["修理進度:", {"score": {"name": "@s", "objective": "fix_progress"}}]
+execute if score @s fix_progress matches 0..9 run function box:fix/process/root
 
 #進度達到10就修理成功
 execute if score @s fix_progress matches 10.. run function box:fix/success

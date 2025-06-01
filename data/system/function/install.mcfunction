@@ -25,13 +25,14 @@ gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
 
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue"}
-scoreboard objectives add info dummy {"text": "遊戲資訊", "color": "gold"}
+scoreboard objectives add info_monitor dummy {"text": "遊戲資訊", "color": "gold"}
+scoreboard objectives add info_survivor dummy {"text": "遊戲資訊", "color": "gold"}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add death deathCount
 scoreboard objectives add money dummy
-scoreboard objectives add kill totalKillCount
+scoreboard objectives add kill totalKillCount "殺怪數"
 scoreboard objectives add stamina dummy "體力值"
 scoreboard objectives add food food
 scoreboard objectives add score dummy "貢獻分數"
@@ -128,6 +129,10 @@ team add spec
 team modify survivor color red
 team modify monitor color blue
 team modify spec color gray
+
+team modify survivor prefix "[求生者]"
+team modify monitor prefix "[監控者]"
+team modify spec prefix "[旁觀者]"
 
 team modify survivor seeFriendlyInvisibles true
 team modify monitor seeFriendlyInvisibles true

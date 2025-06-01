@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-scoreboard players remove 電力 info 30
+scoreboard players remove 電力 info_monitor 30
 scoreboard players set @s camera_level 2

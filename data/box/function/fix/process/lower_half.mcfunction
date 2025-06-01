@@ -1,0 +1,5 @@
+execute if score @s fix_progress matches 5 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬", "color": "gray"}]
+execute if score @s fix_progress matches 6 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬", "color": "gray"}]
+execute if score @s fix_progress matches 7 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬", "color": "gray"}]
+execute if score @s fix_progress matches 8 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬", "color": "gray"}]
+title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬", "color": "gray"}]

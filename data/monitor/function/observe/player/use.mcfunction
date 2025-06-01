@@ -11,6 +11,8 @@
 
 advancement revoke @s only monitor:observe/use/white_dye
 
+execute if score 禁止監控 info_monitor matches 0.. run return run tellraw @s ["◎ 目前監視器正在被", {"text": "禁止使用", "color":"gold"}]
+
 #尋找目標監視器
 execute store result score @s camera store result score #teleport_camera camera run data get entity @s SelectedItem.components."minecraft:custom_model_data"
 execute as @e[type=area_effect_cloud, tag=camera] if score @s camera = #teleport_camera camera run tag @s add camera_destination

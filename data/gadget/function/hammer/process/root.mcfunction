@@ -9,5 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
+execute if predicate gadget:hammer run playsound entity.armor_stand.break ambient @a
+
 execute if score @s hammer matches 0..29 run return run function gadget:hammer/process/upper_half
 function gadget:hammer/process/lower_half

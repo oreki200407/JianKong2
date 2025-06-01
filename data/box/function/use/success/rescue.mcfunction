@@ -1,4 +1,3 @@
-#救援
 execute if entity @s[level=..99] run return run function box:use/fail
 xp add @s -100
 

@@ -10,7 +10,7 @@ recipe take @a *
 xp set @a 0 levels
 xp set @a 0 points
 tag @a add start
-execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
+execute as @a at @s run playsound block.sculk_shrieker.shriek ambient @s ~ ~ ~
 title @a title {"text":"監控圍城 II","bold":true,"color":"red"}
 gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
@@ -22,24 +22,19 @@ effect give @a regeneration 5 100 true
 effect give @a night_vision infinite 0 true
 effect give @a resistance 5 100 true
 
-scoreboard objectives setdisplay sidebar info
+scoreboard objectives setdisplay sidebar.team.blue info_monitor
 scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay list money
 
 scoreboard players reset @a
-scoreboard players set #mode system 4
 scoreboard players set @a[team=survivor] stamina 100
 scoreboard players operation @a[team=!spec] money = 初始資金 lobby
 
 #決定初始電箱
 tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
 #門
-execute as @e[type=marker,tag=door] at @s run function game:door
+execute as @e[type=marker,tag=door] at @s run function gadget:unlock/store
 
 #抽怪物
 function summon:pick/armor_stand
 
 schedule function game:prepare 2s
-
-#清空大廳
-execute at @e[tag=lobby] run place structure game:monitor ~-10 ~-1 ~-10

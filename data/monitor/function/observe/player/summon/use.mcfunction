@@ -15,6 +15,6 @@ advancement revoke @s only monitor:observe/use/monster
 execute if score @s trap_cooldown matches 1.. run return fail
 scoreboard players set @s trap_cooldown 10
 
-execute unless score 電力 info matches 5.. run return run function monitor:observe/player/summon/fail
+execute unless score 電力 info_monitor matches 5.. run return run function monitor:observe/player/summon/fail
 
 execute anchored eyes run function monitor:observe/player/summon/raycast

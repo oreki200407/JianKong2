@@ -2,7 +2,7 @@ advancement revoke @s only gun:chainsaw
 tag @s add shooter
 execute anchored eyes positioned ^ ^ ^1 run function gun:chainsaw/shoot
 
-playsound block.fire.ambient ambient @s ~ ~ ~ 1 2
+playsound block.grindstone.use ambient @a ~ ~ ~ 1 2
 execute unless items entity @s weapon golden_axe[damage=2000] run return run item modify entity @s weapon {function: "set_damage", add: true, damage: -0.001}
 item replace entity @s weapon with air
 playsound entity.item.break

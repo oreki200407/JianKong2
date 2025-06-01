@@ -9,8 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if score @s hammer matches 30..35 run title @s actionbar [{"text": "修理中：▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬", "color": "gray"}]
-execute if score @s hammer matches 36..41 run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬", "color": "gray"}]
-execute if score @s hammer matches 42..47 run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬", "color": "gray"}]
-execute if score @s hammer matches 48..53 run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬", "color": "gray"}]
+execute if score @s hammer matches 30..35 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬", "color": "gray"}]
+execute if score @s hammer matches 36..41 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬", "color": "gray"}]
+execute if score @s hammer matches 42..47 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬", "color": "gray"}]
+execute if score @s hammer matches 48..53 run return run title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬", "color": "gray"}]
 title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬", "color": "gray"}]

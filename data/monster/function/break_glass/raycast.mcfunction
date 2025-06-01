@@ -16,4 +16,4 @@ execute unless entity @s[distance=..2.5] run return fail
 execute if block ~ ~ ~ #gadget:glass run return run function monster:break_glass/looking_at_glass
 
 #還沒到 繼續往前
-execute positioned ^ ^ ^.05 run function monster:break_glass/raycast
+execute positioned ^ ^ ^1 run function monster:break_glass/raycast

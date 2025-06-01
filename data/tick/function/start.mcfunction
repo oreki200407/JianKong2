@@ -37,7 +37,8 @@ execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 #開鎖器
 execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
 
-#修理發電機中
+#電箱
+execute as @a[team=survivor] at @s run function box:use/root
 execute as @a[tag=fixing_box] run function box:fix/fixing
 
 #防毒面具

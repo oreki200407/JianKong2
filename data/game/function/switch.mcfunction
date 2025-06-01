@@ -2,13 +2,31 @@
 scoreboard players set #switch system 1
 
 title @a title {"text":"交換隊伍","bold":true,"color":"blue"}
+tag @a[team=survivor] add monitor_switch
+team join survivor @a[team=monitor]
+team join monitor @a[tag=monitor_switch]
+tag @a[tag=monitor_switch] remove monitor_switch
+team modify survivor color blue
+team modify monitor color red
+
 schedule function game:prepare 2s
 schedule clear summon:natural
 
 #裝備
-item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
-item replace entity @a[team=survivor] armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
-item replace entity @a[team=survivor] armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
+clear @a
+recipe take @a *
+xp set @a 0 levels
+xp set @a 0 points
+effect give @a invisibility 5 0 true
+effect give @a regeneration 5 100 true
+effect give @a resistance 5 100 true
+
+#復原場地
+tag @e[tag=box_off] remove box_off
+execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
+execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data
+execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
+kill @e[type=marker,tag=fire]
 
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster

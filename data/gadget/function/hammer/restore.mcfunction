@@ -1,0 +1,2 @@
+$setblock ~ ~ ~ $(glass)
+kill

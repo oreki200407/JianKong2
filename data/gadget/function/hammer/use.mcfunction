@@ -20,6 +20,8 @@ execute unless score @s hammer matches 60 run return run function gadget:hammer/
 title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}]
 scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
+$summon marker $(put_sign) {Tags: ["plank"]}
+playsound block.wooden_door.close ambient @a
 
 #減少耐久度
 #IEEE-754 floating point error, 用-0.1會導致卡在3耐久度

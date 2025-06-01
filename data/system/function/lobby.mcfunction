@@ -1,8 +1,10 @@
-kill @e[tag=lobby]
+kill @e[type=marker,tag=lobby]
+kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]
 forceload add ~ ~
 setworldspawn ~6 ~ ~5
 
+summon marker ~ ~ ~ {Tags:["lobby"]}
 place structure game:lobby ~-10 ~-1 ~-10
 
 scoreboard players set #mode system 1

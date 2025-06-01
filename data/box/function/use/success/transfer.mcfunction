@@ -1,7 +1,9 @@
 execute if entity @s[level=..124] run return run function box:use/fail
 xp add @s -125
 
-#ing
+execute at @e[tag=box] run tag @e[team=monitor,type=!player,distance=..15] add box_transfer
+
+tellraw @a[team=monitor] ["◎ 求生者使用了電箱-", {"text": "轉移怪物", "color":"gold"},", 有怪物進入了", {"text": "監控室", "color":"gold"}]
 
 tellraw @s ["◎ 你已成功使用電箱-", {"text": "轉移怪物", "color":"gold"}]
 playsound item.trident.hit_ground ambient @s

@@ -10,7 +10,7 @@
 ###################################################
 
 particle cloud ~ ~ ~ 0 0 0 0 10 force
-fill ~ ~ ~ ~ ~ ~ air replace fire
+fill ~ ~ ~ ~ ~ ~ air replace #fire
 
 #往前
 scoreboard players add @s flamethrower 1

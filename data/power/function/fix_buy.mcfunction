@@ -1,4 +1,4 @@
-scoreboard players remove 電力 info 30
+scoreboard players remove 電力 info_monitor 30
 setblock ~ ~ ~ air
 function power:fixed
 
