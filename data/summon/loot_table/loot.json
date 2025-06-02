@@ -120,9 +120,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"散彈槍子彈","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "散彈槍子彈"
+							}
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -148,9 +149,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"手槍彈夾","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "手槍彈夾"
+							}
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -176,9 +178,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"繃帶","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "繃帶"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -214,9 +217,10 @@
 							"count": 1
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"醫療箱","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "醫療箱"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -255,9 +259,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"夾板","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "夾板"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -296,9 +301,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"止痛藥","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "止痛藥"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -337,9 +343,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"鞭炮","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "鞭炮"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -370,7 +377,7 @@
 						{
 							"function": "minecraft:set_name",
 							"entity": "this",
-							"name": {"text":"燃燒瓶","italic":false}
+							"name": {"text": "燃燒瓶", "italic": false}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -411,11 +418,6 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"捕獸夾","italic":false}
-						},
-						{
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
@@ -431,6 +433,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
+								"minecraft:item_name": "捕獸夾",
 								"minecraft:entity_data": {
 									"id": "minecraft:armor_stand",
 									"Tags": ["beast"],
@@ -466,9 +469,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"開鎖器","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "開鎖器"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -507,9 +511,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"火柴","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "火柴"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -548,9 +553,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text":"木板","italic":false}
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "木板"
+							}
 						},
 						{
 							"function": "minecraft:set_lore",
