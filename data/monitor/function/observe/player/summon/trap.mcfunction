@@ -17,7 +17,7 @@ execute at @s run playsound block.smithing_table.use ambient @s ~ ~ ~
 execute if score @s trap matches 1 run return run summon item ~ ~ ~ {Item:{id:"red_concrete",count:1},Invulnerable:1b,PickupDelay:32767,Age:-32768,Tags:["grenade"]}
 
 #2
-execute if score @s trap matches 2 run return run summon lingering_potion ~ ~ ~ {Item: {id: "lingering_potion", components: {"custom_name": '{"text": "燃燒瓶", "color": "aqua", "bold": true, "italic": false}', "potion_contents": {"custom_color": 4144959}, "max_stack_size": 64, "custom_data": {"gadget": "molotov_cocktail"}}}}
+execute if score @s trap matches 2 run return run summon lingering_potion ~ ~ ~ {Item: {id: "lingering_potion", components: {"custom_name": {"text": "燃燒瓶", "color": "aqua", "bold": true, "italic": false}, "potion_contents": {"custom_color": 4144959}, "max_stack_size": 64, "custom_data": {"gadget": "molotov_cocktail"}}}}
 
 #3
 execute if score @s trap matches 3 run return run function gadget:bear_trap/summon

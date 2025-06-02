@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-data merge entity @s {Particle: {type:"block",block_state:"minecraft:air"}, Radius: 0f, Duration: 2147483647, Tags: ["camera"]}
+data merge entity @s {Particle: {type: "block", block_state: "air"}, Radius: 0f, Duration: 2147483647, Tags: ["camera"]}
 scoreboard players operation @s camera = #summon_camera camera
 rotate @s ~ ~
 scoreboard players set @s camera_level 1
