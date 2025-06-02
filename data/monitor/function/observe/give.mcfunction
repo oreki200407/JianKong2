@@ -1,0 +1,6 @@
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=1}] run give @s white_dye[custom_name={"text":"監視器1","italic":false},custom_model_data={floats:[1]}]
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=2}] run give @s white_dye[custom_name={"text":"監視器2","italic":false},custom_model_data={floats:[2]}]
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=3}] run give @s white_dye[custom_name={"text":"監視器3","italic":false},custom_model_data={floats:[3]}]
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=4}] run give @s white_dye[custom_name={"text":"監視器4","italic":false},custom_model_data={floats:[4]}]
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=5}] run give @s white_dye[custom_name={"text":"監視器5","italic":false},custom_model_data={floats:[5]}]
+execute if entity @e[type=area_effect_cloud,tag=camera,scores={camera=6}] run give @s white_dye[custom_name={"text":"監視器6","italic":false},custom_model_data={floats:[6]}]

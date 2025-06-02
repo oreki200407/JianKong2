@@ -12,9 +12,11 @@
 advancement revoke @s only monitor:observe/use/trap
 advancement revoke @s only monitor:observe/use/monster
 
+execute unless entity @s[tag=using_camera,team=monitor] run return fail
 execute if score @s trap_cooldown matches 1.. run return fail
 scoreboard players set @s trap_cooldown 10
 
-execute unless score 電力 info_monitor matches 5.. run return run function monitor:observe/player/summon/fail
+execute unless score 電力 info_monitor matches 2.. run return run function monitor:observe/player/summon/fail
 
+scoreboard players remove 電力 info_monitor 2
 execute anchored eyes run function monitor:observe/player/summon/raycast

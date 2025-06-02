@@ -14,6 +14,8 @@ title @a title {"text":"夜晚來臨","bold":true,"color":"blue"}
 schedule function game:time 1s
 schedule function game:dawn 1500s
 
+execute as @a[team=monitor] run function monitor:observe/give
+
 tag @e[type=armor_stand,tag=box] remove box
 tag @e[type=armor_stand,tag=box_default] add box
 tellraw @a[team=!monitor] ["◎ 初始電箱在", {"selector": "@e[type=armor_stand,tag=box_default]"}]

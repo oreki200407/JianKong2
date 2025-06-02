@@ -12,6 +12,7 @@ execute at @e[type=marker,tag=lobby] run place structure game:monitor ~-10 ~-1 ~
 item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
 item replace entity @a[team=survivor] armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
 item replace entity @a[team=survivor] armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
+give @a[team=monitor] black_dye[custom_model_data={strings:["camera"]},custom_name={"text": "安裝監視器", "italic": false}]
 
 scoreboard players reset #time system
 scoreboard players set @e[tag=power] power_level 1

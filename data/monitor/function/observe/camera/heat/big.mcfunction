@@ -9,4 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-tellraw @a[tag=using_camera, predicate=monitor:is_using_me] "大冒煙"
+title @s title {"text":"⚠","color":red}
+title @s subtitle {"text":"監視器已開始三級冒煙","color":red}
+tellraw @a[tag=using_camera, predicate=monitor:is_using_me] ["◎ 監視器", {"score": {"name": "@s", "objective": "camera"}}, "已開始", {"text": "三級冒煙", "color":"gold"}]
+playsound block.fire.extinguish ambient @s

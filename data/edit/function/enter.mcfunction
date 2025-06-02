@@ -10,7 +10,7 @@
 ###################################################
 
 playsound ui.button.click ambient @s
-execute if entity @s[gamemode=!creative] run return run tellraw @a ["","◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @a ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
 
 scoreboard players set #mode system 1
 execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:1b}

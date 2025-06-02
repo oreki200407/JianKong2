@@ -10,4 +10,4 @@
 ###################################################
 
 scoreboard players add @s fix_progress 1
-tellraw @s "檢定成功"
+playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1.5

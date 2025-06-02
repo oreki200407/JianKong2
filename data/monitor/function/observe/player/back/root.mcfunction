@@ -12,6 +12,5 @@
 data modify storage jk2:data root.monitor.observe.player.uuid set from entity @s UUID
 function monitor:observe/player/back/relay with storage jk2:data root.monitor.observe.player
 effect clear @s invisibility
-give @s white_dye
 tag @s remove using_camera
 scoreboard players reset @s camera

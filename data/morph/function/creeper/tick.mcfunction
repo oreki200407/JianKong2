@@ -10,4 +10,4 @@
 ###################################################
 
 #沒有隱形了就變回苦力怕頭顱
-execute if items entity @s armor.head white_dye unless predicate {condition: "entity_properties", entity: "this", predicate: {effects: {invisibility: {}}}} run item modify entity @s armor.head {function: "set_item", item: "creeper_head"}
+execute if items entity @s armor.head green_dye unless predicate {condition: "entity_properties", entity: "this", predicate: {effects: {invisibility: {}}}} run item modify entity @s armor.head {function: "set_item", item: "creeper_head"}

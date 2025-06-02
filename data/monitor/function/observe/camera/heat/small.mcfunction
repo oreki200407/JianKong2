@@ -9,4 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-tellraw @a[tag=using_camera, predicate=monitor:is_using_me] "小冒煙"
+title @s title {"text":"⚠","color":red}
+title @s subtitle {"text":"監視器已開始一級冒煙","color":red}
+tellraw @s ["◎ 監視器", {"score": {"name": "@s", "objective": "camera"}}, "已開始", {"text": "一級冒煙", "color":"gold"}]
+playsound block.fire.extinguish ambient @s

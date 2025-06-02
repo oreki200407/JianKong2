@@ -1,4 +1,4 @@
-execute if score 電力 info_monitor < @s summon_power run return run function summon:operation/fail
+execute unless score 電力 info_monitor >= @s summon_power run return run function summon:operation/fail
 
 tellraw @s ["",{"text":"◎ 怪物已成功"},{"text":"召喚","color":"gold"}]
 title @a[team=survivor] title {"text":"怪物來襲","bold":true,"color":"red"}

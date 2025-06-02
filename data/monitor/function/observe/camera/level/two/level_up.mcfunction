@@ -9,5 +9,9 @@
 # Author : Alex_Cai
 ###################################################
 
-scoreboard players remove 電力 info_monitor 60
-scoreboard players set @s camera_level 3
+execute unless score 電力 info_monitor matches 80.. run return run tellraw @s ["◎ 電力不足, 無法升級", {"text": "監視器", "color":"gold"}]
+
+setblock ~ ~ ~ oak_wall_sign[facing=north]{front_text:{messages:["",{"text":"目前等級：3","bold":true},{"text":"監視器已經最高級","bold":true},""]},is_waxed:1b} destroy
+playsound entity.player.levelup ambient @a[team=monitor]
+scoreboard players remove 電力 info_monitor 80
+scoreboard players set @e[tag=camera] camera_level 3
