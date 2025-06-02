@@ -1,4 +1,4 @@
 function summon:operation/summon/cooldown
-data modify storage jk2:data root.summon.manual.name set from entity @s equipment.chest.components."minecraft:custom_name"
+data modify storage jk2:data root.summon.manual.name set from entity @s equipment.chest.components."minecraft:item_name"
 data modify storage jk2:data root.summon.manual.lore set from entity @s equipment.chest.components."minecraft:lore"
 data modify storage jk2:data root.summon.manual.profile set from entity @s equipment.chest.components."minecraft:profile"

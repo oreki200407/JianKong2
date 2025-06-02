@@ -1,4 +1,4 @@
-give @s armor_stand[custom_name={"text":"門","italic":false},entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["door","edit","edit_kill"],CustomName:"門"}] 1
-give @s armor_stand[custom_name={"text":"生怪點","italic":false},entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["point","edit","edit_kill"],CustomName:"生怪點"}] 1
-give @s armor_stand[custom_name={"text":"電箱","italic":false},entity_data={id:"minecraft:armor_stand",Small:1b,CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["box_point","edit"],CustomName:"電箱"}] 1
-give @s armor_stand[custom_name={"text":"求生者重生點","italic":false},entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["spawn_survivor","edit","edit_kill"],CustomName:"求生者重生點"}] 1
+give @s armor_stand[item_name="門", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["door","edit","edit_kill"],CustomName:"門"}] 1
+give @s armor_stand[item_name="生怪點", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["point","edit","edit_kill"],CustomName:"生怪點"}] 1
+give @s armor_stand[item_name="電箱", entity_data={id:"minecraft:armor_stand",Small:1b,CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["box_point","edit"],CustomName:"電箱"}] 1
+give @s armor_stand[item_name="求生者重生點", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,NoBasePlate:1b,Tags:["spawn_survivor","edit","edit_kill"],CustomName:"求生者重生點"}] 1

@@ -1,1 +1,1 @@
-$give @s player_head[custom_name=$(name),lore=$(lore),profile=$(profile), consumable={consume_seconds: 99999}] $(count)
+$give @s player_head[item_name=$(name),lore=$(lore),profile=$(profile), consumable={consume_seconds: 99999}] $(count)
