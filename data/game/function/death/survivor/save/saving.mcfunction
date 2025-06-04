@@ -16,4 +16,4 @@ execute if score @s revive_time matches 1..30 run return run function game:death
 execute if score @s revive_time matches 31..61 run return run function game:death/survivor/save/lower_half
 
 title @s actionbar ""
-execute as @e[type=item_display, tag=tomb, distance=..3] run function game:death/tomb/revive
+execute as @n[type=item_display, tag=tomb, distance=..1.5] run function game:death/tomb/revive

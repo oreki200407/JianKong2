@@ -13,12 +13,8 @@
 						"mainhand":
 						{
 							"items": "minecraft:iron_axe",
-							"predicates":
-							{
-								"custom_data":
-								{
-									"gadget": "hammer"
-								}
+							"components": {
+								"minecraft:item_name": "錘子"
 							}
 						}
 					}

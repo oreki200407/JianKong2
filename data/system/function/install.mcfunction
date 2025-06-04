@@ -31,12 +31,13 @@ scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add death deathCount
-scoreboard objectives add money dummy
+scoreboard objectives add money dummy {"text":"💲 錢 💲","color":"green"}
 scoreboard objectives add kill totalKillCount "殺怪數"
 scoreboard objectives add stamina dummy "體力值"
 scoreboard objectives add food food
 scoreboard objectives add score dummy "貢獻分數"
 scoreboard objectives add constant dummy
+scoreboard objectives add xp dummy
 
 #遠程武器
 scoreboard objectives add flamethrower dummy
@@ -75,6 +76,9 @@ scoreboard objectives add hammer dummy "錘子"
 scoreboard objectives add unlock_progess dummy "開鎖進度"
 scoreboard objectives add unlock_slot dummy "開鎖欄位"
 scoreboard objectives add selected_slot dummy
+
+#治療
+scoreboard objectives add medical_cooldown dummy
 
 #監視器
 scoreboard objectives add camera dummy "監視器"

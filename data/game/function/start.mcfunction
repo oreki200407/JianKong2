@@ -4,7 +4,9 @@ scoreboard players set #mode system 3
 execute at @e[type=marker,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ air
 clear @a[team=monitor] black_dye
 
-scoreboard objectives setdisplay list kill
+execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red
+execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue
+
 scoreboard players reset 目前監視器 info_monitor
 scoreboard players reset #time system
 scoreboard players set 倒數 system 3

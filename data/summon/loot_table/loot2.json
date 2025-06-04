@@ -15,8 +15,14 @@
 								"min": 5,
 								"max": 9
 							}
-						},  
-						{  
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "經驗球"
+							}
+						},
+						{
 							"function": "minecraft:enchanted_count_increase",
 							"enchantment": "minecraft:looting",
 							"count": {
@@ -34,7 +40,7 @@
 			"conditions": [
 				{  
 					"condition": "minecraft:random_chance",
-					"chance": 0.55
+					"chance": 0.50
 				}
 			],
 			"entries": [
@@ -46,8 +52,8 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 3,
-								"max": 5
+								"min": 2,
+								"max": 3
 							}
 						},
 						{
@@ -77,8 +83,8 @@
 							"function": "minecraft:enchanted_count_increase",
 							"enchantment": "minecraft:looting",
 							"count": {
-								"min": 1,  
-								"max": 3  
+								"min": 1,
+								"max": 3
 							},
 							"limit": 0
 						}
@@ -87,7 +93,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 5,
-					"name": "minecraft:cookie",
+					"name": "minecraft:melon_slice",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -168,7 +174,36 @@
 				{
 					"type": "minecraft:item",
 					"weight": 3,
-					"name": "minecraft:snowball",
+					"name": "minecraft:iron_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "衝鋒槍彈夾"
+							}
+						},
+						{
+							"function": "minecraft:enchanted_count_increase",
+							"enchantment": "minecraft:looting",
+							"count": {
+								"min": 1,
+								"max": 2
+							},
+							"limit": 0
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "minecraft:paper",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -187,13 +222,13 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [{"text":"點擊右鍵使用","color":"gray","italic":false},{"text":"立即治療","color":"blue","italic":false}]
+							"lore": [{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
 							"strings": {
 								"mode": "append",
-								"values": ["4"]
+								"values": ["bandage"]
 							}
 						},
 						{
@@ -392,7 +427,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:potion_contents": {
-									"custom_color": 5723991,
+									"custom_color": 4144959,
 									"potion": "minecraft:long_water_breathing"
 								},
 								"minecraft:tooltip_display": {

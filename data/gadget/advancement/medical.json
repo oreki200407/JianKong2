@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"unlock":
+		"bandage":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
@@ -12,10 +12,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:tripwire_hook",
-							"components": {
-								"minecraft:item_name": "開鎖器"
-							}
+							"items": "minecraft:paper"
 						}
 					}
 				}
@@ -24,6 +21,6 @@
 	},
 	"rewards":
 	{
-		"function": "gadget:unlock/use"
+		"function": "gadget:medical/root"
 	}
 }

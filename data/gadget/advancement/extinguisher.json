@@ -13,12 +13,8 @@
 						"mainhand":
 						{
 							"items": "minecraft:iron_axe",
-							"predicates":
-							{
-								"custom_data":
-								{
-									"gadget": "extinguisher"
-								}
+							"components": {
+								"minecraft:item_name": "滅火器"
 							}
 						}
 					}

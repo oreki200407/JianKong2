@@ -32,12 +32,8 @@
 								"offhand":
 								{
 									"items": "minecraft:netherite_ingot",
-									"predicates":
-									{
-										"custom_data":
-										{
-											"gadget": "whetstone"
-										}
+									"components": {
+									"minecraft:item_name": "磨刀石"
 									}
 								}
 							}

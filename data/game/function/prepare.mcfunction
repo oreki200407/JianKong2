@@ -1,6 +1,5 @@
 title @a title {"text":"準備時間","bold":true,"color":"gold"}
 scoreboard players set #mode system 4
-scoreboard objectives setdisplay list money
 
 #清空大廳
 kill @e[type=marker,tag=lobby_spawn]

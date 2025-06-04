@@ -8,6 +8,8 @@ team join monitor @a[tag=monitor_switch]
 tag @a[tag=monitor_switch] remove monitor_switch
 team modify survivor color blue
 team modify monitor color red
+scoreboard objectives setdisplay sidebar.team.red info_monitor
+scoreboard objectives setdisplay sidebar.team.blue money
 
 schedule function game:prepare 2s
 schedule clear summon:natural

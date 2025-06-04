@@ -15,11 +15,19 @@ execute if score 倒數 system matches 0..3 run function game:teleport
 execute as @a[tag=!start] run function game:spectate
 
 #死亡展示實體
-execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..3] run function game:death/survivor/save/saving
+execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..1.5] run function game:death/survivor/save/saving
 scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
 #-----------------------道具-----------------------
+#經驗球
+kill @e[tag=!xp,type=experience_orb]
+execute as @e[type=item] if items entity @s contents slime_ball[item_name="經驗球"] at @s run function monster:xp
+execute as @a[team=survivor] run function game:xp
+
+#治療
+scoreboard players remove @a[scores={medical_cooldown=1..}] medical_cooldown 1
+
 #鞭炮
 execute as @e[type=snowball, tag=!checked] run function gadget:grenade/snowball
 execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadget:grenade/summon
@@ -42,7 +50,7 @@ execute as @a[team=survivor] at @s run function box:use/root
 execute as @a[tag=fixing_box] run function box:fix/fixing
 
 #防毒面具
-execute as @a if items entity @s armor.head iron_helmet[custom_data~{gadget: "mask"}] run function gadget:mask/wearing
+execute as @a if items entity @s armor.head iron_helmet[item_name="防毒面具"] run function gadget:mask/wearing
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying

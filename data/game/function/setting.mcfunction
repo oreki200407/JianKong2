@@ -11,7 +11,7 @@ xp set @a 0 levels
 xp set @a 0 points
 tag @a add start
 execute as @a at @s run playsound block.sculk_shrieker.shriek ambient @s ~ ~ ~
-title @a title {"text":"監控圍城 II","bold":true,"color":"red"}
+title @a title {"text":"監控圍城 II","bold":true,"color":"blue"}
 gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 
@@ -23,7 +23,9 @@ effect give @a night_vision infinite 0 true
 effect give @a resistance 5 100 true
 
 scoreboard objectives setdisplay sidebar.team.blue info_monitor
+scoreboard objectives setdisplay sidebar.team.red money
 scoreboard objectives setdisplay below_name health
+scoreboard objectives setdisplay list kill
 
 scoreboard players reset @a
 scoreboard players set @a[team=survivor] stamina 100

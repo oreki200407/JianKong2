@@ -2,14 +2,14 @@
 # 當玩家摔傷的時候執行
 # 
 # Name   : damage.mcfunction
-# Path   : game:fracture/
+# Path   : gadget:medical/fracture/
 # As     : 摔傷的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only game:fall_damage
+advancement revoke @s only gadget:fall_damage
 
 #還沒進入3 就結束
 execute unless score #mode system matches 3 run return fail
