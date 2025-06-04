@@ -1,9 +1,9 @@
 ###################################################
-# 使用噴火器的時候執行
+# 使用噴火槍的時候執行
 # 
 # Name   : use.mcfunction
 # Path   : gun:flamethrower/using/
-# As     : 使用噴火器的玩家
+# As     : 使用噴火槍的玩家
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai

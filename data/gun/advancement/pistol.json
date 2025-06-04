@@ -10,12 +10,8 @@
 						"mainhand":
 						{
 							"items": "minecraft:golden_axe",
-							"predicates":
-							{
-								"custom_data":
-								{
-									"gun": "pistol"
-								}
+							"components": {
+								"minecraft:item_name": "手槍"
 							}
 						}
 					}

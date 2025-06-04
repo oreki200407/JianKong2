@@ -3,8 +3,8 @@
 # 
 # Name   : shoot.mcfunction
 # Path   : gun:flamethrower/using/
-# As     : 噴火器噴出的火
-# At     : 使用噴火器的玩家
+# As     : 噴火槍噴出的火
+# At     : 使用噴火槍的玩家
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################

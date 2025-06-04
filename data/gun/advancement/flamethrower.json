@@ -13,12 +13,8 @@
 						"mainhand":
 						{
 							"items": "minecraft:golden_axe",
-							"predicates":
-							{
-								"custom_data":
-								{
-									"gun": "flamethrower"
-								}
+							"components": {
+								"minecraft:item_name": "噴火槍"
 							}
 						}
 					}
