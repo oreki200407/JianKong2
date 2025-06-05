@@ -1,0 +1,29 @@
+{
+	"criteria":
+	{
+		"unlock":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:iron_horse_armor",
+							"components": {
+								"minecraft:item_name": "捕獸夾"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:bear_trap/use"
+	}
+}
