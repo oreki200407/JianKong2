@@ -1,3 +1,3 @@
-item replace entity @s enderchest.25 with white_stained_glass_pane[custom_data={upgrade: true},custom_model_data={strings:["barrier"]},item_name={"text": "你已無法再升級", "color": "red"}]
+item replace entity @s enderchest.25 with gunpowder[custom_data={upgrade: true},,item_model=barrier,item_name={"text": "你已無法再升級", "color": "red"}]
 function upgrade:ender_chest/armor/health
 function upgrade:ender_chest/armor/fire

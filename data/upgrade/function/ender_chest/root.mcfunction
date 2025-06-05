@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-item replace entity @s enderchest.13 with white_stained_glass_pane[custom_data={upgrade: true},tooltip_display={hide_tooltip: true},custom_model_data=2]
+item replace entity @s enderchest.13 with gunpowder[custom_data={upgrade: true},tooltip_display={hide_tooltip: true},custom_model_data={strings:["enchant"]}]
 
 #是武器
 execute if items entity @s enderchest.10 iron_sword run return run function upgrade:ender_chest/weapon/root
