@@ -9,5 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-item modify entity @s armor.head {function: "set_components", components: {profile: {name: "MHF_Spider", id: [I; 1523932980, 1102466002, -1674438504, 1013143862], properties: [{name: "textures", value: "ewogICJ0aW1lc3RhbXAiIDogMTc0MzYyNDQxOTMwMCwKICAicHJvZmlsZUlkIiA6ICI1YWQ1NWYzNDQxYjY0YmQyOWMzMjE4OTgzYzYzNTkzNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfU3BpZGVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y2MWE0OTU0MWE4MzZhYThmNGY3NmUwZDRjYjJmZjA0ODg4YzYyZjk0MTFlYTEwY2JhY2YxZjJhNTQ0MjQyNDAiCiAgICB9CiAgfQp9"}]}}}
-tellraw @s [{"text": "你變成了"}, {"translate": "entity.minecraft.spider"}]
+item modify entity @s armor.head {function: "set_components", components: {"item_name": {"translate": "entity.minecraft.spider"}, profile: {id:[I;-1948552752,1193560242,-1824200812,-2143139944],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="}]}}}
+item replace entity @s armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=4537654]
+item replace entity @s armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=4537654]
+item replace entity @s armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=4537654]

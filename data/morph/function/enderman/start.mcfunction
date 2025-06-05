@@ -9,5 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-item modify entity @s armor.head {function: "set_components", components: {profile: {name: "MHF_Enderman", id: [I; 1090499442, 318129784, -1275977354, -1084826293], properties: [{name: "textures", value: "ewogICJ0aW1lc3RhbXAiIDogMTcyNTYwNDg0MjA5NSwKICAicHJvZmlsZUlkIiA6ICI0MGZmYjM3MjEyZjY0Njc4YjNmMjIxNzZiZjU2ZGQ0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfRW5kZXJtYW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWIwOWEzNzUyNTEwZTkxNGIwYmRjOTA5NmIzOTJiYjM1OWY3YThlOGE5NTY2YTAyZTdmNjZmYWZmOGQ2Zjg5ZSIKICAgIH0KICB9Cn0="}]}}}
-tellraw @s [{"text": "你變成了"}, {"translate": "entity.minecraft.enderman"}]
+item modify entity @s armor.head {function: "set_components", components: {"item_name": {"translate": "entity.minecraft.enderman"}, profile: {id:[I;233407588,309611990,-1146603762,-94551640],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0="}]}}}
+item replace entity @s armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=3082824]
+item replace entity @s armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=3082824]
+item replace entity @s armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=3082824]

@@ -9,6 +9,9 @@
 # Author : Alex_Cai
 ###################################################
 
+
+execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {"text": "人體變型", "color":"gold"}]
+
 #execute store出monsters的長度
 execute store result score #availables morph store result storage jk2:data root.morph.availables int 1 run data get storage jk2:data root.morph.monsters
 
@@ -25,3 +28,8 @@ function morph:player/start/to with entity @s equipment.head.components."minecra
 
 #變形維持180秒 = 3600刻
 scoreboard players set @s morph 3600
+
+scoreboard players remove 電力 info_monitor 50
+tp @s @e[type=marker,tag=point,sort=random,limit=1]
+tellraw @s [{"text": "你變成了"}, {"entity":"@s","nbt":"equipment.head.components.\"minecraft:item_name\"","interpret":true}]
+title @s title {"entity":"@s","nbt":"equipment.head.components.\"minecraft:item_name\"","interpret":true,bold:true}

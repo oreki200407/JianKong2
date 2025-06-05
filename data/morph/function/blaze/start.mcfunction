@@ -9,6 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
-item modify entity @s armor.head {function: "set_components", components: {profile: {name: "MHF_Blaze", id: [I; 1278799121, 1500139476, -1424152845, -2034119764], properties: [{name: "textures", value: "ewogICJ0aW1lc3RhbXAiIDogMTcyNjUwNTMyMjgxMywKICAicHJvZmlsZUlkIiA6ICI0YzM4ZWQxMTU5NmE0ZmQ0YWIxZDI2ZjM4NmMxY2JhYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNSEZfQmxhemUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA2ZTM0MmY5MGVjNTM4YWFhMTU1MmIyMjRmMjY0YTA0MDg0MDkwMmUxMjZkOTFlY2U2MTM5YWE1YjNjN2NjMyIKICAgIH0KICB9Cn0="}]}}}
-tellraw @s [{"text": "你變成了"}, {"translate": "entity.minecraft.blaze"}]
+item modify entity @s armor.head {function: "set_components", components: {"item_name": {"translate": "entity.minecraft.blaze"}, profile: {id:[I;2095810738,2136949657,-1413910424,622570141],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="}]}}}
+
+item replace entity @s armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=16302610]
+item replace entity @s armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=16302610]
+item replace entity @s armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={binding_curse: 1},dyed_color=16302610]
+
 effect give @s fire_resistance infinite 0 true

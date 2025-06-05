@@ -1,6 +1,6 @@
 execute unless score 電力 info_monitor >= @s summon_power run return run function summon:operation/fail
 
-tellraw @s ["","◎ 你已成功",{"text":"獲得怪物頭顱","color":"gold"},", 請使用",{"text":"監視器","color":"gold"},"來召喚怪物"]
+tellraw @s ["◎ 你已成功",{"text":"獲得怪物頭顱","color":"gold"},", 請使用",{"text":"監視器","color":"gold"},"來召喚怪物"]
 
 execute store result storage jk2:data root.summon.manual.count int 1 run scoreboard players get @s summon_count
 

@@ -1,6 +1,6 @@
 execute unless score 電力 info_monitor >= @s summon_power run return run function summon:operation/fail
 
-tellraw @s ["",{"text":"◎ 怪物已成功"},{"text":"召喚","color":"gold"}]
+tellraw @s [{"text":"◎ 怪物已成功"},{"text":"召喚","color":"gold"}]
 title @a[team=survivor] title {"text":"怪物來襲","bold":true,"color":"red"}
 execute as @a[team=survivor] at @s run playsound block.beacon.power_select ambient @s
 execute at @a[team=survivor] run tag @e[type=marker,tag=point,distance=..10] add summon_point
