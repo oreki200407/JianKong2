@@ -9,6 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
+tp @s ~ ~ ~-1
 
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {"text": "人體變型", "color":"gold"}]
 
@@ -29,6 +30,7 @@ function morph:player/start/to with entity @s equipment.head.components."minecra
 #變形維持180秒 = 3600刻
 scoreboard players set @s morph 3600
 
+clear @s
 scoreboard players remove 電力 info_monitor 50
 tp @s @e[type=marker,tag=point,sort=random,limit=1]
 tellraw @s [{"text": "你變成了"}, {"entity":"@s","nbt":"equipment.head.components.\"minecraft:item_name\"","interpret":true}]

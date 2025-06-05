@@ -1,4 +1,4 @@
-execute store success score @s summon_operate run clear @s glowstone_dust[custom_data={summon:none}] 0
+execute store success score @s summon_operate run clear @s glowstone_dust[custom_data={summon:none}]
 execute as @a[scores={summon_operate=1}] run return run function summon:reset
 
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["add"]}] 0

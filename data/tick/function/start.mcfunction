@@ -81,7 +81,7 @@ execute as @e[type=area_effect_cloud, tag=power1_time] if predicate {condition: 
 execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
 
 #人體變形
-execute as @a[team=monitor] at @s if entity @e[type=marker,tag=morph_machine,distance=..0.3] run function morph:player/start/root
+execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.3] run function morph:player/start/root
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
 #清除所有失去騎乘者的坐騎蜘蛛
 execute as @e[type=spider, tag=spider_vehicle] unless predicate {condition: "entity_properties", entity: "this", predicate: {passenger: {}}} run kill
