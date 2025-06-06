@@ -11,6 +11,9 @@ team modify monitor color red
 scoreboard objectives setdisplay sidebar.team.red info_monitor
 scoreboard objectives setdisplay sidebar.team.blue money
 
+scoreboard players reset @a money
+scoreboard players operation @a[team=survivor] money = 初始資金 lobby
+
 schedule function game:prepare 2s
 schedule clear summon:natural
 

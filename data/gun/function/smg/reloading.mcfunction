@@ -1,4 +1,5 @@
-execute unless items entity @s container.* iron_ingot run return run function gun:reload_fail
+execute unless items entity @s container.* iron_ingot[item_name="衝鋒槍彈夾"] run return run function gun:reload_fail
+execute unless items entity @s weapon golden_axe[item_name="衝鋒槍"] run return run function gun:reload_fail
 
 scoreboard players set @s reload 1
 scoreboard players add @s reload_time 1

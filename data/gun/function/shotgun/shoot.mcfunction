@@ -1,5 +1,3 @@
-
-
 execute unless entity @s[distance=..11] run return run tag @s remove shooter
 execute unless block ~ ~ ~ #air unless block ~ ~ ~ #wooden_doors[open=true] run return run tag @s remove shooter
 

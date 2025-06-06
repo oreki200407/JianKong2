@@ -17,5 +17,5 @@ execute store success score #flame flamethrower align xyz as @e[type=#gun:entity
 execute if score #flame flamethrower matches 1 run return run function gun:flamethrower/flame/clear
 
 #正常飛行
-particle flame ~ ~-.3 ~ .1 .1 .1 0 1 force @a
+particle flame ~ ~-.5 ~ .1 .1 .1 0 1 force @a
 tp @s ^ ^ ^.7
