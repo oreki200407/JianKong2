@@ -5,7 +5,7 @@
 		{
 			"op": "append",
 			"source": "root.monitor.netwalk_game.new_connected_vec2",
-			"target": "connected"
+			"target": "connected_vec2arr"
 		}
 	],
 	"source":
