@@ -1,6 +1,9 @@
 title @a title {"text":"準備時間","bold":true,"color":"gold"}
 scoreboard players set #mode system 4
 
+effect give @a[team=!spec] resistance 180 100 true
+effect give @a[team=survivor] night_vision 180 0 true
+
 #清空大廳
 kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]

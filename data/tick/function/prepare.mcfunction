@@ -5,3 +5,5 @@ execute as @a[scores={camera_interface=1..}] run function monitor:install/camera
 
 #商店
 execute as @a[team=survivor] at @s run function shop:root
+
+function tick:both

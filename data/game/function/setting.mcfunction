@@ -16,11 +16,11 @@ gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 
 effect clear @a
-effect give @a invisibility 5 0 true
+effect give @a invisibility 3 0 true
 effect give @a hunger 3 255 true
-effect give @a regeneration 5 100 true
-effect give @a night_vision infinite 0 true
-effect give @a resistance 5 100 true
+effect give @a regeneration 3 100 true
+effect give @a resistance 2 100 true
+effect give @a night_vision 2 0 true
 
 scoreboard objectives setdisplay sidebar.team.blue info_monitor
 scoreboard objectives setdisplay sidebar.team.red money
