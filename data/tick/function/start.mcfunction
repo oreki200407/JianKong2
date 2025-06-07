@@ -51,11 +51,12 @@ execute as @e[type=block_display, tag=grass_block] run function morph:enderman/b
 execute as @e[type=marker, tag=morph_product] run function morph:marker
 
 #收容
+execute as @e[type=interaction,tag=contain_control] run function contain:control/root
 execute as @e[tag=contain] if score @s contain_health matches ..0 run function contain:death
-execute unless entity @e[tag=contain_creeper] as @e[tag=contain_creeper_marker] at @s if block ~-2 ~-1 ~ air run function contain:death
-execute unless entity @e[tag=contain_zombie] as @e[tag=contain_zombie_marker] at @s if block ~-2 ~-1 ~ air run function contain:death
-execute unless entity @e[tag=contain_villager] as @e[tag=contain_villager_marker] at @s if block ~-2 ~-1 ~ air run function contain:death
-execute unless entity @e[tag=contain_spider] as @e[tag=contain_spider_marker] at @s if block ~-2 ~-1 ~ air run function contain:death
-execute unless entity @e[tag=contain_skeleton] as @e[tag=contain_skeleton_marker] at @s if block ~-2 ~-1 ~ air run function contain:death
+execute unless entity @e[tag=contain_creeper] as @e[tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[tag=contain_zombie] as @e[tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[tag=contain_villager] as @e[tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[tag=contain_spider] as @e[tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[tag=contain_skeleton] as @e[tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute at @e[tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
 execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance=..0.3] run function contain:escape/check
