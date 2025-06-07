@@ -91,6 +91,11 @@ scoreboard objectives add trap_cooldown dummy
 scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
+#收容櫃
+scoreboard objectives add contain_temperature dummy
+scoreboard objectives add contain_health dummy
+scoreboard objectives add contain_food dummy
+
 #發電機
 scoreboard objectives add power dummy
 scoreboard objectives add power_level dummy

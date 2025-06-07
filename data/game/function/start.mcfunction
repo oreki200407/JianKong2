@@ -13,6 +13,7 @@ scoreboard players reset #time system
 scoreboard players set 倒數 system 3
 schedule function game:countdown 1s
 schedule function summon:natural 10s
+schedule function contain:give 60s
 schedule clear game:time
 
 bossbar set jk2:prepare players

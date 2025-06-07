@@ -9,3 +9,5 @@ execute if score 水管爆裂 info_monitor matches 180.. run function box:use/su
 
 execute if score 禁止監控 info_monitor matches 0.. run scoreboard players add 禁止監控 info_monitor 1
 execute if score 禁止監控 info_monitor matches 180.. run function box:use/success/monitor_end
+
+execute as @e[tag=contain] run function contain:random
