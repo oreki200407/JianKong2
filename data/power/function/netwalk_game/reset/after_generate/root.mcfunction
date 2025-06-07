@@ -1,5 +1,3 @@
-kill 0-0-0-0-171e7
-
 # □ □ ■ ■ ■ ■ ■ □ □ #
 # □ □ ■ ■ ■ ■ ■ □ □ #
 # □ □ ■ ■ ■ ■ ■ □ □ #
@@ -7,6 +5,7 @@ kill 0-0-0-0-171e7
 # □ □ ■ ■ ■ ■ ■ □ □ #
 # □ □ □ □ □ □ □ □ □ #
 
+#隨機旋轉
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 2}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 3}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 4}

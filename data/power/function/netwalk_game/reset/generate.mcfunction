@@ -1,4 +1,4 @@
-execute unless entity @s[type=marker] run return run execute as 0-0-0-0-171e7 at @s run function power:netwalk_game/reset/generate
+execute unless entity @s[type=marker] run return run execute as @e[type=marker, tag=netwalk_game] at @s run function power:netwalk_game/reset/generate
 
 execute store result score #nodes_size netwalk_game if data storage jk2:data root.monitor.netwalk_game.nodes_vec2arr[]
 #已經滿了 不生成了
@@ -33,13 +33,13 @@ data modify storage jk2:data root.monitor.netwalk_game.vector2.augend_vec2 set f
 data modify storage jk2:data root.monitor.netwalk_game.vector2.addend_vec2 set from storage jk2:data root.monitor.netwalk_game.direction_vec2
 function power:netwalk_game/vector2/add
 #和要拿去檢查範圍
-data modify storage jk2:data root.monitor.netwalk_game.vector2.check_bound_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.result_vec2
+data modify storage jk2:data root.monitor.netwalk_game.vector2.check_bound_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.sum_vec2
 #超過範圍就下一個 用schedule避免遞迴太深
 execute unless function power:netwalk_game/vector2/is_in_bound run return run schedule function power:netwalk_game/reset/generate 1
 
 #如果新的點位在範圍內的話
 #獲得新點位連了多少個格子數
-data modify storage jk2:data root.monitor.netwalk_game.cell_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.result_vec2
+data modify storage jk2:data root.monitor.netwalk_game.cell_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.sum_vec2
 #已經有連了就下一個 用schedule避免遞迴太深
 execute unless function power:netwalk_game/reset/cell/is_empty run return run schedule function power:netwalk_game/reset/generate 1
 
@@ -57,5 +57,5 @@ data modify storage jk2:data root.monitor.netwalk_game.new_connected_vec2 set fr
 function power:netwalk_game/reset/cell/add_connected
 
 #最後 把新格子加入清單 進行下一次疊代
-data modify storage jk2:data root.monitor.netwalk_game.nodes_vec2arr append from storage jk2:data root.monitor.netwalk_game.vector2.result_vec2
+data modify storage jk2:data root.monitor.netwalk_game.nodes_vec2arr append from storage jk2:data root.monitor.netwalk_game.vector2.sum_vec2
 schedule function power:netwalk_game/reset/generate 1
