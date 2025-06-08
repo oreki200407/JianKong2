@@ -11,4 +11,4 @@
 
 fill ~-1 ~-1 ~-1 ~1 ~1 ~1 fire keep
 summon marker ~ ~ ~ {Tags:["fire"]}
-kill
+kill @s[type=marker]

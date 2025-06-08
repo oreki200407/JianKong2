@@ -1,0 +1,6 @@
+execute unless score 腐肉 info_monitor matches 3.. unless score 紙 info_monitor matches 3.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
+
+scoreboard players remove 腐肉 info_monitor 3
+scoreboard players remove 紙 info_monitor 3
+give @s purple_dye[item_name="燃燒瓶",custom_data={"type":"trap","command":"function gadget:molotov_cocktail/set_fire"},custom_model_data={strings:["molotov_cocktail_monitor"]}, consumable={consume_seconds: 99999}] 1
+playsound block.anvil.use ambient @s ~ ~ ~ 1 2

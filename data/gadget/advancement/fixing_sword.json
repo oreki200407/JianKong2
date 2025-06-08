@@ -15,7 +15,7 @@
 						{
 							"equipment":
 							{
-								"mainhand":
+								"offhand":
 								{
 									"items": "minecraft:iron_sword",
 									"predicates":
@@ -29,9 +29,9 @@
 										}
 									}
 								},
-								"offhand":
+								"mainhand":
 								{
-									"items": "minecraft:netherite_ingot",
+									"items": "minecraft:tripwire_hook",
 									"components": {
 									"minecraft:item_name": "磨刀石"
 									}

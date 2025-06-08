@@ -12,7 +12,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:iron_axe",
+							"items": "minecraft:tripwire_hook",
 							"components": {
 								"minecraft:item_name": "滅火器"
 							}

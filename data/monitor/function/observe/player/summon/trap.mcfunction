@@ -9,18 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute store result score @s trap run data get entity @s SelectedItem.components."minecraft:custom_model_data"
-item modify entity @s weapon.mainhand { "function": "set_count", "count": -1, "add": true }
 execute at @s run playsound block.smithing_table.use ambient @s ~ ~ ~
-
-#1
-execute if score @s trap matches 1 run return run summon item ~ ~ ~ {Item:{id:"red_concrete",count:1},Invulnerable:1b,PickupDelay:32767,Age:-32768,Tags:["grenade"]}
-
-#2
-execute if score @s trap matches 2 run return run summon lingering_potion ~ ~ ~ {Item: {id: "lingering_potion", components: {"custom_model_data":{strings:["molotov_cocktail"]},"potion_contents": {"custom_color": 4144959}, "max_stack_size": 64, "custom_name": {"text": "燃燒瓶", "italic": false}}}}
-
-#3
-execute if score @s trap matches 3 run return run function gadget:bear_trap/summon
-
-#4
-summon splash_potion ~ ~ ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_poison"}}}}
+$$(command)
+item modify entity @s weapon.mainhand { "function": "set_count", "count": -1, "add": true }

@@ -16,7 +16,14 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:purple_dye"
+							"items": "minecraft:purple_dye",
+							"predicates":
+							{
+								"custom_data":
+								{
+									"type": "trap"
+								}
+							}
 						}
 					}
 				}

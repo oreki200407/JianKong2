@@ -9,7 +9,7 @@
 # Author : Alex_Cai, oreki20
 ###################################################
 
-#execute at @e[tag=monster] at @e[distance=..1.5,tag=door] if block ~ ~ ~ #wooden_doors[open=false] run 開門
+#execute at @e[tag=monster] at @e[distance=..1.5,tag=door] if block ~ ~ ~ #doors[open=false] run 開門
 execute as @e[tag=passengerby] unless data entity @s Passengers run kill @s
 kill @e[type=arrow,nbt={inGround:1b}]
 

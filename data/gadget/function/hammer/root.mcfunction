@@ -11,6 +11,7 @@
 
 advancement revoke @s only gadget:hammer
 
+execute unless items entity @s container.* oak_sign[item_name="木板"] run return run tellraw @s ["◎ 你身上沒有", {"text": "木板", "color": "gold"}]
 execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {"text": "體力", "color": "gold"}, "不足, 無法釘木板"]
 
 #是玻璃

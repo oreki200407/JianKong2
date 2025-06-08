@@ -9,5 +9,5 @@
 # Author : oreki20
 ###################################################
 
-summon item ~ ~0.2 ~ {Item:{id:"snowball",count:1,components:{"custom_model_data":{strings:["bomb"]}}},Invulnerable:1b,PickupDelay:32767,Age:-32768,Tags:["grenade"]}
-kill
+summon item ~ ~ ~ {PortalCooldown:40,Item:{id:"snowball",count:1,components:{"custom_model_data":{strings:["bomb"]}}},Invulnerable:1b,PickupDelay:32767,Age:-32768,Tags:["grenade"]}
+kill @s[type=marker]

@@ -10,7 +10,7 @@
 ###################################################
 
 #維持4秒
-execute unless predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 80}} run return fail
+execute unless predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} run return fail
 
 #清除蜘蛛網
 execute at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air

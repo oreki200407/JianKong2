@@ -13,7 +13,7 @@
 execute at @s if block ~ ~ ~ #air run setblock ~ ~ ~ fire
 
 #維持4秒
-execute unless predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 80}} run return fail
+execute unless predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} run return fail
 
 #用#fire 因為有可能會變成靈魂火
 execute at @s if block ~ ~ ~ #fire run setblock ~ ~ ~ air

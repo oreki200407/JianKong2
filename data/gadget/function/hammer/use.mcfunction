@@ -22,11 +22,12 @@ scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 $summon marker $(put_sign) {Tags: ["plank"]}
 playsound block.wooden_door.close ambient @a
+clear @s oak_sign[item_name="木板"] 1
 
 #減少耐久度
 #IEEE-754 floating point error, 用-0.1會導致卡在3耐久度
 item modify entity @s weapon {function: "set_damage", add: true, damage: -0.11}
-execute unless items entity @s weapon iron_axe[damage=10] run return fail
+execute unless items entity @s weapon tripwire_hook[item_name="錘子",damage=10] run return fail
 
 #損壞
 item replace entity @s weapon with air
