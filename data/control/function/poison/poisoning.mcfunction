@@ -1,0 +1,1 @@
+$execute as @a[team=survivor,x=$(x),y=$(y),z=$(z),dx=$(dx),dy=$(dy),dz=$(dz)] unless items entity @s armor.head iron_helmet run effect give @s poison 1 1 true

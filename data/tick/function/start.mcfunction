@@ -60,3 +60,6 @@ execute unless entity @e[tag=contain_spider] as @e[tag=contain_spider_marker] at
 execute unless entity @e[tag=contain_skeleton] as @e[tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute at @e[tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
 execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance=..0.3] run function contain:escape/check
+
+#機關
+execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
