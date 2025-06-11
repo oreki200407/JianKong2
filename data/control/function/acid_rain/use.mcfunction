@@ -8,3 +8,5 @@ scoreboard players add 酸雨 info_survivor 180
 playsound block.piston.extend
 
 tellraw @a ["◎ 場上將在10秒後",{"text": "釋放酸雨", "color":"gold"}]
+
+schedule function control:acid_rain/start 10s

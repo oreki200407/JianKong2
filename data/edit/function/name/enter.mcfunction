@@ -1,9 +1,9 @@
 ###################################################
-# 電箱點位編輯
+# 告示牌
 # 
 # Name   : enter.mcfunction
-# Path   : edit:box_point/
-# As     : 電箱點位盔甲座
+# Path   : edit:name/
+# As     : 點位盔甲座
 # At     : As
 # Loop   : 否
 # Author : oreki20

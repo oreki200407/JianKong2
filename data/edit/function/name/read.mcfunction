@@ -1,8 +1,8 @@
 ###################################################
 # 電箱點位讀取名字
 # 
-# Name   : read_name.mcfunction
-# Path   : edit:box_point/
+# Name   : read.mcfunction
+# Path   : edit:name/
 # As     : 電箱點位盔甲座
 # At     : As
 # Loop   : 否

@@ -91,6 +91,9 @@ scoreboard objectives add trap_cooldown dummy
 scoreboard objectives add photo dummy
 scoreboard objectives add photo_cooldown dummy
 
+#毒氣
+scoreboard objectives add poison_point dummy
+
 #收容櫃
 scoreboard objectives add contain_temperature dummy
 scoreboard objectives add contain_health dummy
@@ -150,9 +153,11 @@ team modify monitor friendlyFire false
 
 #記分板設定
 scoreboard players set 更新 system 1
+scoreboard players set #2 constant 2
 scoreboard players set #9 constant 9
 scoreboard players set #27 constant 27
 scoreboard players set #60 constant 60
+scoreboard players set #100 constant 100
 scoreboard players set #200 constant 200
 
 bossbar add jk2:boss "BOSS血條"
