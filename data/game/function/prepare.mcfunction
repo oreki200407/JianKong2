@@ -16,6 +16,7 @@ bossbar set jk2:prepare players @a
 kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]
 kill @e[tag=lobby_setting]
+kill @e[tag=monitor_marker]
 execute at @e[type=marker,tag=lobby] run place structure game:monitor ~-10 ~-1 ~-10
 
 #裝備

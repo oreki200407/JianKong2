@@ -1,0 +1,1 @@
+scoreboard players add 禁止奔跑 info_survivor 180

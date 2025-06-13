@@ -14,6 +14,7 @@ execute unless score 電力 info_monitor matches 80.. run return run tellraw @s 
 scoreboard players remove 電力 info_monitor 80
 scoreboard players add 更換電箱-冷卻 info_monitor 180
 
+setblock ~ ~ ~ air destroy
 playsound block.piston.extend
 #從所有電箱點位中挑一個新的出來
 execute as @e[type=armor_stand, tag=box_point, tag=!box, sort=random, limit=1] at @s run function box:switch/new_box
