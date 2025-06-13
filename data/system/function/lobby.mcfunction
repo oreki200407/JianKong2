@@ -5,7 +5,7 @@ forceload add ~ ~
 setworldspawn ~6 ~ ~5
 
 summon marker ~ ~ ~ {Tags:["lobby"]}
-place structure game:lobby ~-10 ~-1 ~-10
+place template game:lobby ~-10 ~-1 ~-10
 
 scoreboard players set #mode system 1
 function system:install

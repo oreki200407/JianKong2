@@ -17,7 +17,7 @@ kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]
 kill @e[tag=lobby_setting]
 kill @e[tag=monitor_marker]
-execute at @e[type=marker,tag=lobby] run place structure game:monitor ~-10 ~-1 ~-10
+execute at @e[type=marker,tag=lobby] run place template game:monitor ~-10 ~-1 ~-10
 
 #裝備
 item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=true,enchantments={"game:sonic_boom_protection": 1}]
