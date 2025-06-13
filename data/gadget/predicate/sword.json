@@ -1,0 +1,61 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": "minecraft:iron_sword",
+						"components": {
+							"minecraft:damage": 50
+						}
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": "iron_sword",
+						"components": {
+							"minecraft:damage": 100
+						}
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": "iron_sword",
+						"components": {
+							"minecraft:damage": 150
+						}
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"equipment": {
+					"mainhand": {
+						"items": "iron_sword",
+						"components": {
+							"minecraft:damage": 200
+						}
+					}
+				}
+			}
+		}
+	]
+}

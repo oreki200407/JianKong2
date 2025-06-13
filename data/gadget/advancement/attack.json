@@ -1,9 +1,9 @@
 {
 	"criteria":
 	{
-		"fixing_sword":
+		"attack":
 		{
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:player_hurt_entity",
 			"conditions":
 			{
 				"player":
@@ -17,10 +17,7 @@
 							{
 								"mainhand":
 								{
-									"items": "minecraft:tripwire_hook",
-									"components": {
-									"minecraft:item_name": "磨刀石"
-									}
+									"items": "minecraft:iron_sword"
 								}
 							}
 						}
@@ -31,6 +28,6 @@
 	},
 	"rewards":
 	{
-		"function": "gadget:whetstone/use"
+		"function": "gadget:whetstone/downgrade"
 	}
 }

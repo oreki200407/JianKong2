@@ -1,0 +1,1 @@
+$item modify entity @s weapon {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"attack_damage",amount:$(sword),operation:"add_value",slot:"any"}],replace:0b}

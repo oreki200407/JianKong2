@@ -11,12 +11,12 @@
 
 advancement revoke @s only gadget:hammer
 
-execute unless items entity @s container.* oak_pressure_plate[item_name="木板"] run return run tellraw @s ["◎ 你身上沒有", {"text": "木板", "color": "gold"}]
+execute unless items entity @s container.* oak_pressure_plate[item_name="木板"] run return run title @s actionbar {"text": "你身上沒有木板", "color": "red",bold:1b}
 execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {"text": "體力", "color": "gold"}, "不足, 無法釘木板"]
 
 #是玻璃
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ #gadget:glass run return run function gadget:hammer/at_glass
+execute anchored eyes positioned ^ ^ ^1.5 if block ~ ~ ~ #gadget:glass run return run function gadget:hammer/at_glass
 
 #不是玻璃
 scoreboard players set @s[scores={hammer=1..}] hammer 0
-title @s actionbar {"text": "請對著玻璃使用", "color": "red"}
+title @s actionbar {"text": "請對著玻璃使用", "color": "red",bold:1b}

@@ -12,7 +12,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:iron_nugget",
+							"items": "minecraft:tripwire_hook",
 							"components": {
 								"minecraft:item_name": "捕獸夾"
 							}

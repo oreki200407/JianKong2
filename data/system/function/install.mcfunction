@@ -40,6 +40,7 @@ scoreboard objectives add constant dummy
 scoreboard objectives add xp dummy
 
 #遠程武器
+scoreboard objectives add extinguisher dummy
 scoreboard objectives add flamethrower dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
@@ -62,7 +63,7 @@ scoreboard objectives add summon_cooldown dummy "冷卻"
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
-scoreboard objectives add death_time dummy "復活時間"
+scoreboard objectives add death_time dummy "死亡時間"
 scoreboard objectives add uuid0 dummy "UUID[0]"
 
 #捕獸夾
@@ -71,6 +72,7 @@ scoreboard objectives add jump_break custom:jump "跳躍掙脫"
 
 #錘子
 scoreboard objectives add hammer dummy "錘子"
+scoreboard objectives add hammer_hold dummy
 
 #開鎖器
 scoreboard objectives add unlock_progess dummy "開鎖進度"
