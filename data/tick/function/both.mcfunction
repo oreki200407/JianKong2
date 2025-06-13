@@ -37,7 +37,7 @@ execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
 
 #防毒面具
-execute as @a if items entity @s armor.head iron_helmet[item_name="防毒面具"] run function gadget:mask/wearing
+execute as @a[team=survivor] if items entity @s armor.head carved_pumpkin[item_name="防毒面具"] run function gadget:mask/wearing
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying

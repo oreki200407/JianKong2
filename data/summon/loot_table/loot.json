@@ -456,7 +456,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 3,
-					"name": "minecraft:iron_horse_armor",
+					"name": "minecraft:iron_nugget",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -529,7 +529,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 4,
-					"name": "minecraft:oak_sign",
+					"name": "minecraft:oak_pressure_plate",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

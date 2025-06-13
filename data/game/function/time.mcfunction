@@ -16,9 +16,9 @@ execute if score 鐵門上鎖-冷卻 info_monitor matches 1.. run scoreboard pla
 execute if score 更換電箱-冷卻 info_monitor matches 1.. run scoreboard players remove 更換電箱-冷卻 info_monitor 1
 execute if score 關閉電箱-冷卻 info_monitor matches 1.. run scoreboard players remove 關閉電箱-冷卻 info_monitor 1
 
-execute if score 釋放酸雨 info_survivor matches 1.. run scoreboard players remove 釋放酸雨 info_survivor 1
-execute if score 釋放毒氣 info_survivor matches 1.. run scoreboard players remove 釋放毒氣 info_survivor 1
-execute if score 釋放酸雨 info_survivor matches 0 run function control:acid_rain/end
-execute if score 釋放毒氣 info_survivor matches 0 run function control:poison/end
+execute if score 酸雨 info_survivor matches 1.. run scoreboard players remove 酸雨 info_survivor 1
+execute if score 毒氣 info_survivor matches 1.. run scoreboard players remove 毒氣 info_survivor 1
+execute if score 酸雨 info_survivor matches 0 run function control:acid_rain/end
+execute if score 毒氣 info_survivor matches 0 run function control:poison/end
 
 execute as @e[tag=contain] run function contain:random
