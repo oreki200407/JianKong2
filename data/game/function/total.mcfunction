@@ -1,0 +1,1 @@
+tp @a @e[type=marker, tag=lobby_spawn, limit=1]

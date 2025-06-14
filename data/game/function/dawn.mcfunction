@@ -15,5 +15,20 @@ schedule clear monster:boss/warden/tick
 schedule clear monster:boss/creeper/tick
 schedule clear monster:boss/creeper/tick
 
+scoreboard players reset 釋放酸雨-冷卻 info_monitor
+scoreboard players reset 釋放毒氣-冷卻 info_monitor
+scoreboard players reset 鐵門上鎖-冷卻 info_monitor
+scoreboard players reset 更換電箱-冷卻 info_monitor
+scoreboard players reset 關閉電箱-冷卻 info_monitor
+scoreboard players reset 禁止奔跑-冷卻 info_monitor
+scoreboard players reset 酸雨 info_survivor
+scoreboard players reset 毒氣 info_survivor
+scoreboard players reset 禁止奔跑 info_survivor
+
+execute if score 水管爆裂 info_monitor matches 1.. run function box:use/success/water_end
+execute if score 禁止監控 info_monitor matches 1.. run function box:use/success/monitor_end
+
+tag @e[tag=poison] remove poison
+
 execute unless score #switch system matches 1 run return run schedule function game:switch 3s
 schedule function game:end 3s

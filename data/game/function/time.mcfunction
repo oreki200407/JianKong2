@@ -4,11 +4,11 @@ execute if score #mode system matches 3 store result bossbar jk2:time value run 
 
 execute if score 更換電箱 lobby matches 1.. run function box:switch/auto
 
-execute if score 水管爆裂 info_monitor matches 0.. run scoreboard players add 水管爆裂 info_monitor 1
-execute if score 水管爆裂 info_monitor matches 180.. run function box:use/success/water_end
+execute if score 水管爆裂 info_monitor matches 1.. run scoreboard players remove 水管爆裂 info_monitor 1
+execute if score 水管爆裂 info_monitor matches 0 run function box:use/success/water_end
 
-execute if score 禁止監控 info_monitor matches 0.. run scoreboard players add 禁止監控 info_monitor 1
-execute if score 禁止監控 info_monitor matches 180.. run function box:use/success/monitor_end
+execute if score 禁止監控 info_monitor matches 1.. run scoreboard players remove 禁止監控 info_monitor 1
+execute if score 禁止監控 info_monitor matches 0 run function box:use/success/monitor_end
 
 execute if score 釋放酸雨-冷卻 info_monitor matches 1.. run scoreboard players remove 釋放酸雨-冷卻 info_monitor 1
 execute if score 釋放酸雨-冷卻 info_monitor matches 0 at @e[tag=control_acid_rain] run setblock ~ ~ ~ oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,text:"釋放酸雨"},{bold:1b,click_event:{action:"run_command",command:"function control:acid_rain/use"},text:"花費：60電力"},""]},is_waxed:1b}
