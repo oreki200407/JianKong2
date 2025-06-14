@@ -24,6 +24,7 @@ scoreboard players reset 禁止奔跑-冷卻 info_monitor
 scoreboard players reset 酸雨 info_survivor
 scoreboard players reset 毒氣 info_survivor
 scoreboard players reset 禁止奔跑 info_survivor
+scoreboard players reset 電箱位置 info_survivor
 
 execute if score 水管爆裂 info_monitor matches 1.. run function box:use/success/water_end
 execute if score 禁止監控 info_monitor matches 1.. run function box:use/success/monitor_end

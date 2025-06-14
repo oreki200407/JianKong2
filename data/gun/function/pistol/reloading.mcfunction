@@ -1,5 +1,5 @@
-execute unless items entity @s container.* nether_brick[item_name="手槍彈夾"] run return run function gun:reload_fail
-execute unless items entity @s weapon golden_axe[item_name="手槍"] run return run function gun:reload_fail
+execute unless items entity @s container.* nether_brick[item_name="手槍彈夾"] run return run function gun:reloaded
+execute unless items entity @s weapon golden_axe[item_name="手槍"] run return run function gun:reloaded
 
 scoreboard players set @s reload 2
 scoreboard players add @s reload_time 1

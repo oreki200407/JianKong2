@@ -9,7 +9,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:golden_axe",
+							"items": "minecraft:diamond_axe",
 							"components": {
 								"minecraft:item_name": "電鋸"
 							}

@@ -1,5 +1,5 @@
-execute unless items entity @s container.* brick[item_name="散彈槍子彈"] run return run function gun:reload_fail
-execute unless items entity @s weapon golden_axe[item_name="散彈槍"] run return run function gun:reload_fail
+execute unless items entity @s container.* brick[item_name="散彈槍子彈"] run return run function gun:reloaded
+execute unless items entity @s weapon golden_axe[item_name="散彈槍"] run return run function gun:reloaded
 
 scoreboard players set @s reload 3
 scoreboard players add @s reload_time 1

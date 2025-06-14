@@ -19,4 +19,5 @@ execute as @a[team=monitor] run function monitor:observe/give
 tag @e[type=armor_stand,tag=box] remove box
 tag @e[type=armor_stand,tag=box_default] add box
 tellraw @a[team=!monitor] ["◎ 初始電箱在", {"color":"gold","selector": "@e[type=armor_stand,tag=box_default]"}]
+scoreboard players display numberformat 電箱位置 info_survivor fixed {"selector": "@e[type=armor_stand,tag=box_default]"}
 execute at @e[type=armor_stand,tag=box] run function box:switch/set

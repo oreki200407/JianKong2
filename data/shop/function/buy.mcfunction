@@ -5,7 +5,7 @@ execute unless score @s money >= #price money run return run function shop:fail
 
 #不能雙槍
 scoreboard players reset #gun_check shop
-execute if data entity @s Inventory[{id:"minecraft:golden_axe",components:{"minecraft:custom_data":{gun:"true"}}}] run function shop:gun_check
+execute if data entity @s Inventory[{id:"minecraft:golden_axe"}] run function shop:gun_check
 execute if score #gun_check shop matches 1 run return fail
 
 data modify storage jk2:data root.survivor.shop set from entity @s Inventory[{components:{"minecraft:custom_data":{type:"shop"}}}]
