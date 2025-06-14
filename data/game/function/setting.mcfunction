@@ -29,6 +29,7 @@ scoreboard objectives setdisplay list kill
 
 scoreboard players reset @a
 scoreboard players set @a[team=survivor] stamina 100
+scoreboard players set #power3 power 0
 scoreboard players operation @a[team=survivor] money = 初始資金 lobby
 scoreboard players operation #switch_box_second system = 更換電箱 lobby
 scoreboard players operation #switch_box_second system *= #60 constant
@@ -40,6 +41,6 @@ tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
 execute as @e[type=marker,tag=door] at @s run function gadget:unlock/store
 
 #抽怪物
-function summon:pick/armor_stand
+execute at @e[type=marker,tag=lobby,limit=1] run function summon:pick/armor_stand
 
 schedule function game:prepare 2s

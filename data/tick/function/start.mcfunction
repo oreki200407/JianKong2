@@ -9,7 +9,7 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-execute if score 倒數 system matches 1..3 run function game:teleport
+execute if score 倒數 system matches 0..3 run function game:teleport
 
 #死亡展示實體
 execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..1.5] run function game:death/survivor/save/saving
