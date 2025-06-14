@@ -5,8 +5,8 @@ execute at @e[type=marker,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ air
 clear @a[team=monitor] black_dye
 item replace entity @a[team=survivor] enderchest.10 with air
 
-execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red
-execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue
+execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red info_survivor
+execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue info_survivor
 
 scoreboard players reset 目前監視器 info_monitor
 scoreboard players reset #time system

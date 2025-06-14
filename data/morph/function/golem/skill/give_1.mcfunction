@@ -1,1 +1,1 @@
-give @s brick[custom_name={"text":"震地","color":"gold"},lore=[{"text":"5格內的求生者受到傷害","color":"white","italic":false},{"text":"冷卻7秒","color":"aqua","italic":false}],custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s brick[item_name={"text":"震地","color":"gold"},lore=[{"text":"5格內的求生者受到傷害","color":"white","italic":false},{"text":"冷卻7秒","color":"aqua","italic":false}],custom_data={skill: 1}, consumable={consume_seconds: 99999}]
