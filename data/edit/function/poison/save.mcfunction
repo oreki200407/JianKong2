@@ -28,8 +28,6 @@ execute store result entity @s data.particle_x int 0.01 run scoreboard players g
 execute store result entity @s data.particle_y int 0.01 run scoreboard players get #a_y poison_point
 execute store result entity @s data.particle_z int 0.01 run scoreboard players get #a_z poison_point
 
-data merge entity @s {CustomName:"毒氣點"}
-
+data remove entity @s CustomName
 tag @s add poison_point
-tag @s remove poison_a
 tag @s remove poison_setting
