@@ -1,5 +1,5 @@
 #先複製 以免用太多macro
-$data modify storage jk2:data root.monitor.netwalk_game.custom_data set from block $(coord) Items[$(index)].components."minecraft:custom_data"
+$data modify storage jk2:data root.monitor.netwalk_game.custom_data set from block $(coord) Items[{Slot: $(index)b}].components."minecraft:custom_data"
 
 #獲得長度
 execute store result score #connected_size netwalk_game if data storage jk2:data root.monitor.netwalk_game.custom_data.connected_vec2arr[]
