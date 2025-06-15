@@ -1,0 +1,1 @@
+$item modify block ~ ~ ~ container.$(number) {"function": "minecraft:set_custom_model_data","strings": {"values": ["$(type)$(orientation)"],"mode": "append"}}

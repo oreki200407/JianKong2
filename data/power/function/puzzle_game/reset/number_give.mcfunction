@@ -1,2 +1,3 @@
 $data modify block ~ ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
+$data modify block ~1 ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".number set value $(number)
 $execute if items block ~1 ~ ~ container.$(number) echo_shard[custom_model_data={strings:["none"]}] run data modify block ~1 ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".chest2 set value 1

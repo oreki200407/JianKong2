@@ -4,7 +4,7 @@ kill @e[tag=lobby_text]
 forceload add ~ ~
 setworldspawn ~6 ~ ~5
 
-summon marker ~ ~ ~ {Tags:["lobby"]}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 place template game:lobby ~-10 ~-1 ~-10
 
 scoreboard players set #mode system 1

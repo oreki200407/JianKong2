@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values":
+	[
+		"cooked_beef",
+		"bread",
+		"melon_slice",
+		"brick",
+		"nether_brick",
+		"iron_ingot",
+		"paper",
+		"snowball",
+		"lingering_potion",
+		"tripwire_hook",
+		"oak_pressure_plate"
+	]
+}

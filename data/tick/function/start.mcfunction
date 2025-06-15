@@ -32,6 +32,9 @@ execute as @a[team=survivor] at @s run function upgrade:root
 function tick:both
 
 #-----------------------監控者-----------------------
+clear @a[team=monitor] #game:loot
+xp set @a[team=monitor] 0 points
+
 #使用監視器中
 execute as @a[tag=using_camera] run function monitor:observe/player/watching
 #監視器

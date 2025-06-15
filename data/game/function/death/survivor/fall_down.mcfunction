@@ -21,3 +21,5 @@ execute store result score #fall_down uuid0 run data get entity @s UUID[0]
 
 #召喚物品展示實體
 execute positioned ~ ~.5 ~ summon item_display run function game:death/survivor/new_tomb
+item modify entity @e[type=item_display,tag=tomb_temp,limit=1] contents {function: "fill_player_head", "entity": "this"}
+tag @e[type=item_display,tag=tomb_temp,limit=1] remove tomb_temp
