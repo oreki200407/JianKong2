@@ -12,11 +12,11 @@ function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", in
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 5}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 6}
 
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 9}
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 10}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 11}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 12}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 13}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 14}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 15}
 
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 20}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 21}
@@ -30,12 +30,15 @@ function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", i
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 5}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 6}
 
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 9}
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 10}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 11}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 12}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 13}
+<<<<<<< HEAD
 
 #給編號和材質
 execute store result storage jk2:data root.monitor.netwalk_game.number int 1 run scoreboard players set #reset netwalk_game 0
 function power:netwalk_game/reset/number/root
+=======
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 14}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 15}
+>>>>>>> f5eaca10002efacb08be9dbd28f847a05f338f18
