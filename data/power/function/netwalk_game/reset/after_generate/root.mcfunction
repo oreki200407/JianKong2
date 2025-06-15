@@ -1,3 +1,14 @@
+###################################################
+# Netwalk地圖生成結束，打亂答案
+# 
+# Name   : root.mcfunction
+# Path   : power:netwalk_game/reset/after_generate/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 # □ □ ■ ■ ■ ■ ■ □ □ #
 # □ □ ■ ■ ■ ■ ■ □ □ #
 # □ □ ■ ■ ■ ■ ■ □ □ #
