@@ -39,3 +39,5 @@ function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", i
 #給編號和材質
 execute store result storage jk2:data root.monitor.netwalk_game.number int 1 run scoreboard players set #reset netwalk_game 0
 function power:netwalk_game/reset/number/root
+
+data remove block ~ ~ ~ lock

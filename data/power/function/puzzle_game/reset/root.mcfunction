@@ -1,4 +1,5 @@
 tag @s add puzzle_game
+data remove block ~ ~ ~ lock
 
 scoreboard players reset #puzzle puzzle_game
 scoreboard players reset #random_count puzzle_game

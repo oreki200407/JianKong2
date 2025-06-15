@@ -1,9 +1,11 @@
 tag @s add light_game
+data remove block ~ ~ ~ lock
 
 scoreboard players reset #random_count light_game
 
 data merge block ~ ~ ~ {Items:[]}
 data merge block ~1 ~ ~ {Items:[]}
+
 item replace block ~ ~ ~ container.0 with coal[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.1 with coal[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.7 with coal[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
