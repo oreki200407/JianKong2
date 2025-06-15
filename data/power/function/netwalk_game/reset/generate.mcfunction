@@ -1,3 +1,14 @@
+###################################################
+# 生成Netwalk地圖
+# 
+# Name   : generate.mcfunction
+# Path   : power:netwalk_game/reset/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 遞迴
+# Author : Alex_Cai
+###################################################
+
 execute unless entity @s[type=marker] run return run execute as @e[type=marker, tag=netwalk_game] at @s run function power:netwalk_game/reset/generate
 
 execute store result score #nodes_size netwalk_game if data storage jk2:data root.monitor.netwalk_game.nodes_vec2arr[]

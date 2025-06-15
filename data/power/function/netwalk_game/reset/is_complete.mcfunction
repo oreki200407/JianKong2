@@ -1,3 +1,14 @@
+###################################################
+# 檢查node_vec2四周的格子是否已經生成過了，是的話就return true，否則return false
+# 
+# Name   : is_complete.mcfunction
+# Path   : power:netwalk_game/reset/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #檢查是否四周都生成過了
 
 #被加數

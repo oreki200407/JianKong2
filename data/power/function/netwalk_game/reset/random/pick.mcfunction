@@ -1,3 +1,14 @@
+###################################################
+# 從root.monitor.netwalk_game.nodes_vec2arr中隨機選一個向量
+# 
+# Name   : pick.mcfunction
+# Path   : power:netwalk_game/reset/random/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #Eight Great Ideas in Computer Architecture: Make the Common Case Fast
 execute if score #nodes_size netwalk_game matches 1 run return run function power:netwalk_game/reset/random/common_case/1
 execute if score #nodes_size netwalk_game matches 2 run return run function power:netwalk_game/reset/random/common_case/2
