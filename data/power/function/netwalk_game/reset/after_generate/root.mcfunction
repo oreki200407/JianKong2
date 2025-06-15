@@ -12,11 +12,11 @@ function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", in
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 5}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 6}
 
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 9}
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 10}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 11}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 12}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 13}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 14}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 15}
 
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 20}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~ ~ ~", index: 21}
@@ -30,8 +30,8 @@ function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", i
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 5}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 6}
 
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 9}
-function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 10}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 11}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 12}
 function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 13}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 14}
+function power:netwalk_game/reset/after_generate/rotate/root {coord: "~1 ~ ~", index: 15}
