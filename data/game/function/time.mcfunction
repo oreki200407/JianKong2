@@ -27,4 +27,4 @@ execute if score 酸雨 info_survivor matches 1.. run scoreboard players remove 
 execute if score 毒氣 info_survivor matches 1.. run scoreboard players remove 毒氣 info_survivor 1
 execute if score 禁止奔跑 info_survivor matches 1.. run scoreboard players remove 禁止奔跑 info_survivor 1
 
-execute as @e[tag=contain] run function contain:random
+execute if score #mode system matches 3 as @e[tag=contain] run function contain:random
