@@ -10,7 +10,7 @@
 ###################################################
 
 tag @s remove using_unlock
-title @s actionbar {"text": "門已解鎖", "color": "gold", bold:1b}
+title @s actionbar {"text": "門已解鎖", "color": "gold", bold: true}
 execute at @s run playsound block.chest.open
 execute as @n[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 

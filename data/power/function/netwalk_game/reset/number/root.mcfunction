@@ -1,3 +1,14 @@
+###################################################
+# 給材質
+# 
+# Name   : root.mcfunction
+# Path   : power:netwalk_game/reset/number/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 遞迴
+# Author : oreki20
+###################################################
+
 function power:netwalk_game/reset/number/give with storage jk2:data root.monitor.netwalk_game
 execute positioned ~1 ~ ~ run function power:netwalk_game/reset/number/give with storage jk2:data root.monitor.netwalk_game
 

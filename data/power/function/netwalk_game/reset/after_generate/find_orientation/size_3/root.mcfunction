@@ -1,3 +1,14 @@
+###################################################
+# 三個連接的格子
+# 
+# Name   : root.mcfunction
+# Path   : power:netwalk_game/reset/after_generate/size_3/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 execute store result score #o_r1 netwalk_game run data get storage jk2:data root.monitor.netwalk_game.custom_data.connected_vec2arr[0].row
 execute store result score #o_c1 netwalk_game run data get storage jk2:data root.monitor.netwalk_game.custom_data.connected_vec2arr[0].column
 execute store result score #o_r2 netwalk_game run data get storage jk2:data root.monitor.netwalk_game.custom_data.connected_vec2arr[1].row

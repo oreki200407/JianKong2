@@ -1,3 +1,14 @@
+###################################################
+# 二維歐氏空間向量的加法
+# 
+# Name   : add.mcfunction
+# Path   : power:netwalk_game/vector2/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 execute store result score #r1 netwalk_game run data get storage jk2:data root.monitor.netwalk_game.vector2.augend_vec2.row
 execute store result score #c1 netwalk_game run data get storage jk2:data root.monitor.netwalk_game.vector2.augend_vec2.column
 

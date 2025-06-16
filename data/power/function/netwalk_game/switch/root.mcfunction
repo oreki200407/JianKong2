@@ -1,3 +1,14 @@
+###################################################
+# 點擊格子
+# 
+# Name   : root.mcfunction
+# Path   : power:netwalk_game/switch/
+# As     : 點擊格子的玩家
+# At     : 發電機標記，tag=netwalk_game
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 playsound entity.puffer_fish.blow_up ambient @s
 
 data remove storage jk2:data root.monitor.netwalk_game.chest2

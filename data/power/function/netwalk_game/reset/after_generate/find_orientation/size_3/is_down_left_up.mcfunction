@@ -1,3 +1,14 @@
+###################################################
+# 回傳是否連接到下、左、上
+# 
+# Name   : is_down_left_up.mcfunction
+# Path   : power:netwalk_game/reset/after_generate/size_3/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #  -1 0 1
 # 1 □ ■ □
 # 0 ■ □ □

@@ -435,11 +435,6 @@
 							}
 						},
 						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": {"text": "燃燒瓶", "italic": false}
-						},
-						{
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
@@ -449,7 +444,8 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:potion_contents": {
-									"custom_color": 4144959
+									"custom_color": 4144959,
+									"custom_name": "molotov_cocktail"
 								},
 								"minecraft:tooltip_display": {
 									"hidden_components": ["minecraft:potion_contents"]

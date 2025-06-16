@@ -1,4 +1,13 @@
-#旋轉270度
+###################################################
+# 旋轉27度
+# 
+# Name   : 90.mcfunction
+# Path   : power:netwalk_game/vector2/rotate/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
 
 execute store result score #rotate_r netwalk_game run data get storage jk2:data root.monitor.netwalk_game.vector2.rotate_vec2.row
 execute store result score #rotate_c netwalk_game run data get storage jk2:data root.monitor.netwalk_game.vector2.rotate_vec2.column

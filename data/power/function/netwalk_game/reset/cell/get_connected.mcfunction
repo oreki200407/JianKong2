@@ -1,3 +1,14 @@
+###################################################
+# 回傳格子的連接數
+# 
+# Name   : get_connected.mcfunction
+# Path   : power:netwalk_game/reset/after_generate/rotate/
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #根據row和column，從箱子中選擇
 
 #箱子是長這樣的

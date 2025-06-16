@@ -1,5 +1,16 @@
+###################################################
+# 檢查身上有沒有格子物品
+# 
+# Name   : number.mcfunction
+# Path   : power:netwalk_game/switch/
+# As     : 點擊格子的玩家
+# At     : 發電機標記，tag=netwalk_game
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 scoreboard players set @s netwalk_game 0
-$execute unless data block ~ ~ ~ Items[{Slot:$(check)b}] store success score @s netwalk_game run clear @s magenta_glazed_terracotta[custom_data~{rotate_data:{number:$(check)}}] 0
+$execute unless items block ~ ~ ~ container.$(check) * store success score @s netwalk_game run clear @s magenta_glazed_terracotta[custom_data~{rotate_data:{number:$(check)}}] 0
 
 execute if score @s netwalk_game matches 0 run return fail
 

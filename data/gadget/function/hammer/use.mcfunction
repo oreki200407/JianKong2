@@ -10,7 +10,7 @@
 ###################################################
 
 #要放告示牌的地方沒有空位
-$execute unless block $(put_sign) #air run return run title @s actionbar {"text": "沒有空間", "color": "red",bold:1b}
+$execute unless block $(put_sign) #air run return run title @s actionbar {"text": "沒有空間", "color": "red", bold: true}
 
 #要使用三秒
 execute unless score @s hammer = @s hammer_hold run function gadget:hammer/hold
