@@ -1,0 +1,34 @@
+[
+	{
+		"condition": "minecraft:value_check",
+		"value":
+		{
+			"type": "minecraft:score",
+			"target":
+			{
+				"type": "minecraft:fixed",
+				"name": "#x_offset"
+			},
+			"score": "netwalk_game"
+		},
+		"range": 1
+	},
+	{
+		"condition": "minecraft:value_check",
+		"value":
+		{
+			"type": "minecraft:score",
+			"target":
+			{
+				"type": "minecraft:fixed",
+				"name": "#index"
+			},
+			"score": "netwalk_game"
+		},
+		"range":
+		{
+			"min": 2,
+			"max": 6
+		}
+	}
+]
