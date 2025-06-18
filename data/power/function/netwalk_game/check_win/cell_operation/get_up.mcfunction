@@ -23,7 +23,8 @@
 #  □  □  □  □  □  □  □  □  □ #
 
 #如果不跨箱子 那index - 9就好了
-execute unless predicate power:cross_chest/up run return run scoreboard players remove #index netwalk_game 9
+execute if score #x_offset netwalk_game matches 0 run return run scoreboard players remove #index netwalk_game 9
+execute if score #index netwalk_game matches 11.. run return run scoreboard players remove #index netwalk_game 9
 
 #跨箱子 也就是x_offset為1時 2..6那塊
 scoreboard players set #x_offset netwalk_game 0

@@ -23,7 +23,8 @@
 #  □  □  □  □  □  □  □  □  □ #
 
 #如果不跨箱子 那index + 9就好了
-execute unless predicate power:cross_chest/down run return run scoreboard players add #index netwalk_game 9
+execute if score #x_offset netwalk_game matches 1 run return run scoreboard players add #index netwalk_game 9
+execute if score #index netwalk_game matches ..15 run return run scoreboard players add #index netwalk_game 9
 
 #跨箱子 也就是x_offset為0時 20..24那塊
 scoreboard players set #x_offset netwalk_game 1
