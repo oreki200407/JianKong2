@@ -15,6 +15,10 @@ $item replace entity 0-0-0-0-171e7 contents from block ~$(x_offset) ~ ~ containe
 #已經走過了
 execute if items entity 0-0-0-0-171e7 contents *[custom_data~{pass: true}] run return fail
 
+#檢查是否可以通過
+$scoreboard players set #from netwalk_game $(from)
+execute unless function power:netwalk_game/check_win/cell_operation/is_valid_path run return fail
+
 #標記為走過了 注意首個custom_model_data不要被取代
 $item modify block ~$(x_offset) ~ ~ container.$(index) power:pass
 

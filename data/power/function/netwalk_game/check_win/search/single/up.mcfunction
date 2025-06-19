@@ -34,6 +34,8 @@ execute unless function power:netwalk_game/check_win/cell_operation/is_in_bound 
 
 execute store result storage jk2:data root.monitor.netwalk_game.macro.dfs.x_offset int 1 run scoreboard players get #x_offset netwalk_game
 execute store result storage jk2:data root.monitor.netwalk_game.macro.dfs.index int 1 run scoreboard players get #index netwalk_game
+#從下方來
+data modify storage jk2:data root.monitor.netwalk_game.macro.dfs.from set value 2
 
 #DFS
 function power:netwalk_game/check_win/search/dfs with storage jk2:data root.monitor.netwalk_game.macro.dfs

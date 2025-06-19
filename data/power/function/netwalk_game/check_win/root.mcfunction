@@ -42,8 +42,12 @@ item modify block ~1 ~ ~ container.15 power:not_pass
 
 #召喚一個展示實體 避免一直macro
 summon item_display ~ ~ ~ {UUID: [I; 0, 0, 0, 94695]}
+#參數的堆疊
 data modify storage jk2:data root.monitor.netwalk_game.arguments_stack set value []
+#參數
+data modify storage jk2:data root.monitor.netwalk_game.arguments set value {x_offset: 0, index: 2}
+data modify storage jk2:data root.monitor.netwalk_game.arguments.from set from block ~ ~ ~ Items[{Slot: 2b}].components."minecraft:custom_data".rotate_data.orientation
 #開始深度優先搜尋
-function power:netwalk_game/check_win/search/dfs {x_offset: 0, index: 2}
+function power:netwalk_game/check_win/search/dfs with storage jk2:data root.monitor.netwalk_game.arguments
 #搜尋結束 清除展示實體
 kill 0-0-0-0-171e7
