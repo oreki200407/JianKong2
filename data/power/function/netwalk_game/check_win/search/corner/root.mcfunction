@@ -8,4 +8,4 @@ execute if items entity 0-0-0-0-171e7 contents *[custom_data~{rotate_data: {orie
 execute if items entity 0-0-0-0-171e7 contents *[custom_data~{rotate_data: {orientation: 2}}] run return run function power:netwalk_game/check_win/search/corner/down_left
 
 #LEFT-UP
-execute if items entity 0-0-0-0-171e7 contents *[custom_data~{rotate_data: {orientation: 3}}] run return run function power:netwalk_game/check_win/search/corner/left_up
+function power:netwalk_game/check_win/search/corner/left_up

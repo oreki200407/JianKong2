@@ -10,37 +10,40 @@
 ###################################################
 
 #重設箱子
-item modify block ~ ~ ~ container.2 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.3 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.4 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.5 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.6 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
+item modify block ~ ~ ~ container.2 power:not_pass
+item modify block ~ ~ ~ container.3 power:not_pass
+item modify block ~ ~ ~ container.4 power:not_pass
+item modify block ~ ~ ~ container.5 power:not_pass
+item modify block ~ ~ ~ container.6 power:not_pass
 
-item modify block ~ ~ ~ container.11 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.12 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.13 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.14 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.15 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
+item modify block ~ ~ ~ container.11 power:not_pass
+item modify block ~ ~ ~ container.12 power:not_pass
+item modify block ~ ~ ~ container.13 power:not_pass
+item modify block ~ ~ ~ container.14 power:not_pass
+item modify block ~ ~ ~ container.15 power:not_pass
 
-item modify block ~ ~ ~ container.20 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.21 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.22 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.23 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~ ~ ~ container.24 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
+item modify block ~ ~ ~ container.20 power:not_pass
+item modify block ~ ~ ~ container.21 power:not_pass
+item modify block ~ ~ ~ container.22 power:not_pass
+item modify block ~ ~ ~ container.23 power:not_pass
+item modify block ~ ~ ~ container.24 power:not_pass
 
-item modify block ~1 ~ ~ container.2 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.3 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.4 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.5 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.6 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
+item modify block ~1 ~ ~ container.2 power:not_pass
+item modify block ~1 ~ ~ container.3 power:not_pass
+item modify block ~1 ~ ~ container.4 power:not_pass
+item modify block ~1 ~ ~ container.5 power:not_pass
+item modify block ~1 ~ ~ container.6 power:not_pass
 
-item modify block ~1 ~ ~ container.11 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.12 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.13 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.14 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
-item modify block ~1 ~ ~ container.15 [{function: "set_custom_data", tag: "{pass: false}"}, {function: "set_custom_model_data", strings: {values: ["red"], mode: "append"}}]
+item modify block ~1 ~ ~ container.11 power:not_pass
+item modify block ~1 ~ ~ container.12 power:not_pass
+item modify block ~1 ~ ~ container.13 power:not_pass
+item modify block ~1 ~ ~ container.14 power:not_pass
+item modify block ~1 ~ ~ container.15 power:not_pass
 
 #召喚一個展示實體 避免一直macro
 summon item_display ~ ~ ~ {UUID: [I; 0, 0, 0, 94695]}
 data modify storage jk2:data root.monitor.netwalk_game.arguments_stack set value []
+#開始深度優先搜尋
 function power:netwalk_game/check_win/search/dfs {x_offset: 0, index: 2}
+#搜尋結束 清除展示實體
+kill 0-0-0-0-171e7
