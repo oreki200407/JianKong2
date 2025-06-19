@@ -10,4 +10,4 @@
 ###################################################
 
 setblock ~ ~ ~ cobweb keep
-summon marker ~ ~ ~ {PortalCooldown:80,Tags: ["spider_cobweb", "morph_product"]}
+summon marker ~ ~ ~ {Tags: ["spider_cobweb", "morph_product"]}

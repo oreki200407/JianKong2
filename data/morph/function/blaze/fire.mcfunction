@@ -13,7 +13,7 @@
 execute at @s if block ~ ~ ~ #air run setblock ~ ~ ~ fire
 
 #維持4秒
-execute unless predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} run return fail
+execute unless score @s morph_skill_2_duration matches 80 run return run scoreboard players add @s morph_skill_2_duration 1
 
 #用#fire 因為有可能會變成靈魂火
 execute at @s if block ~ ~ ~ #fire run setblock ~ ~ ~ air

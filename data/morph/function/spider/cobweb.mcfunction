@@ -10,7 +10,7 @@
 ###################################################
 
 #維持4秒
-execute unless predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} run return fail
+execute unless score @s morph_skill_2_duration matches 80 run return run scoreboard players add @s morph_skill_2_duration 1
 
 #清除蜘蛛網
 execute at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air
