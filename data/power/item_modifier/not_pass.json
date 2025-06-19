@@ -5,10 +5,10 @@
 	},
 	{
 		"function": "minecraft:set_custom_model_data",
-		"strings":
+		"colors":
 		{
-			"values": ["red"],
-			"mode": "append"
+			"mode": "replace_all",
+			"values": [1, 0.333333, 0.333333]
 		}
 	}
 ]

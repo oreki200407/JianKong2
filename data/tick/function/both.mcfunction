@@ -19,7 +19,7 @@ scoreboard players remove @a[scores={medical_cooldown=1..}] medical_cooldown 1
 #鞭炮
 execute as @e[type=snowball, tag=!checked] run function gadget:grenade/snowball
 execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadget:grenade/summon
-execute as @e[type=item, tag=grenade] if predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} at @s run function gadget:grenade/explode
+execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadget:grenade/explode
 
 #燃燒瓶
 execute as @e[type=lingering_potion, tag=!checked] run function gadget:molotov_cocktail/potion
@@ -57,5 +57,5 @@ scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_coo
 
 #發電
 execute as @a[team=monitor] run function power:root
-execute as @e[type=area_effect_cloud, tag=power1_time] if predicate {condition: "entity_properties", entity: "this", predicate: {"nbt": "{PortalCooldown:0}"}} at @s run setblock ~ ~ ~ command_block[facing=down]{Command:"execute as @e[tag=power1] at @s run function power:success"}
+execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] at @s run setblock ~ ~ ~ command_block[facing=down]{Command:"execute as @e[tag=power1] at @s run function power:success"}
 execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success

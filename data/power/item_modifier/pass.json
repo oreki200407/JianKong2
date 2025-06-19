@@ -5,11 +5,10 @@
 	},
 	{
 		"function": "minecraft:set_custom_model_data",
-		"strings":
+		"colors":
 		{
-			"values": ["green"],
-			"mode": "replace_section",
-			"offset": 1
+			"mode": "replace_all",
+			"values": [0.333333, 1, 0.333333]
 		}
 	}
 ]
