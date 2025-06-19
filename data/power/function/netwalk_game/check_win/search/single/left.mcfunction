@@ -2,7 +2,7 @@
 # 根據x_offset和index，對左邊的格子進行DFS
 # 
 # Name   : left.mcfunction
-# Path   : power:netwalk_game/check_win/search/
+# Path   : power:netwalk_game/check_win/search/single/
 # As     : 點擊格子的玩家
 # At     : 發電機標記，tag=netwalk_game
 # Loop   : 否

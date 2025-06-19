@@ -23,7 +23,7 @@ $data modify storage jk2:data root.monitor.netwalk_game.arguments_stack append v
 
 #注意0-0-0-0-171e7的contents隨時會被修改
 #因此最好單線執行 也就是說不要造成if item又if item的情形
-function power:netwalk_game/check_win/search/switch
+function power:netwalk_game/check_win/search/type
 
 #堆疊pop
 data remove storage jk2:data root.monitor.netwalk_game.arguments_stack[-1]

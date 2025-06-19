@@ -1,3 +1,14 @@
+###################################################
+# 根據rotate_data的type 決定要怎麼下一步搜尋
+# 
+# Name   : type.mcfunction
+# Path   : power:netwalk_game/check_win/search/
+# As     : 點擊格子的玩家
+# At     : 發電機標記，tag=netwalk_game
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #雖然可以用macro 但還是這樣好了
 
 #單一連通

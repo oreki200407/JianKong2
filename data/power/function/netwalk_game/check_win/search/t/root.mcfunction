@@ -1,3 +1,14 @@
+###################################################
+# rotate_data.type = t
+# 
+# Name   : root.mcfunction
+# Path   : power:netwalk_game/check_win/search/t/
+# As     : 點擊格子的玩家
+# At     : 發電機標記，tag=netwalk_game
+# Loop   : 否
+# Author : Alex_Cai
+###################################################
+
 #UP-RIGHT-DOWN
 execute if items entity 0-0-0-0-171e7 contents *[custom_data~{rotate_data: {orientation: 0}}] run return run function power:netwalk_game/check_win/search/t/up_right_down
 

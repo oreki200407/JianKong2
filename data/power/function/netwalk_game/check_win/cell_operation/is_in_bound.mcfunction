@@ -1,7 +1,7 @@
 ###################################################
 # 回傳x_offset和index是否在範圍內
 # 
-# Name   : in_bound.mcfunction
+# Name   : is_in_bound.mcfunction
 # Path   : power:netwalk_game/check_win/cell_operation/
 # As     : 點擊格子的玩家
 # At     : 發電機標記，tag=netwalk_game
