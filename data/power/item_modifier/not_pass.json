@@ -8,7 +8,7 @@
 		"colors":
 		{
 			"mode": "replace_all",
-			"values": [1, 0.333333, 0.333333]
+			"values": [16711680]
 		}
 	}
 ]

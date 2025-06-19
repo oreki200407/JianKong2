@@ -9,4 +9,4 @@
 # Author : oreki20
 ###################################################
 
-$item modify block ~ ~ ~ container.$(number) {"function": "minecraft:set_custom_model_data","strings": {"values": ["$(type)$(orientation)"],"mode": "append"}}
+$item modify block ~ ~ ~ container.$(number) {"function": "minecraft:set_custom_model_data","strings": {"values": ["$(type)$(orientation)"],"mode": "append"},colors:{values:[16711680],mode:"append"}}
