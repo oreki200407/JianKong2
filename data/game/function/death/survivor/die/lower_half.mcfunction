@@ -9,9 +9,9 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if score @s death_time matches 601..720 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬▬", "color": "gray"}]
-execute if score @s death_time matches 721..840 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬▬", "color": "gray"}]
-execute if score @s death_time matches 841..960 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬▬", "color": "gray"}]
-execute if score @s death_time matches 961..1080 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬▬", "color": "gray"}]
-execute if score @s death_time matches 1081..1200 run return run title @s actionbar [{"text": "死亡中：▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}, {"text": "▬", "color": "gray"}]
-title @s actionbar [{"text": "死亡中：▬▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}]
+execute if score @s death_time matches 601..720 run return run title @s actionbar [{text: "死亡中：▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬▬", color: "gray"}]
+execute if score @s death_time matches 721..840 run return run title @s actionbar [{text: "死亡中：▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬", color: "gray"}]
+execute if score @s death_time matches 841..960 run return run title @s actionbar [{text: "死亡中：▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬", color: "gray"}]
+execute if score @s death_time matches 961..1080 run return run title @s actionbar [{text: "死亡中：▬▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬", color: "gray"}]
+execute if score @s death_time matches 1081..1200 run return run title @s actionbar [{text: "死亡中：▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬", color: "gray"}]
+title @s actionbar [{text: "死亡中：▬▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}]

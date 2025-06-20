@@ -10,4 +10,4 @@
 ###################################################
 
 tag @s remove using_unlock
-title @s actionbar {"text": "使用開鎖器失敗", "color": "red"}
+title @s actionbar {text: "使用開鎖器失敗", color: "red"}

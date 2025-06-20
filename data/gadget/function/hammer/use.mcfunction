@@ -10,7 +10,7 @@
 ###################################################
 
 #要放告示牌的地方沒有空位
-$execute unless block $(put_sign) #air run return run title @s actionbar {"text": "沒有空間", "color": "red", bold: true}
+$execute unless block $(put_sign) #air run return run title @s actionbar {text: "沒有空間", color: "red", bold: true}
 
 #要使用三秒
 execute unless score @s hammer = @s hammer_hold run function gadget:hammer/hold
@@ -18,7 +18,7 @@ scoreboard players add @s hammer 1
 execute unless score @s hammer matches 60 run return run function gadget:hammer/process/root
 
 #三秒到了
-title @s actionbar [{"text": "修理中：▬▬▬▬▬▬▬▬▬▬", "color": "gold", "bold": true}]
+title @s actionbar {text: "修理中：▬▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}
 scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 $summon marker $(put_sign) {Tags: ["plank"]}
