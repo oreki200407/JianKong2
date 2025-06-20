@@ -51,4 +51,7 @@ function power:netwalk_game/reset/after_generate/rotate/root {x_offset: 1, index
 execute store result storage jk2:data root.monitor.netwalk_game.number int 1 run scoreboard players set #reset netwalk_game 0
 function power:netwalk_game/reset/number/root
 
+#試走一遍
+function power:netwalk_game/check_win/root
+
 data remove block ~ ~ ~ lock

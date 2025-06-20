@@ -19,7 +19,7 @@ execute if items entity 0-0-0-0-171e7 contents *[custom_data~{pass: true}] run r
 $scoreboard players set #from netwalk_game $(from)
 execute unless function power:netwalk_game/check_win/cell_operation/is_valid_path run return fail
 
-#標記為走過了 注意首個custom_model_data不要被取代
+#標記為走過了
 $item modify block ~$(x_offset) ~ ~ container.$(index) power:pass
 
 #參數 以堆疊的方式模擬區域變數 畢竟是遞迴嘛
