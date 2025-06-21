@@ -12,6 +12,6 @@
 #每tick 3%
 execute unless predicate game:chance/3 run return fail
 
-execute store result entity @s equipment.head.components."minecraft:custom_data".rotate double 0.01 run random value 0..36000
-execute store result entity @s equipment.head.components."minecraft:custom_data".range double 0.01 run random value 300..700
-execute at @s run function monster:boss/creeper/status/normal/summon with entity @s equipment.head.components."minecraft:custom_data"
+execute store result entity @s data.rotate double 0.01 run random value 0..36000
+execute store result entity @s data.range double 0.01 run random value 300..700
+execute at @s run function monster:boss/creeper/status/normal/summon with entity @s data

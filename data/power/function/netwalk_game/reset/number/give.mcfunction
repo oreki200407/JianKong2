@@ -6,7 +6,7 @@
 # As     : 發電機標記，tag=netwalk_game
 # At     : As，或是As的~1 ~ ~
 # Loop   : 是
-# Author : oreki20
+# Author : oreki20, Alex_Cai
 ###################################################
 
 $item modify block ~ ~ ~ container.$(number) {function: "set_custom_data", tag: "{rotate_data: {number: $(number)}}"}
