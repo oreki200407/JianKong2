@@ -9,6 +9,6 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-execute if entity @s[tag=setting_easy] on target at @s run function system:difficulty/root {"difficulty": "easy"}
-execute if entity @s[tag=setting_normal] on target at @s run function system:difficulty/root {"difficulty": "normal"}
-execute if entity @s[tag=setting_hard] on target at @s run function system:difficulty/root {"difficulty": "hard"}
+execute if entity @s[tag=setting_easy] on target at @s run function system:difficulty/root {difficulty: "easy"}
+execute if entity @s[tag=setting_normal] on target at @s run function system:difficulty/root {difficulty: "normal"}
+execute if entity @s[tag=setting_hard] on target at @s run function system:difficulty/root {difficulty: "hard"}

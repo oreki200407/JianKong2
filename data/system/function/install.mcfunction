@@ -156,8 +156,6 @@ team modify monitor friendlyFire false
 #記分板設定
 scoreboard players set 更新 system 1
 scoreboard players set #2 constant 2
-scoreboard players set #9 constant 9
-scoreboard players set #27 constant 27
 scoreboard players set #60 constant 60
 scoreboard players set #100 constant 100
 scoreboard players set #200 constant 200
