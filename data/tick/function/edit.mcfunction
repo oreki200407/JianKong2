@@ -15,7 +15,7 @@ execute as @a[scores={death=1}] at @s if entity @e[type=marker, tag=lobby_spawn,
 execute as @a at @s[y=-120,dy=50] run tp @s @e[type=marker, tag=lobby_spawn, limit=1]
 
 #刪除盔甲座
-execute as @e[tag=edit] if data entity @s equipment.head.components."minecraft:custom_data".delete run kill
+execute as @e[tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill
 
 #超過兩個重生點
 execute store result score #spawn system if entity @e[tag=spawn_survivor]
