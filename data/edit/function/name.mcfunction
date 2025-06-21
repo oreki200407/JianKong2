@@ -9,7 +9,7 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-execute unless data block ~ ~1 ~ front_text{messages:[""]} run data modify entity @s CustomName set from block ~ ~1 ~ front_text.messages[0]
 execute unless data block ~ ~1 ~ back_text{messages:[""]} run data modify entity @s CustomName set from block ~ ~1 ~ back_text.messages[0]
+execute unless data block ~ ~1 ~ front_text{messages:[""]} run data modify entity @s CustomName set from block ~ ~1 ~ front_text.messages[0]
 #清除告示牌
 setblock ~ ~1 ~ air

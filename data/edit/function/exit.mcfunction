@@ -9,6 +9,8 @@
 # Author : oreki20
 ###################################################
 
+clear @a
+
 playsound ui.button.click ambient @s
 
 execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name

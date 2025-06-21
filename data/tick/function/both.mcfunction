@@ -29,7 +29,7 @@ execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] 
 execute as @e[type=marker,tag=black_hole] at @s run function gadget:black_hole/use
 
 #捕獸夾
-execute as @e[type=block_display, tag=bear_trap] run function gadget:bear_trap/trap_working
+execute as @e[type=item_display, tag=bear_trap] run function gadget:bear_trap/trap_working
 #被捕獸夾抓到的生物
 execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 
