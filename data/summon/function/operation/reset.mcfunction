@@ -12,11 +12,11 @@ execute if items entity @s enderchest.18 player_head[custom_data~{level:"easy"}]
 execute if items entity @s enderchest.18 player_head[custom_data~{level:"medium"}] run scoreboard players set @s summon_power 12
 execute if items entity @s enderchest.18 player_head[custom_data~{level:"hard"}] run scoreboard players set @s summon_power 16
 scoreboard players operation @s summon_power *= @s summon_count
-item modify entity @s enderchest.18 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
+item modify entity @s enderchest.18 summon:summon_data
 
-item modify entity @s enderchest.11 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
-item modify entity @s enderchest.12 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
-item modify entity @s enderchest.13 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
-item modify entity @s enderchest.20 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
-item modify entity @s enderchest.21 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
-item modify entity @s enderchest.22 [{"function": "minecraft:set_lore","entity":"this","lore": [[{"text": "召喚數量：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_count"}}],[{"text": "所需電力：","color": "gray","italic": false},{"score": {"name": "@s","objective": "summon_power"}}]],"mode": "replace_all"}]
+item modify entity @s enderchest.11 summon:summon_data
+item modify entity @s enderchest.12 summon:summon_data
+item modify entity @s enderchest.13 summon:summon_data
+item modify entity @s enderchest.20 summon:summon_data
+item modify entity @s enderchest.21 summon:summon_data
+item modify entity @s enderchest.22 summon:summon_data

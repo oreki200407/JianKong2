@@ -16,4 +16,4 @@ execute if entity @s[tag=!fractured] run return run tellraw @s ["◎ 使用", {t
 attribute @s movement_speed modifier remove jk2:fracture
 tag @s remove fractured
 tellraw @s ["◎ 你治好了", {text: "骨折", color: "gold"}]
-item modify entity @s weapon.mainhand { "function": "set_count", "count": -1, "add": true }
+item modify entity @s weapon gadget:remove_1

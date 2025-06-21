@@ -10,6 +10,6 @@
 ###################################################
 
 $item modify block ~ ~ ~ container.$(number) {function: "set_custom_data", tag: "{rotate_data: {number: $(number)}}"}
-$execute if block ~1 ~ ~ chest run item modify block ~1 ~ ~ container.$(number) {function: "set_custom_data", tag: {chest2: 1}}
+$execute if block ~1 ~ ~ chest run item modify block ~1 ~ ~ container.$(number) power:chest2
 
 $execute if items block ~ ~ ~ container.$(number) *[custom_data] run function power:netwalk_game/reset/number/model with block ~ ~ ~ Items[{Slot:$(number)b}].components."minecraft:custom_data".rotate_data

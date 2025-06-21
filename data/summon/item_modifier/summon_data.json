@@ -1,0 +1,16 @@
+{
+	"function": "minecraft:set_lore",
+	"entity":"this",
+	"lore":
+	[
+		[
+			{"text": "召喚數量：","color": "gray","italic": false},
+			{"score": {"name": "@s","objective": "summon_count"}}
+		],
+		[
+			{"text": "所需電力：","color": "gray","italic": false},
+			{"score": {"name": "@s","objective": "summon_power"}}
+		]
+	],
+	"mode": "replace_all"
+}

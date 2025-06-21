@@ -13,5 +13,5 @@ tag @s add trap_user
 execute summon armor_stand run function monitor:observe/player/summon/monster_success
 tag @s remove trap_user
 
-item modify entity @s weapon.mainhand { "function": "set_count", "count": -1, "add": true }
+item modify entity @s weapon.mainhand gadget:remove_1
 execute at @s run playsound entity.evoker.prepare_summon ambient @s ~ ~ ~ 0.5
