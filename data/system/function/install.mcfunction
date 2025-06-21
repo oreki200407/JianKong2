@@ -65,6 +65,7 @@ scoreboard objectives add summon_cooldown dummy "冷卻"
 scoreboard objectives add revive_time dummy "復活時間"
 scoreboard objectives add death_time dummy "死亡時間"
 scoreboard objectives add uuid0 dummy "UUID[0]"
+scoreboard objectives add uuid0_match dummy "儲存對象的UUID[0]"
 
 #捕獸夾
 scoreboard objectives add bear_trap dummy "捕獸夾"

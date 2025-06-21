@@ -12,7 +12,7 @@
 #透過UUID[0]找到當初那名玩家
 
 #儲存的UUID
-execute store result score #saved uuid0 run data get entity @s data.player_uuid0
+scoreboard players operation #saved uuid0 = @s uuid0_match
 
 #找到跟頭顱裡UUID相同的玩家
 execute at @s as @a[team=survivor] if score @s uuid0 = #saved uuid0 run function game:death/survivor/save/saved

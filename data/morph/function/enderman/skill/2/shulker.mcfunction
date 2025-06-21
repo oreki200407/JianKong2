@@ -14,4 +14,4 @@ data modify entity @s NoAI set value true
 team join monitor @s
 
 #利用草方塊展示實體的UUID建立兩個實體的連結
-scoreboard players operation @s uuid0 = #grass_block_display uuid0
+scoreboard players operation @s uuid0_match = #grass_block_display uuid0

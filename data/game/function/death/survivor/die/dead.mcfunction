@@ -10,14 +10,11 @@
 ###################################################
 
 #死透
-
-#儲存的UUID
-execute as @e[type=item_display, tag=tomb] store result score @s uuid0 run data get entity @s data.player_uuid0
 scoreboard players operation #dead_player uuid0 = @s uuid0
 
 #找到儲存的UUID跟死透的玩家UUID相同的展示實體
 tag @s add dead
-execute as @e[type=item_display, tag=tomb] if score @s uuid0 = #dead_player uuid0 at @s run function game:death/tomb/revive_because_dead
+execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dead_player uuid0 at @s run function game:death/tomb/revive_because_dead
 tag @s remove dead
 
 gamemode adventure @s

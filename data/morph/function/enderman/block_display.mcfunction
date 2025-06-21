@@ -10,13 +10,13 @@
 ###################################################
 
 #記錄自己的UUID
-execute store result score #grass_block uuid0 run data get entity @s UUID[0]
+scoreboard players operation #grass_block uuid0 = @s uuid0
 
 #先假設已經找不到了
 scoreboard players set #found_shulker morph 0
 
 #如果真的找到 再推翻假設
-execute as @e[type=shulker] if score @s uuid0 = #grass_block uuid0 run scoreboard players set #found_shulker morph 1
+execute as @e[type=shulker] if score @s uuid0_match = #grass_block uuid0 run scoreboard players set #found_shulker morph 1
 
 #假設沒有被推翻
 execute if score #found_shulker morph matches 0 run kill

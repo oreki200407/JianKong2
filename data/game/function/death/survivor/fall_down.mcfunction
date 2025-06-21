@@ -17,7 +17,7 @@ tag @s add fall_down
 scoreboard players add @s score 50
 
 #儲存自己的UUID
-execute store result score #fall_down uuid0 run data get entity @s UUID[0]
+execute store result score #fall_down uuid0 store result score @s uuid0 run data get entity @s UUID[0]
 
 #召喚物品展示實體
 execute positioned ~ ~.5 ~ summon item_display run function game:death/survivor/new_tomb

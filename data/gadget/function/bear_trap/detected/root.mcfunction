@@ -20,4 +20,4 @@ attribute @s movement_speed modifier add jk2:bear_trap -1 add_multiplied_base
 execute if entity @s[type=player] run function gadget:bear_trap/detected/player
 execute if entity @s[type=!player] run function gadget:bear_trap/detected/mob
 
-return 1
+return 100
