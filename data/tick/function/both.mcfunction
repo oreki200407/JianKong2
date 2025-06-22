@@ -1,7 +1,7 @@
 ###################################################
 # 遊戲進行中&準備中的tick
 # 
-# Name   : start.mcfunction
+# Name   : both.mcfunction
 # Path   : tick:
 # As     : 世界重生點
 # At     : As
