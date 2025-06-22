@@ -1,3 +1,4 @@
-$execute if items block ~ ~ ~ container.$(number) * run item modify block ~ ~ ~ container.$(number) {function: "set_custom_data", tag: {number: $(number)}}
-$execute if items block ~ ~ ~ container.$(number) * run return run item modify block ~1 ~ ~ container.$(number) power:chest2
-$execute unless items block ~ ~ ~ container.$(number) * run loot replace block ~ ~ ~ container.$(number) 1 loot {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","name": "minecraft:coal","functions": [{"function": "minecraft:set_custom_model_data","strings": {"values": ["green"],"mode": "append"}},{"function": "minecraft:set_name","name": ""},{"function": "minecraft:set_components","components": {"minecraft:tooltip_display": {"hide_tooltip": true}}},{"function": "minecraft:set_custom_data","tag": "{number:$(number)}"}]}]}]}
+$execute unless items block ~ ~ ~ container.$(number) * run return run item replace block ~ ~ ~ container.$(number) with coal[custom_name="", tooltip_display={hide_tooltip: true}, custom_model_data={strings: ["green"]}, custom_data={number: $(number)}]
+
+$item modify block ~ ~ ~ container.$(number) {function: "set_custom_data", tag: {number: $(number)}}
+$item modify block ~1 ~ ~ container.$(number) power:chest2
