@@ -56,12 +56,12 @@ execute as @e[type=marker, tag=morph_product] run function morph:marker
 #收容
 execute as @e[type=interaction,tag=contain_control] run function contain:control/root
 execute as @e[tag=contain] if score @s contain_health matches ..0 run function contain:death
-execute unless entity @e[tag=contain_creeper] as @e[tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[tag=contain_zombie] as @e[tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[tag=contain_villager] as @e[tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[tag=contain_spider] as @e[tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[tag=contain_skeleton] as @e[tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute at @e[tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
+execute unless entity @e[type=creeper, tag=contain_creeper] as @e[type=marker, tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[type=villager, tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[type=spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute at @e[type=marker, tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
 execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance=..0.3] run function contain:escape/check
 
 #機關

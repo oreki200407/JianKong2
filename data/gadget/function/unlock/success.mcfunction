@@ -12,8 +12,7 @@
 tag @s remove using_unlock
 title @s actionbar {text: "門已解鎖", color: "gold", bold: true}
 execute at @s run playsound block.chest.open
-execute as @n[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
+execute as @n[type=marker, tag=door] at @s run function gadget:unlock/door with entity @s data
 
-#減少耐久度
-#IEEE-754 floating point error, 用-0.1會導致卡在3耐久度
-clear @s tripwire_hook[item_name="開鎖器",damage=10] 1
+#消耗開鎖器
+clear @s tripwire_hook[item_name="開鎖器"] 1

@@ -26,7 +26,7 @@ execute as @e[type=armor_stand, tag=slimeman, predicate=!game:riding] at @s run 
 execute as @e[tag=slimehead,type=slime] at @s run function monster:effect/slime/splited
 
 #熾足獸
-execute as @e[tag=strider,type=strider] at @s run effect give @a[team=survivor,distance=..2] wither 3 1 true
+execute at @e[tag=strider,type=strider] run effect give @a[team=survivor,distance=..2] wither 3 1 true
 execute as @e[type=zombie,tag=striderman, predicate=game:on_ground] at @s run function monster:effect/strider
 
 #狼

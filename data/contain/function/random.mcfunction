@@ -1,3 +1,14 @@
+###################################################
+# 給原料的怪物的隨機
+# 
+# Name   : give.mcfunction
+# Path   : contain:
+# As     : 給原料的怪物們(@e[tag=contain])
+# At     : 世界重生點
+# Loop   : 是，一秒
+# Author : oreki20
+###################################################
+
 #---隨機---
 execute if predicate game:chance/5 at @s run return run function contain:escape/root
 

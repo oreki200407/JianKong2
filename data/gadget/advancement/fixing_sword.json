@@ -19,7 +19,7 @@
 								{
 									"items": "minecraft:tripwire_hook",
 									"components": {
-									"minecraft:item_name": "磨刀石"
+										"minecraft:item_name": "磨刀石"
 									}
 								}
 							}
