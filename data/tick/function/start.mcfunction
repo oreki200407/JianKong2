@@ -59,7 +59,7 @@ execute as @e[tag=contain] if score @s contain_health matches ..0 run function c
 execute unless entity @e[type=creeper, tag=contain_creeper] as @e[type=marker, tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=villager, tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[type=spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[type=cave_spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute at @e[type=marker, tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
 execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance=..0.3] run function contain:escape/check
