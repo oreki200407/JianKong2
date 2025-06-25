@@ -10,8 +10,7 @@
 ###################################################
 
 #只要戴著 耐久度就-1
-item modify entity @s armor.head {function: "set_damage", add: true, damage: -0.00042}
-stopsound @s player item.armor.equip_generic
+item modify entity @s armor.head {function: "set_damage", add: true, damage: -0.0005}
 execute unless items entity @s armor.head carved_pumpkin[damage=2400] run return fail
 
 #沒有耐久度了

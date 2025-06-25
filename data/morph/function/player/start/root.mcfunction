@@ -14,7 +14,7 @@ tp @s ~ ~ ~-1
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
 
 #execute store出monsters的長度
-execute store result score #availables morph store result storage jk2:data root.morph.availables int 1 run data get storage jk2:data root.morph.monsters
+execute store result score #availables morph store result storage jk2:data root.morph.availables int 1 if data storage jk2:data root.morph.monsters[]
 
 #沒有可變怪物時失敗
 execute if score #availables morph matches 0 run return run tellraw @s ["◎ 目前沒有", {text: "可變的怪物", color: "gold"}]
