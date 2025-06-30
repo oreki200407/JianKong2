@@ -18,26 +18,29 @@ tag @e[type=marker, tag=being_watched] remove being_watched
 execute as @e[type=!player, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
 scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break
 
-#終界使者
-execute as @e[type=skeleton, tag=enderman,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run tp @s @e[type=marker,tag=point,limit=1,sort=random,distance=..7]
-
 #史萊姆
-execute as @e[type=armor_stand, tag=slimeman, predicate=!game:riding] at @s run function monster:effect/slime/split
-execute as @e[tag=slimehead,type=slime] at @s run function monster:effect/slime/splited
+execute as @e[type=armor_stand, tag=slime_ride, predicate=game:on_ground] at @s run function monster:effect/slime/split
+execute as @e[tag=slime_split, type=slime] at @s run function monster:effect/slime/splited
 
 #熾足獸
-execute at @e[tag=strider,type=strider] run effect give @a[team=survivor,distance=..2] wither 3 1 true
-execute as @e[type=zombie,tag=striderman, predicate=game:on_ground] at @s run function monster:effect/strider
+execute at @e[tag=strider,type=strider] run effect give @a[team=survivor,distance=..2.5] poison 3 1 true
+execute as @e[type=zombie,tag=strider_ride, predicate=game:on_ground] at @s run function monster:effect/strider
+
+#女巫
+execute at @e[tag=witch,type=witch] run effect give @a[team=survivor,distance=..3] weakness 1 1 true
 
 #狼
-execute as @e[type=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
+execute as @e[type=wolf,tag=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
+execute as @e[type=armor_stand, tag=wolf_ride, predicate=game:on_ground] at @s run function monster:effect/wolf/death
 
 #鐵巨人
 execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
 
 #喚魔者
-execute as @e[tag=!vex_summon,type=vex] run data merge entity @s {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.085}, Team:"monitor",DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex_summon"], life_ticks: 100}
+execute as @e[tag=!vex,type=vex] run data merge entity @s {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.085}, Team:"monitor",DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex"], life_ticks: 100}
 
 #蜘蛛
-execute as @e[type=area_effect_cloud, tag=sticky,nbt={Age:60}] at @s run function monster:effect/spider/web
-execute as @e[type=spider, tag=spider,nbt={HurtTime:10s}] at @s unless entity @a[team=monitor,distance=..6] run summon cave_spider ~ ~ ~ {Team:"monitor",DeathLootTable:"summon:empty",PersistenceRequired:1b,Health:10f,Tags:["monster"],attributes:[{base:10,id:"max_health"},{base:2,id:"attack_damage"}]}
+execute as @e[type=area_effect_cloud, tag=cobweb,nbt={PortalCooldown:0}] at @s run function monster:effect/spider/cobweb
+
+#凋零骷髏
+execute as @e[type=armor_stand, tag=wither_skeleton_ride, predicate=game:on_ground] at @s run function monster:effect/wither_skeleton

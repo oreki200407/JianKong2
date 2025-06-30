@@ -16,6 +16,7 @@ execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if 
 scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
+function monster:effect
 #-----------------------道具-----------------------
 #經驗球
 kill @e[tag=!xp,type=experience_orb]

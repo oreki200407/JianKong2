@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"spider":{
+		"spider_attack":{
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
 				"damage": {
@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "monster:effect/spider/hit"
+		"function": "monster:effect/spider/attack"
 	}
 }

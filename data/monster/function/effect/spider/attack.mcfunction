@@ -1,0 +1,4 @@
+advancement revoke @s only monster:spider/attack
+execute if block ~ ~ ~ air run summon area_effect_cloud ~ ~ ~ {PortalCooldown:60,Duration:2147483647,Tags:["cobweb"],Particle:{type:"block",block_state:"minecraft:air"}}
+execute unless block ~ ~ ~ air if block ~ ~1 ~ air run summon area_effect_cloud ~ ~1 ~ {PortalCooldown:60,Duration:2147483647,Tags:["cobweb"],Particle:{type:"block",block_state:"minecraft:air"}}
+execute as @n[type=area_effect_cloud, tag=cobweb] at @s run setblock ~ ~ ~ cobweb

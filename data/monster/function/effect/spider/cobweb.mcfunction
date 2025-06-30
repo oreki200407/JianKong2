@@ -1,2 +1,2 @@
 setblock ~ ~ ~ air
-kill @s
+kill

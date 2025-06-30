@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"enderman_hurt": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"team": "survivor"
+				},
+				"entity": {
+					"type": "minecraft:skeleton",
+					"nbt": "{Tags:[\"enderman\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "monster:effect/enderman/hurt"
+	}
+}

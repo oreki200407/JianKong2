@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "monster:effect/slime/hit"
+		"function": "monster:effect/slime/attack"
 	}
 }

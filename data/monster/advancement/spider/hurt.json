@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"spider_hurt": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"team": "survivor"
+				},
+				"entity": {
+					"type": "minecraft:spider",
+					"nbt": "{Tags:[\"spider\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "monster:effect/spider/hurt"
+	}
+}

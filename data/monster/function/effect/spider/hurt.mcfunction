@@ -1,0 +1,2 @@
+advancement revoke @s only monster:spider/hurt
+execute as @e[type=spider, tag=spider,nbt={HurtTime:10s},distance=..6] at @s run summon cave_spider ~ ~ ~ {Team:"monitor",DeathLootTable:"summon:empty",PersistenceRequired:1b,Health:10f,Tags:["monster"],attributes:[{base:10,id:"max_health"},{base:2,id:"attack_damage"}]}
