@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-summon cave_spider ~ ~ ~ {Team:"monitor",DeathLootTable:"summon:empty",PersistenceRequired:1b,Health:10f,Tags:["monster"],attributes:[{base:10,id:"max_health"},{base:2,id:"attack_damage"}]}
+summon cave_spider ~ ~ ~ {Team: "monitor", DeathLootTable: "summon:empty", PersistenceRequired: true, Health: 10.0F, Tags: ["monster"], attributes: [{id: "max_health", base: 10.0}, {id: "attack_damage", base: 2.0}]}

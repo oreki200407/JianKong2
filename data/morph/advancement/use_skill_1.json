@@ -3,22 +3,16 @@
 	{
 		"use_skill_1":
 		{
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:consume_item",
 			"conditions":
 			{
-				"player":
+				"item":
 				{
-					"equipment": 
+					"predicates":
 					{
-						"mainhand":
+						"custom_data":
 						{
-							"predicates":
-							{
-								"custom_data":
-								{
-									"skill": 1
-								}
-							}
+							"skill": 1
 						}
 					}
 				}
@@ -27,6 +21,6 @@
 	},
 	"rewards":
 	{
-		"function": "morph:player/use_skill/root"
+		"function": "morph:player/use_skill/skill_1"
 	}
 }

@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=redstone,item_name={"text": "治療怪物" , color: "gold"},lore=[[{text: "周圍六格內怪物回血", color: "white", italic: false}], {text: "冷卻7秒", color: "aqua", italic: false}],custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s raw_iron[item_model=redstone, item_name={text: "治療怪物", color: "gold"}, lore=[[{text: "周圍六格內怪物回血", color: "white", italic: false}], {text: "冷卻7秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "intentionally_empty"}]
