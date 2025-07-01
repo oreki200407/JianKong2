@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=glass, item_name={text: "隱身" ,color: "gold"}, lore=[[{translate: "effect.minecraft.invisibility", color: "white", italic: false}, "4秒"], {text: "冷卻9秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s raw_iron[item_model=glass, item_name={text: "隱身" ,color: "gold"}, lore=[[{translate: "effect.minecraft.invisibility", color: "white", italic: false}, "4秒"], {text: "冷卻9秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "intentionally_empty"}]

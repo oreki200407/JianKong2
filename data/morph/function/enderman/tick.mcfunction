@@ -8,3 +8,9 @@
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################
+
+execute unless score @s use_ender_pearl matches 1.. run return fail
+
+#使用終界珍珠 無法被進度偵測到
+advancement grant @s only morph:use_skill_1
+scoreboard players reset @s use_ender_pearl

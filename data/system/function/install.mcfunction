@@ -131,6 +131,7 @@ scoreboard objectives add morph dummy
 scoreboard objectives add morph_skill_1 dummy
 scoreboard objectives add morph_skill_2 dummy
 scoreboard objectives add morph_skill_2_duration dummy
+scoreboard objectives add use_ender_pearl used:ender_pearl
 
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
@@ -173,7 +174,7 @@ bossbar set jk2:time max 1500
 bossbar set jk2:prepare max 180
 
 #可供變形的怪物 以及技能冷卻
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 120, 2: 280},\

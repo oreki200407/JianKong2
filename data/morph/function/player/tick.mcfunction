@@ -21,5 +21,6 @@ $execute if score @s morph_skill_1 matches 0 run function morph:$(monster)/skill
 scoreboard players remove @s[scores={morph_skill_2=1..}] morph_skill_2 1
 $execute if score @s morph_skill_2 matches 0 run function morph:$(monster)/skill/give_2
 
+#飢餓度控制
 effect give @s[scores={food=11..}] hunger 1 0 true
 effect give @s[scores={food=..9}] saturation 1 0 true

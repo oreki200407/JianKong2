@@ -9,9 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-#清除技能道具
-$clear @s *[custom_data~{skill: $(id)}]
-
 #開始冷卻
 $execute store result score @s morph_skill_$(id) run data get entity @s equipment.head.components."minecraft:custom_data".cooldown.$(id)
 

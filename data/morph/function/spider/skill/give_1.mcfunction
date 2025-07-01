@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=cave_spider_spawn_egg,item_name={"text": "夥伴" , color: "gold"},lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.cave_spider"}], {text: "冷卻6秒", color: "aqua", italic: false}],custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s raw_iron[item_model=cave_spider_spawn_egg, item_name={"text": "夥伴", color: "gold"}, lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.cave_spider"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "intentionally_empty"}]
