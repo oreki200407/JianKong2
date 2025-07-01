@@ -19,6 +19,10 @@ execute store result score #availables morph store result storage jk2:data root.
 #沒有可變怪物時失敗
 execute if score #availables morph matches 0 run return run tellraw @s ["◎ 目前沒有", {text: "可變的怪物", color: "gold"}]
 
+#變型成功
+clear @s
+scoreboard players remove 電力 info_monitor 50
+
 #隨機選擇
 execute store result storage jk2:data root.morph.index int 1 run function morph:player/start/random with storage jk2:data root.morph
 
@@ -28,10 +32,8 @@ function morph:player/start/choose with storage jk2:data root.morph
 function morph:player/start/to with entity @s equipment.head.components."minecraft:custom_data"
 
 #變形維持180秒 = 3600刻
-scoreboard players set @s morph 3600
+scoreboard players set @s morph 180
 
-clear @s
-scoreboard players remove 電力 info_monitor 50
+effect give @s hunger 1 255 true
 tp @s @e[type=marker,tag=point,sort=random,limit=1]
-tellraw @s [{text: "你變成了"}, {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true}]
-title @s title {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, bold: true}
+tellraw @s [{text: "——————————\n"}, {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, color: "gold"},{text: "\n主動技能1："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},{text: "\n主動技能2："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},{text: "\n"}, {nbt: 'equipment.head.components."minecraft:lore"', entity: "@s", interpret: true}, {text: "——————————"}]

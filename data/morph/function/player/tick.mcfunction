@@ -9,7 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-scoreboard players remove @s morph 1
 $execute if score @s morph matches 0 run return run function morph:player/end {monster: $(monster)}
 
 #執行怪物的tick函數
@@ -21,5 +20,6 @@ $execute if score @s morph_skill_1 matches 0 run function morph:$(monster)/skill
 scoreboard players remove @s[scores={morph_skill_2=1..}] morph_skill_2 1
 $execute if score @s morph_skill_2 matches 0 run function morph:$(monster)/skill/give_2
 
-effect give @s[scores={food=11..}] hunger 1 0 true
-effect give @s[scores={food=..9}] saturation 1 0 true
+effect give @s[scores={food=..7}] saturation 1 0 true
+
+title @s actionbar [{text: "變型時間：", "color": "gold", "bold": true}, {score: {name: "@s", objective: "morph"}}, "秒"]

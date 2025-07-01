@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-tag @s remove evoker
+tag @s remove evoker_morph

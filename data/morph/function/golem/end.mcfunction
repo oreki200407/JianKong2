@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-tag @s remove golem
+tag @s remove golem_morph

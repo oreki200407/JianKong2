@@ -17,11 +17,11 @@ execute unless score #mode system matches 3 run return fail
 
 #檢查是不是喚魔者
 #execute on不改變at
-execute on attacker if entity @s[tag=evoker] run return run execute if predicate game:chance/5 run summon evoker_fangs
+execute on attacker if entity @s[tag=evoker_morph] run return run execute if predicate game:chance/5 run summon evoker_fangs
 
 scoreboard players set #is_golem morph 0
-execute on attacker if entity @s[tag=golem] run scoreboard players set #is_golem morph 1
-execute if score #is_golem morph matches 1 run return run function monster:effect/golem/hit
+execute on attacker if entity @s[tag=golem_morph] run scoreboard players set #is_golem morph 1
+execute if score #is_golem morph matches 1 run return run function monster:effect/golem/attack
 
 #檢查是不是使用技能的殭屍
 tag @s add victim

@@ -2,6 +2,9 @@ schedule function game:time 1s
 execute if score #mode system matches 4 store result bossbar jk2:prepare value run return run scoreboard players add #prepare system 1
 execute if score #mode system matches 3 store result bossbar jk2:time value run return run scoreboard players add #time system 1
 
+scoreboard players remove @a[scores={morph=1..}] morph 1
+kill @a[scores={morph=0}]
+
 execute if score 更換電箱 lobby matches 1.. run function box:switch/auto
 
 execute if score 水管爆裂 info_monitor matches 1.. run scoreboard players remove 水管爆裂 info_monitor 1
