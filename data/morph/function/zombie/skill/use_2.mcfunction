@@ -10,4 +10,4 @@
 ###################################################
 
 #召喚增援
-summon zombie ~ ~ ~ {attributes:[{base:15,id:"follow_range"},{base:0.3d,id:"movement_speed"},{base:2,id:"attack_damage"}],CanPickUpLoot:0b,DeathLootTable:"summon:loot",PersistenceRequired:1b,Tags:["monster"],Team:"monitor"}
+summon zombie ~ ~ ~ {attributes:[{base:15,id:"follow_range"},{base:0.3d,id:"movement_speed"},{base:2,id:"attack_damage"}],CanPickUpLoot:0b,DeathLootTable:"summon:empty",PersistenceRequired:1b,Tags:["monster"],Team:"monitor"}

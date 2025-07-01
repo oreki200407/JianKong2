@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s cobweb[custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=cobweb,item_name={"text": "吐絲" , color: "gold"},lore=[[{text: "對前方的求生者放置蜘蛛網", color: "white", italic: false}], {text: "冷卻10秒", color: "aqua", italic: false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]

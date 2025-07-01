@@ -1,1 +1,1 @@
-give @s iron_ingot[item_name={"text":"鐵錠治療","color":"gold"},lore=[{"text":"獲得立即治療I","color":"white","italic":false},{"text":"冷卻12秒","color":"aqua","italic":false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=iron_ingot,item_name={"text":"鐵錠治療","color":"gold"},lore=[{"text":"獲得立即治療I","color":"white","italic":false},{"text":"冷卻12秒","color":"aqua","italic":false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]
