@@ -8,6 +8,7 @@
 			{
 				"item":
 				{
+					"items": "minecraft:raw_iron",
 					"predicates":
 					{
 						"custom_data":
