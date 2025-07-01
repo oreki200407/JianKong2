@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=ghast_tear,item_name={text: "利齒", color: "gold"}, lore=[{text: "下一個攻擊的求生者受到額外傷害", color: "white", italic: false}, {text:"冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s raw_iron[item_model=ghast_tear, item_name={text: "利齒", color: "gold"}, lore=[{text: "下一個攻擊的求生者受到額外傷害", color: "white", italic: false}, {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={consume_seconds: 99999}]

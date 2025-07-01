@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=arrow,item_name={"text": "射擊" , color: "gold"},lore=[[{text: "往前射一發箭", color: "white", italic: false}], {text: "冷卻3秒", color: "aqua", italic: false}],custom_data={skill: 1}, consumable={consume_seconds: 99999}]
+give @s raw_iron[item_model=arrow, item_name={text: "射擊" ,color: "gold"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate: "entity.minecraft.arrow"}], {text: "冷卻3秒", color: "aqua", italic: false}], custom_data={skill: 1}, consumable={consume_seconds: 99999}]

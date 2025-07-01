@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_copper[item_model=blaze_powder,item_name={"text": "燃燒之路" , color: "gold"},lore=[[{text: "腳下持續出現火焰7秒", color: "white", italic: false}], {text: "冷卻14秒", color: "aqua", italic: false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=blaze_powder, item_name={text: "燃燒之路" , color: "gold"}, lore=[[{text: "腳下持續出現火焰7秒", color: "white", italic: false}], {text: "冷卻14秒", color: "aqua", italic: false}], custom_data={skill: 2}, consumable={consume_seconds: 99999}]

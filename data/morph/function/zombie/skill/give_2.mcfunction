@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_copper[item_model=red_dye,item_name={"text": "增援" , color: "gold"},lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.zombie"}], {text: "冷卻9秒", color: "aqua", italic: false}], custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=red_dye, item_name={"text": "增援" , color: "gold"}, lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.zombie"}], {text: "冷卻9秒", color: "aqua", italic: false}], custom_data={skill: 2}, consumable={consume_seconds: 99999}]

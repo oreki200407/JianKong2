@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_copper[item_model=iron_sword,item_name={"text": "召喚惱鬼" , color: "gold"},lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.vex"}], {text: "冷卻11秒", color: "aqua", italic: false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=iron_sword, item_name=[{text: "召喚", color: "gold"}, {translate: "entity.minecraft.vex"}], lore=[[{text: "召喚一隻", color: "white", italic: false}, {translate: "entity.minecraft.vex"}], {text: "冷卻11秒", color: "aqua", italic: false}], custom_data={skill: 2}, consumable={consume_seconds: 99999}]

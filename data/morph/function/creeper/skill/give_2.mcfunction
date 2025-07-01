@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_copper[item_model=tnt,item_name={"text": "爆破" , color: "gold"},lore=[[{text: "往前丟一顆點燃的TNT", color: "white", italic: false}], {text: "冷卻13秒", color: "aqua", italic: false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]
+give @s raw_copper[item_model=tnt,item_name={"text": "爆破" , color: "gold"}, lore=[[{text: "往前丟一顆", color: "white", italic: false}, {translate: "entity.minecraft.tnt"}], {text: "冷卻13秒", color: "aqua", italic: false}],custom_data={skill: 2}, consumable={consume_seconds: 99999}]

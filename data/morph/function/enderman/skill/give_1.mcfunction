@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s ender_pearl[custom_data={skill: 1},item_name={"text": "傳送" , color: "gold"},lore=[[{text: "往前丟出終界珍珠", color: "white", italic: false}], {text: "冷卻6秒", color: "aqua", italic: false}]]
+give @s ender_pearl[item_name={"text": "傳送" , color: "gold"}, lore=[[{text: "往前丟出", color: "white", italic: false}, {translate: "item.minecraft.ender_pearl"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1}]
