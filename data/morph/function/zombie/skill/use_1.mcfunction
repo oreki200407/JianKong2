@@ -9,7 +9,5 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-playsound item.trident.hit ambient @s
-
 #下一個打到的玩家額外傷害
 tag @s add zombie_skill_1

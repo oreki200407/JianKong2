@@ -9,7 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-playsound entity.player.swim ambient @s
 #隱形4秒
 effect give @s invisibility 4 0 true
 

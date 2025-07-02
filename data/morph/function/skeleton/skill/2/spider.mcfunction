@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-data merge entity @s {Tags:["spider_vehicle"], Team:"monitor", DeathLootTable:"summon:empty", attributes: [{id: "movement_speed", base: 0.7}]}
+data merge entity @s {Tags: ["spider_vehicle"], Team: "monitor", DeathLootTable: "summon:empty", attributes: [{id: "movement_speed", base: 0.7}]}
 ride @a[tag=ride_spider, limit=1, distance=...5] mount @s
