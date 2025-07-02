@@ -11,7 +11,4 @@
 
 $item replace block ~ ~ ~ container.$(number) with magenta_glazed_terracotta[custom_data={rotate_data:{number:$(number),type:"$(type)",orientation:$(orientation)}},custom_model_data={strings:["$(type)$(orientation)"]},tooltip_display={hide_tooltip: true}]
 
-function power:netwalk_game/check_win/root
-
-#修復成功
-execute at @e[type=marker, tag=netwalk_game, distance=..1] unless items block ~ ~ ~ container.* *[custom_data~{pass: false}] unless items block ~1 ~ ~ container.* *[custom_data~{pass: false}] run function power:fixed
+execute as @e[type=marker, tag=netwalk_game, distance=..1.5] at @s run function power:netwalk_game/switch/try_fixed

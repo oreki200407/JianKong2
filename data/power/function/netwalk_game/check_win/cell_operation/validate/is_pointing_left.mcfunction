@@ -3,8 +3,8 @@
 # 
 # Name   : is_pointing_up.mcfunction
 # Path   : power:netwalk_game/check_win/cell_operation/validate/
-# As     : 點擊格子的玩家
-# At     : 發電機標記，tag=netwalk_game
+# As     : 發電機標記，tag=netwalk_game
+# At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
