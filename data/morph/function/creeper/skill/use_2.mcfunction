@@ -9,6 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
+playsound entity.tnt.primed ambient @s
 #計算向量
 function morph:player/motion_vector/root
 

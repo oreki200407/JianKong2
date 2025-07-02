@@ -11,4 +11,5 @@
 
 #給予6格內怪物回血
 #注意這對不死怪物無效
-effect give @e[type=#morph:monster, team=monitor, distance=..6] regeneration 10 0 true
+playsound block.beacon.activate ambient @s
+effect give @e[type=#monster:all, team=monitor, distance=..6] regeneration 10 0 true

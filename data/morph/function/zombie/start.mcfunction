@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-item modify entity @s armor.head {function: "set_components", components: {item_name: {translate: "entity.minecraft.zombie"}, lore: [{text: "被動技能：在求生者附近加速", italic: false}], profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="]}}}}
-item replace entity @s armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=569262]
-item replace entity @s armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=4997286]
-item replace entity @s armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=7434609]
+item modify entity @s armor.head {function: "set_components", components: {item_name: {translate: "entity.minecraft.zombie"}, lore: [{text: "被動技能：在求生者附近加速", italic: false, color:white}], profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="]}}}}
+item replace entity @s armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable","dyed_color","enchantments"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=569262]
+item replace entity @s armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable","dyed_color","enchantments"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=4997286]
+item replace entity @s armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable","dyed_color","enchantments"]}, enchantment_glint_override=false, enchantments={binding_curse: 1}, dyed_color=7434609]

@@ -2,7 +2,7 @@
 	"replace": false,
 	"values":
 	[
-		"#morph:monster",
+		"#monster:all",
 		"minecraft:player"
 	]
 }

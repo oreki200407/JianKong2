@@ -37,7 +37,7 @@ execute as @e[type=armor_stand, tag=wolf_ride, predicate=game:on_ground] at @s r
 execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
 
 #喚魔者
-execute as @e[tag=!vex,type=vex] run data merge entity @s {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.085}, Team:"monitor",DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex"], life_ticks: 100}
+execute as @e[tag=!vex,type=vex] run data merge entity @s {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.0}, Team:"monitor",DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex"], life_ticks: 200}
 
 #蜘蛛
 execute as @e[type=area_effect_cloud, tag=cobweb,nbt={PortalCooldown:0}] at @s run function monster:effect/spider/cobweb

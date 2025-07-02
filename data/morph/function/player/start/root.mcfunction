@@ -27,7 +27,7 @@ scoreboard players remove 電力 info_monitor 50
 execute store result storage jk2:data root.morph.index int 1 run function morph:player/start/random with storage jk2:data root.morph
 
 #用來儲存變形怪物用的頭顱 以及裝飾用
-item replace entity @s armor.head with player_head[enchantments={binding_curse: 1}]
+item replace entity @s armor.head with player_head[enchantments={binding_curse: 1},tooltip_display={hidden_components:["enchantments"]}]
 function morph:player/start/choose with storage jk2:data root.morph
 function morph:player/start/to with entity @s equipment.head.components."minecraft:custom_data"
 

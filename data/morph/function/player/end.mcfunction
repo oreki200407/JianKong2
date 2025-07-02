@@ -18,3 +18,5 @@ $data modify storage jk2:data root.morph.monsters append value "$(monster)"
 
 clear @s
 function monitor:observe/give
+
+title @s actionbar ""
