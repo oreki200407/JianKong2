@@ -10,4 +10,6 @@
 ###################################################
 
 #爬牆
-execute if predicate game:sneak if function morph:spider/wall_near run effect give @s levitation 1 0 true
+execute at @s if predicate game:sneak if function morph:spider/wall_near run return run effect give @s levitation 1 2 true
+execute at @s unless function morph:spider/wall_near run return run effect clear @s levitation
+execute unless predicate game:sneak run effect clear @s levitation

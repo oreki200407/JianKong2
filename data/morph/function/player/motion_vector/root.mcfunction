@@ -16,4 +16,4 @@ execute store result score #px morph run data get entity @s Pos[0] 1000
 execute store result score #py morph run data get entity @s Pos[1] 1000
 execute store result score #pz morph run data get entity @s Pos[2] 1000
 
-execute anchored eyes positioned ^ ^ ^1 summon marker run function morph:player/motion_vector/marker
+execute positioned ^ ^ ^1 summon marker run function morph:player/motion_vector/marker

@@ -50,7 +50,7 @@ execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s 
 #清除所有失去騎乘者的坐騎蜘蛛
 kill @e[type=spider, tag=spider_vehicle, predicate=!game:being_ride]
 #清除所有失去界伏蚌的草方塊展示實體
-execute as @e[type=block_display, tag=grass_block] run function morph:enderman/block_display
+execute as @e[type=block_display, tag=morph_grass_block,predicate=!game:riding] run kill
 #變形的標記
 execute as @e[type=marker, tag=morph_product] run function morph:marker
 

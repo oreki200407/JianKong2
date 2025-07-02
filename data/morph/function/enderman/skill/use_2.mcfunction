@@ -9,4 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute align xyz summon block_display run function morph:enderman/skill/2/block_display
+playsound block.crop.break ambient @s
+execute align xyz run summon shulker ~ ~ ~ {DeathLootTable:"summon:empty",Silent:1b,Team:"monitor",Tags:["morph_shulker_grass_block"],NoAI:1b,AttachFace:0b,Passengers:[{id:"minecraft:block_display",Tags:["morph_grass_block"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.505f,-1.005f,-0.505f],scale:[1.01f,1.01f,1.01f]},block_state:{Name:"minecraft:grass_block"}}]}
