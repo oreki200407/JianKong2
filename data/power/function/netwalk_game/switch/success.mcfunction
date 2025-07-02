@@ -11,4 +11,4 @@
 
 $item replace block ~ ~ ~ container.$(number) with magenta_glazed_terracotta[custom_data={rotate_data:{number:$(number),type:"$(type)",orientation:$(orientation)}},custom_model_data={strings:["$(type)$(orientation)"]},tooltip_display={hide_tooltip: true}]
 
-execute as @e[type=marker, tag=netwalk_game, distance=..1.5] at @s run function power:netwalk_game/switch/try_fixed
+execute as @e[type=marker, tag=netwalk_game, distance=..1.5, limit=1] at @s run function power:netwalk_game/switch/try_fixed
