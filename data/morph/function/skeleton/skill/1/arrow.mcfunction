@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-$summon arrow ~ ~ ~ {Motion: [$(x)d, $(y)d, $(z)d], fuse: 40}
+$summon arrow ~ ~ ~ {Motion: [$(x)d, $(y)d, $(z)d]}

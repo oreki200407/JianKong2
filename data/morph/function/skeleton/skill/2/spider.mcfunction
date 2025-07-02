@@ -9,7 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-attribute @s movement_speed base set 0.6
-team join monitor
+data merge entity @s {Tags:["spider_vehicle"], Team:"monitor", DeathLootTable:"summon:empty", attributes: [{id: "movement_speed", base: 0.7}]}
 ride @a[tag=ride_spider, limit=1, distance=...5] mount @s
-tag @s add spider_vehicle
