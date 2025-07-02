@@ -3,7 +3,7 @@
 	{
 		"use_skill_2":
 		{
-			"trigger": "minecraft:consume_item",
+			"trigger": "minecraft:using_item",
 			"conditions":
 			{
 				"item":
@@ -13,7 +13,7 @@
 					{
 						"custom_data":
 						{
-							"skill": 2
+							"skill": "2"
 						}
 					}
 				}
