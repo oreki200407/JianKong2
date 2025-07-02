@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-$summon tnt ~ ~ ~ {Motion: [$(x)d, $(y)d, $(z)d], fuse: 40}
+$summon tnt ~ ~ ~ {Tags:["morph_tnt"],Motion: [$(x)d, 0d, $(z)d], fuse: 40}
