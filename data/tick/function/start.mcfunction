@@ -69,3 +69,4 @@ execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance
 #機關
 execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
 execute as @a[team=survivor] at @s positioned ~ ~1 ~ if predicate control:acid_rain run effect give @s poison 2 0 true
+execute if score 禁止奔跑 info_survivor matches 1.. as @a[team=survivor,scores={sprint=1..}] run function control:sprint/poisoning

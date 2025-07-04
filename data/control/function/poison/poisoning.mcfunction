@@ -1,2 +1,2 @@
-$execute as @a[team=survivor,x=$(x),y=$(y),z=$(z),dx=$(dx),dy=$(dy),dz=$(dz)] unless items entity @s armor.head carved_pumpkin run effect give @s poison 1 1 true
-$particle glow_squid_ink $(particle_x) $(particle_y) $(particle_z) $(particle_dx) $(particle_dy) $(particle_dz) 0.1 100 force
+$execute as @a[team=survivor,x=$(x),y=$(y),z=$(z),dx=$(dx),dy=$(dy),dz=$(dz)] unless items entity @s armor.head carved_pumpkin run effect give @s poison 1 10
+$particle dust{color:[0.000,1.000,0.000],scale:1} $(particle_x) $(particle_y) $(particle_z) $(particle_dx) $(particle_dy) $(particle_dz) 0.2 100 force

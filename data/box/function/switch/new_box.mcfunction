@@ -15,7 +15,5 @@ function box:switch/set
 execute as @e[type=armor_stand, tag=box] at @s run function box:switch/remove_box
 
 tag @s add box
-tellraw @a ["◎ 電箱已被更換至", {"selector": "@s"}]
+tellraw @a ["◎ 電箱已被更換至", {"selector": "@s", color:gold}]
 scoreboard players display numberformat 電箱位置 info_survivor fixed {"selector": "@s"}
-
-execute if score #switch_box system matches 0 run scoreboard players operation #switch_box system = #switch_box_second system

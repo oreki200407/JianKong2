@@ -14,11 +14,13 @@ bossbar set jk2:time players
 bossbar set jk2:prepare players @a
 
 #清空大廳
+execute at @e[type=marker, tag=map_info, limit=1] run setblock ~ ~ ~ air
+execute at @e[type=marker, tag=monster_info, limit=1] run setblock ~ ~ ~ air
 kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]
 kill @e[tag=lobby_setting]
 kill @e[tag=monitor_marker]
-execute at @e[type=marker,tag=lobby] run place template game:monitor ~-10 ~-1 ~-10
+execute at @e[type=marker, tag=lobby, limit=1] run place template game:monitor ~-10 ~-1 ~-10
 
 #發電
 scoreboard players set @e[tag=power] power_level 1
