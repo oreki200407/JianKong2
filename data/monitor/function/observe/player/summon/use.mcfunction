@@ -12,7 +12,7 @@
 advancement revoke @s only monitor:observe/trap
 advancement revoke @s only monitor:observe/monster
 
-execute unless entity @s[tag=using_camera,team=monitor] run return fail
+execute unless entity @s[tag=using_camera, team=monitor] run return fail
 execute if score @s trap_cooldown matches 1.. run return fail
 scoreboard players set @s trap_cooldown 10
 
