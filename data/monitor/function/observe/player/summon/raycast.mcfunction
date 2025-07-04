@@ -4,7 +4,7 @@
 # Name   : raycast.mcfunction
 # Path   : monitor:observe/player/summon/
 # As     : 正在看監視器的玩家
-# At     : As
+# At     : 飛出去的視線
 # Loop   : 遞迴
 # Author : Alex_Cai
 ###################################################

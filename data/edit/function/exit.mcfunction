@@ -10,7 +10,7 @@
 ###################################################
 
 playsound ui.button.click ambient @s
-execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式", "color":"gold"}, "來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
 execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name
 execute as @e[type=armor_stand,tag=poison_point] at @s run function edit:name

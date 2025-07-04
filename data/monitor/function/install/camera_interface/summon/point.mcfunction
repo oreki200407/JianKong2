@@ -10,6 +10,7 @@
 ###################################################
 
 data merge entity @s {Particle: {type: "block", block_state: "air"}, Radius: 0f, Duration: 2147483647, Tags: ["camera"]}
-scoreboard players operation @s camera = @a[tag=camera_installer] camera
-tp @s @a[tag=camera_installer,limit=1]
+scoreboard players operation @s camera = #camera_installer camera
+#不要把這個tp改成rotate 它有傳送的
+tp @s ~ ~ ~ ~ ~
 scoreboard players set @s camera_level 1

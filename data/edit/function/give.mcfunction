@@ -1,5 +1,5 @@
 playsound ui.button.click ambient @s
-execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式", "color":"gold"}, "來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
 give @s armor_stand[item_name="門", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,Tags:["door","edit","edit_kill"],CustomName:"門"}] 1
 give @s armor_stand[item_name="生怪點", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,Tags:["point","edit","edit_kill"],CustomName:"生怪點"}] 1

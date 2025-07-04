@@ -9,7 +9,7 @@
 # Author : oreki20
 ###################################################
 
-execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative","color":"gold"},"來操作"]
 scoreboard objectives setdisplay sidebar edit
 
 scoreboard players set #mode system 1
