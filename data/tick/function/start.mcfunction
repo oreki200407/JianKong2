@@ -55,7 +55,6 @@ execute as @e[type=block_display, tag=morph_grass_block,predicate=!game:riding] 
 execute as @e[type=marker, tag=morph_product] run function morph:marker
 
 #收容
-execute as @e[type=interaction,tag=contain_control] run function contain:control/root
 execute as @e[tag=contain] if score @s contain_health matches ..0 run function contain:death
 execute unless entity @e[type=creeper, tag=contain_creeper] as @e[type=marker, tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death

@@ -85,6 +85,7 @@ scoreboard objectives add medical_cooldown dummy
 
 #監視器
 scoreboard objectives add camera dummy "監視器"
+scoreboard objectives add camera_cooldown dummy
 scoreboard objectives add camera_interface trigger "使用監視器"
 scoreboard objectives add camera_level dummy "監視器等級"
 scoreboard objectives add level dummy "電力"

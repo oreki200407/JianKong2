@@ -9,8 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only monitor:observe/use/trap
-advancement revoke @s only monitor:observe/use/monster
+advancement revoke @s only monitor:observe/trap
+advancement revoke @s only monitor:observe/monster
 
 execute unless entity @s[tag=using_camera,team=monitor] run return fail
 execute if score @s trap_cooldown matches 1.. run return fail

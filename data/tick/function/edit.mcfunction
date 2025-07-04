@@ -17,9 +17,9 @@ execute as @a at @s[y=-120,dy=50] run tp @s @e[type=marker, tag=lobby_spawn, lim
 #刪除盔甲座
 execute as @e[tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill
 
-#超過兩個重生點
-execute store result score #spawn system if entity @e[tag=spawn_survivor]
-execute if score #spawn system matches 2.. run function edit:spawn
+#超過一個重生點
+execute store result score 求生者重生點 edit if entity @e[tag=spawn_survivor]
+execute if score 求生者重生點 edit matches 2.. run function edit:spawn
 
 #沒有告示牌就重新放
 execute as @e[type=armor_stand,tag=box_point] at @s unless block ~ ~1 ~ oak_sign run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}
@@ -30,3 +30,6 @@ execute as @e[type=interaction,tag=edit_give] on target run function edit:give
 execute as @e[type=interaction,tag=edit_check] on target run function edit:check
 execute as @e[type=interaction,tag=edit_exit] on target at @e[tag=control_panel] run function edit:exit
 execute as @e[type=interaction] if data entity @s interaction run data remove entity @s interaction
+
+execute store result score 生怪點 edit if entity @e[tag=point,type=armor_stand]
+execute store result score 門 edit if entity @e[tag=door,type=armor_stand]

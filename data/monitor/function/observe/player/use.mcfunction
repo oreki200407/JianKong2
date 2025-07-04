@@ -9,7 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only monitor:observe/use/white_dye
+advancement revoke @s only monitor:observe/use
+
+execute if score @s camera_cooldown matches 1.. run return fail
+scoreboard players set @s camera_cooldown 10
 
 execute if score 禁止監控 info_monitor matches 1.. run return run tellraw @s ["◎ 目前監視器正在被", {text: "禁止使用", color: "gold"}]
 

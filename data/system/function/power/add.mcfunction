@@ -1,4 +1,4 @@
-execute if entity @s[gamemode=!creative] run return run tellraw @a ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
 
 execute if score 更換電箱 lobby matches 0 run scoreboard players display numberformat 更換電箱 lobby styled {"color":"red"}
 scoreboard players add 更換電箱 lobby 1

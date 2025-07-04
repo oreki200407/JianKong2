@@ -11,6 +11,9 @@
 
 advancement revoke @s only monitor:install/use
 
+execute if score @s camera_cooldown matches 1.. run return fail
+scoreboard players set @s camera_cooldown 10
+
 scoreboard players reset @s camera
 function monitor:install/decide
 #如果沒有分數就結束
@@ -20,4 +23,4 @@ execute unless score @s camera = @s camera run return run tellraw @s ["◎ 所�
 gamemode spectator
 scoreboard players enable @s camera_interface
 tp @s @e[type=marker, tag=spawn_survivor, limit=1]
-tellraw @s ["——————————\n", "監視器", {score: {name: "@s", objective: "camera"}}, "\n", {text: "✅", click_event: {action: "run_command", command: "/trigger camera_interface set 1"}}, "        ", {text: "❎", click_event: {action: "run_command", command: "/trigger camera_interface set 2"}}, "\n——————————"]
+tellraw @s ["——————————\n", {text:"監視器", color: "gold"}, {score: {name: "@s", objective: "camera"}}, "\n", {text: "✔", color:green, click_event: {action: "run_command", command: "/trigger camera_interface set 1"}}, "        ", {text: "✘", color:red, click_event: {action: "run_command", command: "/trigger camera_interface set 2"}}, "\n——————————"]

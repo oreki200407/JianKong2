@@ -8,6 +8,7 @@ item replace entity @a[team=survivor] enderchest.10 with air
 execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red info_survivor
 execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue info_survivor
 
+scoreboard players reset @a[team=survivor] money
 scoreboard players reset 目前監視器 info_monitor
 scoreboard players reset #time system
 scoreboard players set 倒數 system 3

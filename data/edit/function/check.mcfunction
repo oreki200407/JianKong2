@@ -1,16 +1,13 @@
 #檢查場地
-execute store result score #point system if entity @e[tag=point,type=armor_stand]
-execute store result score #door system if entity @e[tag=door,type=armor_stand]
-
 execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name
 execute as @e[type=armor_stand,tag=poison_point] at @s run function edit:name
 execute as @e[type=armor_stand,tag=box_point] if data entity @s CustomName run tag @s add box_point_name
 execute as @e[type=armor_stand,tag=poison_point] if data entity @s CustomName run tag @s add poison_point_name
 
-execute if entity @e[tag=spawn_survivor,type=armor_stand] run tellraw @s "——————————\n求生者重生點: ✅"
-execute unless entity @e[tag=spawn_survivor,type=armor_stand] run tellraw @s "——————————\n求生者重生點: ❎"
+execute if score 求生者重生點 edit matches 1 run tellraw @s ["——————————\n",{"text":"求生者重生點",color:gold},": ",{"text":"✔",color:green}]
+execute if score 求生者重生點 edit matches 0 run tellraw @s ["——————————\n",{"text":"求生者重生點",color:gold},": ",{"text":"✘",color:red}]
 
-tellraw @s ["生怪點: ",{score:{name:"#point",objective:"system"}},"\n門: ",{score:{name:"#door",objective:"system"}},"\n電箱: ",{"selector": "@e[tag=box_point_name]"},"\n毒氣點: ",{"selector": "@e[tag=poison_point_name]"},"\n——————————"]
+tellraw @s ["",{"text":"生怪點",color:gold},": ",{score:{name:"生怪點",objective:"edit"}},"\n",{"text":"門",color:gold},": ",{score:{name:"門",objective:"edit"}},"\n",{"text":"電箱",color:gold},": ",{"selector": "@e[tag=box_point_name]"},"\n",{"text":"毒氣點",color:gold},": ",{"selector": "@e[tag=poison_point_name]"},"\n——————————"]
 
 tag @e[type=armor_stand,tag=box_point_name] remove box_point_name
 tag @e[type=armor_stand,tag=poison_point_name] remove poison_point_name

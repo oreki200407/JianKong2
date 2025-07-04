@@ -1,4 +1,4 @@
-execute if entity @s[gamemode=!creative] run return run tellraw @a ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式","color":"gold"},"來操作"]
 
 scoreboard players remove 初始資金 lobby 50
 execute if score 初始資金 lobby matches ..0 run scoreboard players set 初始資金 lobby 50

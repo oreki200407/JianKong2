@@ -1,3 +1,5 @@
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式", "color":"gold"}, "來操作"]
+
 execute at @e[tag=door,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["door"]}
 execute at @e[tag=point,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["point"]}
 execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}

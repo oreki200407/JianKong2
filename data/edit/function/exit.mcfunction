@@ -9,9 +9,8 @@
 # Author : oreki20
 ###################################################
 
-clear @a
-
 playsound ui.button.click ambient @s
+execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {"text": "創造模式", "color":"gold"}, "來操作"]
 
 execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name
 execute as @e[type=armor_stand,tag=poison_point] at @s run function edit:name
@@ -24,6 +23,8 @@ scoreboard players set #mode system 2
 execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Invisible:1b}
 kill @e[tag=edit_setting]
 kill @e[tag=lobby_setting]
+
+clear @a
 
 scoreboard players display numberformat 更換電箱 lobby styled {"color":"red"}
 scoreboard players set 初始資金 lobby 250

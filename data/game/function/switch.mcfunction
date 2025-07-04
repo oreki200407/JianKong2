@@ -27,6 +27,8 @@ effect give @a regeneration 5 100 true
 effect give @a resistance 5 100 true
 
 #復原場地
+execute as @e[team=monitor,type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
+kill @e[team=monitor,type=!player]
 tag @e[tag=box_off] remove box_off
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data
