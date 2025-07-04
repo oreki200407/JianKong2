@@ -4,6 +4,7 @@ scoreboard players set #mode system 4
 effect give @a[team=!spec] resistance 180 100 true
 effect give @a[team=survivor] night_vision 180 0 true
 effect give @a[team=monitor] night_vision infinite 0 true
+effect give @a[team=monitor] saturation infinite 0 true
 
 #時間
 scoreboard players reset #time system
@@ -27,6 +28,9 @@ item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbrea
 item replace entity @a[team=survivor] armor.legs with leather_leggings[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=false]
 item replace entity @a[team=survivor] armor.feet with leather_boots[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=false]
 give @a[team=monitor] black_dye[custom_model_data={strings:["camera"]},item_name="安裝監視器",consumable={consume_seconds: 99999}]
+
+#設定初始怪物
+execute as @e[type=armor_stand,tag=summon_pick,scores={summon_number=1..7}] run function summon:pick/setting
 
 #重置收容
 kill @e[tag=contain]

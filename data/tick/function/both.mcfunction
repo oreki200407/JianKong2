@@ -57,9 +57,9 @@ scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_coo
 
 #發電
 execute as @a[team=monitor] run function power:root
-#execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] at @s run setblock ~ ~1 ~3 smooth_quartz
+execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] at @s run setblock ~ ~3 ~3 polished_andesite
 execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] at @s run setblock ~ ~ ~ command_block[facing=down]{Command:"execute as @e[tag=power1] at @s run function power:success"}
 execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
 
 #收容
-execute as @e[type=interaction,tag=contain_control] run function contain:control/root
+execute as @e[type=interaction,tag=contain_control] at @s if data entity @s interaction run function contain:control/root

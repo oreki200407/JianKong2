@@ -17,11 +17,12 @@ scoreboard players operation @a[team=survivor] money = 初始資金 lobby
 schedule function game:prepare 2s
 schedule clear summon:natural
 
-#裝備
 clear @a
 recipe take @a *
 xp set @a 0 levels
 xp set @a 0 points
+effect clear @a
+effect give @a[team=monitor] hunger 3 255 true
 effect give @a invisibility 5 0 true
 effect give @a regeneration 5 100 true
 effect give @a resistance 5 100 true
@@ -38,5 +39,3 @@ kill @e[type=marker,tag=fire]
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster
 execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
-#設定初始怪物
-execute as @e[type=armor_stand,tag=summon_pick,scores={summon_number=1..7}] run function summon:pick/setting

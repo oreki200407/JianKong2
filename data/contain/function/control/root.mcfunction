@@ -1,5 +1,3 @@
-execute unless data entity @s interaction run return fail
-
 execute on target run playsound block.end_portal_frame.fill ambient @s
 
 execute if entity @s[tag=contain_add_temperature] run function contain:control/add_temperature

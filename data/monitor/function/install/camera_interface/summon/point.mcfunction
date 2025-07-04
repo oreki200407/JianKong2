@@ -10,6 +10,6 @@
 ###################################################
 
 data merge entity @s {Particle: {type: "block", block_state: "air"}, Radius: 0f, Duration: 2147483647, Tags: ["camera"]}
-scoreboard players operation @s camera = #summon_camera camera
-rotate @s ~ ~
+scoreboard players operation @s camera = @a[tag=camera_installer] camera
+tp @s @a[tag=camera_installer,limit=1]
 scoreboard players set @s camera_level 1

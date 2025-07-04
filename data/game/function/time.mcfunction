@@ -1,6 +1,6 @@
 schedule function game:time 1s
 execute if score #mode system matches 4 store result bossbar jk2:prepare value run return run scoreboard players add #prepare system 1
-execute if score #mode system matches 3 store result bossbar jk2:time value run return run scoreboard players add #time system 1
+execute if score #mode system matches 3 store result bossbar jk2:time value run scoreboard players add #time system 1
 
 scoreboard players remove @a[scores={morph=1..}] morph 1
 kill @a[scores={morph=0}]
@@ -30,4 +30,4 @@ execute if score 酸雨 info_survivor matches 1.. run scoreboard players remove 
 execute if score 毒氣 info_survivor matches 1.. run scoreboard players remove 毒氣 info_survivor 1
 execute if score 禁止奔跑 info_survivor matches 1.. run scoreboard players remove 禁止奔跑 info_survivor 1
 
-execute if score #mode system matches 3 as @e[tag=contain] run function contain:random
+execute as @e[tag=contain] run function contain:random

@@ -12,4 +12,6 @@
 #如果處在變形狀態
 execute if score @s morph matches 1.. run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"
 
+effect give @s night_vision infinite 0 true
+effect give @s saturation infinite 0 true
 tp @s @e[type=marker,tag=lobby,limit=1]
