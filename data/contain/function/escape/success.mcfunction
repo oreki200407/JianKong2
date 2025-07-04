@@ -1,0 +1,5 @@
+function contain:summon
+
+scoreboard players operation @n[tag=contain] contain_temperature = @s contain_temperature
+scoreboard players operation @n[tag=contain] contain_food = @s contain_food
+scoreboard players operation @n[tag=contain] contain_health = @s contain_health

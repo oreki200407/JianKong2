@@ -16,6 +16,8 @@ execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if 
 scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
+execute as @a[team=monitor,tag=monitor_death,scores={health=20}] run function game:death/monitor_effect
+
 function monster:effect
 #-----------------------道具-----------------------
 #經驗球
@@ -55,10 +57,10 @@ execute as @e[type=block_display, tag=morph_grass_block,predicate=!game:riding] 
 execute as @e[type=marker, tag=morph_product] run function morph:marker
 
 #收容
-execute as @e[tag=contain] if score @s contain_health matches ..0 run function contain:death
+execute as @e[tag=contain,scores={contain_health=..0}] at @s run function contain:death
 execute unless entity @e[type=creeper, tag=contain_creeper] as @e[type=marker, tag=contain_creeper_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag=contain_zombie_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute unless entity @e[type=villager, tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
+execute unless entity @e[tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=cave_spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute at @e[type=marker, tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player

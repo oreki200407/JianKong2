@@ -7,5 +7,5 @@ execute if entity @s[tag=contain_zombie] unless entity @e[type=marker, distance=
 tellraw @a[team=monitor] ["◎ 成功收容",{selector:"@n[type=marker,tag=contain_marker, distance=..0.3]"}]
 tp @s ~ ~-999 ~
 fill ~-1 ~ ~ ~-1 ~1 ~ glass_pane
-execute as @n[type=marker,tag=contain_marker, distance=..0.3] at @s run function contain:summon
+execute as @n[type=marker,tag=contain_marker, distance=..0.3] at @s run function contain:escape/success
 playsound block.piston.contract ambient @a[team=monitor]
