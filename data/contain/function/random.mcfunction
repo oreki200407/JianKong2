@@ -10,7 +10,7 @@
 ###################################################
 
 #---隨機---
-execute if predicate {"condition": "minecraft:random_chance","chance": 0.005} at @s run return run function contain:escape/root
+execute if predicate {"condition": "minecraft:random_chance","chance": 0.001} at @s run return run function contain:escape/root
 
 execute if score #room contain_temperature matches ..14 if predicate game:chance/20 run scoreboard players remove @s contain_temperature 1
 execute if score #room contain_temperature matches 15..18 if predicate game:chance/10 run scoreboard players remove @s contain_temperature 1

@@ -51,7 +51,10 @@ execute as @a[team=survivor] if items entity @s weapon.offhand golden_axe unless
 scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 
 #-----------------------監控者-----------------------
-#監控者與終界箱
+#監視器
+scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
+
+#終界箱
 execute as @a[team=monitor] at @s run function summon:root
 scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_cooldown=1..}] summon_cooldown 1
 

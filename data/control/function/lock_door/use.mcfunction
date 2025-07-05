@@ -1,3 +1,5 @@
+execute unless score #mode system matches 3 run return fail
+
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "鐵門上鎖", "color":"gold"}]
 
 scoreboard players remove 電力 info_monitor 50

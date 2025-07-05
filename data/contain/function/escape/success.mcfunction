@@ -1,3 +1,5 @@
+tellraw @a[team=monitor] ["◎ 成功收容",{selector:"@s"}]
+
 function contain:summon
 
 scoreboard players operation @n[tag=contain] contain_temperature = @s contain_temperature

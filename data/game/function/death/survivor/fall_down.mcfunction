@@ -14,7 +14,7 @@ gamemode spectator @s
 title @s title {text: "你倒地了", color: "red", bold: true}
 tellraw @a ["◎ ", {selector: "@s"}, " 倒地了"]
 tag @s add fall_down
-scoreboard players add @s score 50
+scoreboard players add @s death_score 50
 
 #儲存自己的UUID
 execute store result score #fall_down uuid0 store result score @s uuid0 run data get entity @s UUID[0]

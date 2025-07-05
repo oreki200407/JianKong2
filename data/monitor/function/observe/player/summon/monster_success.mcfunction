@@ -9,6 +9,6 @@
 # Author : oreki20
 ###################################################
 
-item replace entity @s armor.chest from entity @a[tag=trap_user,limit=1] weapon
+data modify entity @s equipment.chest set from entity @a[tag=trap_user,limit=1] SelectedItem
 function summon:monster
 kill

@@ -6,4 +6,4 @@ scoreboard players operation 電力 info_monitor += @s power_level
 
 execute if entity @s[tag=power1,tag=!power_auto] run function power:progress/1
 
-execute if predicate game:chance/3 run function power:damage
+execute if predicate {"condition": "minecraft:random_chance","chance": 0.01} run function power:damage

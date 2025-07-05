@@ -50,7 +50,7 @@ scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 #scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #人體變形
-execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.3] run function morph:player/start/root
+execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.55] run function morph:player/start/root
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
 #清除所有失去騎乘者的坐騎蜘蛛
 kill @e[type=spider, tag=spider_vehicle, predicate=!game:being_ride]
@@ -66,8 +66,8 @@ execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag
 execute unless entity @e[tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=cave_spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute at @e[type=marker, tag=contain_marker] as @a[team=monitor,distance=..0.2] run function contain:escape/player
-execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker,distance=..0.3] run function contain:escape/check
+execute at @e[type=marker, tag=contain_marker] as @a[team=monitor, distance=..0.5] run function contain:escape/player
+execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker, distance=..0.4] run function contain:escape/check
 
 #機關
 execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data

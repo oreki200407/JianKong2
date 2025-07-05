@@ -27,6 +27,7 @@ gamerule spectatorsGenerateChunks true
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue",bold:1b}
 scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color": "gold",bold:1b}
 scoreboard objectives add info_survivor dummy {"text": "求生者資訊", "color": "gold",bold:1b}
+scoreboard objectives add end dummy {"text": "分數", "color": "green",bold:1b}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy "隱藏資訊"
@@ -35,7 +36,9 @@ scoreboard objectives add money dummy {"text":"💲 錢 💲","color":"green"}
 scoreboard objectives add kill totalKillCount "殺怪數"
 scoreboard objectives add stamina dummy "體力值"
 scoreboard objectives add food food
-scoreboard objectives add score dummy "貢獻分數"
+scoreboard objectives add score dummy "貢獻總分"
+scoreboard objectives add death_score dummy "死亡貢獻分數"
+scoreboard objectives add damage_score custom:damage_taken "受傷貢獻分數"
 scoreboard objectives add constant dummy
 scoreboard objectives add xp dummy
 scoreboard objectives add fracture custom:fall_one_cm "骨折"
@@ -160,6 +163,7 @@ team modify monitor friendlyFire false
 #記分板設定
 scoreboard players set 更新 system 1
 scoreboard players set #2 constant 2
+scoreboard players set #20 constant 20
 scoreboard players set #60 constant 60
 scoreboard players set #100 constant 100
 scoreboard players set #200 constant 200

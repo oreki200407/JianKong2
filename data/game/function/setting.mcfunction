@@ -31,6 +31,7 @@ scoreboard objectives setdisplay list kill
 
 scoreboard players reset @a
 scoreboard players set @a[team=survivor] stamina 100
+scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 scoreboard players operation @a[team=survivor] money = 初始資金 lobby
 scoreboard players operation #switch_box_second system = 更換電箱 lobby

@@ -4,5 +4,4 @@ scoreboard players remove 電力 info_monitor 50
 tellraw @a[team=monitor] ["◎ ",{"entity":"@n[type=marker,tag=power]","nbt":"data.number"},"號發電機已升級為", {"text": "等級3", "color":"gold"}]
 
 setblock ~ ~ ~ oak_wall_sign[facing=south]{front_text:{messages:["",{"text":"目前等級：3","bold":true},{"text":"發電機已經最高級","bold":true},""]},is_waxed:1b} destroy
-
-scoreboard players add @e[tag=power1] power_level 1
+scoreboard players add @n[type=marker,tag=power] power_level 1

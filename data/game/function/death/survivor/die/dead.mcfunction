@@ -22,5 +22,5 @@ effect give @s resistance 10 4
 effect give @s strength 10 1
 tag @s remove fall_down
 scoreboard players reset @s death_time
-scoreboard players add @s score 70
+scoreboard players add @s death_score 70
 playsound entity.zombie.death ambient @s
