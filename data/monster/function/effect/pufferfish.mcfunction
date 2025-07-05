@@ -1,2 +1,2 @@
 advancement revoke @s only monster:pufferfish
-effect give @s poison 1 2 true
+effect give @s poison 1 2

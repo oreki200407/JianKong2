@@ -18,8 +18,8 @@ execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dead_playe
 tag @s remove dead
 
 gamemode adventure @s
-effect give @s resistance 10 100 true
-effect give @s strength 10 1 true
+effect give @s resistance 10 4
+effect give @s strength 10 1
 tag @s remove fall_down
 scoreboard players reset @s death_time
 scoreboard players add @s score 70

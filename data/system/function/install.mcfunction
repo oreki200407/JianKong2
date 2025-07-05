@@ -97,7 +97,6 @@ scoreboard objectives add photo_cooldown dummy
 
 #機關
 scoreboard objectives add poison_point dummy
-scoreboard objectives add sprint custom:sprint_one_cm
 
 #收容櫃
 scoreboard objectives add contain_temperature dummy
