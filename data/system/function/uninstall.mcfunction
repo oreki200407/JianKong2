@@ -12,6 +12,7 @@ scoreboard objectives remove food
 scoreboard objectives remove score
 scoreboard objectives remove constant
 scoreboard objectives remove xp
+scoreboard objectives remove fracture
 
 #遠程武器
 scoreboard objectives remove extinguisher

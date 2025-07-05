@@ -38,6 +38,7 @@ scoreboard objectives add food food
 scoreboard objectives add score dummy "貢獻分數"
 scoreboard objectives add constant dummy
 scoreboard objectives add xp dummy
+scoreboard objectives add fracture custom:fall_one_cm "骨折"
 
 #遠程武器
 scoreboard objectives add extinguisher dummy

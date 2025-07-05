@@ -25,6 +25,9 @@ kill @e[tag=!xp,type=experience_orb]
 execute as @e[type=item] if items entity @s contents slime_ball[item_name="經驗球"] at @s run function monster:xp
 execute as @a[team=survivor] run function game:xp
 
+#骨折
+execute as @a[scores={fracture=300..},team=survivor] at @s run function gadget:medical/fracture/damage
+
 #電箱
 execute as @a[team=survivor] at @s run function box:use/root
 execute as @a[tag=fixing_box] run function box:fix/fixing
