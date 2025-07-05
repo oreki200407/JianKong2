@@ -29,6 +29,7 @@ effect give @a regeneration 5 100 true
 effect give @a resistance 5 100 true
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal
 execute as @a[tag=trapped] run function gadget:bear_trap/trapped/release
+execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
 
 #復原場地
 execute as @e[team=monitor,type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
@@ -38,6 +39,7 @@ execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with e
 execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data
 execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
 kill @e[type=marker,tag=fire]
+kill @e[type=area_effect_cloud,tag=camera]
 
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster

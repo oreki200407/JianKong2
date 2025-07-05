@@ -23,7 +23,7 @@ item modify entity @s weapon.offhand {function: "set_damage", add: true, damage:
 #https://medium.com/starbugs/see-why-floating-point-error-can-not-be-avoided-from-ieee-754-809720b32175
 item modify entity @s weapon {function: "set_damage", add: true, damage: -0.02001}
 
-execute if predicate gadget:sword run function gadget:whetstone/upgrade
+execute if predicate gadget:fix run function gadget:whetstone/upgrade
 
 #還有耐久度
 execute unless items entity @s weapon tripwire_hook[item_name="磨刀石",damage=50] run return fail
