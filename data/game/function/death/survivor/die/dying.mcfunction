@@ -11,7 +11,7 @@
 
 execute unless entity @e[type=item_display, tag=tomb, distance=..0.01] run function game:death/survivor/die/teleport
 
-execute if entity @e[team=survivor, distance=..1.5, scores={revive_time=1..}] run title @s title {text: "你正在被救援", color: blue}
+execute if entity @a[team=survivor, distance=..1.5, scores={revive_time=1..}] run title @s title {text: "你正在被救援", color: blue}
 
 #60秒死透
 scoreboard players add @s death_time 1

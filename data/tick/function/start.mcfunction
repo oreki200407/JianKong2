@@ -13,7 +13,7 @@ execute if score 倒數 system matches 0..3 run function game:teleport
 
 #死亡展示實體
 execute as @a[team=survivor, gamemode=adventure, predicate=game:sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..1.5] run function game:death/survivor/save/saving
-scoreboard players reset @a[team=survivor, gamemode=adventure, predicate=!game:sneak, scores={revive_time=1..}] revive_time
+scoreboard players reset @a[team=survivor, predicate=!game:sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
 execute as @a[team=monitor,tag=monitor_death,scores={health=20}] run function game:death/monitor_effect
@@ -26,7 +26,7 @@ execute as @e[type=item] if items entity @s contents slime_ball[item_name="經�
 execute as @a[team=survivor] run function game:xp
 
 #骨折
-execute as @a[scores={fracture=300..},team=survivor] at @s run function gadget:medical/fracture/damage
+execute as @a[scores={fracture=400..}, team=survivor] at @s run function gadget:medical/fracture/damage
 
 #電箱
 execute as @a[team=survivor] at @s run function box:use/root
