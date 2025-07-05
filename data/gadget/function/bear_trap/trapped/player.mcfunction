@@ -10,4 +10,11 @@
 ###################################################
 
 #跳10次才能解除
-execute if score @s jump_break matches 10 run function gadget:bear_trap/trapped/release
+execute if score @s jump_break matches 10 run return run function gadget:bear_trap/trapped/release
+
+execute at @s if entity @e[type=marker,tag=baer_trap_marker,distance=..0.01] run return fail
+
+tag @s add temp
+scoreboard players operation #check_marker bear_trap = @s bear_trap
+execute as @e[type=marker,tag=baer_trap_marker] at @s if score @s bear_trap = #check_marker bear_trap run tp @a[tag=temp] ~ ~ ~
+tag @s remove temp

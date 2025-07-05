@@ -16,7 +16,7 @@ execute if entity @s[gamemode=spectator] run return fail
 tag @s add trapped
 
 #禁止移動和跳躍
-attribute @s movement_speed modifier add jk2:bear_trap -1 add_multiplied_base
+playsound item.shield.break ambient @a ~ ~ ~ 1 0
 execute if entity @s[type=player] run function gadget:bear_trap/detected/player
 execute if entity @s[type=!player] run function gadget:bear_trap/detected/mob
 

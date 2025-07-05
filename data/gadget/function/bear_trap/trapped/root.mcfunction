@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-#檢查是不是玩家 是的話就執行player
+#檢查是不是玩家 不是的話就執行player
 execute if entity @s[type=player] run return run function gadget:bear_trap/trapped/player
 
 #不是的話就執行mob
