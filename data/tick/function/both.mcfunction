@@ -51,6 +51,8 @@ execute as @a[team=survivor] if items entity @s weapon.offhand golden_axe unless
 scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 
 #-----------------------監控者-----------------------
+execute if score 電力 info_monitor matches 301.. run scoreboard players set 電力 info_monitor 300
+
 #監視器
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
 

@@ -1,4 +1,5 @@
-execute unless score 火藥 info_monitor matches 4.. unless score 骨頭 info_monitor matches 3.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
+execute unless score 火藥 info_monitor matches 4.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
+execute unless score 骨頭 info_monitor matches 3.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
 
 scoreboard players remove 火藥 info_monitor 4
 scoreboard players remove 骨頭 info_monitor 3

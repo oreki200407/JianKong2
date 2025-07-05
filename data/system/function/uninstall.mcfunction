@@ -1,6 +1,7 @@
 scoreboard objectives remove lobby
 scoreboard objectives remove info_monitor
 scoreboard objectives remove info_survivor
+scoreboard objectives remove end
 scoreboard objectives remove edit
 scoreboard objectives remove health
 scoreboard objectives remove system
@@ -10,6 +11,8 @@ scoreboard objectives remove kill
 scoreboard objectives remove stamina
 scoreboard objectives remove food
 scoreboard objectives remove score
+scoreboard objectives remove death_score
+scoreboard objectives remove damage_score
 scoreboard objectives remove constant
 scoreboard objectives remove xp
 scoreboard objectives remove fracture
