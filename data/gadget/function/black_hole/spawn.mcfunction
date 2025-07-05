@@ -1,2 +1,2 @@
-summon marker ~ ~ ~ {Tags:["black_hole"],PortalCooldown:200}
-playsound block.portal.travel ambient @a ~ ~ ~ 0.5 2
+summon area_effect_cloud ~ ~ ~ {Duration:200,Tags:["black_hole"],Particle:{type:"block",block_state:"air"}}
+playsound block.portal.travel ambient @a ~ ~ ~ 0.25 2

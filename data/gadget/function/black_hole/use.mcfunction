@@ -1,5 +1,2 @@
-execute if entity @s[nbt={PortalCooldown:0}] run return run kill
-
-particle squid_ink ~ ~10 ~ .5 .5 .5 0.1 10 force
-
-execute as @e[team=monitor,distance=..5] at @s facing entity @n[tag=black_hole,limit=1] feet if block ^ ^ ^.1 #air run tp ^ ^ ^.1
+particle squid_ink ~ ~ ~ .5 .5 .5 0.1 10 force
+execute as @e[team=survivor,distance=..8] at @s facing entity @n[tag=black_hole,limit=1] feet if block ^ ^ ^.5 #air run tp ^ ^ ^.2

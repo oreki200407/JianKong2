@@ -13,6 +13,7 @@ tp @s ~ ~-0.5 ~ ~ ~
 gamemode adventure @s
 effect give @s resistance 10 4
 title @s title {text: "你已被救起", color: "red", bold: true}
+title @s actionbar ""
 tellraw @a ["◎ ", {selector: "@s"}, " 已被救起"]
 tag @s remove fall_down
 scoreboard players reset @s death_time

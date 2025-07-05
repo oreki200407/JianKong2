@@ -1,7 +1,7 @@
 item replace block ~ ~ ~ container.0 with redstone[item_name={"text":"水管爆裂","color":"gold"},item_model=water_bucket,custom_data={type:"box"},lore=[{"text":"讓監控室淹水3分鐘","color":"white","italic":false},{"text":"所需經驗: 50等級","color":"aqua","italic":false}]]
-item replace block ~ ~ ~ container.1 with redstone[item_name={"text":"電力破壞","color":"gold"},item_model=redstone_torch,custom_data={type:"box"},lore=[{"text":"破壞監控者的三台發電機","color":"white","italic":false},{"text":"所需經驗: 75等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.1 with redstone[item_name={"text":"電力破壞","color":"gold"},item_model=tnt_minecart,custom_data={type:"box"},lore=[{"text":"破壞監控者的三台發電機","color":"white","italic":false},{"text":"所需經驗: 75等級","color":"aqua","italic":false}]]
 item replace block ~ ~ ~ container.2 with redstone[item_name={"text":"禁止監控","color":"gold"},item_model=ender_eye,custom_data={type:"box"},lore=[{"text":"監控者無法使用監視器3分鐘","color":"white","italic":false},{"text":"所需經驗: 100等級","color":"aqua","italic":false}]]
-item replace block ~ ~ ~ container.3 with redstone[item_name={"text":"轉移怪物","color":"gold"},item_model=zombie_head,custom_data={type:"box"},lore=[{"text":"轉移電箱周圍15格內的怪物到監控室","color":"white","italic":false},{"text":"所需經驗: 125等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.3 with redstone[item_name={"text":"轉移怪物","color":"gold"},item_model=ominous_trial_key,custom_data={type:"box"},lore=[{"text":"轉移電箱周圍15格內的怪物到監控室","color":"white","italic":false},{"text":"所需經驗: 125等級","color":"aqua","italic":false}]]
 
 item replace block ~ ~ ~ container.4 with redstone[tooltip_display={hide_tooltip: true},item_model=light_gray_stained_glass_pane,custom_data={type:"box",box:"none"}]
 
