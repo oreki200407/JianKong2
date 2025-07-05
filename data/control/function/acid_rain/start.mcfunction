@@ -1,2 +1,2 @@
-weather rain 180
+weather rain
 scoreboard players add 酸雨 info_survivor 180
