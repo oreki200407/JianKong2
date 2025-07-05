@@ -1,6 +1,6 @@
 #雙倍血
 execute if entity @s[level=..74] run return run function box:use/fail
-xp add @s -75
+xp add @s -75 levels
 
 effect give @a[team=survivor] health_boost 180 4
 

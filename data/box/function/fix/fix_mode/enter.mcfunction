@@ -4,12 +4,13 @@
 # Name   : enter.mcfunction
 # Path   : box:fix/fix_mode/
 # As     : 進入修理發電機狀態的玩家
-# At     : 世界重生點
+# At     : 電箱
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
-execute at @e[tag=box_off] run setblock ~ ~ ~ dispenser[facing=down] destroy
+setblock ~ ~ ~ dispenser[facing=down]{CustomName:"電箱",lock:{count:1,items:"air"}} destroy
+function box:use/kill_item
 tag @s add fixing_box
 #禁止跳躍
 attribute @s jump_strength modifier add jk2:fix_box -0.95 add_multiplied_base

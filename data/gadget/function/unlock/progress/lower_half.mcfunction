@@ -9,8 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if score @s hammer matches 5 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬▬", color: "gray"}]
-execute if score @s hammer matches 6 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬", color: "gray"}]
-execute if score @s hammer matches 7 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬", color: "gray"}]
-execute if score @s hammer matches 8 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬", color: "gray"}]
+execute if score @s unlock_progess matches 5 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬▬", color: "gray"}]
+execute if score @s unlock_progess matches 6 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬▬", color: "gray"}]
+execute if score @s unlock_progess matches 7 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬▬", color: "gray"}]
+execute if score @s unlock_progess matches 8 run return run title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬▬", color: "gray"}]
 title @s actionbar [{text: "開鎖中：▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}, {text: "▬", color: "gray"}]

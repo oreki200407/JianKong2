@@ -4,14 +4,14 @@
 # Name   : success.mcfunction
 # Path   : gadget:unlock/
 # As     : 使用開鎖器的玩家
-# At     : 世界重生點
+# At     : As
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
 tag @s remove using_unlock
-title @s actionbar {text: "門已解鎖", color: "gold", bold: true}
-execute at @s run playsound block.chest.open
+tellraw @a ["◎ 鐵門已", {text: "解鎖", color:gold}]
+playsound block.chest.open ambient
 execute as @n[type=marker, tag=door] at @s run function gadget:unlock/door with entity @s data
 
 #消耗開鎖器

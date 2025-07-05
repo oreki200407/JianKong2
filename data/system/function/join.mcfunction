@@ -9,7 +9,7 @@ effect give @s blindness 3 0 true
 effect give @s absorption 1 0 true
 
 gamemode adventure @s
-title @s times 10 40 10
+title @s times 0 40 0
 tp @s @e[type=marker, tag=lobby_spawn, limit=1]
 execute at @e[type=marker, tag=lobby_spawn, limit=1] run spawnpoint @s ~ ~ ~
 

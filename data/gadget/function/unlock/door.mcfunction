@@ -1,2 +1,2 @@
-$setblock ~ ~ ~ $(door)[half=lower,facing=$(facing),hinge=$(hinge)]
-$setblock ~ ~1 ~ $(door)[half=upper,facing=$(facing),hinge=$(hinge)]
+$setblock ~ ~ ~ $(door)[half=lower, open=false, facing=$(facing), hinge=$(hinge)] destroy
+$setblock ~ ~1 ~ $(door)[half=upper, open=false, facing=$(facing), hinge=$(hinge)] destroy

@@ -18,5 +18,5 @@ execute as @a[scores={box_operation=1}] run return run function box:use/success/
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"範圍清怪","color":"gold"}]
 execute as @a[scores={box_operation=1}] run return run function box:use/success/clear
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"修復電源","color":"red"}]
-execute as @a[scores={box_operation=1}] run return run function box:fix/fix_mode/enter
+execute as @a[scores={box_operation=1}] at @e[tag=box_off] run return run function box:fix/fix_mode/enter
 clear @s redstone[custom_data~{box:"none"}]

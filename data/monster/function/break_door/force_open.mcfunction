@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
+playsound block.iron_door.open ambient @a
 $setblock ~ ~ ~ $(door)[half=lower, open=true, facing=$(facing), hinge=$(hinge)]
-$setblock ~ ~1 ~ $(door)[half=upper, open=true, facing=$(facing), hinge=$(hinge)]

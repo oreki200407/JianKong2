@@ -11,3 +11,4 @@
 
 fill ~ ~ ~ ~ ~1 ~ air
 tag @s remove box
+tag @s remove box_off

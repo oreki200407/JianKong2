@@ -11,6 +11,8 @@
 
 function box:switch/set
 
+execute if entity @e[tag=box_off] run tag @s add box_off
+
 #刪除舊的
 execute as @e[type=armor_stand, tag=box] at @s run function box:switch/remove_box
 

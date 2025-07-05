@@ -21,4 +21,4 @@ execute if score @s unlock_progess matches 0..4 run return run function gadget:u
 execute if score @s unlock_progess matches 5..9 run return run function gadget:unlock/progress/lower_half
 
 #達到100%後 要拿著才會繼續
-execute if items entity @s weapon tripwire_hook[item_name="開鎖器"] run function gadget:unlock/success
+execute if items entity @s weapon tripwire_hook[item_name="開鎖器"] at @s run function gadget:unlock/success

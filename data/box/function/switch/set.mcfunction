@@ -13,3 +13,4 @@
 setblock ~ ~ ~ dispenser[facing=down]{CustomName:"電箱"}
 setblock ~ ~1 ~ ender_chest
 function box:use/reset
+execute if entity @e[tag=box_off] run function box:use/box_off

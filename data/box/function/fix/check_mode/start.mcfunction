@@ -9,6 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
+execute at @s run playsound block.bell.use ambient @s ~ ~ ~ 1 2
+
 #進入檢定狀態
 tag @s add fixing_box_check
 

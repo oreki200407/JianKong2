@@ -402,7 +402,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -438,7 +438,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]]
 						},
 						{
 							"function": "minecraft:set_components",
@@ -480,7 +480,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "放置"]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "放置"]]
 						},
 						{
 							"function": "minecraft:set_components",
@@ -489,6 +489,13 @@
 								"minecraft:consumable": {
 									"consume_seconds": 99999
 								}
+							}
+						},
+						{
+							"function": "minecraft:set_custom_model_data",
+							"strings": {
+								"mode": "append",
+								"values": ["bear_trap"]
 							}
 						},
 						{
@@ -527,7 +534,14 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]]
+						},
+						{
+							"function": "minecraft:set_custom_model_data",
+							"strings": {
+								"mode": "append",
+								"values": ["lockpick"]
+							}
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
