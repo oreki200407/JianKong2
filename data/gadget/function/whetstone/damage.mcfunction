@@ -1,2 +1,1 @@
-$execute if items entity @s weapon iron_sword run return run item modify entity @s weapon {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"attack_damage",amount:$(sword),operation:"add_value",slot:"any"}],replace:0b}
-$item modify entity @s weapon.offhand {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"attack_damage",amount:$(sword),operation:"add_value",slot:"any"}],replace:0b}
+$item modify entity @s weapon.$(slot) {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"attack_damage",amount:$(new_attack),operation:"add_value",slot:"any"}],replace:0b}
