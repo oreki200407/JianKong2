@@ -1,7 +1,7 @@
 scoreboard players set @s shop 3
 item replace entity @s enderchest.0 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.1 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.2 with melon_slice[item_name={"translate": "block.minecraft.melon"},lore=[[{"text": "價格：1", "color": "gold", "italic": false}]],custom_data={type:"shop",price:1}] 5
+item replace entity @s enderchest.2 with melon_slice[lore=[[{"text": "價格：1", "color": "gold", "italic": false}]],custom_data={type:"shop",price:1}] 5
 item replace entity @s enderchest.3 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.4 with bread[lore=[[{"text": "價格：2", "color": "gold", "italic": false}]],custom_data={type:"shop",price:2}] 2
 item replace entity @s enderchest.5 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
