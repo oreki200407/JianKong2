@@ -14,11 +14,11 @@ advancement revoke @s only gadget:fixing_sword
 execute if items entity @s weapon.offhand bone run return run function gadget:whetstone/restore
 execute unless items entity @s weapon.offhand iron_sword run return run title @s actionbar {text: "請把要維修的武器放在副手", color: "red", bold: true}
 execute if items entity @s weapon.offhand iron_sword[damage=0] run return fail
-execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {text: "體力", color: "gold"}, "不足, 無法磨刀"]
+#execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {text: "體力", color: "gold"}, "不足, 無法磨刀"]
 
 #鐵劍耐久度250
 #這個不可以加0.000001
-item modify entity @s weapon.offhand {function: "set_damage", add: true, damage: 0.004}
+item modify entity @s weapon.offhand {function: "set_damage", add: true, damage: 0.003}
 #磨刀石耐久度50
 #https://medium.com/starbugs/see-why-floating-point-error-can-not-be-avoided-from-ieee-754-809720b32175
 item modify entity @s weapon {function: "set_damage", add: true, damage: -0.02001}
