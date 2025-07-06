@@ -11,7 +11,8 @@
 
 advancement revoke @s only gadget:hammer
 
-execute unless items entity @s container.* oak_pressure_plate[item_name="木板"] run return run title @s actionbar {text: "你身上沒有木板", color: "red", bold: true}
+execute store success score #has_plate hammer run clear @s oak_pressure_plate[item_name="木板"] 0
+execute if score #has_plate hammer matches 0 run return run title @s actionbar {text: "你身上沒有木板", color: "red", bold: true}
 execute if score @s stamina matches ..49 run return run tellraw @s ["◎ 你的", {text: "體力", color: "gold"}, "不足, 無法釘木板"]
 
 #是玻璃

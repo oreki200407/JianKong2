@@ -1,4 +1,5 @@
-execute unless items entity @s container.* brick[item_name="散彈槍子彈"] run return run function gun:reloaded
+execute store success score #has_magazine reload run clear @s brick[item_name="散彈槍子彈"] 0
+execute if score #has_magazine reload matches 0 run return run function gun:reloaded
 execute unless items entity @s weapon golden_axe[item_name="散彈槍"] run return run function gun:reloaded
 
 execute unless score @s reload matches 3 run playsound block.piston.contract ambient @s ~ ~ ~ 1 2
