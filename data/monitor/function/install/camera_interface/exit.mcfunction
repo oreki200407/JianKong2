@@ -12,4 +12,6 @@
 gamemode adventure @s
 tp @s @e[type=marker, tag=lobby, limit=1]
 scoreboard players reset @s camera
-playsound ui.button.click
+playsound ui.button.click ambient
+tag @s remove installing_camera
+scoreboard players reset @s camera_interface

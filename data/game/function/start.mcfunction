@@ -1,9 +1,12 @@
 title @a title {"text":"準備時間結束","bold":true,"color":"gold"}
 scoreboard players set #mode system 3
 
+
 execute at @e[type=marker,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ air
-clear @a[team=monitor] black_dye
 item replace entity @a[team=survivor] enderchest.10 with air
+clear @a[team=monitor] black_dye
+execute as @a[tag=installing_camera] run function monitor:install/camera_interface/exit
+execute as @a[tag=using_camera] run function monitor:observe/player/back/root
 
 execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red info_survivor
 execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue info_survivor

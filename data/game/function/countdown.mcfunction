@@ -16,6 +16,7 @@ schedule function game:time 1s
 schedule function game:dawn 1500s
 schedule function morph:free 1200s
 
+clear @a[team=monitor] white_dye
 execute as @a[team=monitor] run function monitor:observe/give
 
 tag @e[type=armor_stand,tag=box] remove box

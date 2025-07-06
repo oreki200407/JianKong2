@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:coal",
+		"minecraft:echo_shard",
+		"minecraft:magenta_glazed_terracotta"
+	]
+}

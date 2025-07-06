@@ -42,7 +42,7 @@ clear @a[team=monitor] #game:loot
 xp set @a[team=monitor] 0 points
 
 #使用監視器中
-execute as @a[tag=using_camera] run function monitor:observe/player/watching
+execute as @a[tag=using_camera] unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
 scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
