@@ -1,4 +1,5 @@
-execute unless items entity @s container.* iron_ingot[item_name="衝鋒槍彈夾"] run return run function gun:reloaded
+execute store success score #has_magazine reload run clear @s iron_ingot[item_name="衝鋒槍彈夾"] 0
+execute if score #has_magazine reload matches 0 run return run function gun:reloaded
 execute unless items entity @s weapon golden_axe[item_name="衝鋒槍"] run return run function gun:reloaded
 
 scoreboard players set @s reload 1

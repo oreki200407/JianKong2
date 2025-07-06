@@ -28,7 +28,7 @@ clear @s oak_pressure_plate[item_name="木板"] 1
 #減少耐久度
 #IEEE-754 floating point error, 用-0.1會導致卡在3耐久度
 item modify entity @s weapon {function: "set_damage", add: true, damage: -0.11}
-execute unless items entity @s weapon tripwire_hook[item_name="錘子",damage=10] run return fail
+execute unless items entity @s weapon tripwire_hook[item_name="錘子", damage=10] run return fail
 
 #損壞
 item replace entity @s weapon with air
