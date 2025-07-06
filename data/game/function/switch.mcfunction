@@ -11,10 +11,6 @@ team modify monitor color red
 scoreboard objectives setdisplay sidebar.team.red info_monitor
 scoreboard objectives setdisplay sidebar.team.blue money
 
-scoreboard players reset @a fracture
-scoreboard players reset @a money
-scoreboard players operation @a[team=survivor] money = 初始資金 lobby
-
 schedule function game:prepare 2s
 schedule clear summon:natural
 
@@ -27,6 +23,10 @@ effect give @a[team=monitor] hunger 3 255 true
 effect give @a invisibility 5 0 true
 effect give @a regeneration 5 100 true
 effect give @a resistance 5 100 true
+scoreboard players reset @a fracture
+scoreboard players reset @a money
+
+#復原狀態
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal
 execute as @a[tag=trapped] run function gadget:bear_trap/trapped/release
 execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive

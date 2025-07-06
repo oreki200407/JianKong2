@@ -14,6 +14,7 @@ execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 
 title @a title {"text":"夜晚來臨","bold":true,"color":"blue"}
 schedule function game:time 1s
 schedule function game:dawn 1500s
+schedule function morph:free 1200s
 
 execute as @a[team=monitor] run function monitor:observe/give
 

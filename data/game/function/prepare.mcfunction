@@ -6,7 +6,12 @@ effect give @a[team=survivor] night_vision 180 0 true
 effect give @a[team=monitor] night_vision infinite 0 true
 effect give @a[team=monitor] saturation infinite 0 true
 
+#發錢
+scoreboard players operation @a[team=survivor] money = 初始資金 lobby
+scoreboard players set @a[team=survivor] stamina 100
+
 #時間
+scoreboard players reset #prepare system
 scoreboard players reset #time system
 schedule function game:time 1s
 schedule function game:start 3601t
@@ -60,5 +65,7 @@ execute at @e[type=marker,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ ender_c
 execute at @e[type=marker,tag=spawn_survivor,limit=1] run spawnpoint @a[team=survivor]
 execute at @e[type=marker,tag=lobby,limit=1] run spawnpoint @a[team=monitor]
 
+tellraw @a[team=survivor] ["◎ 請在準備時間內", {"color":"gold",text: "購買物品"}]
+tellraw @a[team=monitor] ["◎ 請在準備時間內", {"color":"gold",text: "安裝監視器"}]
+
 gamemode adventure @a[team=!spec]
-gamemode spectator @a[team=spec]

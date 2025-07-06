@@ -10,8 +10,8 @@ execute if score #switch system matches 1 run scoreboard objectives setdisplay s
 
 scoreboard players reset @a[team=survivor] money
 scoreboard players reset 目前監視器 info_monitor
-scoreboard players reset #time system
 scoreboard players set 倒數 system 3
+scoreboard players operation #switch_box system = #switch_box_second system
 schedule function game:countdown 1s
 schedule function summon:natural 10s
 schedule function contain:give 60s

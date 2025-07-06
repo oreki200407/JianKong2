@@ -19,6 +19,7 @@ scoreboard players reset @s morph_skill_2_duration
 #將怪物歸還給可供變形的怪物陣列
 $data modify storage jk2:data root.morph.monsters append value "$(monster)"
 
-clear @s
+clear @s *[custom_data={skill: 1b}]
+clear @s *[custom_data={skill: 2b}]
 function monitor:observe/give
 title @s actionbar ""

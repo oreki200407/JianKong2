@@ -4,12 +4,15 @@
 # Name   : root.mcfunction
 # Path   : morph:player/start/
 # As     : 變形的玩家
-# At     : 世界重生點
+# At     : As
 # Loop   : 否
 # Author : Alex_Cai, oreki20
 ###################################################
 
 tp @s ~ ~ ~-1
+
+#免費
+execute at @e[type=marker, tag=morph_machine, limit=1] if block ~ ~-1 ~-2 air run scoreboard players add 電力 info_monitor 50
 
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
 
@@ -20,7 +23,7 @@ execute store result score #availables morph store result storage jk2:data root.
 execute if score #availables morph matches 0 run return run tellraw @s ["◎ 目前沒有", {text: "可變的怪物", color: "gold"}]
 
 #變型成功
-clear @s
+clear @s white_dye
 scoreboard players remove 電力 info_monitor 50
 
 #隨機選擇
