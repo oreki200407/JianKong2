@@ -22,19 +22,19 @@ scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, s
 execute as @e[type=marker, tag=door] at @s run function monster:break_door/door_marker
 
 #史萊姆
-execute as @e[type=armor_stand, tag=slime_ride, predicate=game:on_ground] at @s run function monster:effect/slime/split
+execute as @e[type=armor_stand, tag=slime_ride, predicate=game:flag/on_ground] at @s run function monster:effect/slime/split
 execute as @e[type=slime,tag=slime_split] at @s run function monster:effect/slime/splited
 
 #熾足獸
 execute at @e[type=strider,tag=strider] run effect give @a[team=survivor,distance=..2.5] poison 3 1
-execute as @e[type=zombie,tag=strider_ride, predicate=game:on_ground] at @s run function monster:effect/strider
+execute as @e[type=zombie,tag=strider_ride, predicate=game:flag/on_ground] at @s run function monster:effect/strider
 
 #女巫
 execute at @e[type=witch,tag=witch] run effect give @a[team=survivor,distance=..3] weakness 1 1 true
 
 #狼
 execute as @e[type=wolf,tag=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
-execute as @e[type=armor_stand, tag=wolf_ride, predicate=game:on_ground] at @s run function monster:effect/wolf/death
+execute as @e[type=armor_stand, tag=wolf_ride, predicate=game:flag/on_ground] at @s run function monster:effect/wolf/death
 
 #鐵巨人
 execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
@@ -46,4 +46,4 @@ execute as @e[type=vex,tag=!vex] run data merge entity @s {equipment: {mainhand:
 execute as @e[type=area_effect_cloud, tag=cobweb,nbt={PortalCooldown:0}] at @s run function monster:effect/spider/cobweb
 
 #凋零骷髏
-execute as @e[type=armor_stand, tag=wither_skeleton_ride, predicate=game:on_ground] at @s run function monster:effect/wither_skeleton
+execute as @e[type=armor_stand, tag=wither_skeleton_ride, predicate=game:flag/on_ground] at @s run function monster:effect/wither_skeleton

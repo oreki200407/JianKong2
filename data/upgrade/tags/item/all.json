@@ -6,6 +6,6 @@
 		"#upgrade:armor/golden",
 		"#upgrade:armor/iron",
 		"#upgrade:armor/diamond",
-		"iron_sword"
+		"minecraft:iron_sword"
 	]
 }
