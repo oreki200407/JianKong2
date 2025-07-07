@@ -1,0 +1,37 @@
+###################################################
+# 給原料的怪物的隨機
+# 
+# Name   : give.mcfunction
+# Path   : contain:
+# As     : 給原料的怪物們(@e[tag=contain])
+# At     : 世界重生點
+# Loop   : 是，一秒
+# Author : oreki20
+###################################################
+
+#---隨機---
+execute if predicate {"condition": "minecraft:random_chance","chance": 0.001} at @s run return run function contain:escape/root
+
+execute if score #room contain_temperature matches ..14 if predicate game:chance/10 run function contain:value/temperature_low
+execute if score #room contain_temperature matches 15..19 if predicate game:chance/5 run function contain:value/temperature_low
+execute if score #room contain_temperature matches 20 if predicate game:chance/5 run function contain:value/temperature
+execute if score #room contain_temperature matches 21..25 if predicate game:chance/5 run function contain:value/temperature_high
+execute if score #room contain_temperature matches 26.. if predicate game:chance/10 run function contain:value/temperature_high
+
+execute if score @s contain_food matches 19.. if predicate game:chance/1 run function contain:value/food
+execute if score @s contain_food matches 12..18 if predicate game:chance/5 run function contain:value/food
+execute if score @s contain_food matches ..11 if predicate game:chance/10 run function contain:value/food
+
+execute if score @s contain_temperature matches ..6 if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_temperature matches 7..10 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_temperature matches 11..15 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_temperature matches 25..29 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_temperature matches 30..33 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_temperature matches 34.. if predicate game:chance/10 run function contain:value/health
+
+execute if score @s contain_food matches ..6 if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_food matches 7..10 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_food matches 11..15 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_food matches 25..29 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_food matches 30..33 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_food matches 34.. if predicate game:chance/10 run function contain:value/health
