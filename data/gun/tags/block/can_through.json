@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"values":
+	[
+		"#minecraft:air",
+		"#minecraft:all_signs",
+		"#minecraft:flower_pots",
+		"#minecraft:rails",
+		"#gun:through_types/redstone",
+		"#gun:through_types/hang_plants",
+		"#gun:through_types/attach",
+		"#gun:through_types/carpets",
+		"#gun:through_types/plant",
+		"#gun:through_types/torch"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values":
+	[
+		"#minecraft:buttons",
+		"#minecraft:pressure_plates",
+		"minecraft:tripwire",
+		"minecraft:tripwire_hook",
+		"minecraft:redstone_wire",
+		"minecraft:repeater",
+		"minecraft:comparator",
+		"minecraft:lever"
+	]
+}

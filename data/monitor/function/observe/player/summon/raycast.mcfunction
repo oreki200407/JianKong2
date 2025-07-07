@@ -12,8 +12,8 @@
 #超出範圍
 execute unless entity @s[distance=..50] run return run function monitor:observe/player/summon/check
 
-#不是空氣
-execute unless block ^ ^ ^0.5 #air unless block ^ ^ ^0.5 #doors[open=true] run return run function monitor:observe/player/summon/check
-
 #還沒到 繼續往前
-execute positioned ^ ^ ^.5 run function monitor:observe/player/summon/raycast
+execute positioned ^ ^ ^.5 if function gun:can_through run return run function monitor:observe/player/summon/raycast
+
+#撞上實體方塊
+function monitor:observe/player/summon/check

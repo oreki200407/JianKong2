@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:ladder",
+		"minecraft:vine",
+		"minecraft:glow_lichen",
+		"minecraft:sculk_vein",
+		"minecraft:resin_clump"
+	]
+}

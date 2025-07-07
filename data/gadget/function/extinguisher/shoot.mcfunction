@@ -14,8 +14,8 @@ fill ~ ~ ~ ~ ~ ~ air replace #fire
 
 #往前
 scoreboard players add @s extinguisher 1
-#不是空氣 且 不是打開的門 或 已經走了6格 就結束
-execute unless block ~ ~ ~ #air unless block ~ ~ ~ #doors[open=true] run return run scoreboard players reset @s extinguisher
+#不是可穿過的方塊 或 已經走了6格 就結束
+execute unless function gun:can_through run return run scoreboard players reset @s extinguisher
 execute if score @s extinguisher matches 6.. run return run scoreboard players reset @s extinguisher
 
 #往前1格
