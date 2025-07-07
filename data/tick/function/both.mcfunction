@@ -40,7 +40,7 @@ execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
 execute as @a[team=survivor] if items entity @s weapon tripwire_hook[item_name="錘子"] run scoreboard players add @s hammer_hold 1
 
 #防毒面具
-execute as @a[team=survivor] if items entity @s armor.head carved_pumpkin[item_name="防毒面具"] run function gadget:mask/wearing
+execute as @a[team=survivor,gamemode=adventure] if items entity @s armor.head carved_pumpkin[item_name="防毒面具"] run function gadget:mask/wearing
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying

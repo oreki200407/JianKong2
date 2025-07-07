@@ -11,6 +11,7 @@ execute as @a[tag=using_camera] run function monitor:observe/player/back/root
 execute unless score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.red info_survivor
 execute if score #switch system matches 1 run scoreboard objectives setdisplay sidebar.team.blue info_survivor
 
+scoreboard players reset @a[team=survivor] fracture
 scoreboard players reset @a[team=survivor] money
 scoreboard players reset 目前監視器 info_monitor
 scoreboard players set 倒數 system 3

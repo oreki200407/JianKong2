@@ -5,7 +5,6 @@ execute unless score 電力 info_monitor matches 60.. run return run tellraw @s 
 
 scoreboard players remove 電力 info_monitor 60
 scoreboard players add 釋放酸雨-冷卻 info_monitor 300
-scoreboard players add 酸雨 info_survivor 180
 
 setblock ~ ~ ~ air destroy
 playsound block.piston.extend

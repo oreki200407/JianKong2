@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-execute unless entity @a[team=survivor,tag=!fall_down] if score @s death_time matches 20 run return run function game:death/survivor/save/alone
+execute unless entity @a[team=survivor,tag=!fall_down] if score @s death_time matches 50 run return run function game:death/survivor/save/alone
 execute if score @s death_time matches 1..120 run return run title @s actionbar [{text: "死亡中：", color: "gold", bold: true}, {text: "▬▬▬▬▬▬▬▬▬▬", color: "gray"}]
 execute if score @s death_time matches 121..240 run return run title @s actionbar [{text: "死亡中：▬", color: "gold", bold: true}, {text: "▬▬▬▬▬▬▬▬▬", color: "gray"}]
 execute if score @s death_time matches 241..360 run return run title @s actionbar [{text: "死亡中：▬▬", color: "gold", bold: true}, {text: "▬▬▬▬▬▬▬▬", color: "gray"}]
