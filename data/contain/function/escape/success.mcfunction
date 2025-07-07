@@ -1,7 +1,9 @@
-tellraw @a[team=monitor] ["◎ 成功收容",{selector:"@s"}]
+tellraw @a[team=monitor] ["◎ 成功收容",{selector:"@s", color:gold}]
 
 function contain:summon
 
 scoreboard players operation @n[tag=contain] contain_temperature = @s contain_temperature
 scoreboard players operation @n[tag=contain] contain_food = @s contain_food
 scoreboard players operation @n[tag=contain] contain_health = @s contain_health
+
+function contain:value/all

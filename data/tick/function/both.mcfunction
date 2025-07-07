@@ -53,8 +53,14 @@ scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 #-----------------------監控者-----------------------
 execute if score 電力 info_monitor matches 301.. run scoreboard players set 電力 info_monitor 300
 
-#監視器
+#使用監視器中
+execute as @a[tag=using_camera] unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
+#監視器
+execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
+scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
+#拍攝
+#scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #終界箱
 execute as @a[team=monitor] at @s run function summon:root

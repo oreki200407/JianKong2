@@ -1,5 +1,5 @@
 #遊戲
-execute as @e[type=item, distance=..1.5] if items entity @s contents #power:all run data merge entity @s {PickupDelay:0s}
+execute at @s as @e[type=item, distance=..1.5] if items entity @s contents #power:all run data merge entity @s {PickupDelay:0s}
 
 execute store success score @s light_game run clear @s coal 0
 execute as @a[scores={light_game=1}] at @e[type=marker,tag=light_game] run return run function power:light_game/switch/root

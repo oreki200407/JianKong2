@@ -1,28 +1,28 @@
 scoreboard players set @s shop 2
-item replace entity @s enderchest.0 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.1 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.0 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.1 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.2 with tripwire_hook[item_name="錘子",lore=[[{"text": "價格：10", "color": "gold", "italic": false}],[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:10}, consumable={consume_seconds: 99999}, damage=0, max_damage=10, max_stack_size=1, custom_model_data={strings:["hammer"]}] 1
-item replace entity @s enderchest.3 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.3 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.4 with tripwire_hook[item_name="滅火器",lore=[[{"text": "價格：10", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:10}, consumable={consume_seconds: 99999}, damage=0, max_damage=10, max_stack_size=1, custom_model_data={strings:["extinguisher"]}] 1
-item replace entity @s enderchest.5 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.5 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.6 with tripwire_hook[item_name="開鎖器",lore=[[{"text": "價格：5", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:5}, consumable={consume_seconds: 99999}, custom_model_data={strings:["lockpick"]}] 3
-item replace entity @s enderchest.7 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.8 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.9 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.7 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.8 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.9 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.10 with oak_pressure_plate[item_name="木板",lore=[[{"text": "價格：5", "color": "gold", "italic": false}]],custom_data={type:"shop",price:5}] 5
-item replace entity @s enderchest.11 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.11 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.12 with tripwire_hook[item_name="磨刀石",lore=[[{"text": "價格：5", "color": "gold", "italic": false}],[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]], custom_data={type:"shop",price:5}, consumable={consume_seconds: 99999}, damage=0, max_damage=50, max_stack_size=1,custom_model_data={strings:["whetstone"]}] 1
-item replace entity @s enderchest.13 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.13 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.14 with carved_pumpkin[item_name="防毒面具",lore=[[{"text": "價格：15", "color": "gold", "italic": false}],[{"text": "戴在頭上使用", "color": "gray", "italic": false}]], custom_data={type:"shop",price:15}, equippable={slot: "head", equip_sound: "intentionally_empty", camera_overlay: "misc/pumpkinblur"}, damage=0, max_damage=2400, max_stack_size=1, custom_model_data={strings:["mask"]}] 1
-item replace entity @s enderchest.15 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.15 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.16 with shield[item_name="盾牌",lore=[[{"text": "價格：10", "color": "gold", "italic": false}],[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],max_damage=150,custom_data={type:"shop",price:10}] 1
-item replace entity @s enderchest.17 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.18 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.19 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.17 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.18 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.19 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.20 with snowball[item_name="鞭炮",lore=[[{"text": "價格：3", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]],custom_data={type:"shop",price:3},custom_model_data={strings:["bomb"]}] 1
-item replace entity @s enderchest.21 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.21 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.22 with lingering_potion[tooltip_display={"hidden_components": ["minecraft:potion_contents"]},custom_model_data={strings:["molotov_cocktail"]},lore=[[{"text": "價格：3", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "投擲"]],potion_contents={"custom_color": 4144959, custom_name: "molotov_cocktail"}, max_stack_size=64, custom_data={type:"shop",price:3}] 1
-item replace entity @s enderchest.23 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.23 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.24 with tripwire_hook[item_name="捕獸夾",lore=[[{"text": "價格：3", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "放置"]],custom_data={type:"shop",price:3},custom_model_data={strings:["bear_trap"]}, consumable={consume_seconds: 99999}] 1
-item replace entity @s enderchest.25 with emerald[item_model=light_gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
+item replace entity @s enderchest.25 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.26 with emerald[item_model=compass,item_name="返回主選單",custom_data={price:0,type:"shop"}]

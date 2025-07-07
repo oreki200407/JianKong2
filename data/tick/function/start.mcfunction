@@ -41,14 +41,6 @@ function tick:both
 clear @a[team=monitor] #game:loot
 xp set @a[team=monitor] 0 points
 
-#使用監視器中
-execute as @a[tag=using_camera] unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
-#監視器
-execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
-scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
-#拍攝
-#scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
-
 #人體變形
 execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.55] run function morph:player/start/root
 execute as @a[scores={morph=1..}] run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"

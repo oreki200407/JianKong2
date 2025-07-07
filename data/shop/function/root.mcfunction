@@ -2,7 +2,7 @@ execute if items entity @e[type=item, distance=..1.5] contents *[custom_data~{ty
 
 execute if score @s open_ender_chest matches 1.. run function shop:open_ender_chest
 
-execute store success score @s shop_operate run clear @s emerald[item_model=light_gray_stained_glass_pane]
+execute store success score @s shop_operate run clear @s emerald[item_model=gray_stained_glass_pane]
 execute as @a[scores={shop_operate=1}] run return run function shop:reset
 
 execute store success score @s shop_operate run clear @s emerald[custom_data~{price:0}] 0

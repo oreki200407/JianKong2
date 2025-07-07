@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if score @s camera_interface matches 1 run return run function monitor:install/camera_interface/summon/root
+execute if score @s camera_interface matches 1 at @s align xz positioned ~.5 ~ ~.5 run return run function monitor:install/camera_interface/summon/root
 execute if score @s camera_interface matches 2 run function monitor:install/camera_interface/exit
