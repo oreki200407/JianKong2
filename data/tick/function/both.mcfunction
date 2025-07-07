@@ -44,9 +44,7 @@ execute as @a[team=survivor,gamemode=adventure] if items entity @s armor.head ca
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying
-execute as @a[team=survivor, scores={reload=1}] run function gun:smg/reloading
-execute as @a[team=survivor, scores={reload=2}] run function gun:pistol/reloading
-execute as @a[team=survivor, scores={reload=3}] run function gun:shotgun/reloading
+execute as @a[team=survivor, scores={reload=1..}] run function gun:reloading
 execute as @a[team=survivor] at @s if items entity @s weapon.offhand golden_axe run function gun:manual
 scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 

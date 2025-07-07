@@ -1,15 +1,15 @@
 ###################################################
-# 進入修理發電機狀態
+# 進入修理電箱狀態
 # 
 # Name   : enter.mcfunction
 # Path   : box:fix/fix_mode/
-# As     : 進入修理發電機狀態的玩家
+# As     : 進入修理電箱狀態的玩家
 # At     : 電箱
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
 
-setblock ~ ~ ~ dispenser[facing=down]{CustomName:"電箱",lock:{count:1,items:"air"}} destroy
+setblock ~ ~ ~ dispenser[facing=down]{CustomName: "電箱", lock: {items: "air", count: 1}} destroy
 function box:use/kill_item
 tag @s add fixing_box
 #禁止跳躍
