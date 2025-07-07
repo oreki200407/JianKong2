@@ -3,7 +3,7 @@ item replace block ~ ~ ~ container.1 with redstone[item_name={"text":"電力破�
 item replace block ~ ~ ~ container.2 with redstone[item_name={"text":"禁止監控","color":"gold"},item_model=ender_eye,custom_data={type:"box"},lore=[{"text":"監控者無法使用監視器3分鐘","color":"white","italic":false},{"text":"所需經驗: 100等級","color":"aqua","italic":false}]]
 item replace block ~ ~ ~ container.3 with redstone[item_name={"text":"轉移怪物","color":"gold"},item_model=ominous_trial_key,custom_data={type:"box"},lore=[{"text":"轉移電箱周圍15格內的怪物到監控室","color":"white","italic":false},{"text":"所需經驗: 125等級","color":"aqua","italic":false}]]
 
-item replace block ~ ~ ~ container.4 with redstone[tooltip_display={hide_tooltip: true},item_model=gray_stained_glass_pane,custom_data={type:"box",box:"none"}]
+item replace block ~ ~ ~ container.4 with redstone[tooltip_display={hide_tooltip: true},item_model=light_gray_stained_glass_pane,custom_data={type:"box",box:"none"}]
 
 item replace block ~ ~ ~ container.5 with redstone[item_name={"text":"鐵門解鎖","color":"gold"},item_model=iron_door,custom_data={type:"box"},lore=[{"text":"解開所有上鎖的鐵門","color":"white","italic":false},{"text":"所需經驗: 50等級","color":"aqua","italic":false}]]
 item replace block ~ ~ ~ container.6 with redstone[item_name={"text":"雙倍血量","color":"gold"},item_model=golden_apple,custom_data={type:"box"},lore=[{"text":"所有求生者額外獲得20血量3分鐘","color":"white","italic":false},{"text":"所需經驗: 75等級","color":"aqua","italic":false}]]

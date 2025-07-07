@@ -26,10 +26,10 @@ execute as @e[type=item] if items entity @s contents slime_ball[item_name="經�
 execute as @a[team=survivor] run function game:xp
 
 #骨折
-execute as @a[scores={fracture=400..}, team=survivor] at @s run function gadget:medical/fracture/damage
+execute as @a[scores={fracture=1..}, team=survivor] at @s run function gadget:medical/fracture/damage
 
 #電箱
-execute as @a[team=survivor] at @s run function box:use/root
+execute as @a[team=!spec] at @s run function box:use/root
 execute as @a[tag=fixing_box] run function box:fix/fixing
 
 #升級

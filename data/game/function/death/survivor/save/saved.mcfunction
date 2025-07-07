@@ -9,15 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-tp @s ~ ~-0.5 ~ ~ ~
-gamemode adventure @s
-effect give @s resistance 10 4
 title @s title {text: "你已被救起", color: "red", bold: true}
-title @s actionbar ""
 tellraw @a ["◎ ", {selector: "@s"}, " 已被救起"]
-tag @s remove fall_down
-scoreboard players reset @s death_time
 playsound entity.experience_orb.pickup ambient @s
 
-#有骨折的玩家救起來後繼續骨折
-execute if entity @s[tag=fractured] run attribute @s movement_speed modifier add jk2:fracture -0.3 add_multiplied_total
+function game:death/survivor/up

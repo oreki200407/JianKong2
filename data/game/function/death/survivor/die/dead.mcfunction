@@ -17,10 +17,9 @@ tag @s add dead
 execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dead_player uuid0 at @s run function game:death/tomb/revive_because_dead
 tag @s remove dead
 
-gamemode adventure @s
-effect give @s resistance 10 4
+tellraw @a ["◎ ", {selector: "@s"}, " 已死亡"]
+title @s title {text: "你已死亡", color: "red", bold: true}
 effect give @s strength 10 1
-tag @s remove fall_down
-scoreboard players reset @s death_time
 scoreboard players add @s death_score 70
 playsound entity.zombie.death ambient @s
+function game:death/survivor/up
