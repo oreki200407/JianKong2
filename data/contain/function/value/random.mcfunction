@@ -1,8 +1,8 @@
 ###################################################
 # 給原料的怪物的隨機
 # 
-# Name   : give.mcfunction
-# Path   : contain:
+# Name   : random.mcfunction
+# Path   : contain:value/
 # As     : 給原料的怪物們(@e[tag=contain])
 # At     : 世界重生點
 # Loop   : 是，一秒
