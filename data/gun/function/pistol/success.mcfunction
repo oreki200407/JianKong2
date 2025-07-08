@@ -1,2 +1,2 @@
-damage @n[tag=!shooter, type=#monster:player, dx=0, dy=0, dz=0 ,team=monitor, tag=!enderman_morph] 8 generic by @s
+damage @n[tag=!shooter, type=#monster:player, dx=0, dy=0, dz=0 ,team=monitor, tag=!enderman_morph] 12 generic by @s
 tag @s remove shooter
