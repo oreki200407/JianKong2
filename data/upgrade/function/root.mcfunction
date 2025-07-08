@@ -6,17 +6,17 @@
 # As     : 求生者
 # At     : As
 # Loop   : 是
-# Author : Alex_Cai
+# Author : oreki20, Alex_Cai
 ###################################################
 
 #打開終界箱就重設升級台
 execute if score @s open_ender_chest matches 1.. run function upgrade:reset
 
 #清除附近的白色玻璃
-execute if items entity @e[type=item, distance=..1.5] contents gunpowder[custom_data={upgrade: true}] run function upgrade:kill_item
+execute if items entity @e[type=item, distance=..1.5] contents gunpowder[custom_data~{upgrade: true}] run function upgrade:kill_item
 
 #清除白色玻璃
-execute store success score @s upgrade_operate run clear @s gunpowder[custom_data={upgrade: true}]
+execute store success score @s upgrade_operate run clear @s gunpowder[custom_data~{upgrade: true}]
 execute if score @s upgrade_operate matches 1 run function upgrade:wrong_item/check
 
 execute store success score @s upgrade_operate run clear @s enchanted_book 0

@@ -19,8 +19,8 @@ scoreboard players reset @s morph_skill_2_duration
 #將怪物歸還給可供變形的怪物陣列
 $data modify storage jk2:data root.morph.monsters append value "$(monster)"
 
-clear @s *[custom_data={skill: 1b}]
-clear @s *[custom_data={skill: 2b}]
+clear @s *[custom_data~{skill: 1b}]
+clear @s *[custom_data~{skill: 2b}]
 item replace entity @s armor.head with air
 item replace entity @s armor.chest with air
 item replace entity @s armor.legs with air

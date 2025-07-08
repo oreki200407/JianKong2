@@ -10,4 +10,4 @@
 ###################################################
 
 function upgrade:reset
-execute as @e[type=item, distance=..1.5] if items entity @s contents gunpowder[custom_data={upgrade: true}] run kill
+execute as @e[type=item, distance=..1.5] if items entity @s contents gunpowder[custom_data~{upgrade: true}] run kill
