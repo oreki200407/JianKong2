@@ -4,7 +4,7 @@
 # Name   : tick.mcfunction
 # Path   : morph:player/
 # As     : 變形的玩家
-# At     : 世界重生點
+# At     : As
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################

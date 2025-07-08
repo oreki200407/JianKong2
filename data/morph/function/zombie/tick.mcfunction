@@ -10,4 +10,4 @@
 ###################################################
 
 #附近有生存者就加速
-execute at @s if entity @a[team=survivor, distance=..10] run effect give @s speed 1 0 true
+execute if entity @a[team=survivor, distance=..10, gamemode=adventure] run effect give @s speed 1 0 true
