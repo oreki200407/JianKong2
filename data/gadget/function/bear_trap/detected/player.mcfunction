@@ -12,11 +12,9 @@
 #如果是玩家被抓到
 attribute @s jump_strength modifier add jk2:bear_trap -0.95 add_multiplied_base
 scoreboard players set @s jump_break 0
-tellraw @s ["◎ 你踩到了", {text: "捕獸夾", color: "gold"}, ", 請反覆跳躍掙脫"]
+tellraw @s ["◎ 你踩到了", {text: "捕獸夾", color: "gold"}, ", 請反覆點擊", {keybind: "key.jump", color: "gold"},"來掙脫"]
 
-summon marker ~ ~ ~ {Tags:["baer_trap_marker","baer_trap_new_marker"]}
+summon marker ~ ~-.375 ~ {Tags:["baer_trap_marker","baer_trap_new_marker"]}
 
-execute store result score @e[type=marker,tag=baer_trap_new_marker] bear_trap run scoreboard players add #marker_number bear_trap 1
-scoreboard players operation @s bear_trap = #marker_number bear_trap
-
+execute store result score @e[type=marker,tag=baer_trap_new_marker] bear_trap store result score @s bear_trap run scoreboard players add #marker_number bear_trap 1
 tag @e remove baer_trap_new_marker

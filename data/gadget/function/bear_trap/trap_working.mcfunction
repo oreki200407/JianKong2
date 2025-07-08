@@ -10,10 +10,7 @@
 ###################################################
 
 #1代表陷阱啟動成功
-execute store success score @s bear_trap at @s align xyz as @a[tag=!trapped, dx=0, dy=0, dz=0] run function gadget:bear_trap/detected/root
-#啟動成功就可以清除了
-execute if score @s bear_trap matches 1 run return run kill @s
+execute store success score @s bear_trap at @s as @e[type=#monster:player, dx=0, dy=0, dz=0] run function gadget:bear_trap/detected/root
 
-execute store success score @s bear_trap at @s align xyz as @e[team=monitor, type=#monster:all ,dx=0, dy=0, dz=0] run function gadget:bear_trap/detected/root
 #啟動成功就可以清除了
 kill @s[scores={bear_trap=1}]
