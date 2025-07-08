@@ -8,7 +8,9 @@
 # Loop   : 是
 # Author : oreki20, Alex_Cai
 ###################################################
-execute if items entity @e[type=item, distance=..1.5] contents #summon:clear run function summon:kill_item
+
+execute if items entity @e[type=item, distance=..1.5] contents glowstone_dust run function summon:kill_item
+execute if items entity @e[type=item, distance=..1.5] contents player_head[custom_data~{type:"operation"}] run function summon:kill_item
 
 execute if score @s open_ender_chest matches 1.. run function summon:open_ender_chest
 

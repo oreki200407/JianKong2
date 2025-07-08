@@ -9,8 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute as @e[type=tnt, tag=morph_tnt, nbt={fuse: 1s}] at @s run function morph:creeper/skill/2/tnt_explode
-
 #沒有隱形了就變回苦力怕頭顱
 execute if items entity @s armor.head player_head run return fail
 execute if predicate {condition: "entity_properties", entity: "this", predicate: {effects: {invisibility: {}}}} run return fail
