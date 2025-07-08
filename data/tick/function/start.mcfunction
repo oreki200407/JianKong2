@@ -11,6 +11,8 @@
 
 execute if score 倒數 system matches 0..3 run function game:teleport
 
+#死亡
+execute as @e[type=armor_stand, tag=tomb] run function game:death/tomb/stand
 #死亡展示實體
 execute as @a[team=survivor, gamemode=adventure, predicate=game:flag/sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..1.5] run function game:death/survivor/save/saving
 scoreboard players reset @a[team=survivor, predicate=!game:flag/sneak, scores={revive_time=1..}] revive_time

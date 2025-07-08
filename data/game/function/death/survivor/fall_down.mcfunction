@@ -4,10 +4,13 @@
 # Name   : fall_down.mcfunction
 # Path   : game:death/survivor/
 # As     : 血量歸零倒地的玩家
-# At     : As
+# At     : As，如果死得太低就改成重生點
 # Loop   : 否
 # Author : Alex_Cai, oreki20
 ###################################################
+
+#如果玩家死得太低就回重生點
+execute if predicate game:too_low at @e[type=marker, tag=spawn_survivor, limit=1] run return run function game:death/survivor/fall_down
 
 #轉旁觀
 gamemode spectator @s
@@ -17,9 +20,15 @@ tag @s add fall_down
 scoreboard players add @s death_score 50
 
 #儲存自己的UUID
-execute store result score #fall_down uuid0 store result score @s uuid0 run data get entity @s UUID[0]
+execute store result score @s uuid0 run data get entity @s UUID[0]
 
-#召喚物品展示實體
-execute positioned ~ ~.5 ~ summon item_display run function game:death/survivor/new_tomb
-execute positioned ~ ~.5 ~ run item modify entity @e[type=item_display, tag=tomb_temp, limit=1, distance=..0.1] contents {function: "fill_player_head", entity: "this"}
-tag @e[type=item_display, tag=tomb_temp, limit=1] remove tomb_temp
+#召喚盔甲座和物品展示實體
+
+#讓展示實體乘著盔甲座往下掉
+#不可以把Marker設為true
+summon armor_stand ~ ~.5 ~ {Invisible: true, Invulnerable: true, Small: true, NoBasePlate: true, DisabledSlots: 4144959, attributes: [{id: "scale", base: 0.0625}, {id: "gravity", base: 1.0}], Tags: ["tomb"], Passengers: [{id: "item_display", Glowing: true, glow_color_override: 16711680, CustomName: ["按住", {keybind: "key.sneak"}, "救援"], CustomNameVisible: true, item: {id: "player_head"}, billboard: "vertical", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 180f, 0f, 1f], translation: [0f, 0f, 0f], scale: [1f, 1f, 1f]}, Tags: ["tomb", "tomb_temp"]}]}
+
+#讓展示實體記住對應的玩家
+scoreboard players operation @e[type=item_display, tag=tomb_temp, distance=..1] uuid0_match = @s uuid0
+item modify entity @e[type=item_display, tag=tomb_temp, distance=..1, limit=1] contents {function: "fill_player_head", entity: "this"}
+tag @e[type=item_display, tag=tomb_temp, distance=..1, limit=1] remove tomb_temp
