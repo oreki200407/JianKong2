@@ -1,4 +1,3 @@
-tp @s ~ ~-0.5 ~ ~ ~
 gamemode adventure @s
 title @s actionbar ""
 effect give @s resistance 10 4
