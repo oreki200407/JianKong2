@@ -12,4 +12,4 @@
 scoreboard players add @s bear_trap 1
 
 #會被困住10秒
-execute if score @s bear_trap matches 200 run function gadget:bear_trap/trapped/release
+execute if score @s bear_trap matches 200 run function gadget:bear_trap/release/root
