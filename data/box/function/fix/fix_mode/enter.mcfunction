@@ -17,5 +17,5 @@ attribute @s jump_strength modifier add jk2:fix_box -0.95 add_multiplied_base
 scoreboard players set @s jump_fix 0
 scoreboard players set @s fix_progress 0
 
-tellraw @s ["◎ 反覆點擊", {keybind: "key.jump", color:gold}, "來進行修復"]
-tellraw @s ["◎ 修復過程中將觸發", {text: "快速反應事件", color:gold}]
+tellraw @s ["◎ 反覆點擊", {keybind: "key.jump", color: "gold"}, "來進行修復"]
+tellraw @s ["◎ 修復過程中將觸發", {text: "快速反應事件", color: "gold"}]

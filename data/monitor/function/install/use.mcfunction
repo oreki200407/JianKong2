@@ -24,4 +24,4 @@ tag @s add installing_camera
 gamemode spectator
 scoreboard players enable @s camera_interface
 tp @s @e[type=marker, tag=spawn_survivor, limit=1]
-tellraw @s ["——————————\n", {text:"監視器", color: "gold"}, {score: {name: "@s", objective: "camera"}, color: "gold"}, "\n", {text: "✔", color:green, click_event: {action: "run_command", command: "/trigger camera_interface set 1"}}, "        ", {text: "✘", color:red, click_event: {action: "run_command", command: "/trigger camera_interface set 2"}}, "\n——————————"]
+tellraw @s ["——————————\n", {text:"監視器", color: "gold"}, {score: {name: "@s", objective: "camera"}, color: "gold"}, "\n", {text: "✔", color: "green", click_event: {action: "run_command", command: "/trigger camera_interface set 1"}}, "        ", {text: "✘", color: "red", click_event: {action: "run_command", command: "/trigger camera_interface set 2"}}, "\n——————————"]

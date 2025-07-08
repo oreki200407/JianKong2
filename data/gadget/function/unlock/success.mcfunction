@@ -10,7 +10,7 @@
 ###################################################
 
 tag @s remove using_unlock
-tellraw @a ["◎ 鐵門已", {text: "解鎖", color:gold}]
+tellraw @a ["◎ 鐵門已", {text: "解鎖", color: "gold"}]
 playsound block.chest.open ambient
 execute as @n[type=marker, tag=door] at @s run function gadget:unlock/door with entity @s data
 
