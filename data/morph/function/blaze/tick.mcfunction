@@ -9,6 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
-scoreboard players remove @s[scores={morph_skill_2_duration=1..}] morph_skill_2_duration 1
+execute unless score @s morph_skill_2_duration matches 1.. run return fail
+
+scoreboard players remove @s morph_skill_2_duration 1
 #若在技能效果時間內 沒有標記 就召喚標記
-execute at @s[scores={morph_skill_2_duration=1..}] align xyz positioned ~.5 ~.5 ~.5 unless entity @e[type=marker, tag=blaze_fire, distance=...5] run summon marker ~ ~ ~ {Tags: ["blaze_fire", "morph_product"]}
+execute at @s align xyz positioned ~.5 ~.5 ~.5 unless entity @e[type=marker, tag=blaze_fire, distance=...5] run summon marker ~ ~ ~ {Tags: ["blaze_fire", "morph_product"]}

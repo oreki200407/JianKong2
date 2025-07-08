@@ -1,5 +1,5 @@
 ###################################################
-# 人體變形
+# 人體變形的刻
 # 
 # Name   : tick.mcfunction
 # Path   : morph:player/
@@ -19,7 +19,3 @@ scoreboard players reset @s[scores={morph_skill_1=0}] morph_skill_1
 scoreboard players remove @s[scores={morph_skill_2=1..}] morph_skill_2 1
 $execute if score @s morph_skill_2 matches 0 run function morph:$(monster)/skill/give_2
 scoreboard players reset @s[scores={morph_skill_2=0}] morph_skill_2
-
-effect give @s[scores={food=..7}] saturation 1 0 true
-
-title @s actionbar [{text: "變型時間：", "color": "gold", "bold": true}, {score: {name: "@s", objective: "morph"}}, "秒"]
