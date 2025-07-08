@@ -1,7 +1,7 @@
 execute at @e[tag=box] run function box:use/reset
 execute at @e[tag=box_off] run function box:use/box_off
 
-execute if entity @s[team=monitor] run return run clear @s redstone
+execute if entity @s[team=monitor] run return run clear @s redstone[custom_data~{type:"box"}]
 
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"水管爆裂","color":"gold"}]
 execute as @a[scores={box_operation=1}] run return run function box:use/success/water

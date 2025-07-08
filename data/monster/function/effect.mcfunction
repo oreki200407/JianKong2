@@ -10,7 +10,7 @@
 ###################################################
 
 #execute at @e[tag=monster] at @e[distance=..1.5,tag=door] if block ~ ~ ~ #doors[open=false] run 開門
-kill @e[type=bat, tag=passengerby, predicate=!game:being_ride]
+kill @e[type=bat, tag=blaze_rided, predicate=!game:being_ride]
 kill @e[type=arrow,nbt={inGround:1b}]
 
 #怪物看著未受保護的玻璃會裂開

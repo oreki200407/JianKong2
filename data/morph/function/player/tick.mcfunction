@@ -9,8 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-$execute if score @s morph matches 0 run return run function morph:player/end {monster: $(monster)}
-
 #執行怪物的tick函數
 $function morph:$(monster)/tick
 

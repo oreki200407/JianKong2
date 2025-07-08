@@ -23,6 +23,7 @@ gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
+gamerule maxCommandChainLength 2147483647
 
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue",bold:1b}
 scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color": "gold",bold:1b}

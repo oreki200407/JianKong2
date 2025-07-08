@@ -3,7 +3,7 @@ execute if score #mode system matches 4 store result bossbar jk2:prepare value r
 execute if score #mode system matches 3 store result bossbar jk2:time value run scoreboard players add #time system 1
 
 scoreboard players remove @a[scores={morph=1..}] morph 1
-kill @a[scores={morph=0}]
+execute as @a[team=monitor, scores={morph=0}] at @s run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"
 
 execute if score 更換電箱 lobby matches 1.. run function box:switch/auto
 

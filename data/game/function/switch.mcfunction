@@ -26,19 +26,16 @@ effect give @a resistance 5 100 true
 scoreboard players reset @a fracture
 scoreboard players reset @a money
 
-#復原狀態
-execute as @a[tag=fractured] run function gadget:medical/fracture/heal
-execute as @a[tag=trapped] run function gadget:bear_trap/trapped/release
-execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
-
 #復原場地
-execute as @e[team=monitor,type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
-kill @e[team=monitor,type=!player]
+kill @e[tag=monster_ride]
+kill @e[tag=monster_rided]
+execute as @e[team=monitor,type=#monster:all] run data merge entity @s {DeathLootTable:"summon:empty"}
+kill @e[team=monitor,type=#monster:all]
 tag @e[tag=box_off] remove box_off
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data
-execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
-kill @e[type=marker,tag=fire]
+execute at @e[type=marker, tag=fire] run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace #fire
+kill @e[type=marker, tag=fire]
 kill @e[type=area_effect_cloud,tag=camera]
 
 #重置怪物
