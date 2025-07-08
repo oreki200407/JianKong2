@@ -18,4 +18,4 @@ title @s subtitle [ {"text": "作者: 惡靈", "bold": true, "color": "green"}]
 
 tag @s add join
 
-execute if score #mode system matches 3..4 run function game:spectate
+execute if score #mode system matches 3..4 run function game:join/spectate

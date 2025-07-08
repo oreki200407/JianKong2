@@ -28,21 +28,27 @@ gamerule maxCommandChainLength 2147483647
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue",bold:1b}
 scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color": "gold",bold:1b}
 scoreboard objectives add info_survivor dummy {"text": "求生者資訊", "color": "gold",bold:1b}
-scoreboard objectives add end dummy {"text": "分數", "color": "green",bold:1b}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
-scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add system dummy "隱藏資訊"
-scoreboard objectives add death deathCount
 scoreboard objectives add money dummy {"text":"💲 錢 💲","color":"green"}
-scoreboard objectives add kill totalKillCount "殺怪數"
-scoreboard objectives add stamina dummy "體力值"
+scoreboard objectives add constant dummy
+scoreboard objectives add xp dummy
+scoreboard objectives add leave custom:leave_game
+
+#生命資訊
+scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add food food
+scoreboard objectives add stamina dummy "體力值"
+
+#分數
 scoreboard objectives add score dummy "貢獻總分"
 scoreboard objectives add death_score dummy "死亡貢獻分數"
 scoreboard objectives add damage_score custom:damage_taken "受傷貢獻分數"
-scoreboard objectives add constant dummy
-scoreboard objectives add xp dummy
-scoreboard objectives add fracture custom:fall_one_cm "骨折"
+scoreboard objectives add end dummy {"text": "分數", "color": "green",bold:1b}
+
+#戰鬥
+scoreboard objectives add kill totalKillCount "殺怪數"
+scoreboard objectives add death deathCount
 
 #遠程武器
 scoreboard objectives add extinguisher dummy
@@ -50,7 +56,6 @@ scoreboard objectives add flamethrower dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
-scoreboard objectives add open_ender_chest custom:open_enderchest
 
 #電箱
 scoreboard objectives add box_operation dummy
@@ -85,7 +90,8 @@ scoreboard objectives add unlock_progess dummy "開鎖進度"
 scoreboard objectives add unlock_slot dummy "開鎖欄位"
 scoreboard objectives add selected_slot dummy
 
-#治療
+#骨折與治療
+scoreboard objectives add fracture custom:fall_one_cm "骨折"
 scoreboard objectives add medical_cooldown dummy
 
 #監視器
@@ -118,6 +124,7 @@ scoreboard objectives add netwalk_game dummy
 #商店
 scoreboard objectives add shop dummy
 scoreboard objectives add shop_operate dummy
+scoreboard objectives add open_ender_chest custom:open_enderchest
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"

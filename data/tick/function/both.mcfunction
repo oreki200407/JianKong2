@@ -10,7 +10,9 @@
 ###################################################
 
 #中途加入
-execute as @a[tag=!start] run function game:spectate
+execute as @a[tag=!start] run function game:join/spectate
+#中途離開回來
+execute as @a[scores={leave=1}] run function game:join/rejoin
 
 #-----------------------道具-----------------------
 #治療
@@ -71,4 +73,4 @@ execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] 
 execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
 
 #收容
-execute as @e[type=interaction, tag=contain_control] at @s if data entity @s interaction run function contain:control/root
+execute as @e[type=interaction,tag=contain_control] at @s if data entity @s interaction run function contain:control/root
