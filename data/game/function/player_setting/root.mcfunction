@@ -8,6 +8,6 @@ scoreboard players reset @s
 execute at @s run playsound block.sculk_shrieker.shriek ambient
 title @s title {"text":"監控圍城 II","color":"blue","bold":true}
 
-execute if entity @s[tag=monitor] run return run function game:player_setting/adventure {team: "monitor"}
-execute if entity @s[tag=survivor] run return run function game:player_setting/adventure {team: "survivor"}
+execute if entity @s[tag=monitor_tag] run return run function game:player_setting/adventure {team: "monitor"}
+execute if entity @s[tag=survivor_tag] run return run function game:player_setting/adventure {team: "survivor"}
 function game:player_setting/spectator

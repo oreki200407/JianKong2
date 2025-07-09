@@ -49,7 +49,7 @@ execute as @a[scores={morph=1..}] at @s run function morph:player/tick with enti
 #清除所有失去騎乘者的坐騎蜘蛛
 kill @e[type=spider, tag=spider_vehicle, predicate=!game:being_ride]
 #清除所有失去界伏蚌的草方塊展示實體
-execute as @e[type=block_display, tag=morph_grass_block,predicate=!game:riding] run kill
+kill @e[type=block_display, tag=morph_grass_block, predicate=!game:riding]
 #苦力怕TNT
 execute as @e[type=tnt, tag=morph_tnt, nbt={fuse: 1s}] at @s run function morph:creeper/skill/2/tnt_explode
 #變形的標記
@@ -62,8 +62,7 @@ execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag
 execute unless entity @e[tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=cave_spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute at @e[type=marker, tag=contain_marker] as @a[team=monitor, distance=..0.5] run function contain:escape/player
-execute as @e[tag=contain_escape] at @s if entity @e[tag=contain_marker, distance=..0.4] run function contain:escape/check
+execute at @e[type=marker, tag=contain_marker] run function contain:escape/contain_marker
 
 #機關
 execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
