@@ -9,5 +9,5 @@
 # Author : oreki20
 ###################################################
 
-execute if score #mode system matches 4 run bossbar set jk2:prepare players @a
+execute if score #mode system matches 4 run return run bossbar set jk2:prepare players @a
 execute if score #mode system matches 3 run bossbar set jk2:time players @a

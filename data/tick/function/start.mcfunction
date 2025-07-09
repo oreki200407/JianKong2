@@ -21,6 +21,8 @@ execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run functi
 execute as @a[team=monitor,tag=monitor_death,scores={health=20}] run function game:death/monitor_effect
 
 function monster:effect
+execute as @e[tag=box_transfer] at @s run function monster:effect_transfer
+
 #-----------------------道具-----------------------
 #經驗球
 kill @e[tag=!xp,type=experience_orb]
@@ -67,4 +69,4 @@ execute at @e[type=marker, tag=contain_marker] run function contain:escape/conta
 #機關
 execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
 execute if score 酸雨 info_survivor matches 1.. as @a[team=survivor] at @s positioned ~ ~1 ~ if predicate control:acid_rain run effect give @s poison 1 4
-execute if score 禁止奔跑 info_survivor matches 1.. as @a[team=survivor,predicate=game:flag/sprint] run damage @s 2 cramming
+execute if score 禁止奔跑 info_survivor matches 1.. as @a[team=survivor,predicate=game:flag/sprint] run function control:sprint/poisoning

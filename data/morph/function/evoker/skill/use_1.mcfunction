@@ -11,4 +11,4 @@
 
 #給予6格內怪物回血
 #注意這對不死怪物無效
-effect give @e[type=#monster:all, team=monitor, distance=..6] regeneration 10 0 true
+effect give @e[tag=monster, team=monitor, distance=..6] regeneration 10 0 true

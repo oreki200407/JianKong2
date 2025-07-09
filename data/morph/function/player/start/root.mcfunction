@@ -37,6 +37,7 @@ function morph:player/start/to with entity @s equipment.head.components."minecra
 #變形維持180秒 = 3600刻
 scoreboard players set @s morph 180
 
+tag @s add monster
 effect clear @s saturation
 effect give @s hunger 3 255 true
 tp @s @e[type=marker,tag=point,sort=random,limit=1]

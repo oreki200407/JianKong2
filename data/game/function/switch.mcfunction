@@ -27,10 +27,11 @@ scoreboard players reset @a fracture
 scoreboard players reset @a money
 
 #復原場地
+execute as @e[team=monitor, tag=monster, type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
+kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
-kill @e[tag=monster_rided]
-execute as @e[team=monitor,type=#monster:all] run data merge entity @s {DeathLootTable:"summon:empty"}
-kill @e[team=monitor,type=#monster:all]
+kill @e[tag=monster_being_ride]
+kill @e[team=monitor, tag=monster, type=!player]
 tag @e[tag=box_off] remove box_off
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data

@@ -18,20 +18,20 @@ execute if score #room contain_temperature matches 20 if predicate game:chance/5
 execute if score #room contain_temperature matches 21..25 if predicate game:chance/5 run function contain:value/temperature_high
 execute if score #room contain_temperature matches 26.. if predicate game:chance/10 run function contain:value/temperature_high
 
-execute if score @s contain_food matches 19.. if predicate game:chance/1 run function contain:value/food
-execute if score @s contain_food matches 12..18 if predicate game:chance/5 run function contain:value/food
-execute if score @s contain_food matches ..11 if predicate game:chance/10 run function contain:value/food
+execute if score @s contain_food matches 26.. if predicate game:chance/1 run function contain:value/food
+execute if score @s contain_food matches 10..25 if predicate game:chance/5 run function contain:value/food
+execute if score @s contain_food matches ..9 if predicate game:chance/10 run function contain:value/food
 
-execute if score @s contain_temperature matches ..6 if predicate game:chance/10 run function contain:value/health
-execute if score @s contain_temperature matches 7..10 if predicate game:chance/5 run function contain:value/health
-execute if score @s contain_temperature matches 11..15 if predicate game:chance/1 run function contain:value/health
-execute if score @s contain_temperature matches 25..29 if predicate game:chance/1 run function contain:value/health
-execute if score @s contain_temperature matches 30..33 if predicate game:chance/5 run function contain:value/health
-execute if score @s contain_temperature matches 34.. if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_temperature matches ..4 if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_temperature matches 5..9 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_temperature matches 10..14 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_temperature matches 26..30 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_temperature matches 31..35 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_temperature matches 36.. if predicate game:chance/10 run function contain:value/health
 
-execute if score @s contain_food matches ..6 if predicate game:chance/10 run function contain:value/health
-execute if score @s contain_food matches 7..10 if predicate game:chance/5 run function contain:value/health
-execute if score @s contain_food matches 11..15 if predicate game:chance/1 run function contain:value/health
-execute if score @s contain_food matches 25..29 if predicate game:chance/1 run function contain:value/health
-execute if score @s contain_food matches 30..33 if predicate game:chance/5 run function contain:value/health
-execute if score @s contain_food matches 34.. if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_food matches ..4 if predicate game:chance/10 run function contain:value/health
+execute if score @s contain_food matches 5..9 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_food matches 10..14 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_food matches 26..30 if predicate game:chance/1 run function contain:value/health
+execute if score @s contain_food matches 31..35 if predicate game:chance/5 run function contain:value/health
+execute if score @s contain_food matches 36.. if predicate game:chance/10 run function contain:value/health

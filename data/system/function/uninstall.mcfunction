@@ -16,6 +16,7 @@ scoreboard objectives remove damage_score
 scoreboard objectives remove constant
 scoreboard objectives remove xp
 scoreboard objectives remove fracture
+scoreboard objectives remove leave
 
 #遠程武器
 scoreboard objectives remove extinguisher
