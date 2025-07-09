@@ -7,12 +7,15 @@
 		{
 			"enderchest.10":
 			{
-				"components":
+				"predicates":
 				{
 					"minecraft:enchantments":
-					{
-						"minecraft:unbreaking": 1
-					}
+					[
+						{
+							"enchantments": "minecraft:unbreaking",
+							"levels": 1
+						}
+					]
 				}
 			}
 		}

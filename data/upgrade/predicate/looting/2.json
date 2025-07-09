@@ -7,12 +7,15 @@
 		{
 			"enderchest.10":
 			{
-				"components":
+				"predicates":
 				{
 					"minecraft:enchantments":
-					{
-						"minecraft:looting": 2
-					}
+					[
+						{
+							"enchantments": "minecraft:looting",
+							"levels": 2
+						}
+					]
 				}
 			}
 		}

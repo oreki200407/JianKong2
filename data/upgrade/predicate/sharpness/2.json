@@ -7,12 +7,15 @@
 		{
 			"enderchest.10":
 			{
-				"components":
+				"predicates":
 				{
 					"minecraft:enchantments":
-					{
-						"minecraft:sharpness": 2
-					}
+					[
+						{
+							"enchantments": "minecraft:sharpness",
+							"levels": 2
+						}
+					]
 				}
 			}
 		}

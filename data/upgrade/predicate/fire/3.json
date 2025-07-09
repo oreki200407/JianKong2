@@ -7,12 +7,15 @@
 		{
 			"enderchest.10":
 			{
-				"components":
+				"predicates":
 				{
 					"minecraft:enchantments":
-					{
-						"minecraft:fire_protection": 3
-					}
+					[
+						{
+							"enchantments": "minecraft:fire_protection",
+							"levels": 3
+						}
+					]
 				}
 			}
 		}
