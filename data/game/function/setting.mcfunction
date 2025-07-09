@@ -6,24 +6,12 @@ execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags
 kill @e[tag=edit_kill,type=armor_stand]
 
 time set midnight
-team join spec @a[team=]
-clear @a
-recipe take @a *
-xp set @a 0 levels
-xp set @a 0 points
-tag @a add start
-execute as @a at @s run playsound block.sculk_shrieker.shriek ambient @s ~ ~ ~
-title @a title {"text":"監控圍城 II","bold":true,"color":"blue"}
-gamemode adventure @a[team=!spec]
-gamemode spectator @a[team=spec]
-
-effect clear @a
-effect give @a invisibility 3 0 true
-effect give @a hunger 3 255 true
-effect give @a regeneration 3 100 true
-effect give @a resistance 2 100 true
-effect give @a[team=!spec] night_vision 2 0 true
-effect give @a[team=spec] night_vision infinite 0 true
+tag @a[team=monitor] add monitor_tag
+tag @a[team=survivor] add survivor_tag
+team empty monitor
+team empty survivor
+team empty spec
+execute as @a run function game:player_setting/root
 
 scoreboard objectives setdisplay sidebar.team.blue info_monitor
 scoreboard objectives setdisplay sidebar.team.red money
@@ -31,7 +19,6 @@ scoreboard objectives setdisplay sidebar info_survivor
 scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list kill
 
-scoreboard players reset @a
 scoreboard players operation #switch_box_second system = 更換電箱 lobby
 scoreboard players operation #switch_box_second system *= #60 constant
 

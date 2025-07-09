@@ -10,7 +10,7 @@
 ###################################################
 
 #中途加入
-execute as @a[tag=!start] run function game:join/spectate
+execute as @a[team=] run function game:join/spectate
 #中途離開回來
 execute as @a[scores={leave=1}] run function game:join/rejoin
 
