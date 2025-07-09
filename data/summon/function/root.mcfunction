@@ -15,7 +15,7 @@ execute if items entity @e[type=item, distance=..1.5] contents player_head[custo
 execute if score @s open_ender_chest matches 1.. run function summon:open_ender_chest
 
 execute store success score @s summon_operate run clear @s player_head[custom_data~{type:"operation"}] 0
-execute as @a[scores={summon_operate=1}] run return run function summon:head/select
+execute as @s[scores={summon_operate=1}] run return run function summon:head/select
 
 execute store success score @s summon_operate run clear @s glowstone_dust 0
-execute as @a[scores={summon_operate=1}] run return run function summon:operation/select
+execute as @s[scores={summon_operate=1}] run return run function summon:operation/select

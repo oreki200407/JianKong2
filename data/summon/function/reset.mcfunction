@@ -9,6 +9,7 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
+say 1
 item replace entity @s enderchest.0 with glowstone_dust[custom_data={summon:none},item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true}]
 item replace entity @s enderchest.8 with glowstone_dust[custom_data={summon:none},item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true}]
 item replace entity @s enderchest.9 with glowstone_dust[custom_data={summon:none},item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true}]

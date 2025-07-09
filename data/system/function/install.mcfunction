@@ -180,6 +180,8 @@ bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"
 bossbar add jk2:prepare "準備時間"
 
+bossbar set jk2:time style notched_10
+
 bossbar set jk2:boss color red
 bossbar set jk2:time color yellow
 bossbar set jk2:prepare color purple

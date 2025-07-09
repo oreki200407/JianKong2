@@ -1,3 +1,5 @@
+say 2
+
 item replace entity @s enderchest.11 with glowstone_dust[custom_data={summon:add},custom_model_data={strings:["add1"]},item_name={"text": "+1", "color": "green", "bold": true}]
 item replace entity @s enderchest.12 with glowstone_dust[custom_data={summon:add},custom_model_data={strings:["add5"]},item_name={"text": "+5", "color": "green", "bold": true}]
 item replace entity @s enderchest.13 with glowstone_dust[custom_data={summon:add},custom_model_data={strings:["add10"]},item_name={"text": "+10", "color": "green", "bold": true}]
