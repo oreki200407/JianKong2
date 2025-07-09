@@ -7,17 +7,23 @@
 		{
 			"enderchest.10":
 			{
-				"components":
+				"predicates":
 				{
 					"minecraft:attribute_modifiers":
-					[
+					{
+						"modifiers": 
 						{
-							"id": "minecraft:max_health",
-							"type": "minecraft:max_health",
-							"amount": 3,
-							"operation": "add_value"
+							"contains":
+							[
+								{
+									"id": "jk2:add_health",
+									"attribute": "minecraft:max_health",
+									"amount": 3,
+									"operation": "add_value"
+								}
+							]
 						}
-					]
+					}
 				}
 			}
 		}
