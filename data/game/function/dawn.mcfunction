@@ -26,8 +26,8 @@ scoreboard players reset 電箱位置 info_survivor
 execute if score 酸雨 info_survivor matches 1.. run function control:acid_rain/end
 execute if score 毒氣 info_survivor matches 1.. run function control:poison/end
 execute if score 禁止奔跑 info_survivor matches 1.. run function control:sprint/end
-execute if score 水管爆裂 info_monitor matches 1.. run function box:use/success/water_end
-execute if score 禁止監控 info_monitor matches 1.. run function box:use/success/monitor_end
+execute if score 水管爆裂 info_monitor matches 1.. run function box:use/success/water/end
+execute if score 禁止監控 info_monitor matches 1.. run function box:use/success/monitor/end
 
 #復原狀態
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal

@@ -29,6 +29,8 @@ execute at @e[type=marker, tag=lobby, limit=1] run place template game:monitor ~
 
 #發電
 scoreboard players set @e[tag=power] power_level 1
+scoreboard players set #power2 power 0
+scoreboard players set #power3 power 0
 
 #裝備
 item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=false]
@@ -53,8 +55,6 @@ scoreboard players set 蜘蛛眼 info_monitor 0
 scoreboard players set 腐肉 info_monitor 0
 scoreboard players set 火藥 info_monitor 0
 scoreboard players set 電力 info_monitor 0
-scoreboard players set #power2 power 0
-scoreboard players set #power3 power 0
 
 #電箱
 execute at @e[type=armor_stand,tag=box_point] run fill ~ ~ ~ ~ ~1 ~ air

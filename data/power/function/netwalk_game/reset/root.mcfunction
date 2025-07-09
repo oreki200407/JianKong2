@@ -3,7 +3,7 @@
 # 
 # Name   : root.mcfunction
 # Path   : power:netwalk_game/reset/
-# As     : 發電機標記，tag=power2
+# As     : 發電機標記，tag=power1
 # At     : As
 # Loop   : 否
 # Author : Alex_Cai

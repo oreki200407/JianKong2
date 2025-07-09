@@ -7,10 +7,10 @@ execute as @a[team=monitor, scores={morph=1..}] run function morph:player/second
 execute if score 更換電箱 lobby matches 1.. run function box:switch/auto
 
 execute if score 水管爆裂 info_monitor matches 1.. run scoreboard players remove 水管爆裂 info_monitor 1
-execute if score 水管爆裂 info_monitor matches 0 run function box:use/success/water_end
+execute if score 水管爆裂 info_monitor matches 0 run function box:use/success/water/end
 
 execute if score 禁止監控 info_monitor matches 1.. run scoreboard players remove 禁止監控 info_monitor 1
-execute if score 禁止監控 info_monitor matches 0 run function box:use/success/monitor_end
+execute if score 禁止監控 info_monitor matches 0 run function box:use/success/monitor/end
 
 execute if score 釋放酸雨-冷卻 info_monitor matches 1.. run function control:cooldown/acid_rain
 execute if score 釋放毒氣-冷卻 info_monitor matches 1.. run function control:cooldown/poison

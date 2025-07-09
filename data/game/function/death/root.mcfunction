@@ -13,7 +13,7 @@
 advancement revoke @s only game:death
 scoreboard players reset @s death
 
-execute as @a[tag=trapped] run function gadget:bear_trap/release/root
+execute as @s[tag=trapped] run function gadget:bear_trap/release/root
 
 #還沒進入3 就結束
 execute unless score #mode system matches 3 run return fail
