@@ -18,7 +18,7 @@ execute as @a[team=survivor, gamemode=adventure, predicate=game:flag/sneak] at @
 scoreboard players reset @a[team=survivor, predicate=!game:flag/sneak, scores={revive_time=1..}] revive_time
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
-execute as @a[team=monitor,tag=monitor_death,scores={health=20}] run function game:death/monitor_effect
+execute as @a[team=monitor,tag=monitor_death,scores={health=20..}] run function game:death/monitor_effect
 
 function monster:effect
 execute as @e[tag=box_transfer] at @s run function monster:effect_transfer

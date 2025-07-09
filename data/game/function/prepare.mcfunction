@@ -1,10 +1,10 @@
 title @a title {"text":"準備時間","bold":true,"color":"gold"}
 scoreboard players set #mode system 4
 
+effect give @a[team=!spec] saturation infinite 0 true
 effect give @a[team=!spec] resistance 180 100 true
 effect give @a[team=survivor] night_vision 180 0 true
 effect give @a[team=monitor] night_vision infinite 0 true
-effect give @a[team=monitor] saturation infinite 0 true
 
 #發錢
 scoreboard players operation @a[team=survivor] money = 初始資金 lobby

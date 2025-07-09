@@ -32,6 +32,7 @@ kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]
 kill @e[team=monitor, tag=monster, type=!player]
+kill @e[type=block_display, tag=morph_grass_block]
 tag @e[tag=box_off] remove box_off
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function gadget:hammer/restore with entity @s data

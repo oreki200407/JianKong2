@@ -14,6 +14,7 @@ advancement revoke @s only monitor:observe/use
 execute if score @s camera_cooldown matches 1.. run return fail
 scoreboard players set @s camera_cooldown 10
 
+execute unless score 電力 info_monitor matches 1.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "使用監視器", "color":"gold"}]
 execute if score 禁止監控 info_monitor matches 1.. run return run tellraw @s ["◎ 目前監視器正在被", {text: "禁止使用", color: "gold"}]
 
 #尋找目標監視器

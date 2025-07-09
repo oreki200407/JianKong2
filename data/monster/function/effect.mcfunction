@@ -29,7 +29,7 @@ execute at @e[type=strider,tag=strider,team=monitor] run effect give @a[team=sur
 execute as @e[type=zombie,tag=strider_ride, predicate=game:flag/on_ground] at @s run function monster:effect/strider
 
 #女巫
-execute at @e[type=witch,tag=witch,team=monitor] run effect give @a[team=survivor,distance=..3] weakness 1 1 true
+execute at @e[type=witch,tag=witch,team=monitor] run effect give @a[team=survivor,distance=..3] weakness 1 0 true
 
 #狼
 execute as @e[type=wolf,tag=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
