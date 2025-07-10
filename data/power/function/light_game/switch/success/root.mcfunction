@@ -1,8 +1,8 @@
 execute store success score @s light_game run clear @s coal[custom_model_data={strings:["green"]}]
-$execute as @a[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["green"]},custom_name="",tooltip_display={hide_tooltip: true}]
+$execute as @s[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["green"]},custom_name="",tooltip_display={hide_tooltip: true}]
 
 execute store success score @s light_game run clear @s coal[custom_model_data={strings:["red"]}]
-$execute as @a[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["red"]},custom_name="",tooltip_display={hide_tooltip: true}]
+$execute as @s[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["red"]},custom_name="",tooltip_display={hide_tooltip: true}]
 
 $execute if items block ~ ~ ~ container.$(switch) coal[custom_model_data={strings:["red"]},custom_name=""] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["green"]},custom_name="change",tooltip_display={hide_tooltip: true}]
 $execute if items block ~ ~ ~ container.$(switch) coal[custom_model_data={strings:["green"]},custom_name=""] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["red"]},custom_name="change",tooltip_display={hide_tooltip: true}]

@@ -10,7 +10,7 @@
 ###################################################
 
 advancement revoke @s only system:prevent_spec_suicide
-execute unless score 更新 system matches 1 run return fail
+execute unless entity @e[type=marker, tag=lobby, limit=1] run return fail
 
 tp @s ~ 0 ~
 effect give @s instant_health 10 10 true

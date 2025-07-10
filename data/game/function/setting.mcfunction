@@ -4,6 +4,8 @@ execute at @e[tag=door,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["door"]
 execute at @e[tag=point,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["point"]}
 execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
 kill @e[tag=edit_kill,type=armor_stand]
+execute as @e[tag=box_point,type=armor_stand] run data merge entity @s {DisabledSlots:4144959}
+execute as @e[tag=poison_point,type=armor_stand] run data merge entity @s {DisabledSlots:4144959}
 
 time set midnight
 tag @a[team=monitor] add monitor_tag

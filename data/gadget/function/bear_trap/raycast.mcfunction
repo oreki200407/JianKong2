@@ -8,4 +8,4 @@ execute positioned ^ ^ ^.2 if function gun:can_through run return run function g
 execute if block ~ ~-1 ~ air run return run tellraw @s ["◎ 請對著地板", {"text": "放置", "color":"gold"}]
 
 item modify entity @s weapon.mainhand gadget:remove_1
-summon armor_stand ~ ~ ~ {Tags:["bear_trap_point"],Small:1b,Invisible:1b,Invulnerable:1b,attributes:[{id:"explosion_knockback_resistance",base:1},{id:"gravity",base:1}]}
+summon armor_stand ~ ~ ~ {Tags:["bear_trap_point"],NoBasePlate:1b,DisabledSlots:4144959,Small:1b,Invisible:1b,Invulnerable:1b,attributes:[{id:"explosion_knockback_resistance",base:1},{id:"gravity",base:1}]}

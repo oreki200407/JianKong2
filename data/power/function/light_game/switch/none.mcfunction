@@ -1,3 +1,3 @@
 execute store success score @s light_game run clear @s coal[custom_model_data={strings:["none"]}]
-$execute if data storage jk2:data root.monitor.light_game.chest2 as @a[scores={light_game=1}] run return run item replace block ~1 ~ ~ container.$(switch) with coal[custom_data={number:$(switch),chest2:1},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
-$execute as @a[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+$execute if data storage jk2:data root.monitor.light_game.chest2 as @s[scores={light_game=1}] run return run item replace block ~1 ~ ~ container.$(switch) with coal[custom_data={number:$(switch),chest2:1},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+$execute as @s[scores={light_game=1}] run item replace block ~ ~ ~ container.$(switch) with coal[custom_data={number:$(switch)},custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]

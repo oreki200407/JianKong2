@@ -19,7 +19,7 @@ execute store result storage jk2:data root.monitor.netwalk_game.check int 1 run 
 function power:netwalk_game/switch/check
 
 function power:netwalk_game/switch/none with storage jk2:data root.monitor.netwalk_game.switch
-execute if entity @a[scores={netwalk_game=1}] run return fail
+execute if entity @s[scores={netwalk_game=1}] run return fail
 
 function power:netwalk_game/switch/type
 function power:netwalk_game/switch/orientation

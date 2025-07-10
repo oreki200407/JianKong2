@@ -13,10 +13,10 @@ execute if score 倒數 system matches 0..3 run function game:teleport
 
 #死亡
 execute as @e[type=armor_stand, tag=tomb] run function game:death/tomb/stand
-#死亡展示實體
+execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
+#救援
 execute as @a[team=survivor, gamemode=adventure, predicate=game:flag/sneak] at @s if entity @e[type=item_display, tag=tomb, distance=..1.5] run function game:death/survivor/save/saving
 scoreboard players reset @a[team=survivor, predicate=!game:flag/sneak, scores={revive_time=1..}] revive_time
-execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying
 
 execute as @a[team=monitor,tag=monitor_death,scores={health=20..}] run function game:death/monitor_effect
 
@@ -68,5 +68,5 @@ execute at @e[type=marker, tag=contain_marker] run function contain:escape/conta
 
 #機關
 execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
-execute if score 酸雨 info_survivor matches 1.. as @a[team=survivor] at @s positioned ~ ~1 ~ if predicate control:acid_rain run effect give @s poison 1 4
+execute if score 酸雨 info_survivor matches 1.. as @a[team=survivor] at @s positioned ~ ~1 ~ if predicate control:acid_rain run function control:acid_rain/poisoning
 execute if score 禁止奔跑 info_survivor matches 1.. as @a[team=survivor,predicate=game:flag/sprint] run function control:sprint/poisoning

@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-title @s title {text: "你已被救起", color: "red", bold: true}
+title @s title {text: "你已被救起", color: "green", bold: true}
 tellraw @a ["◎ ", {selector: "@s"}, " 已被救起"]
 playsound entity.experience_orb.pickup ambient @s
 

@@ -8,7 +8,7 @@ execute store result storage jk2:data root.monitor.puzzle_game.check int 1 run s
 function power:puzzle_game/switch/check
 
 function power:puzzle_game/switch/none with storage jk2:data root.monitor.puzzle_game
-execute if entity @a[scores={puzzle_game=1}] run return fail
+execute if entity @s[scores={puzzle_game=1}] run return fail
 
 function power:puzzle_game/switch/around
 
