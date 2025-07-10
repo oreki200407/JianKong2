@@ -1,7 +1,7 @@
 ###################################################
 # 防止旁觀者跳虛空自殺
 # 
-# Name   : prevent_spec_suicide.mcfunction
+# Name   : prevent_suicide.mcfunction
 # Path   : system:
 # As     : 跳虛空的旁觀者
 # At     : As

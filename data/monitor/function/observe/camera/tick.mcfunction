@@ -18,9 +18,11 @@ execute if score #using_me camera matches 0 run return run scoreboard players re
 
 #在增加前先儲存原本的數值
 scoreboard players operation #previous heat = @s heat
-
 #增加熱度
 scoreboard players operation @s heat += #using_me camera
-
 #檢查熱度
 function monitor:observe/camera/level/check_heat
+
+#消耗電力
+scoreboard players operation @s cost_time += #using_me camera
+function monitor:observe/camera/level/check_electricity

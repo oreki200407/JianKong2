@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-data modify storage jk2:data root.monitor.observe.player.uuid set from entity @s UUID
+data modify storage jk2:data root.monitor.observe.player.uuid0 set from entity @s UUID[0]
 function monitor:observe/player/back/relay with storage jk2:data root.monitor.observe.player
 effect clear @s invisibility
 tag @s remove using_camera

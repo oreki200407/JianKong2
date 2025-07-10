@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-$function monitor:observe/player/back/teleport with storage jk2:data root.monitor.observe."$(uuid)"
+$function monitor:observe/player/back/teleport with storage jk2:data root.monitor.observe.$(uuid0)

@@ -24,7 +24,7 @@ execute unless entity @e[type=area_effect_cloud, tag=camera_destination] run ret
 
 #儲存位置
 scoreboard players operation @s camera = #teleport_camera camera
-data modify storage jk2:data root.monitor.observe.player.uuid set from entity @s UUID
+data modify storage jk2:data root.monitor.observe.player.uuid0 set from entity @s UUID[0]
 execute if entity @s[tag=!using_camera] run function monitor:observe/player/store_location with storage jk2:data root.monitor.observe.player
 
 #傳送到目標監視器

@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"prevent_spec_suicide":
+		"prevent_suicide":
 		{
 			"trigger": "minecraft:location",
 			"conditions":

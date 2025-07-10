@@ -100,6 +100,7 @@ scoreboard objectives add camera_cooldown dummy
 scoreboard objectives add camera_interface trigger "使用監視器"
 scoreboard objectives add camera_level dummy "監視器等級"
 scoreboard objectives add level dummy "電力"
+scoreboard objectives add cost_time dummy
 scoreboard objectives add heat dummy "過熱"
 scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
