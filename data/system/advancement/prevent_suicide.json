@@ -1,0 +1,35 @@
+{
+	"criteria":
+	{
+		"prevent_spec_suicide":
+		{
+			"trigger": "minecraft:location",
+			"conditions":
+			{
+				"player": 
+				[
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate":
+						{
+							"type_specific":
+							{
+								"type": "minecraft:player",
+								"gamemode": ["creative", "spectator"]
+							}
+						}
+					},
+					{
+						"condition": "minecraft:reference",
+						"name": "game:too_low"
+					}
+				]
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "system:prevent_suicide"
+	}
+}

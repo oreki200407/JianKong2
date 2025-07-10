@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only system:prevent_spec_suicide
+advancement revoke @s only system:prevent_suicide
 execute unless entity @e[type=marker, tag=lobby, limit=1] run return fail
 
 tp @s ~ 0 ~
