@@ -1,0 +1,19 @@
+{
+	"criteria":
+	{
+		"prevent_spec_suicide":
+		{
+			"trigger": "minecraft:location",
+			"conditions":
+			{
+				"player": 
+				[
+					{
+						"condition": "minecraft:reference",
+						"name": "game:too_low"
+					}
+				]
+			}
+		}
+	}
+}
