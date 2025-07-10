@@ -17,7 +17,9 @@ execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dead_playe
 
 tellraw @a ["◎ ", {selector: "@s"}, " 已死亡"]
 title @s title {text: "你已死亡", color: "red", bold: true}
-effect give @s strength 10 1
 scoreboard players add @s death_score 70
 playsound entity.zombie.death ambient @s
+effect give @s resistance 30 4
+effect give @s strength 30 0
+
 function game:death/survivor/up

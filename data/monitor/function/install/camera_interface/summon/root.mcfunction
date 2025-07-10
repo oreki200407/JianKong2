@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-execute unless block ~ ~1 ~ air run return run function monitor:install/camera_interface/summon/fail
+execute positioned ~ ~1 ~ unless function gun:can_through run return run function monitor:install/camera_interface/summon/fail
 
 scoreboard players add 目前監視器 info_monitor 1
 tellraw @s ["◎ 監視器", {score: {name: "@s", objective: "camera"}}, {text: "安裝成功", color: "gold"}]

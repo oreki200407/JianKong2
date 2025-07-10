@@ -45,6 +45,12 @@ function tick:both
 clear @a[team=monitor] #game:loot
 xp set @a[team=monitor] 0 points
 
+#陷阱
+scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
+execute unless score #冷卻中 trap_cooldown matches 1 if score #冷卻 trap_cooldown matches 2000.. run scoreboard players set #冷卻中 trap_cooldown 1
+execute if score #冷卻 trap_cooldown matches 1.. run scoreboard players remove #冷卻 trap_cooldown 1
+execute if score #冷卻中 trap_cooldown matches 1 if score #冷卻 trap_cooldown matches 0 run scoreboard players reset #冷卻中 trap_cooldown
+
 #人體變形
 execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.55] run function morph:player/start/root
 execute as @a[scores={morph=1..}] at @s run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"

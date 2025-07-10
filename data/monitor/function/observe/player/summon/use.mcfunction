@@ -17,6 +17,9 @@ execute unless entity @s[tag=using_camera, team=monitor] run return fail
 execute if score @s trap_cooldown matches 1.. run return fail
 scoreboard players set @s trap_cooldown 10
 
+execute if score #冷卻中 trap_cooldown matches 1 run return run tellraw @s ["◎ 投放功能目前在", {"text": "冷卻中", "color": "gold"}]
+scoreboard players add #冷卻 trap_cooldown 210
+
 execute unless score 電力 info_monitor matches 2.. run return run function monitor:observe/player/summon/fail
 
 scoreboard players remove 電力 info_monitor 2

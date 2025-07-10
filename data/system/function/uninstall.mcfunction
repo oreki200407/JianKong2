@@ -68,6 +68,7 @@ scoreboard objectives remove camera_cooldown
 scoreboard objectives remove camera_interface
 scoreboard objectives remove camera_level
 scoreboard objectives remove level
+scoreboard objectives remove cost_time
 scoreboard objectives remove heat
 scoreboard objectives remove trap
 scoreboard objectives remove trap_cooldown

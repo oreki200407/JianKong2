@@ -6,6 +6,7 @@
 		"#minecraft:all_signs",
 		"#minecraft:flower_pots",
 		"#minecraft:rails",
+		"minecraft:light",
 		"#gun:through_types/redstone",
 		"#gun:through_types/hang_plants",
 		"#gun:through_types/attach",

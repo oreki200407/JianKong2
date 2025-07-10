@@ -13,6 +13,8 @@
 advancement revoke @s only game:death
 scoreboard players reset @s death
 
+execute if score #mode system matches 1..2 run return run tag @s add lobby_death
+
 execute if entity @s[tag=trapped] run function gadget:bear_trap/release/root
 
 #還沒進入3 就結束

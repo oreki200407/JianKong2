@@ -60,7 +60,6 @@ execute as @a[tag=using_camera] unless predicate game:keyboard/no_input run func
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick
-scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
 #拍攝
 #scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
