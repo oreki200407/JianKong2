@@ -8,15 +8,23 @@ scoreboard objectives remove system
 scoreboard objectives remove death
 scoreboard objectives remove money
 scoreboard objectives remove kill
+scoreboard objectives remove damage
 scoreboard objectives remove stamina
 scoreboard objectives remove food
 scoreboard objectives remove score
 scoreboard objectives remove death_score
 scoreboard objectives remove damage_score
+scoreboard objectives remove kill_score
 scoreboard objectives remove constant
 scoreboard objectives remove xp
 scoreboard objectives remove fracture
 scoreboard objectives remove leave
+
+#統計
+scoreboard objectives remove st_fall
+scoreboard objectives remove st_death
+scoreboard objectives remove st_damage
+scoreboard objectives remove st_kill
 
 #遠程武器
 scoreboard objectives remove extinguisher

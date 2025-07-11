@@ -11,20 +11,21 @@ team modify monitor color red
 scoreboard objectives setdisplay sidebar.team.red info_monitor
 scoreboard objectives setdisplay sidebar.team.blue money
 
-schedule function game:prepare 2s
+schedule function game:prepare 3s
 schedule clear summon:natural
 
 clear @a
 recipe take @a *
 xp set @a 0 levels
 xp set @a 0 points
-effect clear @a
 effect give @a[team=monitor] hunger 3 255 true
-effect give @a invisibility 5 0 true
-effect give @a regeneration 5 100 true
-effect give @a resistance 5 100 true
+effect give @a invisibility 3 0 true
+effect give @a regeneration 3 100 true
+effect give @a resistance 3 4 true
 scoreboard players reset @a fracture
 scoreboard players reset @a money
+scoreboard players reset @a kill
+scoreboard players reset @a damage
 
 #復原場地
 execute as @e[team=monitor, tag=monster, type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}

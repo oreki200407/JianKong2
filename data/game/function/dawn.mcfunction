@@ -1,5 +1,4 @@
 title @a title {"text":"早上來臨","bold":true,"color":"gold"}
-effect give @a[team=!spec] resistance 3 100 true
 
 schedule clear contain:give
 schedule clear control:acid_rain/start
@@ -35,5 +34,14 @@ execute as @a[tag=trapped] run function gadget:bear_trap/release/root
 execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
 execute as @a[team=monitor, scores={morph=1..}] at @s run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"
 
+clear @a
+effect clear @a[team=!spec]
+effect give @a[team=!spec] resistance 3 4 true
+effect give @a[team=!spec] invisibility 3 0 true
+effect give @a[team=!spec] regeneration 3 100 true
+
+#分數
+execute as @a[team=survivor] run function game:end/damage
+
 execute unless score #switch system matches 1 run return run schedule function game:switch 3s
-schedule function game:end 3s
+schedule function game:end/root 3s

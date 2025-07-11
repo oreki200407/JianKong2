@@ -19,7 +19,7 @@ scoreboard objectives setdisplay sidebar.team.blue info_monitor
 scoreboard objectives setdisplay sidebar.team.red money
 scoreboard objectives setdisplay sidebar info_survivor
 scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay list kill
+scoreboard objectives setdisplay list kill_score
 
 scoreboard players operation #switch_box_second system = 更換電箱 lobby
 scoreboard players operation #switch_box_second system *= #60 constant
@@ -33,4 +33,4 @@ execute as @e[type=marker,tag=door] at @s run function gadget:unlock/store
 #抽怪物
 execute at @e[type=marker,tag=lobby,limit=1] run function summon:pick/armor_stand
 
-schedule function game:prepare 2s
+schedule function game:prepare 3s

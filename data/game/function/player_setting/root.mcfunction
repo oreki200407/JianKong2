@@ -5,6 +5,7 @@ xp set @s 0 levels
 xp set @s 0 points
 scoreboard players reset @s
 
+title @s times 0 40 0
 execute at @s run playsound block.sculk_shrieker.shriek ambient
 title @s title {"text":"監控圍城 II","color":"blue","bold":true}
 

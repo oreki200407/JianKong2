@@ -1,8 +1,0 @@
-{
-	"replace": false,
-	"values":
-	[
-		"#monster:all",
-		"minecraft:player"
-	]
-}

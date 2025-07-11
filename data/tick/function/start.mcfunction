@@ -11,6 +11,9 @@
 
 execute if score 倒數 system matches 0..3 run function game:teleport
 
+#殺怪數
+execute as @a[team=survivor] unless score @s kill_score = @s kill run scoreboard players operation @s kill_score = @s kill
+
 #死亡
 execute as @e[type=armor_stand, tag=tomb] run function game:death/tomb/stand
 execute as @a[team=survivor, gamemode=spectator, tag=fall_down] at @s run function game:death/survivor/die/dying

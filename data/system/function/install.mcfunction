@@ -43,12 +43,20 @@ scoreboard objectives add stamina dummy "體力值"
 #分數
 scoreboard objectives add score dummy "貢獻總分"
 scoreboard objectives add death_score dummy "死亡貢獻分數"
-scoreboard objectives add damage_score custom:damage_taken "受傷貢獻分數"
+scoreboard objectives add damage_score dummy "受傷貢獻分數"
+scoreboard objectives add kill_score dummy "殺怪分數"
 scoreboard objectives add end dummy {"text": "分數", "color": "green",bold:1b}
 
+#統計
+scoreboard objectives add st_fall dummy "倒地次數"
+scoreboard objectives add st_death dummy "死亡次數"
+scoreboard objectives add st_damage dummy "受傷量"
+scoreboard objectives add st_kill dummy "擊殺數"
+
 #戰鬥
-scoreboard objectives add kill totalKillCount "殺怪數"
+scoreboard objectives add kill totalKillCount
 scoreboard objectives add death deathCount
+scoreboard objectives add damage custom:damage_taken
 
 #遠程武器
 scoreboard objectives add extinguisher dummy
