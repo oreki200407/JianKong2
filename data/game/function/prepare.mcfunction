@@ -29,6 +29,7 @@ execute at @e[type=marker, tag=lobby, limit=1] run place template game:monitor ~
 
 #發電
 scoreboard players set @e[tag=power] power_level 1
+scoreboard players set #power1 power 0
 scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 

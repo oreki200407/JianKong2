@@ -4,7 +4,7 @@ execute unless score 電力 info_monitor matches 130.. run return run tellraw @s
 scoreboard players remove 電力 info_monitor 130
 tellraw @a[team=monitor] ["◎ ",{"entity":"@n[type=marker,tag=power]","nbt":"data.number"},"號發電機已升級為", {"text": "全自動", "color":"gold"}]
 setblock ~ ~ ~ air destroy
-fill ~-2 ~-2 ~ ~-2 ~-1 ~ shroomlight
+setblock ~-2 ~-1 ~ shroomlight
 tag @n[type=marker,tag=power] add power_auto
 
-execute as @n[type=marker,tag=power] if entity @s[tag=power1] run kill @e[type=area_effect_cloud,tag=power1_time]
+execute positioned ~-2 ~-1 ~ run kill @e[type=area_effect_cloud,tag=power_time,distance=..0.5]

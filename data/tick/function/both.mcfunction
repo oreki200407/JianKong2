@@ -69,7 +69,7 @@ scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_coo
 
 #發電
 execute as @a[team=monitor] run function power:root
-execute as @e[type=area_effect_cloud, tag=power1_time, nbt={PortalCooldown: 0}] at @s run function power:progress/1_end
+execute as @e[type=area_effect_cloud, tag=power_time, nbt={PortalCooldown: 0}] at @s run function power:light_off
 execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
 
 #收容

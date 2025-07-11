@@ -1,8 +1,9 @@
-execute if score #power2 power matches 0..7 run setblock ~ ~2 ~ air
-execute if score #power2 power matches 0..3 run setblock ~-1 ~2 ~ stone_pressure_plate
-execute if score #power2 power matches 4..7 run setblock ~1 ~2 ~ stone_pressure_plate
-execute if score #power2 power matches 0..3 run data merge block ~ ~ ~ {powered:0b}
-execute if score #power2 power matches 5..7 run data merge block ~ ~ ~ {powered:0b}
+execute unless block ~ ~1 ~ gold_block run return fail
 
-scoreboard players add #power2 power 1
-execute if score #power2 power matches 8 run scoreboard players set #power2 power 0
+execute if score #power2 power matches 0..7 run setblock ~ ~1 ~ polished_andesite
+execute if score #power2 power matches 0..3 run setblock ~-1 ~1 ~ gold_block
+execute if score #power2 power matches 4..7 run setblock ~1 ~1 ~ gold_block
+execute if score #power2 power matches 4 as @e[tag=power2] at @s run function power:manual
+
+execute unless score #power2 power matches 7 run return run scoreboard players add #power2 power 1
+scoreboard players set #power2 power 0
