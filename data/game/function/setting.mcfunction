@@ -13,6 +13,17 @@ tag @a[team=survivor] add survivor_tag
 team empty monitor
 team empty survivor
 team empty spec
+
+clear @a
+effect clear @a
+recipe take @a *
+xp set @a 0 levels
+xp set @a 0 points
+scoreboard players reset @a
+title @a times 0 40 0
+title @a title {"text":"監控圍城 II","color":"blue","bold":true}
+execute at @e[type=marker, tag=lobby, limit=1] run playsound block.sculk_shrieker.shriek ambient @a
+
 execute as @a run function game:player_setting/root
 
 scoreboard objectives setdisplay sidebar.team.blue info_monitor

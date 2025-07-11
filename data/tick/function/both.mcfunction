@@ -27,9 +27,6 @@ execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run functio
 execute as @e[type=lingering_potion, tag=!checked] run function gadget:molotov_cocktail/potion
 execute as @e[type=marker, tag=molotov_cocktail_marker, predicate=!game:riding] at @s run function gadget:molotov_cocktail/set_fire
 
-#黑洞炸彈
-execute as @e[type=area_effect_cloud,tag=black_hole] at @s run function gadget:black_hole/use
-
 #捕獸夾
 execute as @e[type=armor_stand, tag=bear_trap_point, predicate=game:flag/on_ground] at @s run function gadget:bear_trap/summon
 execute as @e[type=item_display, tag=bear_trap] run function gadget:bear_trap/trap_working

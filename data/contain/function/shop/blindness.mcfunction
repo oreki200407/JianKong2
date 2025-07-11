@@ -3,5 +3,5 @@ execute unless score 骨頭 info_monitor matches 3.. run return run tellraw @s [
 
 scoreboard players remove 火藥 info_monitor 4
 scoreboard players remove 骨頭 info_monitor 3
-give @s purple_dye[item_name="黑洞炸彈",custom_data={"type":"trap","command":"function gadget:black_hole/spawn"},custom_model_data={strings:["black_hole_monitor"]}, consumable={consume_seconds: 99999}] 1
+give @s purple_dye[item_name="失明彈",custom_data={"type":"trap","command":"summon splash_potion ~ ~.1 ~ {Item:{id:\"splash_potion\",count:1,components:{\"potion_contents\":{custom_effects:[{id:\"blindness\",amplifier:0,duration:200}]}}}}"},custom_model_data={strings:["blindness_monitor"]}, consumable={consume_seconds: 99999}] 1
 playsound block.anvil.use ambient @s ~ ~ ~ 1 2
