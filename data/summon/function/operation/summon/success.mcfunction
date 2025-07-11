@@ -1,4 +1,4 @@
 playsound entity.experience_orb.pickup ambient @s
 scoreboard players operation 電力 info_monitor -= @s summon_power
-scoreboard players reset @s summon_monster
-function summon:reset
+
+execute as @a[team=monitor] if score @s summon_monster = @a[tag=summoner,limit=1] summon_monster run function summon:open_ender_chest

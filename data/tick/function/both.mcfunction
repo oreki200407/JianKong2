@@ -55,7 +55,6 @@ scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 execute if score 電力 info_monitor matches 301.. run function power:full
 
 #使用監視器中
-execute unless score 電力 info_monitor matches 1.. as @a[tag=using_camera] run function monitor:observe/player/back/root
 execute as @a[tag=using_camera] unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
 #監視器

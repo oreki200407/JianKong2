@@ -34,8 +34,8 @@ scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 
 #陷阱
-scoreboard players reset #冷卻 trap_cooldown
-scoreboard players reset #冷卻中 trap_cooldown
+scoreboard players set #trap trap_cooldown 15
+scoreboard players reset #cooldown trap_cooldown
 
 #裝備
 item replace entity @a[team=survivor] armor.chest with leather_chestplate[unbreakable={}, tooltip_display={hidden_components: ["unbreakable"]},enchantment_glint_override=false]

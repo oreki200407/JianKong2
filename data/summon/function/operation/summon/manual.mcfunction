@@ -6,7 +6,6 @@ execute store result storage jk2:data root.summon.manual.count int 1 run scorebo
 
 tag @s add summoner
 execute as @e[type=armor_stand,tag=summon_pick] if score @s summon_monster = @a[tag=summoner,limit=1] summon_monster run function summon:manual/set
-tag @s remove summoner
-
 function summon:manual/give with storage jk2:data root.summon.manual
 function summon:operation/summon/success
+tag @s remove summoner

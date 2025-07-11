@@ -16,3 +16,4 @@ effect clear @s resistance
 tag @s remove using_camera
 attribute @s scale modifier remove jk2:monitor
 scoreboard players reset @s camera
+title @s actionbar ""

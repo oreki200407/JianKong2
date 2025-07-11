@@ -11,5 +11,4 @@ tag @s remove summon_shuffler
 tellraw @s ["◎ 你已成功", {"text": "刷新怪物", "color":"gold"}]
 scoreboard players remove 電力 info_monitor 10
 playsound entity.player.swim ambient @s
-scoreboard players reset @s summon_monster
-function summon:reset
+function summon:open_ender_chest

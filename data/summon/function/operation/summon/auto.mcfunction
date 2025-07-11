@@ -7,6 +7,5 @@ execute at @a[team=survivor] run tag @e[type=marker,tag=point,distance=..10] add
 
 tag @s add summoner
 execute as @e[type=armor_stand,tag=summon_pick] if score @s summon_monster = @a[tag=summoner,limit=1] summon_monster run function summon:auto
-tag @s remove summoner
-
 function summon:operation/summon/success
+tag @s remove summoner
