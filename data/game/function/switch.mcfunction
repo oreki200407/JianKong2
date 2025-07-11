@@ -29,6 +29,7 @@ scoreboard players reset @a damage
 
 #復原場地
 execute as @e[team=monitor, tag=monster, type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
+kill @e[type=experience_orb]
 kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]

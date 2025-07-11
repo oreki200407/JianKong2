@@ -2,7 +2,7 @@ playsound ui.button.click ambient @s
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
 give @s armor_stand[item_name="門", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,Tags:["door","edit","edit_kill"],CustomName:"門"}] 1
-give @s armor_stand[item_name="生怪點", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,Tags:["point","edit","edit_kill"],CustomName:"生怪點"}] 1
+give @s armor_stand[item_name="生怪點", entity_data={id:"minecraft:armor_stand",NoGravity:1b,CustomNameVisible:1b,Glowing:1b,Tags:["point","edit","edit_kill"],CustomName:"生怪點"}] 1
 give @s armor_stand[item_name="電箱", entity_data={id:"minecraft:armor_stand",Small:1b,CustomNameVisible:1b,Glowing:1b,Tags:["box_point","edit"]}] 1
 give @s armor_stand[item_name="求生者重生點", entity_data={id:"minecraft:armor_stand",CustomNameVisible:1b,Glowing:1b,Tags:["spawn_survivor","edit","edit_kill"],CustomName:"求生者重生點"}] 1
 
