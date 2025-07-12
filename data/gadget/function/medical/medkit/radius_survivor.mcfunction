@@ -9,5 +9,5 @@
 # Author : oreki20
 ###################################################
 
-effect give @s regeneration 8 3
+effect give @s regeneration 8 2
 tellraw @s ["◎ 你獲得了", {"text": "醫療箱", "color":"gold"},"的治療效果"]

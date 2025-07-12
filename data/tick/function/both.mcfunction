@@ -15,6 +15,8 @@ execute as @a[team=] run function game:join/spectate
 execute as @a[scores={leave=1}] run function game:join/rejoin
 
 #-----------------------道具-----------------------
+clear @a[team=survivor] glass_bottle
+
 #治療
 scoreboard players remove @a[scores={medical_cooldown=1..}] medical_cooldown 1
 

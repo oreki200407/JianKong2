@@ -217,7 +217,25 @@
 							"components": {
 								"minecraft:item_name": "繃帶",
 								"minecraft:consumable": {
-									"consume_seconds": 99999
+									"consume_seconds": 0,
+									"sound": "entity.silverfish.ambient",
+									"has_consume_particles":false,
+									"on_consume_effects":[
+										{
+											"type":"minecraft:apply_effects",
+											"effects":[
+												{
+													"id":"instant_health",
+													"amplifier":0,
+													"duration":1
+												}
+											]
+										}
+									]
+								},
+								"use_cooldown": {
+									"seconds": 0.5,
+									"cooldown_group": "jk2:bandage"
 								}
 							}
 						},
@@ -225,7 +243,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"text":"立即治療","color":"blue","italic":false}]]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"translate": "effect.minecraft.instant_health", "color": "blue", "italic": false}]]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -262,7 +280,13 @@
 							"components": {
 								"minecraft:item_name": "醫療箱",
 								"minecraft:consumable": {
-									"consume_seconds": 99999
+									"consume_seconds": 0,
+									"sound": "block.beacon.activate",
+									"has_consume_particles":false
+								},
+								"use_cooldown":{
+									"seconds": 0.5,
+									"cooldown_group": "jk2:medkit"
 								}
 							}
 						},
@@ -270,7 +294,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"text":"周圍5格內的玩家治療 IV (00:08)","color":"blue","italic":false}]]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"text": "周圍5格內的玩家", "color": "blue", "italic": false}, {"translate": "potion.withDuration", "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.regeneration"}, {"translate": "potion.potency.2"}]}, "00:08"]}]]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -352,7 +376,25 @@
 							"components": {
 								"minecraft:item_name": "止痛藥",
 								"minecraft:consumable": {
-									"consume_seconds": 99999
+									"consume_seconds": 0,
+									"sound": "block.scaffolding.break",
+									"has_consume_particles":false,
+									"on_consume_effects":[
+										{
+											"type":"minecraft:apply_effects",
+											"effects":[
+												{
+													"id":"resistance",
+													"amplifier":4,
+													"duration":100
+												}
+											]
+										}
+									]
+								},
+								"use_cooldown":{
+									"seconds": 0.5,
+									"cooldown_group": "jk2:painkiller"
 								}
 							}
 						},
@@ -360,7 +402,7 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"text":"抗性 V (0:05)","color":"blue","italic":false}]]
+							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"translate": "potion.withDuration", "color": "blue", "italic": false, "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.resistance"}, {"translate": "potion.potency.4"}]}, "00:05"]}]]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -435,6 +477,13 @@
 							}
 						},
 						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "燃燒瓶",
+								"italic": false
+							}
+						},
+						{
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
@@ -444,8 +493,7 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:potion_contents": {
-									"custom_color": 4144959,
-									"custom_name": "molotov_cocktail"
+									"custom_color": 4144959
 								},
 								"minecraft:tooltip_display": {
 									"hidden_components": ["minecraft:potion_contents"]

@@ -22,5 +22,4 @@ attribute @s movement_speed modifier remove jk2:fracture
 tag @s remove fractured
 tellraw @s ["◎ 你治好了", {text: "骨折", color: "gold"}]
 
-execute if items entity @s weapon paper[item_name="夾板"] run return run item modify entity @s weapon gadget:remove_1
-item modify entity @s weapon.offhand gadget:remove_1
+clear @s paper[item_name="夾板"] 1

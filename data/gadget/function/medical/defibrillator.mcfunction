@@ -16,5 +16,4 @@ scoreboard players set @s medical_cooldown 10
 execute unless entity @e[type=item_display, tag=tomb, distance=..5] run return run tellraw @s ["◎ 使用", {"text": "失敗", "color":"gold"},", 周圍沒有", {"text": "倒地的玩家", "color":"gold"}]
 execute as @n[type=item_display, tag=tomb, distance=..5] run function game:death/tomb/revive
 
-execute if items entity @s weapon paper[item_name="電擊器"] run return run item modify entity @s weapon gadget:remove_1
-item modify entity @s weapon.offhand gadget:remove_1
+clear @s paper[item_name="電擊器"] 1
