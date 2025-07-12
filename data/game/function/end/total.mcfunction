@@ -10,6 +10,6 @@ effect give @s saturation infinite 0 true
 effect give @s night_vision infinite 0 true
 effect give @s weakness infinite 99 true
 
-execute if score 紅隊 end > 藍隊 end run return run title @a title {"text":"紅隊獲勝","bold":true,"color":"red"}
-execute if score 紅隊 end < 藍隊 end run return run title @a title {"text":"藍隊獲勝","bold":true,"color":"blue"}
+execute if score §c紅隊 end > §9藍隊 end run return run title @a title {"text":"紅隊獲勝","bold":true,"color":"red"}
+execute if score §c紅隊 end < §9藍隊 end run return run title @a title {"text":"藍隊獲勝","bold":true,"color":"blue"}
 title @a title {"text":"平手","bold":true,"color":"gold"}

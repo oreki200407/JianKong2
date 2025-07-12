@@ -15,6 +15,6 @@ effect clear @s invisibility
 effect clear @s resistance
 effect clear @s weakness
 tag @s remove using_camera
-attribute @s scale modifier remove jk2:monitor
+attribute @s scale modifier remove jk2:observe
 scoreboard players reset @s camera
 title @s actionbar ""
