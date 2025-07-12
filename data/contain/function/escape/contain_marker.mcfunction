@@ -10,4 +10,4 @@
 ###################################################
 
 execute as @a[team=monitor, distance=..0.5] run function contain:escape/player
-execute as @e[tag=contain_escape, distance=..0.4] run function contain:escape/check
+execute as @e[tag=contain_escape, distance=..0.5] run function contain:escape/check
