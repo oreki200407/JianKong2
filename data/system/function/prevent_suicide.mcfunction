@@ -12,5 +12,5 @@
 advancement revoke @s only system:prevent_suicide
 execute unless entity @e[type=marker, tag=lobby, limit=1] run return fail
 
-tp @s ~ 0 ~
+tp @s ~ -32 ~
 effect give @s instant_health 10 10 true
