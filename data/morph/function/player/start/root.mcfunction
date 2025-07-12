@@ -11,6 +11,8 @@
 
 tp @s ~ ~ ~-1
 
+execute if score #switching system matches 1 run return fail
+
 #免費
 execute at @e[type=marker, tag=morph_machine, limit=1] if block ~ ~-1 ~-2 air run scoreboard players add 電力 info_monitor 50
 

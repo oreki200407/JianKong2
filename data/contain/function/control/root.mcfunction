@@ -9,6 +9,8 @@
 # Author : oreki20
 ###################################################
 
+execute if score #switching system matches 1 run return run data remove entity @s interaction
+
 execute on target run playsound block.end_portal_frame.fill ambient @s ~ ~ ~ 1 2
 
 execute if entity @s[tag=contain_add_temperature] run function contain:control/add_temperature

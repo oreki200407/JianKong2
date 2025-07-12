@@ -1,3 +1,5 @@
+execute if score #switching system matches 1 run return fail
+
 execute unless score 腐肉 info_monitor matches 3.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
 execute unless score 紙 info_monitor matches 3.. run return run tellraw @s ["◎ 材料不足, 無法", {"text": "購買陷阱", "color": "gold"}]
 

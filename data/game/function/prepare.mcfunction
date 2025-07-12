@@ -1,5 +1,6 @@
 title @a title {"text":"準備時間","bold":true,"color":"gold"}
 scoreboard players set #mode system 4
+scoreboard players reset #switching system
 
 effect give @a[team=!spec] saturation infinite 0 true
 effect give @a[team=!spec] resistance 180 100 true

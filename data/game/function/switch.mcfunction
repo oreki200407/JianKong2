@@ -11,9 +11,6 @@ team modify monitor color red
 scoreboard objectives setdisplay sidebar.team.red info_monitor
 scoreboard objectives setdisplay sidebar.team.blue money
 
-schedule function game:prepare 3s
-schedule clear summon:natural
-
 clear @a
 recipe take @a *
 xp set @a 0 levels
@@ -30,6 +27,7 @@ scoreboard players reset @a damage
 #復原場地
 execute as @e[team=monitor, tag=monster, type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
 kill @e[type=experience_orb]
+kill @e[type=area_effect_cloud, tag=power_time]
 kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]
@@ -45,3 +43,5 @@ kill @e[type=area_effect_cloud,tag=camera]
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster
 execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
+
+schedule function game:prepare 3s

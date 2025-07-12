@@ -1,4 +1,5 @@
 execute unless score #mode system matches 3 run return fail
+execute if score #switching system matches 1 run return fail
 
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "關閉電箱", "color":"gold"}]
 

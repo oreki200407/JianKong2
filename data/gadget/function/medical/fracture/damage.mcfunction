@@ -9,6 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
+execute if score #switching system matches 1 run return run scoreboard players reset @s fracture
+
 execute if entity @s[scores={fracture=1..399}] run return run scoreboard players reset @s fracture
 
 #已經骨折了

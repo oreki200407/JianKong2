@@ -1,4 +1,9 @@
 title @a title {"text":"早上來臨","bold":true,"color":"gold"}
+scoreboard players set #switching system 1
+
+#電箱
+execute at @e[type=armor_stand,tag=box_point] run fill ~ ~ ~ ~ ~1 ~ air
+execute at @e[type=marker,tag=monitor_ender_chest] run setblock ~ ~ ~ air
 
 schedule clear contain:give
 schedule clear control:acid_rain/start
