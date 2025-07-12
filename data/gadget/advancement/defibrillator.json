@@ -1,0 +1,24 @@
+{
+	"criteria":
+	{
+		"defibrillator":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:paper",
+					"components":
+					{
+						"minecraft:item_name": "電擊器"
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:medical/defibrillator"
+	}
+}

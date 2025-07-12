@@ -12,7 +12,7 @@
 #3秒復活
 scoreboard players add @s revive_time 1
 
-title @p[team=survivor, distance=..1.5, gamemode=spectator, tag=fall_down] title {text: "你正在被救援", color: blue, bold:1b}
+title @p[team=survivor, distance=..1.5, gamemode=spectator, tag=fall_down] title {text: "你正在被救援", color: blue, bold: true}
 
 execute if score @s revive_time matches 1..30 run return run function game:death/survivor/save/upper_half
 execute if score @s revive_time matches 31..61 run return run function game:death/survivor/save/lower_half

@@ -9,6 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
+advancement revoke @s only gadget:splint
+execute if score @s medical_cooldown matches 1.. run return fail
+scoreboard players set @s medical_cooldown 10
+
 #沒有骨折
 execute if entity @s[tag=!fractured] run return run tellraw @s ["◎ 使用", {text: "失敗", color: "gold"}, ", 你沒有", {text: "骨折", color: "gold"}]
 
@@ -17,4 +21,6 @@ playsound entity.villager.work_fletcher ambient
 attribute @s movement_speed modifier remove jk2:fracture
 tag @s remove fractured
 tellraw @s ["◎ 你治好了", {text: "骨折", color: "gold"}]
-item modify entity @s weapon gadget:remove_1
+
+execute if items entity @s weapon paper[item_name="夾板"] run return run item modify entity @s weapon gadget:remove_1
+item modify entity @s weapon.offhand gadget:remove_1

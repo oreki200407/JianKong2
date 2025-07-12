@@ -1,0 +1,24 @@
+{
+	"criteria":
+	{
+		"splint":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:paper",
+					"components":
+					{
+						"minecraft:item_name": "夾板"
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:medical/fracture/heal"
+	}
+}

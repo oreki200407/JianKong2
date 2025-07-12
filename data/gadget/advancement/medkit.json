@@ -1,0 +1,24 @@
+{
+	"criteria":
+	{
+		"medkit":
+		{
+			"trigger": "minecraft:consume_item",
+			"conditions":
+			{
+				"item":
+				{
+					"items": "minecraft:paper",
+					"components":
+					{
+						"minecraft:item_name": "醫療箱"
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:medical/medkit/use"
+	}
+}
