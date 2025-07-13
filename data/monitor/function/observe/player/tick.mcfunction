@@ -4,7 +4,7 @@
 # Name   : tick.mcfunction
 # Path   : monitor:observe/player/
 # As     : 使用監視器的玩家
-# At     : 世界重生點
+# At     : As
 # Loop   : 是
 # Author : Alex_Cai
 ###################################################
