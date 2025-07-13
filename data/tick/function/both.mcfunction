@@ -54,7 +54,7 @@ scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 execute if score 電力 info_monitor matches 301.. run function power:full
 
 #使用監視器中
-execute as @a[tag=using_camera] run function monitor:observe/player/tick
+execute as @a[tag=using_camera] at @s run function monitor:observe/player/tick
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
 #監視器
 execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/camera/tick

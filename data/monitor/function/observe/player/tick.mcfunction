@@ -13,4 +13,5 @@
 execute unless predicate game:keyboard/no_input run function monitor:observe/player/back/root
 
 #滅火 頻率不要太高
-execute if predicate {condition: "entity_properties", entity: "this", predicate: {flags: {is_on_fire: true}, periodic_tick: 20}} at @s run summon splash_potion ~ ~.49 ~ {Item: {id: "splash_potion", components: {potion_contents: {potion: "water"}}}}
+execute if predicate {condition: "entity_properties", entity: "this", predicate: {flags: {is_on_fire: true}, periodic_tick: 20}} run summon splash_potion ~ ~.49 ~ {Item: {id: "splash_potion", components: {potion_contents: {potion: "water"}}}}
+fill ~ ~ ~ ~ ~ ~ air replace #fire
