@@ -2,18 +2,35 @@
 	"replace": false,
 	"values":
 	[
+		"#gun:through_types/dead_coral",
 		"#minecraft:saplings",
-		"#minecraft:crops",
+		"#minecraft:bee_growables",
 		"#minecraft:flowers",
+		"#minecraft:frog_prefer_jump_to",
+		"#minecraft:underwater_bonemeals",
+		"minecraft:sea_pickle",
 		"minecraft:short_grass",
 		"minecraft:tall_grass",
 		"minecraft:fern",
+		"minecraft:bush",
 		"minecraft:large_fern",
 		"minecraft:dead_bush",
 		"minecraft:short_dry_grass",
 		"minecraft:tall_dry_grass",
 		"minecraft:nether_sprouts",
 		"minecraft:warped_roots",
-		"minecraft:crimson_roots"
+		"minecraft:crimson_roots",
+		"minecraft:red_mushroom",
+		"minecraft:brown_mushroom",
+		"minecraft:warped_fungus",
+		"minecraft:crimson_fungus",
+		"minecraft:sugar_cane",
+		"minecraft:bamboo_sapling",
+		"minecraft:firefly_bush",
+		"minecraft:frogspawn",
+		"minecraft:leaf_litter",
+		"minecraft:small_dripleaf",
+		"minecraft:hanging_roots",
+		"minecraft:kelp"
 	]
 }
