@@ -11,6 +11,7 @@
 
 #清除標籤
 tag @s remove fixing_box_check
+scoreboard players set @s jump_fix 0
 
 #清除title
 title @s title ""

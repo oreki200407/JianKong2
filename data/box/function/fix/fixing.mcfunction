@@ -18,7 +18,7 @@ execute if score @s fix_progress matches 10.. at @e[tag=box] run function box:fi
 execute unless predicate game:keyboard/no_wasd run return run function box:fix/fix_mode/leave
 
 #如果是正在檢定的話 剩下的就不用管了
-execute if entity @s[tag=fixing_box_check] run function box:fix/check_mode/countdown
+execute if entity @s[tag=fixing_box_check] run return run function box:fix/check_mode/countdown
 
 #沒有跳躍 剩下的就不用執行了
 execute unless score @s jump_fix matches 1.. run return fail
