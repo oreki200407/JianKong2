@@ -12,6 +12,10 @@
 kill @e[tag=monster_being_ride, predicate=!game:being_ride]
 kill @e[type=arrow,nbt={inGround:1b}]
 
+#防止轉化
+execute as @e[type=#monster:drowned,nbt={InWaterTime:599}] run data merge entity @s {InWaterTime:-1}
+execute as @e[type=skeleton,nbt={StrayConversionTime:1}] run data merge entity @s {StrayConversionTime:-1}
+
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched
 execute as @e[tag=monster, team=monitor, type=!player] at @s anchored eyes run function monster:break_glass/raycast
