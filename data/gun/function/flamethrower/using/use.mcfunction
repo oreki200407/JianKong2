@@ -12,6 +12,7 @@
 advancement revoke @s only gun:flamethrower
 
 #召喚火marker
+scoreboard players operation #fire_marker uuid0_match = @s uuid0
 execute anchored eyes positioned ^ ^ ^.5 summon marker run function gun:flamethrower/using/shoot
 
 #物品損壞

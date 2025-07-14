@@ -12,3 +12,5 @@
 tag @s add flame
 #角度和玩家一樣
 rotate @s ~ ~
+
+execute store result entity @s data.owner int 1 run scoreboard players get #fire_marker uuid0_match 

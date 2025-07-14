@@ -1,24 +1,23 @@
 scoreboard objectives remove lobby
 scoreboard objectives remove info_monitor
 scoreboard objectives remove info_survivor
-scoreboard objectives remove end
 scoreboard objectives remove edit
-scoreboard objectives remove health
 scoreboard objectives remove system
-scoreboard objectives remove death
-scoreboard objectives remove money
-scoreboard objectives remove kill
-scoreboard objectives remove damage
-scoreboard objectives remove stamina
+scoreboard objectives remove constant
+scoreboard objectives remove xp
+scoreboard objectives remove leave
+
+#生命資訊
+scoreboard objectives remove health
 scoreboard objectives remove food
+scoreboard objectives remove stamina
+
+#分數
 scoreboard objectives remove score
 scoreboard objectives remove death_score
 scoreboard objectives remove damage_score
 scoreboard objectives remove kill_score
-scoreboard objectives remove constant
-scoreboard objectives remove xp
-scoreboard objectives remove fracture
-scoreboard objectives remove leave
+scoreboard objectives remove end
 
 #統計
 scoreboard objectives remove st_fall
@@ -27,13 +26,18 @@ scoreboard objectives remove st_damage
 scoreboard objectives remove st_kill
 scoreboard objectives remove st_save
 
+#戰鬥
+scoreboard objectives remove kill
+scoreboard objectives remove death
+scoreboard objectives remove damage
+
 #遠程武器
 scoreboard objectives remove extinguisher
 scoreboard objectives remove flamethrower
+scoreboard objectives remove flamethrower_attacker_uuid0
 scoreboard objectives remove reload_time
 scoreboard objectives remove reload
 scoreboard objectives remove gun_cooldown
-scoreboard objectives remove open_ender_chest
 
 #電箱
 scoreboard objectives remove box_operation
@@ -69,7 +73,8 @@ scoreboard objectives remove unlock_progess
 scoreboard objectives remove unlock_slot
 scoreboard objectives remove selected_slot
 
-#治療
+#骨折與治療
+scoreboard objectives remove fracture
 scoreboard objectives remove medical_cooldown
 
 #監視器
@@ -103,6 +108,8 @@ scoreboard objectives remove netwalk_game
 #商店
 scoreboard objectives remove shop
 scoreboard objectives remove shop_operate
+scoreboard objectives remove open_ender_chest
+scoreboard objectives remove money
 
 #修理
 scoreboard objectives remove jump_fix

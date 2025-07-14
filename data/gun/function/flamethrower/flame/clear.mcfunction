@@ -1,5 +1,5 @@
 ###################################################
-# 清除火焰標記
+# 清除火焰飛行標記
 # 
 # Name   : clear.mcfunction
 # Path   : gun:flamethrower/flame/

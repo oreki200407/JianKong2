@@ -30,7 +30,6 @@ scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color"
 scoreboard objectives add info_survivor dummy {"text": "求生者資訊", "color": "gold",bold:1b}
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add system dummy "隱藏資訊"
-scoreboard objectives add money dummy {"text":"💲 錢 💲","color":"green"}
 scoreboard objectives add constant dummy
 scoreboard objectives add xp dummy
 scoreboard objectives add leave custom:leave_game
@@ -62,6 +61,7 @@ scoreboard objectives add damage custom:damage_taken
 #遠程武器
 scoreboard objectives add extinguisher dummy
 scoreboard objectives add flamethrower dummy
+scoreboard objectives add flamethrower_attacker_uuid0 dummy
 scoreboard objectives add reload_time dummy
 scoreboard objectives add reload dummy
 scoreboard objectives add gun_cooldown dummy
@@ -136,6 +136,7 @@ scoreboard objectives add netwalk_game dummy
 scoreboard objectives add shop dummy
 scoreboard objectives add shop_operate dummy
 scoreboard objectives add open_ender_chest custom:open_enderchest
+scoreboard objectives add money dummy {"text":"💲 錢 💲","color":"green"}
 
 #修理
 scoreboard objectives add jump_fix custom:jump "跳躍修理"

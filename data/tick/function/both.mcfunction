@@ -46,6 +46,8 @@ execute as @a[team=survivor,gamemode=adventure] if items entity @s armor.head ca
 
 #遠程武器
 execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/flying
+#被火焰槍擊中的生物
+execute as @e[tag=monster, team=monitor, scores={flamethrower=1..}] run function gun:flamethrower/flame/burning
 execute as @a[team=survivor, scores={reload=1..}] run function gun:reloading
 execute as @a[team=survivor] at @s if items entity @s weapon.offhand golden_axe run function gun:manual
 scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
@@ -68,7 +70,7 @@ scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_coo
 #發電
 execute as @a[team=monitor] run function power:root
 execute as @e[type=area_effect_cloud, tag=power_time, nbt={PortalCooldown: 0}] at @s run function power:light_off
-execute as @e[type=marker,tag=power_auto] at @s if predicate {condition: "entity_properties", entity: "this", predicate: {periodic_tick: 40}} at @s run function power:success
+execute as @e[type=marker,tag=power_auto, predicate=tick:2_seconds] at @s run function power:success
 
 #收容
 execute as @e[type=interaction,tag=contain_control] at @s if data entity @s interaction run function contain:control/root

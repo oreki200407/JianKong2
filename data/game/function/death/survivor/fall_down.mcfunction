@@ -20,9 +20,6 @@ tag @s add fall_down
 scoreboard players add @s death_score 50
 scoreboard players add @s st_fall 1
 
-#儲存自己的UUID
-execute store result score @s uuid0 run data get entity @s UUID[0]
-
 #召喚盔甲座和物品展示實體
 
 #讓展示實體乘著盔甲座往下掉
