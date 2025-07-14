@@ -1,3 +1,4 @@
+gamemode creative @s
 kill @e[type=marker,tag=lobby]
 kill @e[type=marker,tag=lobby_spawn]
 kill @e[tag=lobby_text]
@@ -7,7 +8,7 @@ setworldspawn ~6 ~ ~5
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 place template game:lobby ~-10 ~-1 ~-10
 
-execute at @e[type=marker, tag=map_info, limit=1] run setblock ~ ~ ~ lectern[has_book=true]{Book: {id: "written_book", components:{written_book_content: {pages: [\
+execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Book: {id: "written_book", components:{written_book_content: {pages: [\
 [\
 	{text: "", font: "uniform"},\
 	{text: "遊戲介紹\n", bold: true},\
@@ -148,9 +149,9 @@ execute at @e[type=marker, tag=map_info, limit=1] run setblock ~ ~ ~ lectern[has
 	"在遊戲中，所有怪物皆可破壞窗戶與開門。\n",\
 	"求生者可前往商店購買", {text: "錘子", bold: true}, "與", {text: "木板", bold: true}, "，用來加固窗戶。完成加固後，該窗戶將無法被怪物破壞。\n",\
 	"在遊戲中，", {text: "監控者", bold: true}, "可能會鎖上所有門。求生者可使用", {text: "開鎖器", bold: true}, "解鎖。在", {translate: "block.minecraft.iron_door"}, "旁手持開鎖器點擊", {keybind: "key.use"}, "，接著持續", {text: "上下滾動", bold: true}, "滑鼠滾輪，進行解鎖操作。完成解鎖後，該", {translate: "block.minecraft.iron_door"}, "將會轉換為木門。"\
-]], author: "監控局局長", title: "遊戲介紹"}}}} destroy
+]], author: "監控局局長", title: "遊戲介紹"}}}}
 
-execute at @e[type=marker, tag=monster_info, limit=1] run setblock ~ ~ ~ lectern[has_book=true]{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{pages: [\
+execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{pages: [\
 [\
 	{text: "", font: "uniform"},\
 	{"translate":"entity.minecraft.zombie", bold: true},"\n",\
@@ -282,11 +283,10 @@ execute at @e[type=marker, tag=monster_info, limit=1] run setblock ~ ~ ~ lectern
 	"●兩格高\n",\
 	"●被打到會凋零\n",\
 	"●死後會滯留凋零效果"\
-]],author:"監控局局長",title:"怪物介紹"}}}} destroy
+]],author:"監控局局長",title:"怪物介紹"}}}}
 
 function system:install
-scoreboard players set #mode system 1
-scoreboard objectives setdisplay sidebar edit
+execute at @e[tag=control_panel] run function edit:enter
 difficulty hard
 time set day
 clear @a
