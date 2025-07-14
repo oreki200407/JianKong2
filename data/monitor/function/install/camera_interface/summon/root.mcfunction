@@ -15,6 +15,7 @@ scoreboard players add 目前監視器 info_monitor 1
 tellraw @s ["◎ 監視器", {score: {name: "@s", objective: "camera"}}, {text: "安裝成功", color: "gold"}]
 scoreboard players operation #camera_installer camera = @s camera
 execute summon area_effect_cloud run function monitor:install/camera_interface/summon/point
+fill ~ ~1 ~ ~ ~1 ~ air replace barrier
 
 execute as @a[team=monitor] run function monitor:observe/give
 
