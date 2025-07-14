@@ -14,7 +14,7 @@ execute at @e[type=marker, tag=map_info, limit=1] run setblock ~ ~ ~ lectern{Boo
 	"玩家將被分為兩個陣營：", {text: "求生者", color: "red", bold: true}, "與", {text: "監控者", color: "blue", bold: true}, "。\\n",\
 	"一場遊戲共分為", {text: "上下兩回合", bold: true}, "，下半場將會雙方 ", {text: "交換陣營", bold: true}, "。\\n",\
 	{text: "求生者目標", color: "red", bold: true}, "：利用手中的物資與武器，存活25分鐘，同時擊退怪物與應對各種危機。\\n",\
-	{text: "監控者目標", color: "blue", bold: true}, {text: "：部署陷阱、召喚怪物，想盡辦法讓求生者倒地或死亡。"}\
+	{text: "監控者目標", color: "blue", bold: true}, "：部署陷阱、召喚怪物，想盡辦法讓求生者倒地或死亡。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
@@ -146,7 +146,139 @@ execute at @e[type=marker, tag=map_info, limit=1] run setblock ~ ~ ~ lectern{Boo
 	"在遊戲中，", {text: "監控者", bold: true}, "可能會鎖上所有門。求生者可使用", {text: "開鎖器", bold: true}, "來解鎖鐵門。在鐵門旁手持開鎖器點擊右鍵，接著持續", {text: "上下滾動", bold: true}, "滑鼠滾輪，進行解鎖操作。完成解鎖後，該鐵門將會轉換為木門。"\
 ]],author:"監控局局長",title:"遊戲介紹"}}}} destroy
 
-execute at @e[type=marker, tag=monster_info, limit=1] run setblock ~ ~ ~ air
+execute at @e[type=marker, tag=monster_info, limit=1] run setblock ~ ~ ~ lectern{Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{pages: [\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.zombie", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●移動速度快\\n",\
+	"●較弱的視力\\n",\
+	"●以量取勝\\n\\n",\
+	{"translate":"entity.minecraft.creeper", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●移動速度慢\\n",\
+	"●血量高\\n",\
+	"●爆炸時間長"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.skeleton", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●使用弓箭\\n",\
+	"●移動速度快\\n",\
+	"●較強的視力\\n\\n",\
+	{"translate":"entity.minecraft.slime", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●被打到會緩速\\n",\
+	"●移動速度慢\\n",\
+	"●死後會分裂"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.pufferfish", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●尖刺效果\\n",\
+	"●被打到會中毒\\n",\
+	"●容易被擊退\\n\\n",\
+	{"translate":"entity.minecraft.pig", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●強大的擊退力\\n",\
+	"●血量高\\n",\
+	"●不易被擊退"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.wolf", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●血量低\\n",\
+	"●死後會化為狼人\\n",\
+	"●狼人攻擊力提高\\n\\n",\
+	{"translate":"entity.minecraft.strider", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●移動速度快\\n",\
+	"●靠近的玩家會中毒\\n",\
+	"●死後會放火"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.enderman", bold: true},"\\n",\
+	"等級：",{"text":"低\\n","color":"green"},\
+	"特點：\\n",\
+	"●移動速度快\\n",\
+	"●受傷會瞬移\\n",\
+	"●被打到會轉動視角\\n"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.guardian", bold: true},"\\n",\
+	"等級：",{"text":"中\\n","color":"gold"},\
+	"特點：\\n",\
+	"●雷射攻擊\\n",\
+	"●尖刺效果\\n",\
+	"●有腳行走\\n\\n",\
+	{"translate":"entity.minecraft.vindicator", bold: true},"\\n",\
+	"等級：",{"text":"中\\n","color":"gold"},\
+	"特點：\\n",\
+	"●移動速度快\\n",\
+	"●攻擊力高\\n",\
+	"●破窗時不受木板影響"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.iron_golem", bold: true},"\\n",\
+	"等級：",{"text":"中\\n","color":"gold"},\
+	"特點：\\n",\
+	"●移動速度慢\\n",\
+	"●血量高\\n",\
+	"●被打到會被擊飛\\n\\n",\
+	{"translate":"entity.minecraft.witch", bold: true},"\\n",\
+	"等級：",{"text":"中\\n","color":"gold"},\
+	"特點：\\n",\
+	"●藥水攻擊\\n",\
+	"●血量高\\n",\
+	"●靠近的玩家會虛弱"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.spider", bold: true},"\\n",\
+	"等級：",{"text":"中\\n","color":"gold"},\
+	"特點：\\n",\
+	"●會爬墻\\n",\
+	"●受傷會召喚洞穴蜘蛛\\n",\
+	"●被打到會被蜘蛛網纏著"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.blaze", bold: true},"\\n",\
+	"等級：",{"text":"高\\n","color":"red"},\
+	"特點：\\n",\
+	"●使用火焰弓箭\\n",\
+	"●無法預測的飛行\\n",\
+	"●攻擊力高\\n\\n",\
+	{"translate":"entity.minecraft.evoker", bold: true},"\\n",\
+	"等級：",{"text":"高\\n","color":"red"},\
+	"特點：\\n",\
+	"●擁有不死圖騰\\n",\
+	"●召喚惱鬼\\n",\
+	"●召喚尖牙"\
+],\
+[\
+	{text: "", font: "uniform"},\
+	{"translate":"entity.minecraft.wither_skeleton", bold: true},"\\n",\
+	"等級：",{"text":"高\\n","color":"red"},\
+	"特點：\\n",\
+	"●兩格高\\n",\
+	"●被打到會凋零\\n",\
+	"●死後會滯留凋零效果"\
+]],author:"監控局局長",title:"怪物介紹"}}}} destroy
 
 function system:install
 scoreboard players set #mode system 1
