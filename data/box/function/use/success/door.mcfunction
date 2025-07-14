@@ -1,6 +1,6 @@
 #解鎖門
-execute if entity @s[level=..49] run return run function box:use/fail
-xp add @s -50 levels
+execute unless entity @s[level=25..] run return run function box:use/fail
+xp add @s -25 levels
 
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 

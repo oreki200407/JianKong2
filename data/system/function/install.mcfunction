@@ -89,6 +89,7 @@ scoreboard objectives add uuid0_match dummy "儲存對象的UUID[0]"
 #捕獸夾
 scoreboard objectives add bear_trap dummy "捕獸夾"
 scoreboard objectives add jump_break custom:jump "跳躍掙脫"
+scoreboard objectives add bear_trap_release dummy "掙脫"
 
 #錘子
 scoreboard objectives add hammer dummy "錘子"

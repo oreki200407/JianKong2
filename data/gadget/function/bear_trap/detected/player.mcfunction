@@ -12,6 +12,7 @@
 #如果是玩家被抓到
 attribute @s jump_strength modifier add jk2:bear_trap -0.95 add_multiplied_base
 scoreboard players set @s jump_break 0
+scoreboard players set @s bear_trap_release 0
 tellraw @s ["◎ 你踩到了", {text: "捕獸夾", color: "gold"}, ", 請反覆點擊", {keybind: "key.jump", color: "gold"}, "來掙脫"]
 
 #召喚標記

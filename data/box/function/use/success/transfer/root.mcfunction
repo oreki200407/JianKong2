@@ -1,5 +1,5 @@
-execute if entity @s[level=..124] run return run function box:use/fail
-xp add @s -125 levels
+execute unless entity @s[level=100..] run return run function box:use/fail
+xp add @s -100 levels
 
 execute at @e[tag=box] run tag @e[tag=monster,team=monitor,type=!player,distance=..15] add box_transfer
 execute at @e[tag=box] run tag @e[tag=monster_being_ride,type=!player,distance=..15] add box_transfer

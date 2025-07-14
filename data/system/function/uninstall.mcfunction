@@ -58,6 +58,7 @@ scoreboard objectives remove uuid0_match
 #捕獸夾
 scoreboard objectives remove bear_trap
 scoreboard objectives remove jump_break
+scoreboard objectives remove bear_trap_release
 
 #錘子
 scoreboard objectives remove hammer
