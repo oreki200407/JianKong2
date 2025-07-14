@@ -52,6 +52,7 @@ scoreboard objectives add st_fall dummy "倒地次數"
 scoreboard objectives add st_death dummy "死亡次數"
 scoreboard objectives add st_damage dummy "受傷量"
 scoreboard objectives add st_kill dummy "擊殺數"
+scoreboard objectives add st_save dummy "救援數"
 
 #戰鬥
 scoreboard objectives add kill totalKillCount

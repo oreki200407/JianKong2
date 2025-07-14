@@ -25,6 +25,7 @@ scoreboard objectives remove st_fall
 scoreboard objectives remove st_death
 scoreboard objectives remove st_damage
 scoreboard objectives remove st_kill
+scoreboard objectives remove st_save
 
 #遠程武器
 scoreboard objectives remove extinguisher

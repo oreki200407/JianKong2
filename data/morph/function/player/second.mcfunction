@@ -10,6 +10,7 @@
 ###################################################
 
 effect give @s[scores={food=..7}] saturation 1 0 true
+effect give @s[scores={food=14..}] hunger 1 255 true
 
 title @s actionbar [{text: "變型時間：", color: "gold", bold: true}, {score: {name: "@s", objective: "morph"}}, "秒"]
 scoreboard players remove @s morph 1
