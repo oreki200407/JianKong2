@@ -17,12 +17,18 @@
 							{
 								"type": "minecraft:player",
 								"gamemode": ["creative", "spectator"]
+							},
+							"location":
+							{
+								"position":
+								{
+									"y":
+									{
+										"max": -70
+									}
+								}
 							}
 						}
-					},
-					{
-						"condition": "minecraft:reference",
-						"name": "game:too_low"
 					}
 				]
 			}
