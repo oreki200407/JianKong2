@@ -37,6 +37,7 @@ execute if score 禁止監控 info_monitor matches 1.. run function box:use/succ
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal
 execute as @a[tag=trapped] run function gadget:bear_trap/release/root
 execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
+execute as @a[tag=using_camera] run function monitor:observe/player/back/root
 execute as @a[team=monitor, scores={morph=1..}] at @s run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"
 
 clear @a
