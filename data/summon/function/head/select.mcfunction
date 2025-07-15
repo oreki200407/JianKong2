@@ -25,4 +25,4 @@ function summon:head/set with storage jk2:data root.summon
 
 playsound block.piston.extend ambient @s ~ ~ ~ 1 2
 scoreboard players set @s summon_count 1
-execute if score @s summon_monster matches 1..7 run function summon:operation/reset
+function summon:operation/reset

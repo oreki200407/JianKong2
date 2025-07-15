@@ -10,7 +10,6 @@
 ###################################################
 
 execute as @a[tag=lobby_death,scores={health=20..}] at @s if entity @e[type=marker, tag=lobby_spawn, limit=1, distance=..0.1] run function system:death
-execute as @a at @s[y=-120,dy=50] run tp @s @e[type=marker, tag=lobby_spawn, limit=1]
 
 #刪除盔甲座
 execute as @e[tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill

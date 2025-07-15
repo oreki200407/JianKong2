@@ -14,6 +14,8 @@ execute if items entity @e[type=item, distance=..1.5] contents player_head[custo
 
 execute if score @s open_ender_chest matches 1.. run function summon:open_ender_chest
 
+execute unless score @s summon_monster matches 1..7 if items entity @s enderchest.18 glowstone_dust[item_model=lime_dye] run function summon:reset
+
 execute store success score @s summon_operate run clear @s player_head[custom_data~{type:"operation"}] 0
 execute as @s[scores={summon_operate=1}] run return run function summon:head/select
 
