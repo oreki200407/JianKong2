@@ -9,8 +9,11 @@
 # Author : Alex_Cai
 ###################################################
 
-#30秒的灼傷
-scoreboard players set @s flamethrower 15
+#不能傷害旁觀者
+execute if entity @s[gamemode=spectator] run return fail
+
+#4秒的灼傷
+scoreboard players set @s flamethrower 2
 scoreboard players operation @s flamethrower_attacker_uuid0 = #flame_hit uuid0_match
 
 #TODO: 或能用自訂附魔的post_attack
