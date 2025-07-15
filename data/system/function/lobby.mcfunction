@@ -8,12 +8,12 @@ setworldspawn ~6 ~ ~5
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 place template game:lobby ~-10 ~-1 ~-10
 
-execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Book: {id: "written_book", components:{written_book_content: {pages: [\
+execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{pages: [\
 [\
 	{text: "", font: "uniform"},\
 	{text: "遊戲介紹\n", bold: true},\
 	"玩家將分為兩個陣營：", {text: "求生者", color: "red", bold: true}, "與", {text: "監控者", color: "blue", bold: true}, "。\n",\
-	"一場遊戲共分為", {text: "上下兩回合", bold: true}, "，下半場雙方", {text: "交換陣營", bold: true}, "。\n",\
+	"一場遊戲共分為", {text: "上下兩回合", bold: true}, "，下半場雙方", {text: "交換陣營", bold: true}, "。\n\n",\
 	{text: "求生者目標", color: "red", bold: true}, "：利用手中的物資與武器存活25分鐘，同時擊退怪物與應對各種危機。\n",\
 	{text: "監控者目標", color: "blue", bold: true}, "：部署陷阱、召喚怪物，想盡辦法讓求生者倒地或死亡。"\
 ],\
@@ -24,19 +24,19 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	"●倒地：監控者+50分\n",\
 	"●死亡：監控者+70分\n",\
 	"●擊殺怪物：監控者-1分\n",\
-	"●遊戲結束時，求生者所承受的總傷害將加成並換算為分數（傷害量×5%）\n",\
+	"●遊戲結束時，求生者所承受的總傷害將加成並換算為分數（傷害量×5%）\n\n",\
 	"遊戲結束時，總分較高的隊伍獲得勝利。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
 	{text: "準備階段\n", bold: true},\
 	"遊戲一開始有", {text: "三分鐘", bold: true}, "準備時間，雙方要在時間內完成以下事項：\n\n",\
-	{text: "求生者", bold: true}, "：前往商店購買裝備或探索地圖熟悉地形。\n",\
+	{text: "求生者", color: "red", bold: true}, "：前往商店購買裝備或探索地圖熟悉地形。\n",\
 	"每種槍枝每位求生者僅能各購買一把。準備階段結束後，商店將永久關閉。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
-	{text: "監控者", bold: true}, "：安裝六台監視器。\n",\
+	{text: "監控者", color: "blue", bold: true}, "：安裝六台監視器。\n",\
 	"點擊對話框中的安裝按鈕，即可在當前位置放置監視器，安裝後便無法移動。準備階段結束後，將無法安裝監視器。"\
 ],\
 [\
@@ -45,7 +45,7 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	"在監控方，", {text: "電力", bold: true}, "是關鍵資源，最大儲存上限為", {text: "300", bold: true}, "。\n",\
 	"監控者擁有三台", {text: "發電機", bold: true}, "，可消耗電力升級，共分為", {text: "三個等級", bold: true}, "。等級越高，發電所產出的電力越多。\n",\
 	"可選擇消耗", {text: "130電力", bold: true}, "升級為", {text: "全自動發電機", bold: true}, "，無需人工操作也能穩定產出電力。\n",\
-	{text: "注意", bold: true}, "：在發電過程中，發電機有機率發生故障。監控者可", {text: "手動修復", bold: true}, "，或消耗", {text: "40電力", bold: true}, "自動修復。"\
+	{text: "注意", color: "gold", bold: true}, "：在發電過程中，發電機有機率發生故障。監控者可", {text: "手動修復", bold: true}, "，或消耗", {text: "40電力", bold: true}, "自動修復。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
@@ -70,20 +70,20 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	"召喚方式分為兩種：\n",\
 	"●", {text: "自動召喚", bold: true}, "：怪物將會隨機出現在求生者周圍地區，無需手動操作。\n",\
 	"●", {text: "手動召喚", bold: true}, "：監控者可透過監視器畫面，右鍵點擊指定位置召喚怪物。每召喚一隻怪物將消耗2電力。\n",\
-	{text: "注意", bold: true}, "：每40秒會在求生者周圍", {text: "自然生成怪物", bold: true}, "。"\
+	{text: "注意", color: "gold", bold: true}, "：每40秒會在求生者周圍", {text: "自然生成怪物", bold: true}, "。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
 	{text: "收容生物\n", color: "blue", bold: true},\
 	"監控者擁有五種收容生物：", {translate: "entity.minecraft.villager"}, "、", {translate: "entity.minecraft.zombie"}, "、", {translate: "entity.minecraft.skeleton"}, "、", {translate: "entity.minecraft.spider"}, "、", {translate: "entity.minecraft.creeper"}, "。\n",\
 	"每個生物擁有三項狀態：體溫、飽食度、血量。\n",\
-	"若體溫或飽食度過高或過低，都會導致血量下降。玩家需透過調節室內溫度與餵食，維持牠們的穩定狀態。\n",\
-	"若生物血量降至0則會死亡。可消耗30電力將其復活。"\
+	"若體溫或飽食度過高或過低，都會導致", {text: "血量", bold: true}, "下降。玩家需透過調節室內溫度與餵食，維持牠們的穩定狀態。\n",\
+	"若生物血量降至0則會", {text: "死亡", bold: true}, "。可消耗30電力將其復活。"\
 ],\
 [\
-	{text: "在遊戲過程中，生物有機率逃離收容櫃。若未將其重新關回收容櫃中，將無法獲得材料資源。\n", font: "uniform"},\
-	"生物每1分鐘會自動產出對應的材料，收集到的材料可用來購買各式陷阱。\n",\
-	"監控者可透過監視器投放陷阱至地圖上的指定位置，以阻擋或牽制求生者。"\
+	{text: "在遊戲過程中，生物有機率逃離", font: "uniform"}, {text: "收容櫃", bold: true}, "。若未將其重新關回收容櫃中，將無法獲得材料資源。\n",\
+	"生物每1分鐘會自動產出對應的", {text: "材料", bold: true}, "，收集到的材料可用來購買各式", {text: "陷阱", bold: true}, "。\n",\
+	"監控者可透過", {text: "監視器", bold: true}, "投放陷阱至地圖上的指定位置，以阻擋或牽制求生者。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
@@ -116,11 +116,11 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 [\
 	{text: "", font: "uniform"},\
 	{text: "倒地\n", color: "red", bold: true},\
-	"當求生者的血量耗盡時，會進入倒地狀態，需等待隊友救援，並增加監控者50分。\n",\
-	"其他求生者可在倒地隊友旁長按", {keybind: "key.sneak"}, "進行救援。\n",\
-	"被救援成功後，求生者將獲得10秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.regeneration"}, {translate: "potion.potency.1"}]}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}]}, "效果。\n",\
+	"當求生者的血量耗盡時，會進入", {text: "倒地狀態", bold: true}, "，需等待隊友救援，並增加監控者50分。\n",\
+	"其他求生者可在倒地隊友旁長按", {keybind: "key.sneak", bold: true}, "進行救援。\n",\
+	"被救援成功後，求生者將獲得10秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.regeneration"}, {translate: "potion.potency.1"}], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。\n",\
 	"若60秒內無人救援，該求生者將會死亡，後在原地重生，並增加監控者70分。\n",\
-	"死亡重生後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"]}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}]}, "效果。"\
+	"死亡重生後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
