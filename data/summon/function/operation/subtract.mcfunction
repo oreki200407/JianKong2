@@ -9,6 +9,6 @@ scoreboard players remove @s[scores={summon_operate=1}] summon_count 5
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["subtract10"]}]
 scoreboard players remove @s[scores={summon_operate=1}] summon_count 10
 
-execute if score @s summon_count matches ..0 run scoreboard players set @s summon_count 1
+scoreboard players set @s[scores={summon_count=..0}] summon_count 1
 
 function summon:operation/reset
