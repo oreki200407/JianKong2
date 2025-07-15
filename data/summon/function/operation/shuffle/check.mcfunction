@@ -6,9 +6,9 @@ execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_easy] a
 execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_medium] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_medium,sort=random,limit=1] run function summon:operation/shuffle/monster
 execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_hard] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_hard,sort=random,limit=1] run function summon:operation/shuffle/monster
 execute as @e[type=armor_stand,tag=summon_shuffle] run function summon:pick/reset
-tag @s remove summon_shuffler
 
 tellraw @s ["◎ 你已成功", {"text": "刷新怪物", "color":"gold"}]
 scoreboard players remove 電力 info_monitor 10
 playsound entity.player.swim ambient @s
-function summon:open_ender_chest
+execute as @a[team=monitor] if score @s summon_monster = @a[tag=summon_shuffler,limit=1] summon_monster run function summon:open_ender_chest
+tag @s remove summon_shuffler

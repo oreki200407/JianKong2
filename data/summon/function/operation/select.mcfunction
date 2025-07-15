@@ -7,7 +7,7 @@ execute as @s[scores={summon_operate=1}] at @s run function summon:operation/add
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_data~{summon:subtract}] 0
 execute as @s[scores={summon_operate=1}] at @s run function summon:operation/subtract
 
-function summon:operation/reset
+execute if score @s summon_monster matches 1..7 run function summon:operation/reset
 
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["shuffle"]}]
 execute as @s[scores={summon_operate=1}] at @s run return run function summon:operation/shuffle/check

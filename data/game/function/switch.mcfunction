@@ -41,6 +41,7 @@ execute at @e[type=marker, tag=plank] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_
 kill @e[type=marker, tag=fire]
 kill @e[type=marker, tag=plank]
 kill @e[type=area_effect_cloud,tag=camera]
+execute as @e[type=item] if items entity @s contents #game:loot run kill
 
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster

@@ -2,6 +2,9 @@ title @a title {"text":"遊戲結束","bold":true,"color":"green"}
 
 kill @e[tag=monitor_marker]
 kill @e[tag=contain]
+kill @e[tag=contain_escape]
+execute at @e[tag=power] run setblock ~ ~ ~ air
+execute at @e[tag=power] run setblock ~1 ~ ~ air
 execute at @e[type=marker,tag=lobby,limit=1] run place template game:lobby ~-10 ~-1 ~-10
 
 #計算
