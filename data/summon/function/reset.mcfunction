@@ -4,7 +4,7 @@
 # Name   : reset.mcfunction
 # Path   : summon:
 # As     : 重設終界箱的玩家
-# At     : 世界重生點
+# At     : As
 # Loop   : 否
 # Author : oreki20, Alex_Cai
 ###################################################

@@ -14,7 +14,7 @@ tag @s add checked
 #不是燃燒瓶就算了
 #藥水不能用if items entity @s content
 #有時候我會懷疑Mojang的標準到底是什麼
-execute unless entity @s[nbt={Item: {components: {"minecraft:custom_name": {"text":"燃燒瓶",italic:false}}}}] run return fail
+execute unless entity @s[nbt={Item: {components: {"minecraft:custom_name": {text : "燃燒瓶", italic: false}}}}] run return fail
 
 #讓標記騎著燃燒瓶
 tag @s add temp

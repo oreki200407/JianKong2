@@ -9,9 +9,11 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
+#清除丟出來的物品
 execute if items entity @e[type=item, distance=..1.5] contents glowstone_dust run function summon:kill_item
 execute if items entity @e[type=item, distance=..1.5] contents player_head[custom_data~{type:"operation"}] run function summon:kill_item
 
+#開終界箱
 execute if score @s open_ender_chest matches 1.. run function summon:open_ender_chest
 
 execute unless score @s summon_monster matches 1..7 if items entity @s enderchest.18 glowstone_dust[item_model=lime_dye] run function summon:reset

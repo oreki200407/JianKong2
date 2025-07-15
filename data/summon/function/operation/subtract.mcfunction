@@ -10,3 +10,5 @@ execute store success score @s summon_operate run clear @s glowstone_dust[custom
 scoreboard players remove @s[scores={summon_operate=1}] summon_count 10
 
 execute if score @s summon_count matches ..0 run scoreboard players set @s summon_count 1
+
+function summon:operation/reset
