@@ -12,7 +12,7 @@
 #不能傷害旁觀者
 execute if entity @s[gamemode=spectator] run return fail
 
-#4秒的灼傷
+#2秒的灼傷
 scoreboard players set @s flamethrower 2
 scoreboard players operation @s flamethrower_attacker_uuid0 = #flame_hit uuid0_match
 

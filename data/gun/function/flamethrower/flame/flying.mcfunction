@@ -15,7 +15,7 @@ execute unless function gun:can_through run return run kill
 scoreboard players add @s flamethrower 1
 execute if score @s flamethrower matches 15 run return run kill
 
-execute align xyz if entity @e[team=monitor, tag=monster, dx=0, dy=0, dz=0] run function gun:flamethrower/flame/ignite
+execute align xyz if function gun:flamethrower/flame/is_touched run function gun:flamethrower/flame/ignite
 
 #正常飛行
 particle flame ~ ~-.5 ~ .1 .1 .1 0 1 force @a
