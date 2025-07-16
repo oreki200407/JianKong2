@@ -13,6 +13,8 @@ execute if entity @s[tag=money+] on target run function system:money/add
 execute if entity @s[tag=box-] on target run function system:power/subtract
 execute if entity @s[tag=box+] on target run function system:power/add
 
+execute if entity @s[tag=check_book] on target run function system:check/book
+
 execute if entity @s[tag=edit_enter] on target at @e[tag=control_panel] run function edit:enter
 
 execute if entity @s[tag=start_button] on target run function game:setting
