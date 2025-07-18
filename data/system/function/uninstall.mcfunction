@@ -11,10 +11,6 @@ scoreboard objectives remove health
 scoreboard objectives remove food
 scoreboard objectives remove stamina
 
-#經驗值
-scoreboard objectives remove xp
-scoreboard objectives remove xp_kill
-
 #分數
 scoreboard objectives remove score
 scoreboard objectives remove death_score
@@ -28,6 +24,11 @@ scoreboard objectives remove st_death
 scoreboard objectives remove st_damage
 scoreboard objectives remove st_kill
 scoreboard objectives remove st_save
+
+#經驗值
+scoreboard objectives remove xp
+scoreboard objectives remove xp_orb
+scoreboard objectives remove xp_kill
 
 #戰鬥
 scoreboard objectives remove kill
