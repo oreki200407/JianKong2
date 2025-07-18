@@ -27,7 +27,6 @@ scoreboard objectives remove st_save
 
 #經驗值
 scoreboard objectives remove xp
-scoreboard objectives remove xp_orb
 scoreboard objectives remove xp_kill
 
 #戰鬥

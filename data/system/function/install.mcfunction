@@ -53,8 +53,7 @@ scoreboard objectives add st_kill dummy "擊殺數"
 scoreboard objectives add st_save dummy "救援數"
 
 #經驗值
-scoreboard objectives add xp xp
-scoreboard objectives add xp_orb dummy
+scoreboard objectives add xp dummy
 scoreboard objectives add xp_kill totalKillCount
 
 #戰鬥
