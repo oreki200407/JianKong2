@@ -4,13 +4,16 @@ scoreboard objectives remove info_survivor
 scoreboard objectives remove edit
 scoreboard objectives remove system
 scoreboard objectives remove constant
-scoreboard objectives remove xp
 scoreboard objectives remove leave
 
 #生命資訊
 scoreboard objectives remove health
 scoreboard objectives remove food
 scoreboard objectives remove stamina
+
+#經驗值
+scoreboard objectives remove xp
+scoreboard objectives remove xp_kill
 
 #分數
 scoreboard objectives remove score

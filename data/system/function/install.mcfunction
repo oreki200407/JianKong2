@@ -31,7 +31,6 @@ scoreboard objectives add info_survivor dummy {"text": "求生者資訊", "color
 scoreboard objectives add edit dummy {"text": "編輯中", "color": "dark_aqua"}
 scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add constant dummy
-scoreboard objectives add xp dummy
 scoreboard objectives add leave custom:leave_game
 
 #生命資訊
@@ -52,6 +51,10 @@ scoreboard objectives add st_death dummy "死亡次數"
 scoreboard objectives add st_damage dummy "受傷量"
 scoreboard objectives add st_kill dummy "擊殺數"
 scoreboard objectives add st_save dummy "救援數"
+
+#經驗值
+scoreboard objectives add xp dummy
+scoreboard objectives add xp_kill totalKillCount
 
 #戰鬥
 scoreboard objectives add kill totalKillCount

@@ -15,7 +15,7 @@ execute if score #switching system matches 1 run return fail
 execute unless score 電力 info_monitor matches 80.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "更換電箱", "color":"gold"}]
 
 scoreboard players remove 電力 info_monitor 80
-scoreboard players add 更換電箱-冷卻 info_monitor 180
+scoreboard players add 更換電箱-冷卻 info_monitor 300
 
 setblock ~ ~ ~ air destroy
 playsound block.piston.extend
