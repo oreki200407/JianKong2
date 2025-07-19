@@ -9,6 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
+execute if score #switching system matches 1 run return fail
+
 #1代表陷阱啟動成功
 execute store success score @s bear_trap at @s as @e[team=monitor, tag=monster, dx=0, dy=0, dz=0, type=!player] run function gadget:bear_trap/detected/root
 

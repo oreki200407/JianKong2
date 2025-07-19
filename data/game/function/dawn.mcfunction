@@ -34,6 +34,8 @@ execute if score 水管爆裂 info_monitor matches 1.. run function box:use/succ
 execute if score 禁止監控 info_monitor matches 1.. run function box:use/success/monitor/end
 
 #復原狀態
+execute as @a[tag=using_unlock] run function gadget:unlock/fail
+execute as @a[tag=fixing_box] run function box:fix/fix_mode/leave
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal
 execute as @a[tag=trapped] run function gadget:bear_trap/release/root
 execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
