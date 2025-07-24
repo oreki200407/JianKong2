@@ -12,8 +12,8 @@
 tag @s add being_watched
 scoreboard players add @s glass_break 1
 
-#2秒後打破玻璃
-execute unless score @s glass_break matches 40 run return fail
+#1秒後打破玻璃
+execute unless score @s glass_break matches 20 run return fail
 
 function monster:break_glass/store
 setblock ~ ~ ~ air destroy

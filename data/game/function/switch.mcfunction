@@ -13,8 +13,6 @@ scoreboard objectives setdisplay sidebar.team.blue money
 
 clear @a
 recipe take @a *
-xp set @a 0 levels
-xp set @a 0 points
 effect clear @a[team=!spec]
 effect give @a[team=monitor] hunger 3 255 true
 effect give @a invisibility 3 0 true
