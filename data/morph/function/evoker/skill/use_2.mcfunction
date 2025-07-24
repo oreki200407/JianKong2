@@ -10,4 +10,4 @@
 ###################################################
 
 #召喚惱鬼
-summon vex ~ ~1 ~ {equipment: {mainhand: {id: "wooden_sword", count: 1b}}, drop_chances: {mainhand: 0.0, offhand: 0.0}, Team: "monitor", DeathLootTable: "summon:empty", PersistenceRequired: true, Tags: ["monster", "vex"], life_ticks: 200}
+summon vex ~ ~1 ~ {equipment: {mainhand: {id: "iron_sword", components: {attribute_modifiers: [{type: "attack_damage", id: "base_attack_damage", amount: 0, operation: "add_value", slot: "mainhand"}]}}}, drop_chances: {mainhand: 0.0, offhand: 0.0}, Team: "monitor", DeathLootTable: "summon:empty", PersistenceRequired: true, Tags: ["monster", "vex"], life_ticks: 200}

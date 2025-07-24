@@ -47,6 +47,7 @@ function tick:both
 
 #-----------------------監控者-----------------------
 clear @a[team=monitor] #game:loot
+xp set @a[team=monitor] 0 levels
 xp set @a[team=monitor] 0 points
 
 #陷阱
