@@ -23,7 +23,7 @@ scoreboard players remove @a[scores={medical_cooldown=1..}] medical_cooldown 1
 #鞭炮
 execute as @e[type=snowball, tag=!checked] run function gadget:grenade/snowball
 execute as @e[type=marker, tag=grenade_marker, predicate=!game:riding] at @s run function gadget:grenade/summon
-execute as @e[type=item, tag=grenade, nbt={PortalCooldown: 0}] at @s run function gadget:grenade/explode
+execute as @e[type=item, tag=grenade] at @s run function gadget:grenade/explode
 
 #燃燒瓶
 execute as @e[type=lingering_potion, tag=!checked] run function gadget:molotov_cocktail/potion
