@@ -38,7 +38,7 @@ scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 
 #陷阱
-scoreboard players set #trap trap_cooldown 15
+scoreboard players set #trap trap_cooldown 10
 scoreboard players reset #cooldown trap_cooldown
 
 #裝備

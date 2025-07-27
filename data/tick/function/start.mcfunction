@@ -52,7 +52,7 @@ xp set @a[team=monitor] 0 points
 
 #陷阱
 scoreboard players remove @a[scores={trap_cooldown=1..}] trap_cooldown 1
-execute unless score #trap trap_cooldown matches 15 run function monitor:observe/player/summon/cooldown
+execute unless score #trap trap_cooldown matches 10 run function monitor:observe/player/summon/cooldown
 
 #人體變形
 execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.55] run function morph:player/start/root
