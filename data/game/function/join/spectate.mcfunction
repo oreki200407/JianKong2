@@ -1,7 +1,7 @@
 ###################################################
 # 以旁觀者加入
 # 
-# Name   : soectate.mcfunction
+# Name   : spectate.mcfunction
 # Path   : game:join/
 # As     : 加入的玩家
 # At     : 世界重生點

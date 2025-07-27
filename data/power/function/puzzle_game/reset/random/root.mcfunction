@@ -28,4 +28,4 @@ execute if score #random_fail puzzle_game matches 1 run return run function powe
 function power:puzzle_game/switch/around
 
 scoreboard players add #random_count puzzle_game 1
-execute if score #random_count puzzle_game matches ..70 run function power:puzzle_game/reset/random/root
+execute if score #random_count puzzle_game matches ..50 run function power:puzzle_game/reset/random/root
