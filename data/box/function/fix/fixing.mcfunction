@@ -9,10 +9,10 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if score @s fix_progress matches 0..9 run function box:fix/process/root
+execute if score #box fix_progress matches 0..9 run function box:fix/process/root
 
 #進度達到10就修理成功
-execute if score @s fix_progress matches 10.. at @e[tag=box] run function box:fix/success
+execute if score #box fix_progress matches 10.. at @e[tag=box] run function box:fix/success
 
 #水平移動了就失敗
 execute unless predicate game:keyboard/no_wasd run return run function box:fix/fix_mode/leave
@@ -29,7 +29,7 @@ scoreboard players set @s jump_fix 0
 execute store result score #chance fix_progress run random value 0..19
 
 #直接+10%
-execute if score #chance fix_progress matches ..4 run return run scoreboard players add @s fix_progress 1
+execute if score #chance fix_progress matches ..4 run return run scoreboard players add #box fix_progress 1
 
 #檢定
 execute if score #chance fix_progress matches 18.. run function box:fix/check_mode/start
