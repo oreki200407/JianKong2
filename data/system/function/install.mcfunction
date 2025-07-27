@@ -151,6 +151,7 @@ scoreboard objectives add fix_time dummy "檢定時間"
 scoreboard objectives add glass_break dummy
 
 #怪物
+scoreboard objectives add monster_delay dummy
 scoreboard objectives add monster_slime dummy
 scoreboard objectives add monster_golem dummy
 

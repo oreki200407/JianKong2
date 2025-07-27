@@ -124,6 +124,7 @@ scoreboard objectives remove fix_time
 scoreboard objectives remove glass_break
 
 #怪物
+scoreboard objectives remove monster_delay
 scoreboard objectives remove monster_slime
 scoreboard objectives remove monster_golem
 

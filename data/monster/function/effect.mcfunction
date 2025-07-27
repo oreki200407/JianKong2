@@ -16,6 +16,10 @@ kill @e[type=arrow,nbt={inGround:1b}]
 execute as @e[type=#monster:drowned,nbt={InWaterTime:599}] run data merge entity @s {InWaterTime:-1}
 execute as @e[type=skeleton,nbt={StrayConversionTime:1}] run data merge entity @s {StrayConversionTime:-1}
 
+#延遲
+execute as @e[tag=monster_delay] run function monster:delay/root
+execute as @e[scores={monster_delay=1..}] run function monster:delay/tick
+
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched
 execute as @e[tag=monster, team=monitor, type=!player] at @s anchored eyes run function monster:break_glass/raycast
@@ -29,7 +33,7 @@ execute as @e[type=armor_stand, tag=slime_ride, predicate=!game:riding] at @s ru
 execute as @e[type=slime,tag=slime_split] at @s run function monster:effect/slime/splited
 
 #熾足獸
-execute at @e[type=strider,tag=strider,team=monitor] run effect give @a[team=survivor,distance=..2.5] poison 3 1
+execute at @e[type=strider,tag=strider,team=monitor] run effect give @a[team=survivor,distance=..1] poison 1 4
 execute as @e[type=zombie,tag=strider_ride, predicate=game:flag/on_ground] at @s run function monster:effect/strider
 
 #女巫
