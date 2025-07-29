@@ -35,6 +35,7 @@ execute as @a[team=survivor,scores={xp_kill=1..}] run function monster:xp/kill
 
 #骨折
 execute as @a[scores={fracture=1..}, team=survivor] at @s run function gadget:medical/fracture/damage
+execute as @a[tag=fractured] run function gadget:medical/fracture/notice
 
 #電箱
 execute as @a[team=!spec] at @s run function box:use/root
