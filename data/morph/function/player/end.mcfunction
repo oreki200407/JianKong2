@@ -27,7 +27,7 @@ item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
 
 tag @s remove monster
-
+effect give @s saturation infinite 0 true
 tp @s @e[type=marker,tag=lobby,limit=1]
 
 function monitor:observe/give

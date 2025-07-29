@@ -9,7 +9,7 @@ execute if score #time system matches 901..1200 run tag @e[type=armor_stand,tag=
 
 execute as @a[team=survivor] run scoreboard players add @e[type=armor_stand,tag=summon_natural,limit=1] summon_count 2
 
-execute at @a[team=survivor] run tag @e[team=monitor, tag=monster ,distance=..10] add exist_monster
+execute at @a[team=survivor] run tag @e[team=monitor, tag=monster ,distance=..20] add exist_monster
 execute store result score #目前怪物 system if entity @e[tag=exist_monster]
 tag @e[tag=exist_monster] remove exist_monster
 
