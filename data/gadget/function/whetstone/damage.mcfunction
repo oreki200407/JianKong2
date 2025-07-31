@@ -1,1 +1,1 @@
-$item modify entity @s weapon.$(slot) {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"attack_damage",amount:$(new_attack),operation:"add_value",slot:"any"}],replace:0b}
+$item modify entity @s weapon.$(slot) {function:"minecraft:set_attributes",modifiers:[{attribute:"minecraft:attack_damage",id:"jk2:attack_damage",amount:$(new_attack),operation:"add_value",slot:"mainhand"}],replace:0b}
