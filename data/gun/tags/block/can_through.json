@@ -14,6 +14,7 @@
 		"minecraft:water",
 		"minecraft:lava",
 		"minecraft:cobweb",
+		"minecraft:redstone_wire",
 		"minecraft:powder_snow",
 		"#gun:through_types/redstone",
 		"#gun:through_types/hang_plants",

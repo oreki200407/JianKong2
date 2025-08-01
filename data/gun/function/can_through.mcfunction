@@ -10,6 +10,7 @@
 ###################################################
 
 execute if block ~ ~ ~ #doors[open=true] run return 100
+execute if block ~ ~ ~ #fence_gates[open=true] run return 100
 execute if block ~ ~ ~ snow[layers=1] run return 100
 execute if block ~ ~ ~ snow[layers=2] run return 100
 return run execute if block ~ ~ ~ #gun:can_through
