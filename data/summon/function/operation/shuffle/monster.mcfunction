@@ -2,3 +2,5 @@ scoreboard players operation @s summon_monster = @a[tag=summon_shuffler,limit=1]
 execute store result entity @s equipment.chest.components."minecraft:custom_data".number int 1 run scoreboard players get @s summon_monster
 tag @s add summon_picked
 tag @s add summon_pick_release
+
+scoreboard players set @s summon_shuffle 30

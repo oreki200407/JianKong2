@@ -82,6 +82,7 @@ scoreboard objectives add summon_monster dummy "怪物編號"
 scoreboard objectives add summon_operate dummy "操作終界箱"
 scoreboard objectives add summon_power dummy "召喚電力"
 scoreboard objectives add summon_cooldown dummy "冷卻"
+scoreboard objectives add summon_shuffle dummy "刷新冷卻"
 
 #死亡
 scoreboard objectives add revive_time dummy "復活時間"
@@ -284,7 +285,7 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	{text: "", font: "uniform"},\
 	{text: "怪物召喚\n", color: "blue", bold: true},\
 	"監控者可召喚", {text: "七種不同怪物", bold: true}, "，依難度分為：三種簡單怪物、兩種普通怪物、兩種困難怪物。\n",\
-	"雙方會獲得相同的怪物，在遊戲開始時會隨機抽選。若對當前的怪物不滿意，可花費10電力刷新一種怪物。\n",\
+	"雙方會獲得相同的怪物，在遊戲開始時會隨機抽選。若對當前的怪物不滿意，可花費20電力刷新一種怪物。\n",\
 	"遊戲開始時會解鎖前三種怪物，之後每經過5分鐘，將依序解鎖一種新的怪物。"\
 ],\
 [\

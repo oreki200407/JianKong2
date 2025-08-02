@@ -32,6 +32,6 @@
 	},
 	"rewards":
 	{
-		"function": "monitor:observe/player/summon/use"
+		"function": "monitor:observe/player/summon/trap/use"
 	}
 }

@@ -55,6 +55,7 @@ scoreboard objectives remove summon_monster
 scoreboard objectives remove summon_operate
 scoreboard objectives remove summon_power
 scoreboard objectives remove summon_cooldown
+scoreboard objectives remove summon_shuffle
 
 #死亡
 scoreboard objectives remove revive_time
