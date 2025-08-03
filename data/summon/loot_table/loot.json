@@ -17,10 +17,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "經驗球"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "經驗球",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -126,10 +126,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "散彈槍子彈"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "散彈槍子彈",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -155,10 +155,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "手槍彈夾"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "手槍彈夾",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -184,10 +184,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "衝鋒槍彈夾"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "衝鋒槍彈夾",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
@@ -213,27 +213,32 @@
 							}
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "繃帶",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "繃帶",
 								"minecraft:consumable": {
 									"consume_seconds": 0,
 									"sound": "entity.silverfish.ambient",
 									"has_consume_particles":false,
-									"on_consume_effects":[
+									"on_consume_effects": [
 										{
 											"type":"minecraft:apply_effects",
-											"effects":[
+											"effects": [
 												{
 													"id":"instant_health",
-													"amplifier":0,
-													"duration":1
+													"amplifier": 0,
+													"duration": 1
 												}
 											]
 										}
 									]
 								},
-								"use_cooldown": {
+								"minecraft:use_cooldown": {
 									"seconds": 0.5,
 									"cooldown_group": "jk2:bandage"
 								}
@@ -273,15 +278,20 @@
 							"count": 1
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "醫療箱",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "醫療箱",
 								"minecraft:consumable": {
 									"consume_seconds": 0,
 									"sound": "block.beacon.activate",
 									"has_consume_particles":false
 								},
-								"use_cooldown":{
+								"minecraft:use_cooldown":{
 									"seconds": 0.5,
 									"cooldown_group": "jk2:medkit"
 								}
@@ -291,7 +301,10 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"text": "周圍5格內的玩家", "color": "blue", "italic": false}, {"translate": "potion.withDuration", "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.regeneration"}, {"translate": "potion.potency.2"}]}, "00:08"]}]]
+							"lore": [
+								[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],
+								[{"text": "周圍5格內的玩家", "color": "blue", "italic": false}, {"translate": "potion.withDuration", "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.regeneration"}, {"translate": "potion.potency.2"}]}, "00:08"]}]
+							]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -318,9 +331,14 @@
 							"count": 1
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "夾板",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "夾板",
 								"minecraft:consumable": {
 									"consume_seconds": 99999
 								}
@@ -363,9 +381,14 @@
 							}
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "止痛藥",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "止痛藥",
 								"minecraft:consumable": {
 									"consume_seconds": 0,
 									"sound": "block.scaffolding.break",
@@ -373,17 +396,17 @@
 									"on_consume_effects":[
 										{
 											"type":"minecraft:apply_effects",
-											"effects":[
+											"effects": [
 												{
-													"id":"resistance",
-													"amplifier":4,
-													"duration":100
+													"id": "minecraft:resistance",
+													"amplifier": 4,
+													"duration": 100
 												}
 											]
 										}
 									]
 								},
-								"use_cooldown":{
+								"minecraft:use_cooldown":{
 									"seconds": 0.5,
 									"cooldown_group": "jk2:painkiller"
 								}
@@ -393,7 +416,10 @@
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],[{"translate": "potion.withDuration", "color": "blue", "italic": false, "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.resistance"}, {"translate": "potion.potency.4"}]}, "00:05"]}]]
+							"lore": [
+								[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"],
+								[{"translate": "potion.withDuration", "color": "blue", "italic": false, "with": [{"translate": "potion.withAmplifier", "with": [{"translate": "effect.minecraft.resistance"}, {"translate": "potion.potency.4"}]}, "00:05"]}]
+							]
 						},
 						{
 							"function": "minecraft:set_custom_model_data",
@@ -426,10 +452,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "鞭炮"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "鞭炮",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:set_lore",
@@ -486,7 +512,7 @@
 								"minecraft:tooltip_display": {
 									"hidden_components": ["minecraft:potion_contents"]
 								},
-								"max_stack_size": 64
+								"minecraft:max_stack_size": 64
 							}
 						},
 						{
@@ -517,6 +543,12 @@
 							}
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "捕獸夾",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_lore",
 							"mode": "append",
 							"entity": "this",
@@ -525,7 +557,6 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "捕獸夾",
 								"minecraft:consumable": {
 									"consume_seconds": 99999
 								}
@@ -562,9 +593,14 @@
 							}
 						},
 						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "開鎖器",
+							"target": "item_name"
+						},
+						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "開鎖器",
 								"minecraft:consumable": {
 									"consume_seconds": 99999
 								}
@@ -607,10 +643,10 @@
 							}
 						},
 						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": "木板"
-							}
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": "木板",
+							"target": "item_name"
 						},
 						{
 							"function": "minecraft:enchanted_count_increase",
