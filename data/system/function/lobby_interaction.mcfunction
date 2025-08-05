@@ -17,6 +17,8 @@ execute if entity @s[tag=check_book] on target run function system:check/book
 
 execute if entity @s[tag=edit_enter] on target at @e[tag=control_panel] run function edit:enter
 
+execute if entity @s[tag=enter_tutorial] on target run function tutorial:enter
+
 execute if entity @s[tag=start_button] on target run function game:setting
 
 data remove entity @s interaction

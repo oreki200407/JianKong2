@@ -6,3 +6,5 @@ execute as @a[tag=lobby_death,scores={health=20..}] at @s if entity @e[type=mark
 execute as @e[type=interaction] if data entity @s interaction run function system:lobby_interaction
 
 execute as @e[tag=check_display] run function system:check/display_kill
+
+execute if entity @a[tag=tutorial] run function tutorial:tick
