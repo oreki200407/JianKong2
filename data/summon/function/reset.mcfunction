@@ -35,5 +35,5 @@ function summon:head/reset
 execute unless score @s summon_monster matches 1..7 run return fail
 
 execute store result storage jk2:data root.summon.head int 1 run scoreboard players get @s summon_monster
-function summon:head/set with storage jk2:data root.summon
+function summon:head/choose with storage jk2:data root.summon
 function summon:operation/reset

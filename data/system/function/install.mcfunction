@@ -189,10 +189,10 @@ team modify monitor friendlyFire false
 #記分板設定
 scoreboard players set 更新 system 1
 scoreboard players set #2 constant 2
+scoreboard players set #10 constant 10
 scoreboard players set #20 constant 20
 scoreboard players set #60 constant 60
 scoreboard players set #100 constant 100
-scoreboard players set #200 constant 200
 
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"

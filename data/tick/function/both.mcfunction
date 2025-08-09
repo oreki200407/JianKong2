@@ -65,7 +65,6 @@ execute as @e[type=area_effect_cloud, tag=camera] run function monitor:observe/c
 
 #終界箱
 execute as @a[team=monitor] at @s run function summon:root
-scoreboard players remove @e[type=armor_stand,tag=summon_pick,scores={summon_cooldown=1..}] summon_cooldown 1
 
 #發電
 execute as @a[team=monitor] run function power:root

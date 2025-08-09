@@ -1,4 +1,2 @@
-$item replace entity @s enderchest.18 from entity @s enderchest.$(head)
-$scoreboard players set @s summon_monster $(head)
-item modify entity @s enderchest.18 {"function": "minecraft:set_custom_data","tag": "{number:8}"}
-data remove storage jk2:data root.summon.head
+$item replace entity @a[team=monitor] enderchest.$(number) from entity @s armor.chest
+$execute if score @s summon_cooldown matches 1.. run item modify entity @a[team=monitor] enderchest.$(number) {"function": "minecraft:set_lore","entity":"this","lore":[[{"text": "冷卻中：","color": "red","italic": false},{"score": {"name": "@s","objective": "summon_monster"}},{"text": "秒","color": "red","italic": false}]],"mode": "replace_all"}

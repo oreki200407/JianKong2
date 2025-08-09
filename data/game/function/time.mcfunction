@@ -2,8 +2,8 @@ schedule function game:time 1s
 execute if score #mode system matches 4 store result bossbar jk2:prepare value run return run scoreboard players add #prepare system 1
 execute if score #mode system matches 3 store result bossbar jk2:time value run scoreboard players add #time system 1
 
-scoreboard players remove @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] summon_shuffle 1
-execute as @a[scores={summon_monster=1..7}] run function summon:operation/shuffle/cooldown
+execute as @e[type=armor_stand,tag=summon_picked,scores={summon_cooldown=1..}] run function summon:head/cooldown
+execute as @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] run function summon:operation/shuffle/cooldown
 
 execute as @a[team=monitor, scores={morph=1..}] run function morph:player/second
 
