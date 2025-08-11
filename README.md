@@ -60,7 +60,7 @@
 ⚠️ 注意：每 **40秒** 會在求生者周圍 **自然生成怪物**。
 
 ### 🧪 收容生物
-監控者擁有 五種 收容生物：村民、殭屍、骷髏、蜘蛛、苦力怕。<br>
+監控者擁有 **五種收容生物**：村民、殭屍、骷髏、蜘蛛、苦力怕。<br>
 每個生物擁有三項狀態：體溫、飽食度、血量<br>
 若體溫或飽食度過高或過低，都會導致 **血量** 下降。玩家需透過 調節室內溫度 與 餵食 來維持牠們的穩定狀態。<br>
 若生物血量降至 0 則會 **死亡**。可消耗 **30電力** 將其復活。<br>
@@ -85,14 +85,14 @@
 人體變型功能可消耗 **50電力**，讓監控者暫時化身為怪物，進行直接干擾與攻擊。<br>
 成功變型後，玩家將會被傳送至求生者的聚集區域。每隻變型怪物皆擁有兩個 **主動技能** 和一個 **被動技能**。
 
-⚠️ 注意：在遊戲最後 **5分鐘**，人體變型裝置將 免費開放，所有監控者皆可無限制變型。
+⚠️ 注意：在遊戲最後 **5分鐘**，人體變型裝置將 **免費開放**，所有監控者皆可無限制變型。
 
 ## 🔴 求生者
 ### 🧍‍♂️ 裝備武器
 遊戲開始時，所有求生者將獲得一套皮革裝備。<br>
 求生者可透過強化台升級武器與防具。強化需消耗 **經驗值**，可透過擊殺怪物獲得。<br>
 商店中提供五種 **近戰武器** 選購，每種武器具備不同攻擊傷害與攻擊速度。<br>
-⚠️ 注意：武器的攻擊力會隨著耐久度下降而降低。副手拿著武器，主手拿著 磨刀石，按著右鍵即可進行修復。<br>
+⚠️ 注意：武器的攻擊力會隨著耐久度下降而降低。副手拿著武器，主手拿著 **磨刀石**，按著右鍵即可進行修復。<br>
 **建議購買物品**：
 - 近戰武器×1
 - 手槍-彈夾×10~15
@@ -139,7 +139,7 @@
 求生者可前往商店購買 **錘子** 與 **木板** ，用來加固窗戶。完成加固後，該窗戶將無法被怪物破壞。<br>
 在遊戲中，監控者可能會鎖上所有門。求生者可使用 **開鎖器** 解鎖。在鐵門旁手持開鎖器點擊右鍵，接著持續上下滾動滑鼠滾輪，進行解鎖操作。完成解鎖後，該鐵門將會轉換為木門。
 
-### 💀 怪物
+## 💀 怪物
 殭屍<br>
 等級：低<br>
 特點：
@@ -259,23 +259,23 @@
 - 被打到會凋零
 - 死後會滯留凋零效果
 
-### 🔻 下載
+## 🔻 下載
 地圖（神社）：[點我](https://drive.usercontent.google.com/u/0/uc?id=1DqR3tsgh_-jNF-rmaVfak_eM0GCqpWWS&export=download)<br>
 地圖（西部）：[點我](https://drive.usercontent.google.com/uc?id=1oNzBnzscrVx4qHQV8inO0MsBpaTLteQ8&export=download)<br>
 地圖（木屋）：[點我](https://drive.usercontent.google.com/uc?id=1jW6G8e5YEAKtbEWuGyKpzX2-UzZZ7Ga2&export=download)<br>
 地圖（村莊）：[點我](https://drive.usercontent.google.com/uc?id=1RaTu334eztXtaqfRhyxq4nrLrsTsWjwv&export=download)<br>
 資源包：[點我](https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download)
 
-### 🎨 資源包
+## 🎨 資源包
 本地圖提供 **專屬資源包**。強烈建議安裝以獲得更好的遊戲體驗。<br>
 可搭配其他的資源包遊玩。<br>
 若想讓伺服器的玩家自動安裝資源包，可在server.properties做出以下設定：
-```
+```properties
 require-resource-pack=true
 resource-pack=https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download
 ```
 
-### 🧑‍🤝‍🧑 製作人員
+## 🧑‍🤝‍🧑 製作人員
 企劃：惡靈<br>
 指令：惡靈、AC<br>
 材質：惡靈、姆咪<br>
