@@ -1,4 +1,5 @@
 # 監控圍城2
+![監控圍城 II](images/title.png)
 - 地圖名稱：監控圍城 II
 - 地圖類型：多人對戰
 - 遊戲版本：1.21.5
@@ -19,6 +20,8 @@
 - 遊戲結束時，求生者所承受的總傷害將加成並換算為分數（傷害量×5%）
 
 遊戲結束時，總分較高的隊伍獲得勝利。
+![遊戲時間線](images/timeline.png)
+🔺 遊戲時間線
 
 ## 📦 準備階段
 遊戲一開始有 **3分鐘** 準備時間，雙方要在準備時間內完成以下事項：<br>
@@ -270,7 +273,7 @@
 本地圖提供 **專屬資源包**。強烈建議安裝以獲得更好的遊戲體驗。<br>
 可搭配其他的資源包遊玩。<br>
 若想讓伺服器的玩家自動安裝資源包，可在server.properties做出以下設定：
-```properties
+```
 require-resource-pack=true
 resource-pack=https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download
 ```
