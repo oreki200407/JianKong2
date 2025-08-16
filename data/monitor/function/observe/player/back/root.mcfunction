@@ -16,5 +16,7 @@ effect clear @s resistance
 effect clear @s weakness
 tag @s remove using_camera
 attribute @s scale modifier remove jk2:observe
+attribute @s block_interaction_range modifier remove jk2:observe
+attribute @s entity_interaction_range modifier remove jk2:observe
 scoreboard players reset @s camera
 title @s actionbar ""

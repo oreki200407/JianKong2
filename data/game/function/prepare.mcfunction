@@ -20,6 +20,7 @@ scoreboard players reset #time system
 schedule function game:time 1s
 schedule function game:start 3601t
 bossbar set jk2:time players
+bossbar set jk2:time color yellow
 bossbar set jk2:prepare players @a
 
 #清空大廳
