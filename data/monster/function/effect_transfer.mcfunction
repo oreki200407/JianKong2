@@ -1,5 +1,5 @@
 #熾足獸
-execute if entity @s[type=strider,tag=strider,team=survivor] run return run effect give @a[team=monitor,distance=..1] poison 1 4
+execute if entity @s[type=strider,tag=strider,team=survivor,tag=!monster_delay] run return run effect give @a[team=monitor,distance=..1] poison 1 4
 
 #女巫
 execute if entity @s[type=witch,tag=witch,team=survivor] run return run effect give @a[team=monitor,distance=..3] weakness 1

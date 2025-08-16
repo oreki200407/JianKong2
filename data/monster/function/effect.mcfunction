@@ -33,7 +33,7 @@ execute as @e[type=armor_stand, tag=slime_ride, predicate=!game:riding] at @s ru
 execute as @e[type=slime,tag=slime_split] at @s run function monster:effect/slime/splited
 
 #熾足獸
-execute at @e[type=strider,tag=strider,team=monitor] run effect give @a[team=survivor,distance=..1] poison 1 4
+execute at @e[type=strider,tag=strider,team=monitor,tag=!monster_delay] run effect give @a[team=survivor,distance=..1] poison 1 4
 execute as @e[type=zombie,tag=strider_ride, predicate=game:flag/on_ground] at @s run function monster:effect/strider
 
 #女巫
