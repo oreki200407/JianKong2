@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values":
+	[
+		"#gun:through_types/dead_coral",
+		"minecraft:sea_pickle",
+		"minecraft:frogspawn",
+		"minecraft:firefly_bush"
+	]
+}
