@@ -20,7 +20,6 @@ function monitor:install/decide
 execute unless score @s camera = @s camera run return run tellraw @s ["◎ 所有監視器已", {text: "安裝完畢", color: "gold"}, "或", {text: "正在安裝", color: "gold"}]
 
 #允許使用監視器介面
-tag @s add installing_camera
 gamemode spectator
 scoreboard players enable @s camera_interface
 tp @s @e[type=marker, tag=spawn_survivor, limit=1]
