@@ -292,7 +292,7 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	{text: "玩家可選擇召喚的怪物數量。召喚後會進入", font: "uniform"}, {text: "冷卻時間", bold: true}, "，召喚數量越多，冷卻時間越長。\n",\
 	"召喚方式分為兩種：\n",\
 	"●", {text: "自動召喚", bold: true}, "：怪物將會隨機出現在求生者周圍地區，無需手動操作。\n",\
-	"●", {text: "手動召喚", bold: true}, "：監控者可透過監視器畫面，右鍵點擊指定位置召喚怪物。每召喚一隻怪物將消耗2電力。\n",\
+	"●", {text: "手動召喚", bold: true}, "：監控者可透過監視器畫面，", {keybind: "key.use"}, "點擊指定位置召喚怪物。每召喚一隻怪物將消耗2電力。\n",\
 	{text: "注意", color: "gold", bold: true}, "：每40秒會在求生者周圍", {text: "自然生成怪物", bold: true}, "。"\
 ],\
 [\
