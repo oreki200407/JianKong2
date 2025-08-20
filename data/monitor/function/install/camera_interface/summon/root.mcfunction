@@ -17,6 +17,6 @@ scoreboard players operation #camera_installer camera = @s camera
 execute summon area_effect_cloud run function monitor:install/camera_interface/summon/point
 fill ~ ~1 ~ ~ ~2 ~ air replace barrier
 
-execute as @a[team=monitor] run function monitor:observe/give
+execute as @a[team=monitor] run function monitor:observe/player/give/root
 
 function monitor:install/camera_interface/exit
