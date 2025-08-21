@@ -5,5 +5,5 @@ execute unless score #power1 power matches 1 run return run scoreboard players a
 
 setblock ~1 ~-2 ~ polished_andesite
 setblock ~1 ~ ~ gold_block
-execute as @e[tag=power1] at @s run function power:manual
+execute as @e[type=marker, tag=power1] at @s run function power:manual
 scoreboard players set #power1 power 0

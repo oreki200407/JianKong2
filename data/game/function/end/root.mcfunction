@@ -1,7 +1,7 @@
 title @a title {"text":"遊戲結束","bold":true,"color":"green"}
 
-execute at @e[tag=power] run setblock ~ ~ ~ air
-execute at @e[tag=power] run setblock ~1 ~ ~ air
+execute at @e[type=marker, tag=power] run setblock ~ ~ ~ air
+execute at @e[type=marker, tag=power] run setblock ~1 ~ ~ air
 
 kill @e[tag=monitor_marker]
 kill @e[tag=contain]

@@ -10,7 +10,7 @@
 ###################################################
 
 execute unless score #time system matches 1400.. run schedule function contain:give 60s
-execute if entity @e[tag=freeze] run return fail
+execute if entity @e[type=interaction, tag=freeze] run return fail
 
 #---給原料---
 execute if entity @e[type=villager, tag=contain_villager,tag=contain] run scoreboard players add 紙 info_monitor 1

@@ -33,7 +33,7 @@ kill @e[tag=monitor_marker]
 execute at @e[type=marker, tag=lobby, limit=1] run place template game:monitor ~-10 ~-1 ~-10
 
 #發電
-scoreboard players set @e[tag=power] power_level 1
+scoreboard players set @e[type=marker, tag=power] power_level 1
 scoreboard players set #power1 power 0
 scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0

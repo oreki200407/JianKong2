@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-$title @s title {keybind: "key.hotbar.$(slot_keybind)", color: "gold", bold: true}
+$title @s title ["請按下 ", {keybind: "key.hotbar.$(slot_keybind)", color: "gold", bold: true}]

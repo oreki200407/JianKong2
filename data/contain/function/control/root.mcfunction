@@ -3,7 +3,7 @@
 # 
 # Name   : root.mcfunction
 # Path   : contain:control/
-# As     : 收容展示實體，tag=contain_control
+# As     : 收容互動實體，tag=contain_control
 # At     : As
 # Loop   : 否
 # Author : oreki20
