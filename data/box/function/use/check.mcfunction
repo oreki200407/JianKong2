@@ -1,5 +1,5 @@
-execute at @e[tag=box] run function box:use/reset
-execute at @e[tag=box_off] run function box:use/box_off
+execute at @e[type=armor_stand, tag=box] run function box:use/reset
+execute at @e[type=armor_stand, tag=box_off] run function box:use/box_off
 
 execute if entity @s[team=monitor] run return run clear @s redstone[custom_data~{type:"box"}]
 
@@ -18,7 +18,7 @@ execute as @s[scores={box_operation=1}] run return run function box:use/success/
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"立即救援","color":"gold"}]
 execute as @s[scores={box_operation=1}] run return run function box:use/success/rescue
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"範圍清怪","color":"gold"}]
-execute as @s[scores={box_operation=1}] run return run function box:use/success/clear
+execute as @s[scores={box_operation=1}] run return run function box:use/success/clear/root
 execute store success score @s box_operation run clear @s redstone[item_name={"text":"修復電源","color":"red"}]
-execute as @s[scores={box_operation=1}] at @e[tag=box_off] run return run function box:fix/fix_mode/enter
+execute as @s[scores={box_operation=1}] at @e[type=armor_stand, tag=box_off] run return run function box:fix/fix_mode/enter
 clear @s redstone[custom_data~{box:"none"}]

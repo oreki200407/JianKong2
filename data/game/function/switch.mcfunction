@@ -33,7 +33,7 @@ kill @e[tag=monster_being_ride]
 kill @e[team=monitor, tag=monster, type=!player]
 kill @e[type=block_display, tag=morph_grass_block]
 kill @e[type=item_display, tag=bear_trap]
-tag @e[tag=box_off] remove box_off
+tag @e[type=armor_stand, tag=box_off] remove box_off
 execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function monster:break_glass/restore with entity @s data
 execute at @e[type=marker, tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire

@@ -24,6 +24,7 @@ scoreboard players reset @a[team=survivor, predicate=!game:flag/sneak, scores={r
 execute as @a[team=monitor,tag=monitor_death,scores={health=20..}] run function game:death/monitor_effect
 
 function monster:effect
+#被轉移的怪物們
 execute as @e[tag=box_transfer] at @s run function monster:effect_transfer
 
 #-----------------------道具-----------------------

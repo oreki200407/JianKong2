@@ -9,13 +9,13 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-function box:switch/set
-
-execute if entity @e[tag=box_off] run tag @s add box_off
+#上鎖的電箱繼續上鎖
+execute if entity @e[type=armor_stand, tag=box_off] run tag @s add box_off
 
 #刪除舊的
 execute as @e[type=armor_stand, tag=box] at @s run function box:switch/remove_box
 
-tag @s add box
+#放上新的
+function box:switch/set
+
 tellraw @a ["◎ 電箱已被更換至", {"selector": "@s", color:gold}]
-scoreboard players display numberformat 電箱位置 info_survivor fixed {"selector": "@s"}
