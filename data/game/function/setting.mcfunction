@@ -1,12 +1,12 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
-execute at @e[tag=door,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["door"]}
-execute at @e[tag=point,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["point"]}
-execute at @e[tag=spawn_survivor,type=armor_stand] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
-kill @e[tag=edit_kill,type=armor_stand]
+execute at @e[type=armor_stand,tag=door] run summon marker ~ ~ ~ {Tags: ["door"]}
+execute at @e[type=armor_stand,tag=point] run summon marker ~ ~ ~ {Tags: ["point"]}
+execute at @e[type=armor_stand,tag=spawn_survivor] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
+kill @e[type=armor_stand,tag=edit_kill]
 kill @e[tag=check_display]
-execute as @e[tag=box_point,type=armor_stand] run data merge entity @s {DisabledSlots:4144959}
-execute as @e[tag=poison_point,type=armor_stand] run data merge entity @s {DisabledSlots:4144959}
+execute as @e[type=armor_stand,tag=box_point] run data merge entity @s {DisabledSlots:4144959}
+execute as @e[type=armor_stand,tag=poison_point] run data merge entity @s {DisabledSlots:4144959}
 
 time set midnight
 tag @a[team=monitor] add monitor_tag

@@ -12,7 +12,7 @@
 execute if score #switching system matches 1 run return fail
 
 #1代表陷阱啟動成功
-execute store success score @s bear_trap at @s as @e[team=monitor, tag=monster, dx=0, dy=0, dz=0, type=!player] run function gadget:bear_trap/detected/root
+execute store success score @s bear_trap at @s as @e[type=!player, team=monitor, tag=monster, dx=0, dy=0, dz=0] run function gadget:bear_trap/detected/root
 
 #啟動成功就可以清除了
 execute if score @s bear_trap matches 1 run return run kill

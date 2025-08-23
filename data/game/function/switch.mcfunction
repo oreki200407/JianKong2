@@ -24,20 +24,20 @@ scoreboard players reset @a kill
 scoreboard players reset @a damage
 
 #復原場地
-execute as @e[team=monitor, tag=monster, type=!player] run data merge entity @s {DeathLootTable:"summon:empty"}
+execute as @e[type=!player, team=monitor, tag=monster] run data merge entity @s {DeathLootTable:"summon:empty"}
 kill @e[type=experience_orb]
 kill @e[type=area_effect_cloud, tag=power_time]
 kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]
-kill @e[team=monitor, tag=monster, type=!player]
+kill @e[type=!player, team=monitor, tag=monster]
 kill @e[type=block_display, tag=morph_grass_block]
 kill @e[type=item_display, tag=bear_trap]
 tag @e[type=armor_stand, tag=box_off] remove box_off
-execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
+execute as @e[type=marker,tag=door] at @s run function gadget:unlock/door with entity @s data
 execute as @e[type=marker,tag=glass_broken] at @s run function monster:break_glass/restore with entity @s data
-execute at @e[type=marker, tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
-execute at @e[type=marker, tag=plank] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_sign
+execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
+execute at @e[type=marker,tag=plank] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_sign
 kill @e[type=marker, tag=fire]
 kill @e[type=marker, tag=plank]
 kill @e[type=area_effect_cloud,tag=camera]

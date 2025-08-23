@@ -45,8 +45,8 @@ item replace block ~1 ~ ~ container.26 with echo_shard[custom_model_data={string
 
 summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:0,Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
 
-execute as @e[tag=puzzle,type=marker] store result entity @s data.number int 1 run scoreboard players add #puzzle puzzle_game 1
+execute as @e[type=marker,tag=puzzle] store result entity @s data.number int 1 run scoreboard players add #puzzle puzzle_game 1
 
-execute as @e[tag=puzzle,type=marker,limit=1] run function power:puzzle_game/reset/insert
+execute as @e[type=marker,tag=puzzle,limit=1] run function power:puzzle_game/reset/insert
 
 function power:puzzle_game/reset/random/root

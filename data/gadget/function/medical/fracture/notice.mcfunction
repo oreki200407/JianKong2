@@ -11,4 +11,4 @@
 
 execute if predicate tick:2_seconds run return run title @s actionbar {text: "你骨折了, 請使用夾板治療", color: "red"}
 
-title @s[predicate=tick:1_second] actionbar "你骨折了, 請使用夾板治療"
+title @s[predicate=tick:1_second] actionbar {text: "你骨折了, 請使用夾板治療", color: "dark_red"}

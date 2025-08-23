@@ -9,5 +9,5 @@ scoreboard players add 鐵門上鎖-冷卻 info_monitor 180
 setblock ~ ~ ~ air destroy
 playsound block.piston.extend
 
-execute as @e[tag=door,type=marker] at @s run function control:lock_door/lock with entity @s data
+execute as @e[type=marker,tag=door] at @s run function control:lock_door/lock with entity @s data
 tellraw @a ["◎ 所有門已被", {"text": "上鎖", "color":"gold"}]

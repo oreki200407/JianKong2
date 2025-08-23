@@ -8,7 +8,7 @@ kill @e[tag=contain]
 kill @e[tag=contain_escape]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]
-kill @e[team=monitor, tag=monster, type=!player]
+kill @e[type=!player, team=monitor, tag=monster]
 kill @e[type=block_display, tag=morph_grass_block]
 
 execute at @e[type=marker,tag=lobby,limit=1] run place template game:lobby ~-10 ~-1 ~-10

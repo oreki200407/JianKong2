@@ -22,7 +22,7 @@ execute as @e[scores={monster_delay=1..}] run function monster:delay/tick
 
 #怪物看著未受保護的玻璃會裂開
 tag @e[type=marker, tag=being_watched] remove being_watched
-execute as @e[tag=monster, team=monitor, type=!player] at @s anchored eyes run function monster:break_glass/raycast
+execute as @e[type=!player, tag=monster, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
 scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break
 
 #怪物開門

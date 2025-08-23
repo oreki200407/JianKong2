@@ -28,5 +28,5 @@ execute as @e[type=interaction,tag=edit_check] on target run function edit:check
 execute as @e[type=interaction,tag=edit_exit] on target at @e[tag=control_panel] run function edit:exit
 execute as @e[type=interaction] if data entity @s interaction run data remove entity @s interaction
 
-execute store result score 生怪點 edit if entity @e[tag=point,type=armor_stand]
-execute store result score 門 edit if entity @e[tag=door,type=armor_stand]
+execute store result score 生怪點 edit if entity @e[type=armor_stand,tag=point]
+execute store result score 門 edit if entity @e[type=armor_stand,tag=door]
