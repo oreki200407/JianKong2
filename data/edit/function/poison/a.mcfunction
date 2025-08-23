@@ -1,7 +1,7 @@
 setblock ~ ~ ~ air
 playsound ui.button.click ambient @p ~ ~ ~
 
-execute if entity @e[tag=poison_setting] run return run function edit:poison/fail
+execute if entity @e[type=armor_stand, tag=poison_setting] run return run function edit:poison/fail
 
 tag @s add poison_setting
 tag @s remove poison_a

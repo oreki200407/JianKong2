@@ -12,10 +12,10 @@
 execute as @a[tag=lobby_death,scores={health=20..}] at @s if entity @e[type=marker, tag=lobby_spawn, limit=1, distance=..0.1] run function system:death
 
 #刪除盔甲座
-execute as @e[tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill
+execute as @e[type=armor_stand, tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill
 
 #超過一個重生點
-execute store result score 求生者重生點 edit if entity @e[tag=spawn_survivor]
+execute store result score 求生者重生點 edit if entity @e[type=armor_stand, tag=spawn_survivor]
 execute if score 求生者重生點 edit matches 2.. run function edit:spawn
 
 #沒有告示牌就重新放

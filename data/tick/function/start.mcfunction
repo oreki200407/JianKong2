@@ -78,6 +78,6 @@ execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker,
 execute at @e[type=marker, tag=contain_marker] run function contain:escape/contain_marker
 
 #機關
-execute as @e[tag=poison,limit=1] run function control:poison/poisoning with entity @s data
+execute as @e[type=armor_stand, tag=poison,limit=1] run function control:poison/poisoning with entity @s data
 execute if score 酸雨 info_survivor matches 1.. as @a[team=survivor,gamemode=adventure] at @s positioned ~ ~1 ~ if predicate control:acid_rain run function control:acid_rain/poisoning
 execute if score 禁止奔跑 info_survivor matches 1.. as @a[team=survivor,predicate=game:flag/sprint,gamemode=adventure] run function control:sprint/poisoning

@@ -11,8 +11,8 @@ setblock ~ ~ ~ air destroy
 playsound block.piston.extend
 
 #抽毒氣
-tag @e[tag=poison_point,sort=random,limit=1] add poison_choose
+tag @e[type=armor_stand, tag=poison_point,sort=random,limit=1] add poison_choose
 
-tellraw @a ["◎ ", {selector:"@e[tag=poison_choose,limit=1]"},"將在10秒後",{"text": "釋放毒氣", "color":"gold"},"3分鐘"]
+tellraw @a ["◎ ", {selector:"@e[type=armor_stand, tag=poison_choose,limit=1]"},"將在10秒後",{"text": "釋放毒氣", "color":"gold"},"3分鐘"]
 schedule function control:poison/start 10s
 schedule function control:poison/end 190s

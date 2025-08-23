@@ -4,4 +4,4 @@ $execute unless items block ~ ~ ~ container.$(check) * store success score @s li
 execute if score @s light_game matches 0 run return fail
 
 $data modify storage jk2:data root.monitor.light_game.switch set value $(check)
-execute unless entity @e[tag=light_game,distance=..0.1] run data modify storage jk2:data root.monitor.light_game.chest2 set value 1
+execute unless entity @e[type=marker, tag=light_game,distance=..0.1] run data modify storage jk2:data root.monitor.light_game.chest2 set value 1
