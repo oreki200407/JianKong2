@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-tag @s add ride_spider
-#召喚出蜘蛛坐騎
-execute summon spider run function morph:skeleton/skill/2/spider
-tag @s remove ride_spider
+tag @s add ride_skeleton_horse
+#召喚出骷髏馬坐騎
+execute summon skeleton_horse run function morph:skeleton/skill/2/skeleton_horse
+tag @s remove ride_skeleton_horse

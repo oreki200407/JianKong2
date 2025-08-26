@@ -8,3 +8,5 @@
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
+
+scoreboard players reset @s use_ender_pearl

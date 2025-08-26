@@ -59,8 +59,8 @@ execute unless score #trap trap_cooldown matches 10 run function monitor:observe
 #人體變形
 execute as @a[team=monitor] at @s unless score @s morph matches 1.. if entity @e[type=marker,tag=morph_machine,distance=..0.55] run function morph:player/start/root
 execute as @a[scores={morph=1..}] at @s run function morph:player/tick with entity @s equipment.head.components."minecraft:custom_data"
-#清除所有失去騎乘者的坐騎蜘蛛
-kill @e[type=spider, tag=spider_vehicle, predicate=!game:being_ride]
+#清除所有失去騎乘者的坐騎骷髏馬
+kill @e[type=skeleton_horse, tag=skeleton_horse_vehicle, predicate=!game:being_ride]
 #清除所有失去界伏蚌的草方塊展示實體
 kill @e[type=block_display, tag=morph_grass_block, predicate=!game:riding]
 #苦力怕TNT
