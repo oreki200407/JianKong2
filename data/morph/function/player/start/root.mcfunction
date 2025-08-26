@@ -42,7 +42,14 @@ scoreboard players set @s morph 180
 tag @s add monster
 effect clear @s saturation
 title @s title {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, color: "gold",bold:true}
-tellraw @s [{text: "——————————\n"}, {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, color: "gold"},{text: "\n主動技能1："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},{text: "\n主動技能2："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},{text: "\n"}, {nbt: 'equipment.head.components."minecraft:lore"', entity: "@s", interpret: true}, {text: "\n——————————"}]
+tellraw @s \
+[\
+	{text: "——————————\n"},\
+	{nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, color: "gold"},\
+	{text: "\n主動技能1："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 1b}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},\
+	{text: "\n主動技能2："}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:item_name"', entity: "@s", interpret: true}, {text: "-"}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:lore"[{color:"white"}]', entity: "@s", interpret: true}, {text: " ("}, {nbt: 'Inventory[{components:{"minecraft:custom_data":{skill: 2b}}}].components."minecraft:lore"[{color:"aqua"}]', entity: "@s", interpret: true}, {text: ")"},{text: "\n"}, {nbt: 'equipment.head.components."minecraft:lore"', entity: "@s", interpret: true},\
+	{text: "\n——————————"}\
+]
 
 execute at @a[team=survivor] run tag @e[type=marker,tag=point,distance=..25] add morph_teleport
 tp @s @e[type=marker,tag=morph_teleport,sort=random,limit=1]

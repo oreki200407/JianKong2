@@ -24,7 +24,24 @@ scoreboard players add @s st_fall 1
 
 #讓展示實體乘著盔甲座往下掉
 #不可以把Marker設為true
-summon armor_stand ~ ~ ~ {Invisible: true, Invulnerable: true, Small: true, NoBasePlate: true, DisabledSlots: 4144959, attributes: [{id: "scale", base: 0.0625}, {id: "gravity", base: 1.0}], Tags: ["tomb"], Passengers: [{id: "item_display", Glowing: true, glow_color_override: 16711680, item: {id: "player_head"}, billboard: "vertical", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 180f, 0f, 1f], translation: [0f, 1f, 0f], scale: [1f, 1f, 1f]}, Tags: ["tomb", "tomb_temp"], Passengers: [{id: "text_display", text:["按住", {keybind: "key.sneak"}, "救援"], billboard: "vertical", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 1.2f, 0f], scale: [1.2f, 1.2f, 1.2f]}, Tags: ["tomb_text"]}]}]}
+summon armor_stand ~ ~ ~ \
+{\
+	Invisible: true, Invulnerable: true, Small: true, NoBasePlate: true, DisabledSlots: 4144959, attributes: [{id: "scale", base: 0.0625}, {id: "gravity", base: 1.0}], Tags: ["tomb"],\
+	Passengers:\
+	[\
+		{\
+			id: "item_display", Glowing: true, glow_color_override: 16711680, item: {id: "player_head"}, billboard: "vertical", Tags: ["tomb", "tomb_temp"],\
+			transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 180f, 0f, 1f], translation: [0f, 1f, 0f], scale: [1f, 1f, 1f]},\
+			Passengers:\
+			[\
+				{\
+					id: "text_display", text: ["按住", {keybind: "key.sneak"}, "救援"], billboard: "vertical", Tags: ["tomb_text"],\
+					transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 1.2f, 0f], scale: [1.2f, 1.2f, 1.2f]}\
+				}\
+			]\
+		}\
+	]\
+}
 
 #讓展示實體記住對應的玩家
 scoreboard players operation @e[type=item_display, tag=tomb_temp, distance=..1] uuid0_match = @s uuid0

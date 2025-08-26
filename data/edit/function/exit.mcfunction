@@ -31,31 +31,250 @@ scoreboard players set 初始資金 lobby 250
 scoreboard players set 更換電箱 lobby 5
 scoreboard players set 監視器 lobby 6
 
-summon item_display ~4 ~-2.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"red","text":"加入紅隊"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_red"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNhMDNjMDZmZmUyMzU2Y2UwMGFlZjViNzA4ODc4ZDJmZTQzNjVhOTdiYzRkYWUxZTE1NDJjMjdiMmViMzBkZCJ9fX0="]}}}},Tags:["lobby_setting"]}
-summon item_display ~3 ~-2.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"gray","text":"加入旁觀者"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_spec"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNkZTQ0ZThmODBlNTY2MTBjMGZmYzY0YzA4ZTE5NDM1MTdmZGFmODAwZjVlZTc1ZWY2OTg2YzVhODk2NmU5YyJ9fX0="]}}}},Tags:["lobby_setting"]}
-summon item_display ~2 ~-2.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"blue","text":"加入藍隊"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_blue"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTIyNTdlYjU4MDM4MDMxNDI4ZTk3MjkzOWUzMWM3ODBjYjhjMWY3Yjk1MWM1YmQxZjkzODZmZjNlMTdjNTY4NiJ9fX0="]}}}},Tags:["lobby_setting"]}
-summon item_display ~2 ~-1.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"gold","text":"隨機分隊"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_random"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA1MDBmNWUyNTAyYWMwNDMzYjIxMWViMzUwYjJkZmY5MzMzODM2MGE0ODI1YTc2NWQ3ZTU1YjU2YzU4YzhlZSJ9fX0="]}}}},Tags:["lobby_setting"]}
-summon item_display ~4 ~-1.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"white","text":"離開隊伍"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_leave"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVhZDkzZDU2NTQ2ZjEyZDUzNTZlZmZjYmM2ZWM0Yzg3YmEyNDVkODFlMTY2MmM0YjgzMGY3ZDI5OGU5In19fQ=="]}}}},Tags:["lobby_setting"]}
-summon item_display ~4 ~-.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"green","text":"簡單模式"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_easy"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="]}}}},Tags:["lobby_setting"]}
-summon item_display ~3 ~-.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"gold","text":"普通模式"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_normal","selected_difficulty"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ViNGIzNDUxOWZlMTU4NDdkYmVhNzIyOTE3OWZlZWI2ZWE1NzcxMmQxNjVkY2M4ZmY2Yjc4NWJiNTg5MTFiMCJ9fX0="]}}}},Tags:["lobby_setting"]}
-summon item_display ~2 ~-.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"red","text":"困難模式"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_hard"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="]}}}},Tags:["lobby_setting"]}
+summon item_display ~4 ~-2.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"red","text":"加入紅隊"}\
+		},\
+		{\
+			id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_red"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNhMDNjMDZmZmUyMzU2Y2UwMGFlZjViNzA4ODc4ZDJmZTQzNjVhOTdiYzRkYWUxZTE1NDJjMjdiMmViMzBkZCJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~3 ~-2.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"gray","text":"加入旁觀者"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_spec"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNkZTQ0ZThmODBlNTY2MTBjMGZmYzY0YzA4ZTE5NDM1MTdmZGFmODAwZjVlZTc1ZWY2OTg2YzVhODk2NmU5YyJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~2 ~-2.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"blue","text":"加入藍隊"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_blue"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTIyNTdlYjU4MDM4MDMxNDI4ZTk3MjkzOWUzMWM3ODBjYjhjMWY3Yjk1MWM1YmQxZjkzODZmZjNlMTdjNTY4NiJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~2 ~-1.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"gold","text":"隨機分隊"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_random"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA1MDBmNWUyNTAyYWMwNDMzYjIxMWViMzUwYjJkZmY5MzMzODM2MGE0ODI1YTc2NWQ3ZTU1YjU2YzU4YzhlZSJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~4 ~-1.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"white","text":"離開隊伍"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","team_leave"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVhZDkzZDU2NTQ2ZjEyZDUzNTZlZmZjYmM2ZWM0Yzg3YmEyNDVkODFlMTY2MmM0YjgzMGY3ZDI5OGU5In19fQ=="]}}}},\
+	Tags:["lobby_setting"]}
+summon item_display ~4 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"green","text":"簡單模式"}\
+		},\
+		{\
+			id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_easy"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~3 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"gold","text":"普通模式"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_normal","selected_difficulty"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ViNGIzNDUxOWZlMTU4NDdkYmVhNzIyOTE3OWZlZWI2ZWE1NzcxMmQxNjVkY2M4ZmY2Yjc4NWJiNTg5MTFiMCJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~2 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"red","text":"困難模式"}\
+		},\
+		{\
+			id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","difficulty_setting","setting_hard"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNlNzFhZDkxOTUyM2VhY2U5Y2Q2MmEyNWIxOGU0ZTE3YWIzOGQxMjU2MjQxZjQyNjJkZmJhNzI5N2M0ZDkyIn19fQ=="]}}}},\
+	Tags:["lobby_setting"]\
+}
 
-summon text_display ~-1.9 ~-2.6 ~ {background:0,line_width:100,alignment:"right",Tags:["lobby_setting","money_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.1f],scale:[1f,1f,1f]},text:[{"bold":true,"color":"yellow","text":"               初始資金: "},{"score":{"name":"初始資金","objective":"lobby"}}]}
-summon item_display ~-3.25 ~-2.75 ~ {Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","money-"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},Tags:["lobby_setting"]}
-summon item_display ~-4 ~-2.75 ~ {Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","money+"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},Tags:["lobby_setting"]}
+summon text_display ~-1.9 ~-2.6 ~ \
+{\
+	background:0,line_width:100,alignment:"right",Tags:["lobby_setting","money_setting"],Rotation:[180.0f,0.0f],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.1f],scale:[1f,1f,1f]},\
+	text:[{"bold":true,"color":"yellow","text":"               初始資金: "},{"score":{"name":"初始資金","objective":"lobby"}}]\
+}
+summon item_display ~-3.25 ~-2.75 ~ \
+{\
+	Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","money-"]}],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~-4 ~-2.75 ~ \
+{\
+	Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","money+"]}],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},\
+	Tags:["lobby_setting"]\
+}
 
-summon text_display ~-1.9 ~-1.6 ~ {background:0,line_width:100,alignment:"right",Tags:["lobby_setting","box_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.1f],scale:[1f,1f,1f]},text:[{"bold":true,"color":"yellow","text":"               更換電箱: "},{"color":"yellow","score":{"name":"更換電箱","objective":"lobby"}},{"text":"分鐘"}]}
-summon item_display ~-3.25 ~-1.75 ~ {Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","box-"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},Tags:["lobby_setting"]}
-summon item_display ~-4 ~-1.75 ~ {Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","box+"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},Tags:["lobby_setting"]}
+summon text_display ~-1.9 ~-1.6 ~ \
+{\
+	background:0,line_width:100,alignment:"right",Tags:["lobby_setting","box_setting"],Rotation:[180.0f,0.0f],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.1f],scale:[1f,1f,1f]},\
+	text:[{"bold":true,"color":"yellow","text":"               更換電箱: "},{"color":"yellow","score":{"name":"更換電箱","objective":"lobby"}},{"text":"分鐘"}]\
+}
+summon item_display ~-3.25 ~-1.75 ~ \
+{\
+	Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","box-"]}],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},\
+	Tags:["lobby_setting"]\
+}
+summon item_display ~-4 ~-1.75 ~ \
+{\
+	Passengers:[{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","box+"]}],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},\
+	Tags:["lobby_setting"]\
+}
 
-summon item_display ~-2 ~-.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"aqua","text":"查看場地"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","check_book"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyNzEwNTI3MTllZjY0MDc5ZWU4YzE0OTg5NTEyMzhhNzRkYWM0YzI3Yjk1NjQwZGI2ZmJkZGMyZDZiNWI2ZSJ9fX0="]}}}},Tags:["lobby_setting"]}
+summon item_display ~-2 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"aqua","text":"查看場地"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","check_book"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyNzEwNTI3MTllZjY0MDc5ZWU4YzE0OTg5NTEyMzhhNzRkYWM0YzI3Yjk1NjQwZGI2ZmJkZGMyZDZiNWI2ZSJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
 
-summon item_display ~-4 ~-.75 ~ {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},text:{"bold":true,"color":"dark_purple","text":"進入編輯模式"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","edit_enter"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I4N2QyMjUyY2FjMWFhMTVkZjMyNTk5OGI4ZWM4MmVmOTEwOWI2YzU2NzYxMGFmYWMwZWNkYTUxM2Y2MSJ9fX0="]}}}},Tags:["lobby_setting"]}
+summon item_display ~-4 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"dark_purple","text":"進入編輯模式"}\
+		},\
+		{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","edit_enter"]}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I4N2QyMjUyY2FjMWFhMTVkZjMyNTk5OGI4ZWM4MmVmOTEwOWI2YzU2NzYxMGFmYWMwZWNkYTUxM2Y2MSJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
 
-summon item_display ~ ~-3.2 ~-0.4 {Passengers:[{id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1f,1f,1f]},text:{"bold":true,"color":"red","text":"開始遊戲"}},{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","start_button"]}],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE4OTc4Y2NiZjU3NmY0NDZlMjFjNTFkM2U4MGZjN2Y4NTY2ZWI3MjY1Y2M0M2M0YWQ3MWNmYjc4YzE2NTI1NyJ9fX0="]}}}},Tags:["lobby_setting"]}
+summon item_display ~ ~-3.2 ~-0.4 \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.75f,0f],scale:[1f,1f,1f]},\
+			text:{"bold":true,"color":"red","text":"開始遊戲"}\
+		},\
+		{id:"minecraft:interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","start_button"]}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE4OTc4Y2NiZjU3NmY0NDZlMjFjNTFkM2U4MGZjN2Y4NTY2ZWI3MjY1Y2M0M2M0YWQ3MWNmYjc4YzE2NTI1NyJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
 
 
 #TODO: 放到合適的位置
-summon text_display ~ ~ ~ {text: {text: "               監視器: ", color: "yellow", bold: true, extra: [{score: {name: "監視器", objective: "lobby"}}]}, background: 0, line_width: 100, alignment: "right", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0.1f], scale: [1f, 1f, 1f]}, Rotation: [180.0f, 0.0f], Tags: ["lobby_setting", "camera_setting"]}
-summon item_display ~ ~ ~ {item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]}, Tags: ["lobby_setting"], Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count-"]}]}
-summon item_display ~ ~ ~ {item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]}, Tags: ["lobby_setting"], Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count+"]}]}
+summon text_display ~ ~ ~ \
+{\
+	text: {text: "               監視器: ", color: "yellow", bold: true, extra: [{score: {name: "監視器", objective: "lobby"}}]},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0.1f], scale: [1f, 1f, 1f]},\
+	background: 0, line_width: 100, alignment: "right", Rotation: [180.0f, 0.0f], Tags: ["lobby_setting", "camera_setting"]\
+}
+summon item_display ~ ~ ~ \
+{\
+	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
+	Tags: ["lobby_setting"],\
+	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count-"]}]\
+}
+summon item_display ~ ~ ~ \
+{\
+	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
+	Tags: ["lobby_setting"],\
+	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count+"]}]\
+}
