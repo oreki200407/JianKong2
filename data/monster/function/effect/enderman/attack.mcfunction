@@ -1,2 +1,2 @@
 advancement revoke @s only monster:enderman/attack
-tp @s ~ ~ ~ ~-45 ~
+rotate @s ~-45 ~
