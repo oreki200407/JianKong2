@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s crossbow[item_name={text: "射擊" ,color: "gold"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate: "entity.minecraft.arrow"}], {text: "冷卻3秒", color: "aqua", italic: false}], custom_data={skill: 1b}, charged_projectiles=[{id: "arrow", components: {intangible_projectile: {}}}], max_damage=1, break_sound={sound_id: "intentionally_empty"}]
+give @s crossbow[item_name={text: "射擊",color: "gold"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate: "entity.minecraft.arrow"}], {text: "冷卻3秒", color: "aqua", italic: false}], custom_data={skill: 1b}, charged_projectiles=[{id: "arrow", components: {intangible_projectile: {}}}], max_damage=1, break_sound={sound_id: "intentionally_empty"}]

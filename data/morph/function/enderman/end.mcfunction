@@ -10,8 +10,6 @@
 ###################################################
 
 #如果origin對上了就清除
-tag @s add enderman_end
 execute as @e[type=ender_pearl] if function morph:enderman/is_remain_ender_pearl run kill
-tag @s remove enderman_end
 
 tag @s remove enderman_morph

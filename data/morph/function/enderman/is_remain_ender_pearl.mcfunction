@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute on origin if entity @s[tag=enderman_end] run return 100
+execute on origin if entity @s[tag=enderman_morph] run return 100
 
 return fail
