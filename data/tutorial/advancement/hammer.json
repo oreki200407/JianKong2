@@ -1,0 +1,29 @@
+{
+	"criteria":
+	{
+		"hammer":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:tripwire_hook",
+							"components": {
+								"minecraft:item_name": "錘子"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "tutorial:hammer/root"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"criteria":
+	{
+		"unlock":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:diamond",
+							"components": {
+								"minecraft:item_name": "開鎖器"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "tutorial:unlock/use"
+	}
+}
