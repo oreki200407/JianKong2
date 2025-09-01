@@ -194,6 +194,10 @@ scoreboard players set #20 constant 20
 scoreboard players set #60 constant 60
 scoreboard players set #100 constant 100
 
+scoreboard players set #power1 power 0
+scoreboard players set #power2 power 0
+scoreboard players set #power3 power 0
+
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"
 bossbar add jk2:prepare "準備時間"

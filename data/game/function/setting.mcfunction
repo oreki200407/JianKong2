@@ -1,5 +1,9 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
+execute as @a[tag=tutorial] run function tutorial:exit
+kill @e[tag=tutorial_marker]
+execute at @e[type=marker,tag=lobby,limit=1] run fill ~-10 ~7 ~-10 ~10 ~14 ~10 air
+
 execute at @e[type=armor_stand,tag=door] run summon marker ~ ~ ~ {Tags: ["door"]}
 execute at @e[type=armor_stand,tag=point] run summon marker ~ ~ ~ {Tags: ["point"]}
 execute at @e[type=armor_stand,tag=spawn_survivor] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
