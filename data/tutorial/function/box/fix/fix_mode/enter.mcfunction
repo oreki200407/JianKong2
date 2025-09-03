@@ -2,7 +2,7 @@
 # 進入修理電箱狀態
 # 
 # Name   : enter.mcfunction
-# Path   : box:fix/fix_mode/
+# Path   : tutorial:box/fix/fix_mode/
 # As     : 進入修理電箱狀態的玩家
 # At     : 電箱
 # Loop   : 否

@@ -41,6 +41,7 @@ scoreboard players set @s morph 180
 
 tag @s add monster
 effect clear @s saturation
+attribute @s attack_knockback modifier remove jk2:attack_knockback
 title @s title {nbt: 'equipment.head.components."minecraft:item_name"', entity: "@s", interpret: true, color: "gold",bold:true}
 tellraw @s \
 [\
