@@ -2,7 +2,7 @@
 # 離開修理發電機狀態
 # 
 # Name   : leave.mcfunction
-# Path   : box:fix/fix_mode/
+# Path   : tutorial:box/fix/fix_mode/
 # As     : 離開修理電箱狀態的玩家
 # At     : 世界重生點
 # Loop   : 否

@@ -2,7 +2,7 @@
 # 開鎖中
 # 
 # Name   : unlocking.mcfunction
-# Path   : gadget:unlock/
+# Path   : tutorial:unlock/
 # As     : 使用開鎖器的玩家
 # At     : 世界重生點
 # Loop   : 是

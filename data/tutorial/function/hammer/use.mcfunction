@@ -2,7 +2,7 @@
 # 使用錘子後
 # 
 # Name   : use.mcfunction
-# Path   : gadget:hammer/
+# Path   : tutorial:hammer/
 # As     : 使用錘子的玩家
 # At     : 玻璃的Position，As的Rotation和Dimension
 # Loop   : 是

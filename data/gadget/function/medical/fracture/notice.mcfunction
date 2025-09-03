@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if predicate tick:2_seconds run return run title @s actionbar {text: "你骨折了, 請使用夾板治療", color: "red", "bold": true}
+execute if predicate tick:2_seconds run return run title @s actionbar {text: "你骨折了, 請使用夾板治療", color: "red", bold: true}
 
-title @s[predicate=tick:1_second] actionbar {text: "你骨折了, 請使用夾板治療", color: "dark_red", "bold": true}
+title @s[predicate=tick:1_second] actionbar {text: "你骨折了, 請使用夾板治療", color: "dark_red", bold: true}

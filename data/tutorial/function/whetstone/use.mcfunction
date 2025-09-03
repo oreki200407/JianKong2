@@ -2,7 +2,7 @@
 # 主手拿著磨刀石，副手拿著鐵劍，右鍵使用磨刀石
 # 
 # Name   : use.mcfunction
-# Path   : gadget:whetstone/
+# Path   : tutorial:whetstone/
 # As     : 使用磨刀石的玩家
 # At     : As
 # Loop   : 是

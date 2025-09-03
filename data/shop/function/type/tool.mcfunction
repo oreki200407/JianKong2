@@ -1,7 +1,7 @@
 scoreboard players set @s shop 2
 item replace entity @s enderchest.0 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.1 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.2 with tripwire_hook[item_name="錘子",lore=[[{"text": "價格：5", "color": "gold", "italic": false}],[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:5}, consumable={consume_seconds: 99999}, damage=0, max_damage=10, max_stack_size=1, custom_model_data={strings:["hammer"]}] 1
+item replace entity @s enderchest.2 with tripwire_hook[item_name="錘子",lore=[[{"text": "價格：5", "color": "gold", "italic": false}],[{"text": "按住", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:5}, consumable={consume_seconds: 99999}, damage=0, max_damage=20, max_stack_size=1, custom_model_data={strings:["hammer"]}] 1
 item replace entity @s enderchest.3 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.4 with tripwire_hook[item_name="滅火器",lore=[[{"text": "價格：10", "color": "gold", "italic": false}],[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]],custom_data={type:"shop",price:10}, consumable={consume_seconds: 99999}, damage=0, max_damage=10, max_stack_size=1, custom_model_data={strings:["extinguisher"]}] 1
 item replace entity @s enderchest.5 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]

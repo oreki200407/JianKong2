@@ -2,7 +2,7 @@
 # 當玩家倒地的時候執行
 # 
 # Name   : saving.mcfunction
-# Path   : game:death/survivor/save/
+# Path   : tutorial:save/
 # As     : 蹲在展示實體附近的玩家
 # At     : As
 # Loop   : 是
