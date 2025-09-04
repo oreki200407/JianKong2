@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_iron[item_model=fire_charge, item_name={translate: "item.minecraft.fire_charge", color: "gold"},lore=[[{text: "往前射一發", color: "white", italic: false}, {translate: "entity.minecraft.fireball"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1b}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "entity.blaze.shoot"}]
+give @s raw_iron[item_model=fire_charge, item_name={translate: "item.minecraft.fire_charge", color: "gold"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate: "entity.minecraft.fireball"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1b}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "entity.blaze.shoot"}]

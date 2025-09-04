@@ -202,18 +202,20 @@ scoreboard players set #power3 power 0
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"
 bossbar add jk2:prepare "準備時間"
+bossbar add jk2:distance "玩家距離"
 
 bossbar set jk2:time style notched_10
 
 bossbar set jk2:boss color red
 bossbar set jk2:time color yellow
 bossbar set jk2:prepare color purple
+bossbar set jk2:distance color blue
 
 bossbar set jk2:time max 1500
 bossbar set jk2:prepare max 180
 
-#可供變形的怪物 以及技能冷卻
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem"]
+#可供變形的怪物 以及技能冷卻(單位是tick)
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem", "warden"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 120, 2: 280},\
@@ -223,7 +225,8 @@ data modify storage jk2:data root.morph.cooldown set value \
 	enderman: {1: 120, 2: 200},\
 	evoker: {1: 140, 2: 220},\
 	blaze: {1: 120, 2: 280},\
-	golem: {1: 140, 2: 240}\
+	golem: {1: 140, 2: 240},\
+	warden: {1: 280, 2: 200}\
 }
 
 #方向常數 上右下左
