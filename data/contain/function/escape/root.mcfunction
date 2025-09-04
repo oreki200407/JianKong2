@@ -5,7 +5,7 @@ scoreboard players operation @n[type=marker,tag=contain_marker] contain_health =
 scoreboard players reset @s contain_temperature
 scoreboard players reset @s contain_food
 scoreboard players reset @s contain_health
-function contain:value/all
+function contain:update_text/all
 
 tellraw @a[team=monitor] ["◎ ",{selector:"@s"},"從收容櫃",{"text":"逃出來了","color":"gold"}]
 tp @s ~ ~-999 ~

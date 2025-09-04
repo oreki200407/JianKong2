@@ -17,4 +17,4 @@ kill @s[tag=contain]
 
 setblock ~-2 ~-1 ~ oak_wall_sign[facing=west]{front_text:{messages:["",{bold:1b,text:"復活生物"},{bold:1b,click_event:{action:"run_command",command:"function contain:revive/check"},text:"花費：30電力"},""]},is_waxed:1b}
 
-function contain:value/all
+function contain:update_text/all
