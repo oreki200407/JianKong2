@@ -10,7 +10,8 @@ schedule function morph:free 1200s
 
 clear @a[team=monitor] white_dye
 execute as @a[team=monitor] run function monitor:observe/player/give/root
-attribute @s attack_knockback modifier add jk2:attack_knockback 1 add_value
+execute as @a[team=monitor] run attribute @s attack_knockback modifier add jk2:attack_knockback 1 add_value
+execute as @a[team=survivor] run attribute @s attack_knockback modifier remove jk2:attack_knockback
 
 tag @e[type=armor_stand,tag=box] remove box
 tellraw @a[team=!monitor] ["◎ 初始電箱在", {"color":"gold","selector": "@e[type=armor_stand,tag=box_default]"}]

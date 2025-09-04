@@ -6,4 +6,4 @@ scoreboard players operation @n[tag=contain] contain_temperature = @s contain_te
 scoreboard players operation @n[tag=contain] contain_food = @s contain_food
 scoreboard players operation @n[tag=contain] contain_health = @s contain_health
 
-function contain:value/all
+function contain:update_text/all
