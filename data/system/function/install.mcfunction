@@ -432,15 +432,6 @@ execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~
 	"●血量低\n",\
 	"●死後會化為狼人\n",\
 	"●狼人攻擊力提高\n\n",\
-	{"translate":"entity.minecraft.strider", bold: true},"\n",\
-	"等級：",{"text":"低\n","color":"green"},\
-	"特點：\n",\
-	"●移動速度快\n",\
-	"●靠近的玩家會中毒\n",\
-	"●死後會放火"\
-],\
-[\
-	{text: "", font: "uniform"},\
 	{"translate":"entity.minecraft.enderman", bold: true},"\n",\
 	"等級：",{"text":"低\n","color":"green"},\
 	"特點：\n",\
@@ -485,7 +476,13 @@ execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~
 	"特點：\n",\
 	"●會爬墻\n",\
 	"●受傷會召喚洞穴蜘蛛\n",\
-	"●被打到會被蜘蛛網纏著"\
+	"●被打到會被蜘蛛網纏著",\
+	{"translate":"entity.minecraft.strider", bold: true},"\n",\
+	"等級：",{"text":"中\n","color":"gold"},\
+	"特點：\n",\
+	"●移動速度快\n",\
+	"●靠近的玩家會中毒\n",\
+	"●死後會放火"\
 ],\
 [\
 	{text: "", font: "uniform"},\
