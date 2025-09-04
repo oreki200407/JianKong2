@@ -65,6 +65,12 @@ scoreboard players set 蜘蛛眼 info_monitor 0
 scoreboard players set 腐肉 info_monitor 0
 scoreboard players set 火藥 info_monitor 0
 scoreboard players set 電力 info_monitor 0
+scoreboard players display name 紙 info_monitor {translate: "item.minecraft.paper"}
+scoreboard players display name 骨頭 info_monitor {translate: "item.minecraft.bone"}
+scoreboard players display name 蜘蛛眼 info_monitor {translate: "item.minecraft.spider_eye"}
+scoreboard players display name 腐肉 info_monitor {translate: "item.minecraft.rotten_flesh"}
+scoreboard players display name 火藥 info_monitor {translate: "item.minecraft.gunpowder"}
+scoreboard players reset * contain_second
 
 #電箱
 execute at @e[type=armor_stand,tag=box_point] run fill ~ ~ ~ ~ ~1 ~ air

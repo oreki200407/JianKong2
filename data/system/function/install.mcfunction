@@ -128,6 +128,7 @@ scoreboard objectives add poison_point dummy
 scoreboard objectives add contain_temperature dummy
 scoreboard objectives add contain_health dummy
 scoreboard objectives add contain_food dummy
+scoreboard objectives add contain_second dummy
 
 #發電機
 scoreboard objectives add power dummy

@@ -101,6 +101,7 @@ scoreboard objectives remove poison_point
 scoreboard objectives remove contain_temperature
 scoreboard objectives remove contain_health
 scoreboard objectives remove contain_food
+scoreboard objectives remove contain_second
 
 #發電機
 scoreboard objectives remove power
