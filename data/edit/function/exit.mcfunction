@@ -209,7 +209,28 @@ summon item_display ~-4 ~-1.75 ~ \
 	Tags:["lobby_setting"]\
 }
 
-summon item_display ~-2 ~-.75 ~ \
+summon text_display ~-1.9 ~-.6 ~ \
+{\
+	text: {text: "               監視器: ", color: "yellow", bold: true, extra: [{score: {name: "監視器", objective: "lobby"}}]},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0.1f], scale: [1f, 1f, 1f]},\
+	background: 0, line_width: 100, alignment: "right", Rotation: [180.0f, 0.0f], Tags: ["lobby_setting", "camera_setting"]\
+}
+summon item_display ~-3.25 ~-.75 ~ \
+{\
+	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
+	Tags: ["lobby_setting"],\
+	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count-"]}]\
+}
+summon item_display ~-4 ~-.75 ~ \
+{\
+	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},\
+	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
+	Tags: ["lobby_setting"],\
+	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count+"]}]\
+}
+
+summon item_display ~-.25 ~-.75 ~ \
 {\
 	Passengers:\
 	[\
@@ -224,7 +245,22 @@ summon item_display ~-2 ~-.75 ~ \
 	Tags:["lobby_setting"]\
 }
 
-summon item_display ~-4 ~-.75 ~ \
+summon item_display ~.25 ~-.75 ~ \
+{\
+	Passengers:\
+	[\
+		{\
+			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.1f],scale:[0.75f,0.75f,0.75f]},\
+			text:{"bold":true,"color":"blue","text":"進入教學"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","enter_tutorial"]\
+		}\
+	],\
+	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
+	item:{id:"player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyNzEwNTI3MTllZjY0MDc5ZWU4YzE0OTg5NTEyMzhhNzRkYWM0YzI3Yjk1NjQwZGI2ZmJkZGMyZDZiNWI2ZSJ9fX0="]}}}},\
+	Tags:["lobby_setting"]\
+}
+
+summon item_display ~-4 ~.25 ~ \
 {\
 	Passengers:\
 	[\
@@ -254,27 +290,4 @@ summon item_display ~ ~-3.2 ~-0.4 \
 	transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.49f,0f],scale:[0.95f,0.95f,0.95f]},\
 	item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE4OTc4Y2NiZjU3NmY0NDZlMjFjNTFkM2U4MGZjN2Y4NTY2ZWI3MjY1Y2M0M2M0YWQ3MWNmYjc4YzE2NTI1NyJ9fX0="]}}}},\
 	Tags:["lobby_setting"]\
-}
-
-
-#TODO: 放到合適的位置
-summon text_display ~ ~ ~ \
-{\
-	text: {text: "               監視器: ", color: "yellow", bold: true, extra: [{score: {name: "監視器", objective: "lobby"}}]},\
-	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0.1f], scale: [1f, 1f, 1f]},\
-	background: 0, line_width: 100, alignment: "right", Rotation: [180.0f, 0.0f], Tags: ["lobby_setting", "camera_setting"]\
-}
-summon item_display ~ ~ ~ \
-{\
-	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgzNDhhYTc3ZjlmYjJiOTFlZWY2NjJiNWM4MWI1Y2EzMzVkZGVlMWI5MDVmM2E4YjkyMDk1ZDBhMWYxNDEifX19"]}}}},\
-	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
-	Tags: ["lobby_setting"],\
-	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count-"]}]\
-}
-summon item_display ~ ~ ~ \
-{\
-	item: {id: "player_head", components: {profile: {properties: {textures: ["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiMDNiNzFkM2Y4NjIyMGVmMTIyZjk4MzFhNzI2ZWIyYjI4MzMxOWM3YjYyZTdkY2QyZDY0ZDk2ODIifX19"]}}}},\
-	transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0.49f, 0f], scale: [0.95f, 0.95f, 0.95f]},\
-	Tags: ["lobby_setting"],\
-	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count+"]}]\
 }
