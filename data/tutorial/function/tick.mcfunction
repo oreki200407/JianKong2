@@ -1,3 +1,6 @@
+#資訊
+execute as @e[type=interaction,tag=tutorial_marker] if data entity @s interaction run function tutorial:info/interaction
+
 #救援
 execute as @e[type=interaction,tag=tutorial_player_interaction] at @s if data entity @s attack run function tutorial:save/death
 execute as @a[tag=tutorial,predicate=game:flag/sneak] at @s if entity @e[type=item_display, tag=tutorial_tomb, distance=..1.5] run function tutorial:save/saving
@@ -15,10 +18,7 @@ execute as @e[tag=tutorial_trapped] run function tutorial:bear_trap/trapped
 execute as @a[tag=tutorial] at @s run function tutorial:box/use/root
 execute as @a[tag=tutorial_fixing_box] run function tutorial:box/fix/fixing
 
-#升級
-execute as @a[tag=tutorial] at @s run function upgrade:root
-
 #發電機
-execute if entity @s[tag=tutorial_power1,tag=!puzzle_game] run function power:puzzle_game/reset/root
-execute if entity @s[tag=tutorial_power2,tag=!netwalk_game] run function power:netwalk_game/reset/root
-execute if entity @s[tag=tutorial_power3,tag=!light_game] run function power:light_game/reset/root
+execute as @e[tag=tutorial_power1,tag=!puzzle_game] at @s run function power:puzzle_game/reset/root
+execute as @e[tag=tutorial_power2,tag=!netwalk_game] at @s run function power:netwalk_game/reset/root
+execute as @e[tag=tutorial_power3,tag=!light_game] at @s run function power:light_game/reset/root
