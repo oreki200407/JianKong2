@@ -10,7 +10,7 @@ scoreboard players reset @a[tag=tutorial, predicate=!game:flag/sneak, scores={re
 execute as @a[tag=tutorial_unlock] run function tutorial:unlock/unlocking
 
 #捕獸夾
-execute at @e[type=marker,tag=tutorial_bear_trap_point,limit=1] unless entity @a[distance=..1] unless entity @e[type=item_display,tag=tutorial_bear_trap] run summon item_display ~ ~.375 ~ {item: {id: "tripwire_hook", components: {"custom_model_data": {strings: ["bear_trap"]}}}, transformation: {scale: [0.75f, 0.75f, 0.75f], left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}, Tags: ["tutorial_bear_trap"]}
+execute at @e[type=marker,tag=tutorial_bear_trap_point,limit=1] unless entity @a[distance=..1.5] unless entity @e[type=item_display,tag=tutorial_bear_trap] run summon item_display ~ ~.375 ~ {item: {id: "tripwire_hook", components: {"custom_model_data": {strings: ["bear_trap"]}}}, transformation: {scale: [0.75f, 0.75f, 0.75f], left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}, Tags: ["tutorial_bear_trap"]}
 execute as @e[type=item_display, tag=tutorial_bear_trap] run function tutorial:bear_trap/trap_working
 execute as @e[tag=tutorial_trapped] run function tutorial:bear_trap/trapped
 

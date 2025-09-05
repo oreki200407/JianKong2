@@ -12,6 +12,8 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative","color":"gold"},"來操作"]
 scoreboard objectives setdisplay sidebar edit
 
+execute as @a[tag=tutorial] run function tutorial:exit
+
 scoreboard players set #mode system 1
 execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:1b,CustomNameVisible:1b,Invisible:0b}
 

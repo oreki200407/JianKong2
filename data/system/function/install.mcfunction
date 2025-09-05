@@ -227,9 +227,10 @@ data modify storage jk2:data root.morph.cooldown set value \
 	evoker:   [I; 0, 140, 220],\
 	blaze:    [I; 0, 120, 280],\
 	golem:    [I; 0, 140, 240],\
+	warden:   [I; 0, 280, 200],\
 	phantom:  [I; 0, 200, 200]\
 }
-#warden:   [I; 0, 280, 200]
+
 
 #方向常數 上右下左
 data modify storage jk2:data root.monitor.netwalk_game.directions_vec2arr set value \
