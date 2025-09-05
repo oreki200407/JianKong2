@@ -218,16 +218,16 @@ bossbar set jk2:prepare max 180
 data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem", "phantom"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
-	zombie: {1: 120, 2: 280},\
-	skeleton: {1: 60, 2: 200},\
-	spider: {1: 120, 2: 200},\
-	creeper: {1: 200, 2: 260},\
-	enderman: {1: 120, 2: 200},\
-	evoker: {1: 140, 2: 220},\
-	blaze: {1: 120, 2: 280},\
-	golem: {1: 140, 2: 240},\
-	phantom: {1: 200, 2: 200},\
-	warden: {1: 280, 2: 200}\
+	zombie:   [I; 0, 120, 280],\
+	skeleton: [I; 0,  60, 200],\
+	spider:   [I; 0, 120, 200],\
+	creeper:  [I; 0, 200, 260],\
+	enderman: [I; 0, 120, 200],\
+	evoker:   [I; 0, 140, 220],\
+	blaze:    [I; 0, 120, 280],\
+	golem:    [I; 0, 140, 240],\
+	phantom:  [I; 0, 200, 200],\
+	warden:   [I; 0, 280, 200]\
 }
 
 #方向常數 上右下左

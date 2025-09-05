@@ -15,8 +15,5 @@
 $function morph:$(monster)/skill/give_1
 $function morph:$(monster)/skill/give_2
 
-#複製技能冷卻數值到頭顱
-$item modify entity @s armor.head {function: "copy_custom_data", source: {type: "storage", source: "jk2:data"}, ops: [{op: "replace", source: "root.morph.cooldown.$(monster)", target: "cooldown"}]}
-
 #開始
 $function morph:$(monster)/start

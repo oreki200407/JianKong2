@@ -10,7 +10,7 @@
 ###################################################
 
 #開始冷卻
-$execute store result score @s morph_skill_$(id) run data get entity @s equipment.head.components."minecraft:custom_data".cooldown.$(id)
+$execute store result score @s morph_skill_$(id) run data get storage jk2:data root.morph.cooldown.$(monster)[$(id)]
 
 #清除進度
 $advancement revoke @s only morph:use_skill_$(id)
