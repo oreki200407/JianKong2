@@ -215,7 +215,7 @@ bossbar set jk2:time max 1500
 bossbar set jk2:prepare max 180
 
 #可供變形的怪物 以及技能冷卻(單位是tick)
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem", "warden"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem", "phantom"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie: {1: 120, 2: 280},\
@@ -226,6 +226,7 @@ data modify storage jk2:data root.morph.cooldown set value \
 	evoker: {1: 140, 2: 220},\
 	blaze: {1: 120, 2: 280},\
 	golem: {1: 140, 2: 240},\
+	phantom: {1: 200, 2: 200},\
 	warden: {1: 280, 2: 200}\
 }
 

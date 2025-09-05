@@ -13,9 +13,8 @@
 $function morph:$(monster)/tick
 
 #技能冷卻
-scoreboard players remove @s[scores={morph_skill_1=1..}] morph_skill_1 1
+scoreboard players remove @s[scores={morph_skill_1=0..}] morph_skill_1 1
 $execute if score @s morph_skill_1 matches 0 run function morph:$(monster)/skill/give_1
-scoreboard players reset @s[scores={morph_skill_1=0}] morph_skill_1
-scoreboard players remove @s[scores={morph_skill_2=1..}] morph_skill_2 1
+
+scoreboard players remove @s[scores={morph_skill_2=0..}] morph_skill_2 1
 $execute if score @s morph_skill_2 matches 0 run function morph:$(monster)/skill/give_2
-scoreboard players reset @s[scores={morph_skill_2=0}] morph_skill_2
