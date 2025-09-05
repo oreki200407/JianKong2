@@ -75,7 +75,7 @@ execute unless entity @e[type=zombie, tag=contain_zombie] as @e[type=marker, tag
 execute unless entity @e[tag=contain_villager] as @e[type=marker, tag=contain_villager_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=cave_spider, tag=contain_spider] as @e[type=marker, tag=contain_spider_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
 execute unless entity @e[type=skeleton, tag=contain_skeleton] as @e[type=marker, tag=contain_skeleton_marker] at @s unless block ~-2 ~-1 ~ oak_wall_sign run function contain:death
-execute at @e[type=marker, tag=contain_marker] run function contain:escape/contain_marker
+execute at @e[type=marker, tag=contain_marker] positioned ~-.4 ~ ~-.4 run function contain:escape/contain_marker
 
 #機關
 execute as @e[type=armor_stand, tag=poison,limit=1] run function control:poison/poisoning with entity @s data

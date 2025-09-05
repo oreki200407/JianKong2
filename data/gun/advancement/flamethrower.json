@@ -12,7 +12,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:diamond_axe",
+							"items": "minecraft:blaze_rod",
 							"components": {
 								"minecraft:item_name": "噴火槍"
 							}

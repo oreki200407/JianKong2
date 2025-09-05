@@ -5,9 +5,9 @@ tellraw @s ["——————————\n",{"text":"電箱",color:gold},": "
 clear @s written_book[written_book_content~{title:"查看場地"}]
 give @s written_book[written_book_content={pages:\
 [[\
-	"",{"text":"【所有玩家傳送至重生點】",click_event:{"action":"run_command","command":"/tp @a @e[type=armor_stand,tag=spawn_survivor,limit=1]"}},{"text":"\n"},\
+	"",{"text":"【自己傳送至重生點】",click_event:{"action":"run_command","command":"/tp @s @e[type=armor_stand,tag=spawn_survivor,limit=1]"}},{"text":"\n"},{"text":"【所有玩家傳送至重生點】",click_event:{"action":"run_command","command":"/tp @a @e[type=armor_stand,tag=spawn_survivor,limit=1]"}},{"text":"\n\n"},\
 	{"text":"【查看重生點位置】",click_event:{"action":"run_command","command":"/function system:check/spawn"}},{"text":"\n"},\
 	{"text":"【查看電箱位置】",click_event:{"action":"run_command","command":"/function system:check/box"}},{"text":"\n"},\
-	{"text":"【查看毒氣位置】",click_event:{"action":"run_command","command":"/function system:check/poison"}},{"text":"\n"},\
-	{"text":"【所有玩家傳送至大廳】",click_event:{"action":"run_command","command":"/tp @a @e[type=marker,tag=lobby_spawn,limit=1]"}},{"text":"\n"}\
+	{"text":"【查看毒氣位置】",click_event:{"action":"run_command","command":"/function system:check/poison"}},{"text":"\n\n"},\
+	{"text":"【自己傳送至大廳】",click_event:{"action":"run_command","command":"/tp @s @e[type=marker,tag=lobby_spawn,limit=1]"}},{"text":"\n"},{"text":"【所有玩家傳送至大廳】",click_event:{"action":"run_command","command":"/tp @a @e[type=marker,tag=lobby_spawn,limit=1]"}}\
 ]],title:"查看場地",author:"監控局局長"}]

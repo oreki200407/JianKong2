@@ -1,6 +1,6 @@
 #清怪
-execute unless entity @s[level=100..] run return run function box:use/fail
-xp add @s -100 levels
+execute unless entity @s[level=120..] run return run function box:use/fail
+xp add @s -120 levels
 
 execute at @a[team=survivor] as @e[team=monitor, distance=..10] run function box:use/success/clear/run
 

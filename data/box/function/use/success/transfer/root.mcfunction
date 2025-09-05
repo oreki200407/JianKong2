@@ -1,5 +1,5 @@
-execute unless entity @s[level=100..] run return run function box:use/fail
-xp add @s -100 levels
+execute unless entity @s[level=120..] run return run function box:use/fail
+xp add @s -120 levels
 
 execute at @e[type=armor_stand, tag=box] as @e[type=!player, team=monitor, distance=..15] run function box:use/success/transfer/radius
 

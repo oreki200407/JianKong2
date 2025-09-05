@@ -1,6 +1,6 @@
 execute store success score #has_magazine reload run clear @s nether_brick[item_name="手槍彈夾"] 0
 execute if score #has_magazine reload matches 0 run return run function gun:no_magazine
-execute unless items entity @s weapon golden_axe[item_name="手槍"] run return run function gun:reloaded
+execute unless items entity @s weapon breeze_rod[item_name="手槍"] run return run function gun:reloaded
 
 execute unless score @s reload matches 2 run playsound block.piston.contract ambient @s ~ ~ ~ 1 2
 scoreboard players set @s reload 2

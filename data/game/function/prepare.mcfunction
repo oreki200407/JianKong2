@@ -52,8 +52,6 @@ give @a[team=monitor] black_dye[custom_model_data={strings:["camera"]},item_name
 execute as @e[type=armor_stand,tag=summon_pick,scores={summon_number=1..7}] run function summon:pick/setting
 
 #重置收容
-kill @e[tag=contain]
-kill @e[tag=contain_escape]
 execute as @e[type=marker,tag=contain_marker] at @s run function contain:summon
 scoreboard players set #room contain_temperature 20
 scoreboard players set @e[tag=contain] contain_health 20

@@ -1,6 +1,6 @@
 #雙倍血
-execute unless entity @s[level=50..] run return run function box:use/fail
-xp add @s -50 levels
+execute unless entity @s[level=80..] run return run function box:use/fail
+xp add @s -80 levels
 
 effect give @a[team=survivor] health_boost 120 4
 effect give @a[team=survivor] regeneration 1 255

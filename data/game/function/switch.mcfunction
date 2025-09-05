@@ -27,11 +27,6 @@ scoreboard players reset @a damage
 execute as @e[type=!player, team=monitor, tag=monster] run data merge entity @s {DeathLootTable:"summon:empty"}
 kill @e[type=experience_orb]
 kill @e[type=area_effect_cloud, tag=power_time]
-kill @e[tag=box_transfer]
-kill @e[tag=monster_ride]
-kill @e[tag=monster_being_ride]
-kill @e[type=!player, team=monitor, tag=monster]
-kill @e[type=block_display, tag=morph_grass_block]
 kill @e[type=item_display, tag=bear_trap]
 tag @e[type=armor_stand, tag=box_off] remove box_off
 execute as @e[type=marker,tag=door] at @s run function gadget:unlock/door with entity @s data
@@ -46,5 +41,7 @@ execute as @e[type=item] if items entity @s contents #game:loot run kill
 #重置怪物
 scoreboard players reset #summon_pick_release summon_monster
 execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
+scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_cooldown=1..}] summon_cooldown
+scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] summon_shuffle
 
 schedule function game:prepare 3s

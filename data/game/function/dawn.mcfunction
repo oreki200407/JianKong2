@@ -48,6 +48,14 @@ effect give @a[team=!spec] resistance 3 4 true
 effect give @a[team=!spec] invisibility 3 0 true
 effect give @a[team=!spec] regeneration 3 100 true
 
+kill @e[tag=contain]
+kill @e[tag=contain_escape]
+kill @e[tag=box_transfer]
+kill @e[tag=monster_ride]
+kill @e[tag=monster_being_ride]
+kill @e[type=!player, team=monitor, tag=monster]
+kill @e[type=block_display, tag=morph_grass_block]
+
 #分數
 execute as @a[team=survivor] run function game:end/damage
 

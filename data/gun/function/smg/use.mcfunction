@@ -1,6 +1,6 @@
 advancement revoke @s only gun:smg
 
-execute if items entity @s weapon golden_axe[damage=32] run return run function gun:smg/reloading
+execute if items entity @s weapon breeze_rod[damage=32] run return run function gun:smg/reloading
 item modify entity @s weapon {"function": "set_damage", "add": true, damage: -0.0333}
 tag @s[tag=!shooter] add shooter
 rotate @s ~ ~-.6

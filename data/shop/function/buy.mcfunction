@@ -5,7 +5,7 @@ execute unless score @s money >= #price money run return run function shop:fail
 
 #不能雙槍
 scoreboard players reset #gun_check shop
-execute store success score #has_gun shop run clear @s golden_axe[custom_data~{type: "shop"}] 0
+execute store success score #has_gun shop run clear @s breeze_rod[custom_data~{type: "shop"}] 0
 execute if score #has_gun shop matches 1 run function shop:gun_check
 execute if score #gun_check shop matches 1 run return fail
 

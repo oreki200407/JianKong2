@@ -49,7 +49,7 @@ execute as @e[type=marker, tag=flame] at @s run function gun:flamethrower/flame/
 #被火焰槍擊中的生物
 execute as @e[tag=monster, team=monitor, scores={flamethrower=1..}] run function gun:flamethrower/flame/burning
 execute as @a[team=survivor, scores={reload=1..}] run function gun:reloading
-execute as @a[team=survivor] at @s if items entity @s weapon.offhand golden_axe run function gun:manual
+execute as @a[team=survivor] at @s if items entity @s weapon.offhand breeze_rod run function gun:manual
 scoreboard players remove @a[scores={gun_cooldown=1..}] gun_cooldown 1
 
 #-----------------------監控者-----------------------

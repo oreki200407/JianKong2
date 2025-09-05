@@ -9,7 +9,7 @@
 					{
 						"mainhand":
 						{
-							"items": "minecraft:golden_axe",
+							"items": "minecraft:breeze_rod",
 							"components": {
 								"minecraft:item_name": "散彈槍"
 							}
