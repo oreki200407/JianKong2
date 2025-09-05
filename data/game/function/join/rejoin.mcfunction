@@ -9,5 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-function game:join/restore_bossbar
+execute if score #mode system matches 3..4 run function game:join/restore_bossbar
+title @s times 0 40 0
 scoreboard players reset @s leave

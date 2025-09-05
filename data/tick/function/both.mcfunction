@@ -12,7 +12,7 @@
 #中途加入
 execute as @a[team=] run function game:join/spectate
 #中途離開回來
-execute as @a[scores={leave=1}] run function game:join/rejoin
+execute as @a[scores={leave=1..}] run function game:join/rejoin
 
 #-----------------------道具-----------------------
 clear @a[team=survivor] glass_bottle

@@ -1,3 +1,5 @@
+execute as @a[scores={leave=1..}] run function game:join/rejoin
+
 execute store result score 遊戲人數 lobby if entity @a[team=!spec]
 execute store result score 紅隊人數 lobby if entity @a[team=survivor]
 execute store result score 藍隊人數 lobby if entity @a[team=monitor]

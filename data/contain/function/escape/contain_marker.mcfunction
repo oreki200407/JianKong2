@@ -9,5 +9,5 @@
 # Author : oreki20
 ###################################################
 
-execute as @a[team=monitor, distance=..0.5] run function contain:escape/player
-execute as @e[tag=contain_escape, distance=..0.5] run function contain:escape/check
+execute positioned ~-.4 ~ ~-.4 as @a[team=monitor, dx=0.8, dy=1, dz=0.8] run function contain:escape/player
+execute positioned ~-.4 ~ ~-.4 as @e[tag=contain_escape, dx=0.8, dy=1, dz=0.8] run function contain:escape/check

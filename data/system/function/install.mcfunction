@@ -198,6 +198,7 @@ scoreboard players set #100 constant 100
 scoreboard players set #power1 power 0
 scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
+scoreboard players set #box fix_progress 0
 
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"
@@ -226,9 +227,9 @@ data modify storage jk2:data root.morph.cooldown set value \
 	evoker:   [I; 0, 140, 220],\
 	blaze:    [I; 0, 120, 280],\
 	golem:    [I; 0, 140, 240],\
-	phantom:  [I; 0, 200, 200],\
-	warden:   [I; 0, 280, 200]\
+	phantom:  [I; 0, 200, 200]\
 }
+#warden:   [I; 0, 280, 200]
 
 #方向常數 上右下左
 data modify storage jk2:data root.monitor.netwalk_game.directions_vec2arr set value \
@@ -481,7 +482,7 @@ execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~
 	"特點：\n",\
 	"●會爬墻\n",\
 	"●受傷會召喚洞穴蜘蛛\n",\
-	"●被打到會被蜘蛛網纏著",\
+	"●被打到會被蜘蛛網纏著\n\n",\
 	{"translate":"entity.minecraft.strider", bold: true},"\n",\
 	"等級：",{"text":"中\n","color":"gold"},\
 	"特點：\n",\

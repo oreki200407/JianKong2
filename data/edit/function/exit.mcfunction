@@ -230,7 +230,7 @@ summon item_display ~-4 ~-.75 ~ \
 	Passengers: [{id: "interaction", width: 0.5f, height: 0.5f, response: true, Tags: ["lobby_setting", "camera_count+"]}]\
 }
 
-summon item_display ~-.25 ~-.75 ~ \
+summon item_display ~-.5 ~-.75 ~ \
 {\
 	Passengers:\
 	[\
@@ -245,7 +245,7 @@ summon item_display ~-.25 ~-.75 ~ \
 	Tags:["lobby_setting"]\
 }
 
-summon item_display ~.25 ~-.75 ~ \
+summon item_display ~.5 ~-.75 ~ \
 {\
 	Passengers:\
 	[\
