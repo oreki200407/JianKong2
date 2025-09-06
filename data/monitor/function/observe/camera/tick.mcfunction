@@ -16,15 +16,19 @@ execute store result score #using_me camera if entity @a[tag=using_camera, predi
 #沒有人就漸漸冷卻並結束
 execute if score #using_me camera matches 0 run return run scoreboard players remove @s[scores={heat=1..}] heat 1
 
-title @a[tag=using_camera, predicate=monitor:is_using_me] actionbar [{text: "監視器熱度：", color: "gold", bold: true}, {score: {name: "@s", objective: "heat"}}, "     投放次數：", {score: {name: "#trap", objective: "trap_cooldown"}}]
+execute if score @s camera_level matches 3 run return run title @a[tag=using_camera, predicate=monitor:is_using_me] actionbar [{text: "投放次數：", color: "gold", bold: true}, {score: {name: "#trap", objective: "trap_cooldown"}}]
 
 #在增加前先儲存原本的數值
 scoreboard players operation #previous heat = @s heat
 #增加熱度
 scoreboard players operation @s heat += #using_me camera
-#檢查熱度
-function monitor:observe/camera/level/check_heat
 
 #消耗電力
 scoreboard players operation @s cost_time += #using_me camera
-function monitor:observe/camera/level/check_electricity
+
+#檢查熱度和電力
+execute if score @s camera_level matches 1 run return run function monitor:observe/camera/level/one/check
+function monitor:observe/camera/level/two/check_heat
+function monitor:observe/camera/level/two/check_electricity
+
+title @a[tag=using_camera, predicate=monitor:is_using_me] actionbar [{text: "監視器熱度：", color: "gold", bold: true}, {score: {name: "@s", objective: "heat"}}, "     投放次數：", {score: {name: "#trap", objective: "trap_cooldown"}}]

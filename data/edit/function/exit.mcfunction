@@ -37,7 +37,7 @@ summon item_display ~4 ~-2.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"red","text":"加入紅隊"}\
 		},\
 		{\
@@ -54,7 +54,7 @@ summon item_display ~3 ~-2.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"gray","text":"加入旁觀者"}\
 		},\
 		{\
@@ -71,7 +71,7 @@ summon item_display ~2 ~-2.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"blue","text":"加入藍隊"}\
 		},\
 		{\
@@ -88,7 +88,7 @@ summon item_display ~2 ~-1.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"gold","text":"隨機分隊"}\
 		},\
 		{\
@@ -105,7 +105,7 @@ summon item_display ~4 ~-1.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"white","text":"離開隊伍"}\
 		},\
 		{\
@@ -121,7 +121,7 @@ summon item_display ~4 ~-.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"green","text":"簡單模式"}\
 		},\
 		{\
@@ -138,7 +138,7 @@ summon item_display ~3 ~-.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"gold","text":"普通模式"}\
 		},\
 		{\
@@ -155,7 +155,7 @@ summon item_display ~2 ~-.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"red","text":"困難模式"}\
 		},\
 		{\
@@ -236,7 +236,7 @@ summon item_display ~-.5 ~-.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"aqua","text":"查看場地"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","check_book"]\
 		}\
 	],\
@@ -251,7 +251,7 @@ summon item_display ~.5 ~-.75 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"blue","text":"進入教學"}},{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","enter_tutorial"]\
 		}\
 	],\
@@ -266,7 +266,7 @@ summon item_display ~-4 ~.25 ~ \
 	[\
 		{\
 			id:"text_display",Tags:["lobby_setting"],Rotation:[180.0f,0.0f],\
-			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.4f],scale:[0.75f,0.75f,0.75f]},\
+			transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0.25f],scale:[0.75f,0.75f,0.75f]},\
 			text:{"bold":true,"color":"dark_purple","text":"進入編輯模式"}\
 		},\
 		{id:"interaction",width:0.5f,height:0.5f,response:1b,Tags:["lobby_setting","edit_enter"]}\
