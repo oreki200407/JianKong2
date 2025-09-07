@@ -9,6 +9,8 @@
 # Author : Alex_Cai
 ###################################################
 
+#@e[scores={camera=1}] 有可能是玩家或藥水雲
+
 execute if score 監視器 lobby matches 0 run return fail
 
 execute unless entity @e[scores={camera=1}] run return run scoreboard players set @s camera 1

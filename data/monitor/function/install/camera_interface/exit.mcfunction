@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-gamemode adventure @s
+gamemode adventure
 tp @s @e[type=marker, tag=lobby, limit=1]
 scoreboard players reset @s camera
 playsound ui.button.click ambient
