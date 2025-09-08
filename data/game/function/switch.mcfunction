@@ -8,8 +8,6 @@ team join monitor @a[tag=monitor_switch]
 tag @a[tag=monitor_switch] remove monitor_switch
 team modify survivor color blue
 team modify monitor color red
-scoreboard objectives setdisplay sidebar.team.red info_monitor
-scoreboard objectives setdisplay sidebar.team.blue money
 
 clear @a
 recipe take @a *
@@ -22,6 +20,9 @@ scoreboard players reset @a fracture
 scoreboard players reset @a money
 scoreboard players reset @a kill
 scoreboard players reset @a damage
+scoreboard players reset * info_monitor
+scoreboard objectives setdisplay sidebar.team.red info_monitor
+scoreboard objectives setdisplay sidebar.team.blue money
 
 #復原場地
 execute as @e[type=!player, team=monitor, tag=monster] run data merge entity @s {DeathLootTable:"summon:empty"}
