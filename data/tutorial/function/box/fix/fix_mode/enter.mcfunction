@@ -9,6 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
+scoreboard players reset #box fix_progress
 setblock ~ ~ ~ dispenser[facing=down]{CustomName: "電箱", lock: {items: "air", count: 1}} destroy
 function tutorial:box/use/kill_item
 tag @s add tutorial_fixing_box

@@ -18,7 +18,7 @@ scoreboard players add @s hammer 1
 execute unless score @s hammer matches 60 run return run function gadget:hammer/process/root
 
 #三秒到了
-title @s actionbar {text: "修理中：▬▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}
+title @s actionbar {text: "加固中：▬▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}
 scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 $summon marker $(put_sign) {Tags: ["tutorial_plank","tutorial_marker"]}

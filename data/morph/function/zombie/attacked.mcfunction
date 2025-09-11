@@ -9,5 +9,5 @@
 # Author : oreki20, Alex_Cai
 ###################################################
 
-damage @a[tag=victim, limit=1] 3 dry_out by @s
+damage @a[tag=victim, limit=1] 5 player_attack by @s
 tag @s remove zombie_skill_1
