@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-tp @s ~ ~0.5 ~
-effect give @s levitation 1 12 true
+scoreboard players set #phantom morph_skill_1 15
+attribute @s gravity modifier add jk2:phantom -0.16 add_value
 item modify entity @s armor.chest {function: "set_item", item: "elytra"}

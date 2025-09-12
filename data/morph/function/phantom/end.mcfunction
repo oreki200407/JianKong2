@@ -10,4 +10,5 @@
 ###################################################
 
 attribute @s scale modifier remove jk2:phantom
+attribute @s gravity modifier remove jk2:phantom
 effect clear @s speed
