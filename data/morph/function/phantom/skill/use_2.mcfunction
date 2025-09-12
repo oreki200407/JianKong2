@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-effect give @s speed 8
+effect give @s speed 6 2

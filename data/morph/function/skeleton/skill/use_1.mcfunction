@@ -8,3 +8,5 @@
 # Loop   : 否
 # Author : Alex_Cai
 ###################################################
+
+advancement revoke @s only morph:shot_crossbow

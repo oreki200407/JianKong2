@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-tp @s ~ ~0.1 ~
+tp @s ~ ~0.5 ~
 effect give @s levitation 1 12 true
 item modify entity @s armor.chest {function: "set_item", item: "elytra"}
