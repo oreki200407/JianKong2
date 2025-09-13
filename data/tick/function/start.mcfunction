@@ -30,7 +30,7 @@ execute as @e[tag=box_transfer] at @s run function monster:effect_transfer
 #-----------------------道具-----------------------
 #經驗球
 kill @e[type=experience_orb,tag=!xp]
-execute as @e[type=item] if items entity @s contents slime_ball[item_name="經驗球"] at @s run function monster:xp/orb
+execute as @e[type=item] if items entity @s contents slime_ball[item_name="經驗球"] at @s run function monster:xp/orb/root
 execute as @a[team=survivor] run function monster:xp/item
 execute as @a[team=survivor,scores={xp_kill=1..}] run function monster:xp/kill
 

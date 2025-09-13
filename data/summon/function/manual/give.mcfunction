@@ -1,1 +1,1 @@
-$give @s player_head[item_name=$(name),lore=$(lore),profile=$(profile), consumable={consume_seconds: 99999}, custom_model_data={strings:["manual"]}] $(count)
+$give @s player_head[item_name=$(name),lore=$(lore),profile=$(profile), consumable={consume_seconds: 99999}, custom_model_data={strings:["manual"]}, !equippable] $(count)
