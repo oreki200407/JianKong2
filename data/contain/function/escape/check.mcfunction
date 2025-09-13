@@ -20,7 +20,7 @@ tp @e[tag=contain_escape, distance=..1.5] ~-1.5 ~ ~
 
 tp @s ~ ~-999 ~
 fill ~-1 ~ ~ ~-1 ~1 ~ glass_pane
-playsound block.piston.contract ambient @a[team=monitor]
+playsound block.piston.contract master @a[team=monitor]
 
 execute as @n[type=marker,tag=contain_marker, distance=..0.01] at @s run function contain:escape/success
 

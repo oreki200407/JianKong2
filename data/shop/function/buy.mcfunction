@@ -15,4 +15,4 @@ data remove storage jk2:data root.survivor.shop.components."minecraft:lore"[0]
 function shop:give with storage jk2:data root.survivor.shop
 
 scoreboard players operation @s money -= #price money
-playsound entity.player.attack.sweep ambient @s ~ ~ ~ 1 2
+playsound entity.player.attack.sweep master @s ~ ~ ~ 1 2

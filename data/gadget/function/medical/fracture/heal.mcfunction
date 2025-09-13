@@ -17,7 +17,7 @@ scoreboard players set @s medical_cooldown 10
 execute if entity @s[tag=!fractured] run return run tellraw @s ["◎ 使用", {text: "失敗", color: "gold"}, ", 你沒有", {text: "骨折", color: "gold"}]
 
 #治好
-playsound entity.villager.work_fletcher ambient
+playsound entity.villager.work_fletcher master
 attribute @s movement_speed modifier remove jk2:fracture
 tag @s remove fractured
 tellraw @s ["◎ 你治好了", {text: "骨折", color: "gold"}]

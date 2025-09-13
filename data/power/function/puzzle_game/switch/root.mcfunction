@@ -1,4 +1,4 @@
-playsound block.stone_button.click_on ambient @s
+playsound block.stone_button.click_on master @s
 
 data remove storage jk2:data root.monitor.puzzle_game.chest2
 data remove storage jk2:data root.monitor.puzzle_game.switch

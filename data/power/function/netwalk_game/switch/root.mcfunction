@@ -9,7 +9,7 @@
 # Author : oreki20
 ###################################################
 
-playsound entity.puffer_fish.blow_up ambient @s
+playsound entity.puffer_fish.blow_up master @s
 
 data remove storage jk2:data root.monitor.netwalk_game.chest2
 data remove storage jk2:data root.monitor.netwalk_game.switch

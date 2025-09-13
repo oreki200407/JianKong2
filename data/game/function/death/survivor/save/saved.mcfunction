@@ -11,7 +11,7 @@
 
 title @s title {text: "你已被救起", color: "green", bold: true}
 tellraw @a ["◎ ", {selector: "@s"}, " 已被救起"]
-playsound entity.experience_orb.pickup ambient @s
+playsound entity.experience_orb.pickup master @s
 effect give @s resistance 10 4
 effect give @s regeneration 10 1
 

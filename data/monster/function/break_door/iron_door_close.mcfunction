@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-playsound block.iron_door.close ambient @a
+playsound block.iron_door.close master @a
 $setblock ~ ~ ~ iron_door[half=lower, open=false, facing=$(facing), hinge=$(hinge)]

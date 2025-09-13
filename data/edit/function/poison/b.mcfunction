@@ -1,5 +1,5 @@
 setblock ~ ~ ~ air
-playsound ui.button.click ambient @p ~ ~ ~
+playsound ui.button.click master @p ~ ~ ~
 
 execute unless entity @e[type=armor_stand, tag=poison_setting] run return run function edit:poison/fail
 

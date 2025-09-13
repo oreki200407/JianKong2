@@ -2,7 +2,7 @@ execute store success score #has_magazine reload run clear @s nether_brick[item_
 execute if score #has_magazine reload matches 0 run return run function gun:no_magazine
 execute unless items entity @s weapon breeze_rod[item_name="手槍"] run return run function gun:reloaded
 
-execute unless score @s reload matches 2 run playsound block.piston.contract ambient @s ~ ~ ~ 1 2
+execute unless score @s reload matches 2 run playsound block.piston.contract master @s ~ ~ ~ 1 2
 scoreboard players set @s reload 2
 scoreboard players add @s reload_time 1
 

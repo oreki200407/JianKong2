@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute at @s run playsound block.smithing_table.use ambient @s ~ ~ ~
+execute at @s run playsound block.smithing_table.use master @s ~ ~ ~
 $$(command)
 item modify entity @s weapon gadget:remove_1

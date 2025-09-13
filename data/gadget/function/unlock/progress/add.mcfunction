@@ -11,4 +11,4 @@
 
 scoreboard players add @s unlock_progess 1
 execute store result score @s unlock_slot run random value 0..8
-execute at @s run playsound ui.button.click ambient @s ~ ~ ~ 1 2
+execute at @s run playsound ui.button.click master @s ~ ~ ~ 1 2

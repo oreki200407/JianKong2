@@ -25,7 +25,7 @@ recipe take @a *
 scoreboard players reset @a
 title @a times 0 40 0
 title @a title {"text":"監控圍城 II","color":"blue","bold":true}
-execute at @e[type=marker, tag=lobby, limit=1] run playsound block.sculk_shrieker.shriek ambient @a
+execute at @e[type=marker, tag=lobby, limit=1] run playsound block.sculk_shrieker.shriek master @a
 
 execute as @a run function game:player_setting/root
 

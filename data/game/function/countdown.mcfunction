@@ -2,7 +2,7 @@
 execute if score 倒數 system matches 1..3 run return run function game:counting
 
 scoreboard players reset 倒數 system
-execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 1 2
+execute as @a at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 2
 title @a title {"text":"夜晚來臨","bold":true,"color":"blue"}
 schedule function game:time 1s
 schedule function game:dawn 1500s

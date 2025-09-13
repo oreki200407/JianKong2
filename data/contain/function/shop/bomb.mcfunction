@@ -6,4 +6,4 @@ execute unless score 紙 info_monitor matches 3.. run return run tellraw @s ["�
 scoreboard players remove 火藥 info_monitor 3
 scoreboard players remove 紙 info_monitor 3
 give @s purple_dye[item_name="鞭炮",custom_data={"type":"trap","command":"function gadget:grenade/summon"},custom_model_data={strings:["bomb_monitor"]}, consumable={consume_seconds: 99999}] 1
-playsound block.anvil.use ambient @s ~ ~ ~ 1 2
+playsound block.anvil.use master @s ~ ~ ~ 1 2

@@ -10,5 +10,5 @@
 ###################################################
 
 tellraw @s ["◎ 監視器", {score: {name: "@s", objective: "camera"}}, "因為過熱而", {text: "爆炸", color: "gold"}]
-execute at @s run playsound entity.generic.explode ambient @s
+execute at @s run playsound entity.generic.explode master @s
 function monitor:observe/player/back/root

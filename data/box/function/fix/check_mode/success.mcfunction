@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1.5
+execute at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 1.5
 scoreboard players add #box fix_progress 1

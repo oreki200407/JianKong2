@@ -6,4 +6,4 @@ execute at @e[type=armor_stand, tag=box] as @e[type=!player, team=monitor, dista
 tellraw @a[team=monitor] ["◎ 求生者使用了電箱-", {"text": "轉移怪物", "color":"gold"},", 有怪物進入了", {"text": "監控室", "color":"gold"}]
 
 tellraw @s ["◎ 你已成功使用電箱-", {"text": "轉移怪物", "color":"gold"}]
-playsound item.trident.hit_ground ambient @s
+playsound item.trident.hit_ground master @s

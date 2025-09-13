@@ -6,7 +6,7 @@ execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dead_playe
 
 title @s title {text: "你靠自己爬起來了", color: "red", bold: true}
 tellraw @a ["◎ ", {selector: "@s"}, " 靠自己爬起來了"]
-playsound entity.experience_orb.pickup ambient @s
+playsound entity.experience_orb.pickup master @s
 effect give @s resistance 30 4
 effect give @s strength 30 0
 

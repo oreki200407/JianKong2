@@ -1,4 +1,4 @@
-playsound item.shield.break ambient @a[team=monitor]
+playsound item.shield.break master @a[team=monitor]
 tellraw @a[team=monitor] ["◎ ",{"entity":"@s","nbt":"data.number"},"號發電機", {"text": "已損壞", "color":"gold"}, ", 請盡快維修"]
 tag @s add power_damage
 

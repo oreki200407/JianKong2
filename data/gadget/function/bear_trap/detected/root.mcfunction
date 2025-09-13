@@ -13,7 +13,7 @@
 tag @s add trapped
 
 #禁止移動和跳躍
-playsound item.shield.break ambient @a ~ ~ ~ 1 0
+playsound item.shield.break master @a ~ ~ ~ 1 0
 execute if entity @s[type=player] run function gadget:bear_trap/detected/player
 execute if entity @s[type=!player] run function gadget:bear_trap/detected/mob
 

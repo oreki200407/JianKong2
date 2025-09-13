@@ -7,5 +7,5 @@ scoreboard players set @s gun_cooldown 10
 item modify entity @s weapon {"function": "set_damage", "add": true, damage: -0.09}
 tag @s[tag=!shooter] add shooter
 rotate @s ~ ~-1
-playsound entity.generic.explode ambient @a ~ ~ ~ 1 2
+playsound entity.generic.explode master @a ~ ~ ~ 1 2
 execute anchored eyes positioned ^ ^ ^1 run function gun:pistol/shoot

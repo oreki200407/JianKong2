@@ -9,5 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-execute at @s run playsound entity.elder_guardian.curse ambient @s ~ ~ ~ 1 2
+execute at @s run playsound entity.elder_guardian.curse master @s ~ ~ ~ 1 2
 execute if score #box fix_progress matches 1.. run scoreboard players remove #box fix_progress 1

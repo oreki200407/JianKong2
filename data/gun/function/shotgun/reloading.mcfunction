@@ -2,7 +2,7 @@ execute store success score #has_magazine reload run clear @s brick[item_name="�
 execute if score #has_magazine reload matches 0 run return run function gun:no_magazine
 execute unless items entity @s weapon breeze_rod[item_name="散彈槍"] run return run function gun:reloaded
 
-execute unless score @s reload matches 3 run playsound block.piston.contract ambient @s ~ ~ ~ 1 2
+execute unless score @s reload matches 3 run playsound block.piston.contract master @s ~ ~ ~ 1 2
 scoreboard players set @s reload 3
 scoreboard players add @s reload_time 1
 

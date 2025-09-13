@@ -12,6 +12,6 @@ execute as @e[type=armor_stand,tag=summon_shuffle] run function summon:pick/rese
 
 tellraw @s ["◎ 你已成功", {"text": "刷新怪物", "color":"gold"}]
 scoreboard players remove 電力 info_monitor 20
-playsound entity.player.swim ambient @s
+playsound entity.player.swim master @s
 execute as @a[team=monitor] if score @s summon_monster = @a[tag=summon_shuffler,limit=1] summon_monster run function summon:open_ender_chest
 tag @s remove summon_shuffler

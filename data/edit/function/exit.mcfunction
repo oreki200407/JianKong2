@@ -9,7 +9,7 @@
 # Author : oreki20
 ###################################################
 
-playsound ui.button.click ambient @s
+playsound ui.button.click master @s
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
 execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name

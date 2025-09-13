@@ -6,4 +6,4 @@ effect give @a[team=survivor] health_boost 120 4
 effect give @a[team=survivor] regeneration 1 255
 
 tellraw @s ["◎ 你已成功使用電箱-", {"text": "雙倍血量", "color":"gold"}]
-playsound item.trident.hit_ground ambient @s
+playsound item.trident.hit_ground master @s

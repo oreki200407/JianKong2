@@ -23,6 +23,6 @@ execute if entity @s[tag=summon_fail] run return run tag @s remove summon_fail
 
 function summon:head/choose with storage jk2:data root.summon
 
-playsound block.piston.extend ambient @s ~ ~ ~ 1 2
+playsound block.piston.extend master @s ~ ~ ~ 1 2
 scoreboard players set @s summon_count 1
 function summon:operation/reset

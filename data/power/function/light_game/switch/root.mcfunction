@@ -1,4 +1,4 @@
-playsound item.lodestone_compass.lock ambient @s
+playsound item.lodestone_compass.lock master @s
 
 data remove storage jk2:data root.monitor.light_game.chest2
 data remove storage jk2:data root.monitor.light_game.switch

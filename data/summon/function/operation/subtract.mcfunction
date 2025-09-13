@@ -1,4 +1,4 @@
-playsound ui.button.click ambient @s
+playsound ui.button.click master @s
 
 execute store success score @s summon_operate run clear @s glowstone_dust[custom_model_data={strings:["subtract1"]}]
 scoreboard players remove @s[scores={summon_operate=1}] summon_count 1

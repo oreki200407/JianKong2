@@ -1,7 +1,7 @@
 #復活怪物
 execute unless score 電力 info_monitor matches 30.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "復活生物", "color":"gold"}]
 
-playsound block.bell.use ambient @a[team=monitor]
+playsound block.bell.use master @a[team=monitor]
 scoreboard players remove 電力 info_monitor 30
 
 fill ~1 ~1 ~ ~1 ~2 ~ glass_pane

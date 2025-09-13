@@ -14,7 +14,7 @@ tag @s remove tutorial_trapped
 #釋放
 attribute @s movement_speed modifier remove jk2:bear_trap
 attribute @s jump_strength modifier remove jk2:bear_trap
-execute at @s run playsound block.copper_door.open ambient @a
+execute at @s run playsound block.copper_door.open master @a
 
 tellraw @s ["◎ 你成功掙脫了", {text: "捕獸夾", color: "gold"}]
 

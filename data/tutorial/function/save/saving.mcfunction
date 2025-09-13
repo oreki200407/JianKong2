@@ -16,5 +16,5 @@ execute if score @s revive_time matches 1..30 run return run function game:death
 execute if score @s revive_time matches 31..61 run return run function game:death/survivor/save/lower_half
 
 title @s actionbar ""
-playsound entity.experience_orb.pickup ambient @s ~ ~ ~
+playsound entity.experience_orb.pickup master @s ~ ~ ~
 execute as @e[type=item_display, tag=tutorial_tomb] at @s run function tutorial:save/revive

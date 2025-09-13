@@ -12,7 +12,7 @@
 tag @s remove using_unlock
 tellraw @s ["◎ 鐵門已", {text: "解鎖", color: "gold"}]
 title @s actionbar {text: "開鎖中：▬▬▬▬▬▬▬▬▬▬", color: "gold", bold: true}
-playsound block.chest.open ambient
+playsound block.chest.open master
 xp add @s 1 levels
 execute as @n[type=marker, tag=door] at @s run function gadget:unlock/door with entity @s data
 

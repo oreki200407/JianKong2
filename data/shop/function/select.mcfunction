@@ -1,4 +1,4 @@
-playsound ui.button.click ambient @s
+playsound ui.button.click master @s
 
 execute store success score @s shop_operate run clear @s emerald[item_name="武器類",custom_data~{price:0}]
 execute if entity @s[scores={shop_operate=1}] run return run function shop:type/weapon

@@ -13,7 +13,7 @@
 tag @s add tutorial_trapped
 
 #禁止移動和跳躍
-playsound item.shield.break ambient @a ~ ~ ~ 1 0
+playsound item.shield.break master @a ~ ~ ~ 1 0
 attribute @s jump_strength modifier add jk2:bear_trap -0.95 add_multiplied_base
 scoreboard players set @s jump_break 0
 scoreboard players set @s bear_trap_release 0

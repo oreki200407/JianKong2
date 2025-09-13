@@ -6,4 +6,4 @@ execute unless score 腐肉 info_monitor matches 2.. run return run tellraw @s [
 scoreboard players remove 蜘蛛眼 info_monitor 4
 scoreboard players remove 腐肉 info_monitor 2
 give @s purple_dye[item_name={translate: "item.minecraft.lingering_potion.effect.harming"},custom_data={"type":"trap","command":"summon lingering_potion ~ ~.1 ~ {Item:{id:\"lingering_potion\",count:1,components:{\"potion_contents\":{potion:\"strong_harming\"}}}}"},custom_model_data={strings:["instant_damage_monitor"]}, consumable={consume_seconds: 99999}] 1
-playsound block.anvil.use ambient @s ~ ~ ~ 1 2
+playsound block.anvil.use master @s ~ ~ ~ 1 2

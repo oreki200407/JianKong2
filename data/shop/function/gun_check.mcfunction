@@ -8,6 +8,6 @@ execute store success score #has_shotgun shop run clear @s breeze_rod[item_name=
 execute if score #has_shotgun shop matches 1 if entity @s[tag=!shop_shotgun] run return run tag @s add shop_shotgun
 
 tellraw @s ["◎ 你不能購買兩把", {"text": "一樣的槍", "color":"gold"}]
-playsound entity.villager.no ambient @s
+playsound entity.villager.no master @s
 clear @s *[custom_data~{type:"shop"}]
 scoreboard players set #gun_check shop 1

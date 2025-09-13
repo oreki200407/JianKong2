@@ -11,6 +11,6 @@ summon item_display ~ ~ ~ \
 	]\
 }
 
-playsound entity.zombie.death ambient @a ~ ~ ~
+playsound entity.zombie.death master @a ~ ~ ~
 kill @e[type=item_display, tag=tutorial_player]
 kill

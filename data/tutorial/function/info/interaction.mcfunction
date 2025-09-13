@@ -1,4 +1,4 @@
-execute on target run playsound ui.button.click ambient @s
+execute on target run playsound ui.button.click master @s
 
 execute if entity @s[tag=tutorial_info_power1] on target run function tutorial:info/power1
 execute if entity @s[tag=tutorial_info_power2] on target run function tutorial:info/power2

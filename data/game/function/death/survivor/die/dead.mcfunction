@@ -19,7 +19,7 @@ tellraw @a ["◎ ", {selector: "@s"}, " 已死亡"]
 title @s title {text: "你已死亡", color: "red", bold: true}
 scoreboard players add @s death_score 100
 scoreboard players add @s st_death 1
-playsound entity.zombie.death ambient @s
+playsound entity.zombie.death master @s
 effect give @s resistance 30 4
 effect give @s strength 30 0
 

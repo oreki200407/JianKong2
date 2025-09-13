@@ -1,4 +1,4 @@
-playsound item.shield.break ambient
+playsound item.shield.break master
 item modify entity @s weapon {function:"minecraft:set_item",item:"bone"}
 execute store result score #sword system run data get entity @s SelectedItem.components."minecraft:attribute_modifiers"[{id:"jk2:attack_damage"}].amount
 execute store result storage jk2:data root.sword.new_attack double 1 run scoreboard players remove #sword system 10

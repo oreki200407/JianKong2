@@ -20,4 +20,4 @@ tellraw @s \
 tag @e[type=armor_stand,tag=box_point_name] remove box_point_name
 tag @e[type=armor_stand,tag=poison_point_name] remove poison_point_name
 
-playsound ui.button.click ambient @s
+playsound ui.button.click master @s

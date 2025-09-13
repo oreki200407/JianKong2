@@ -14,4 +14,4 @@ execute unless entity @e[type=marker, tag=lobby, limit=1] run return fail
 
 tp @s ~ -32 ~
 effect give @s instant_health 10 10 true
-playsound entity.player.teleport ambient @s ~ -32 ~ 1 1 1
+playsound entity.player.teleport master @s ~ -32 ~ 1 1 1

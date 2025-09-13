@@ -22,4 +22,4 @@ title @s actionbar {text: "加固中：▬▬▬▬▬▬▬▬▬▬", color: "
 scoreboard players set @s hammer 0
 $setblock $(put_sign) oak_wall_sign[facing=$(sign_facing)]
 $summon marker $(put_sign) {Tags: ["tutorial_plank","tutorial_marker"]}
-playsound block.wooden_door.close ambient @a
+playsound block.wooden_door.close master @a

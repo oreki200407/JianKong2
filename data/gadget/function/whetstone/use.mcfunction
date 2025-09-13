@@ -30,4 +30,4 @@ execute if predicate gadget:fix run function gadget:whetstone/upgrade
 execute unless items entity @s weapon tripwire_hook[item_name="磨刀石",damage=50] run return fail
 
 item replace entity @s weapon with air
-execute at @s run playsound block.grindstone.use ambient @s ~ ~ ~ .5
+execute at @s run playsound block.grindstone.use master @s ~ ~ ~ .5

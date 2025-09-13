@@ -1,4 +1,4 @@
-execute on target run playsound ui.button.click ambient @s
+execute on target run playsound ui.button.click master @s
 
 execute if entity @s[tag=team_red] on target run team join survivor
 execute if entity @s[tag=team_spec] on target run team join spec
