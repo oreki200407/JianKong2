@@ -1,1 +1,10 @@
-effect give @s instant_health 1 0 true
+###################################################
+# 使用鐵巨人的第二個技能
+# 
+# Name   : use_2.mcfunction
+# Path   : morph:golem/skill/
+# As     : 使用技能的玩家
+# At     : As
+# Loop   : 否
+# Author : oreki20
+###################################################

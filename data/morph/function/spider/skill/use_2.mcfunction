@@ -10,4 +10,4 @@
 ###################################################
 
 #看到生存者就放蜘蛛網
-execute anchored eyes positioned ^ ^ ^5 at @a[team=survivor, distance=..5] run function morph:spider/skill/2/cobweb
+execute anchored eyes positioned ^ ^ ^5 at @a[team=survivor, distance=..5, gamemode=adventure] run function morph:spider/skill/2/cobweb
