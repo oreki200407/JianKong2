@@ -10,5 +10,4 @@
 ###################################################
 
 #給予6格內怪物回血
-#注意這對不死怪物無效
-effect give @e[tag=monster, team=monitor, distance=..6] regeneration 10 0 true
+execute as @e[tag=monster, team=monitor, distance=..6] run function morph:evoker/skill/1/health

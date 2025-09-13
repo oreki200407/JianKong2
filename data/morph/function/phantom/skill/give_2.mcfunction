@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s raw_copper[item_model=leather_boots, item_name={text: "加速", color: "gold"}, lore=[[{text: "獲得", color: "white", italic: false}, {translate: "effect.minecraft.speed"}, "效果"], {text: "冷卻10秒", color: "aqua", italic: false}], custom_data={skill: 2b}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "block.grass.step"}]
+give @s raw_copper[item_model=leather_boots, item_name={text: "加速", color: "gold"}, lore=[[{text: "獲得", color: "white", italic: false}, {translate: "effect.minecraft.speed"}, "效果"], {text: "冷卻10秒", color: "aqua", italic: false}], custom_data={skill: 2b}, consumable={animation: "none", has_consume_particles: false, consume_seconds: 0.0F, sound: "block.grass.step", on_consume_effects: [{type: "apply_effects", effects: [{id: "speed", duration: 120, amplifier: 2}]}]}]

@@ -136,6 +136,7 @@ scoreboard objectives remove morph_skill_1
 scoreboard objectives remove morph_skill_2
 scoreboard objectives remove morph_skill_2_duration
 scoreboard objectives remove use_ender_pearl
+scoreboard objectives remove use_firework
 
 scoreboard objectives remove boss_health
 scoreboard objectives remove boss_time

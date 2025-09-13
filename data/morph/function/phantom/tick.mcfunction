@@ -9,8 +9,5 @@
 # Author : Alex_Cai
 ###################################################
 
-#正在上升中
-execute if score #phantom morph_skill_1 matches 0.. run return run function morph:phantom/skill/1/rising
-
-#飛到了 開始偵測鞘翅
-execute if items entity @s armor.chest elytra run function morph:phantom/skill/1/wearing
+#使用煙火 無法被進度偵測到
+execute if score @s use_firework matches 1.. run function morph:player/use_skill/skill_1

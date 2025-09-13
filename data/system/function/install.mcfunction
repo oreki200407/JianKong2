@@ -163,6 +163,7 @@ scoreboard objectives add morph_skill_1 dummy
 scoreboard objectives add morph_skill_2 dummy
 scoreboard objectives add morph_skill_2_duration dummy
 scoreboard objectives add use_ender_pearl used:ender_pearl
+scoreboard objectives add use_firework used:firework_rocket
 
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
