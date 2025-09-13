@@ -38,6 +38,9 @@ execute as @a[team=survivor,scores={xp_kill=1..}] run function monster:xp/kill
 execute as @a[scores={fracture=1..}, team=survivor] at @s run function gadget:medical/fracture/damage
 execute as @a[tag=fractured] run function gadget:medical/fracture/notice
 
+#煙霧彈
+execute at @e[type=area_effect_cloud,tag=blindness] run particle campfire_signal_smoke ~ ~ ~ 1.5 1.5 1.5 .01 150 force
+
 #電箱
 execute as @a[team=!spec] at @s run function box:use/root
 execute as @a[tag=fixing_box] run function box:fix/fixing
