@@ -9,4 +9,4 @@ execute as @e[type=interaction,tag=lobby_setting] if data entity @s interaction 
 
 execute as @e[tag=check_display] run function system:check/display_kill
 
-execute if entity @a[tag=tutorial] run function tutorial:tick
+function tutorial:tick

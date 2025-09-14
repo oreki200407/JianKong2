@@ -30,3 +30,5 @@ execute as @e[type=interaction] if data entity @s interaction run data remove en
 
 execute store result score 生怪點 edit if entity @e[type=armor_stand,tag=point]
 execute store result score 門 edit if entity @e[type=armor_stand,tag=door]
+
+function tutorial:tick

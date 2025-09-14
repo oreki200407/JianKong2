@@ -10,7 +10,7 @@
 ###################################################
 
 #1代表陷阱啟動成功
-execute store success score @s bear_trap at @s as @a[tag=tutorial, gamemode=!spectator, dx=0, dy=0, dz=0] run function tutorial:bear_trap/detected
+execute store success score @s bear_trap at @s as @a[gamemode=!spectator, dx=0, dy=0, dz=0] run function tutorial:bear_trap/detected
 
 #啟動成功就可以清除了
 kill @s[scores={bear_trap=1}]
