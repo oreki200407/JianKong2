@@ -1,5 +1,6 @@
 gamerule announceAdvancements false
 gamerule commandBlockOutput false
+gamerule disableRaids true
 gamerule doDaylightCycle false
 gamerule doEntityDrops false
 gamerule doFireTick false
@@ -17,13 +18,15 @@ gamerule enderPearlsVanishOnDeath true
 gamerule fallDamage false
 gamerule keepInventory true
 gamerule logAdminCommands false
+gamerule maxCommandChainLength 2147483647
 gamerule mobGriefing false
+gamerule projectilesCanBreakBlocks false
 gamerule reducedDebugInfo false
 gamerule sendCommandFeedback false
 gamerule showDeathMessages false
+gamerule snowAccumulationHeight 0
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
-gamerule maxCommandChainLength 2147483647
 
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue",bold:1b}
 scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color": "gold",bold:1b}
@@ -164,6 +167,7 @@ scoreboard objectives add morph_skill_2 dummy
 scoreboard objectives add morph_skill_2_duration dummy
 scoreboard objectives add use_ender_pearl used:ender_pearl
 scoreboard objectives add use_firework used:firework_rocket
+scoreboard objectives add use_wind_charge used:wind_charge
 
 scoreboard objectives add boss_health dummy "Boss血量"
 scoreboard objectives add boss_time dummy "Boss時間"
@@ -217,7 +221,7 @@ bossbar set jk2:time max 1500
 bossbar set jk2:prepare max 180
 
 #可供變形的怪物 以及技能冷卻(單位是tick)
-data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "golem", "phantom"]
+data modify storage jk2:data root.morph.monsters set value ["zombie", "skeleton", "spider", "creeper", "enderman", "evoker", "blaze", "breeze", "golem", "phantom"]
 data modify storage jk2:data root.morph.cooldown set value \
 {\
 	zombie:   [I; 0, 120, 280],\
@@ -227,6 +231,7 @@ data modify storage jk2:data root.morph.cooldown set value \
 	enderman: [I; 0, 120, 200],\
 	evoker:   [I; 0, 140, 220],\
 	blaze:    [I; 0, 120, 280],\
+	breeze:   [I; 0, 120, 280],\
 	golem:    [I; 0, 140, 240],\
 	warden:   [I; 0, 280, 200],\
 	phantom:  [I; 0, 200, 200]\
