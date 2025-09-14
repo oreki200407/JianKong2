@@ -14,3 +14,6 @@ function morph:player/motion_vector/root
 
 #如果直接execute summon tnt 會看不到
 execute anchored eyes positioned ^ ^ ^1 run function morph:creeper/skill/2/tnt with storage jk2:data root.morph.motion
+
+#39 ticks後替換
+schedule function morph:creeper/skill/2/replace_tnt 39

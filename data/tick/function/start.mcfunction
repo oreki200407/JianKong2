@@ -66,8 +66,6 @@ execute as @a[scores={morph=1..}] at @s run function morph:player/tick with enti
 kill @e[type=skeleton_horse, tag=skeleton_horse_vehicle, predicate=!game:being_ride]
 #清除所有失去界伏蚌的草方塊展示實體
 kill @e[type=block_display, tag=morph_grass_block, predicate=!game:riding]
-#苦力怕TNT
-execute as @e[type=tnt, tag=morph_tnt, nbt={fuse: 1s}] at @s run function morph:creeper/skill/2/tnt_explode
 #變形的標記
 execute as @e[type=marker, tag=morph_product] run function morph:marker
 

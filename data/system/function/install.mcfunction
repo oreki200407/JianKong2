@@ -27,6 +27,7 @@ gamerule showDeathMessages false
 gamerule snowAccumulationHeight 0
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
+gamerule tntExplodes false
 
 scoreboard objectives add lobby dummy {"text": "監控圍城 II", "color": "blue",bold:1b}
 scoreboard objectives add info_monitor dummy {"text": "監控者資訊", "color": "gold",bold:1b}
@@ -236,7 +237,6 @@ data modify storage jk2:data root.morph.cooldown set value \
 	warden:   [I; 0, 280, 200],\
 	phantom:  [I; 0, 200, 200]\
 }
-
 
 #方向常數 上右下左
 data modify storage jk2:data root.monitor.netwalk_game.directions_vec2arr set value \
