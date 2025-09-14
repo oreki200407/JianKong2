@@ -231,7 +231,7 @@ data modify storage jk2:data root.morph.cooldown set value \
 	enderman: [I; 0, 120, 200],\
 	evoker:   [I; 0, 140, 220],\
 	blaze:    [I; 0, 120, 280],\
-	breeze:   [I; 0, 120, 280],\
+	breeze:   [I; 0, 120, 200],\
 	golem:    [I; 0, 140, 240],\
 	warden:   [I; 0, 280, 200],\
 	phantom:  [I; 0, 200, 200]\
