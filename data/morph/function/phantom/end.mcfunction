@@ -9,5 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-attribute @s scale modifier remove jk2:phantom
 effect clear @s speed
