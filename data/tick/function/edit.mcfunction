@@ -18,6 +18,9 @@ execute as @e[type=armor_stand, tag=edit] if items entity @s armor.head *[custom
 execute store result score 求生者重生點 edit if entity @e[type=armor_stand, tag=spawn_survivor]
 execute if score 求生者重生點 edit matches 2.. run function edit:spawn
 
+#forceload
+execute as @e[tag=load_chunk] at @s run function edit:load_chunk
+
 #沒有告示牌就重新放
 execute as @e[type=armor_stand,tag=box_point] at @s unless block ~ ~1 ~ oak_sign run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}
 execute as @e[type=armor_stand,tag=poison_a] at @s run function edit:poison/a
