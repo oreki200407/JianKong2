@@ -3,7 +3,7 @@
 # 
 # Name   : poisoning.mcfunction
 # Path   : control:acid_rain/
-# As     : 受到酸雨傷害的玩家
+# As     : 暴露於酸雨的玩家
 # At     : As ~ ~1 ~
 # Loop   : 是
 # Author : oreki20
