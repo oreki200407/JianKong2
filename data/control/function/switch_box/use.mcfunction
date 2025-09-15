@@ -1,8 +1,8 @@
 ###################################################
 # 更換電箱
 # 
-# Name   : switch_box.mcfunction
-# Path   : control:
+# Name   : use.mcfunction
+# Path   : control:switch_box/
 # As     : 點擊更換電箱的監控者
 # At     : 更換電箱告示牌
 # Loop   : 否

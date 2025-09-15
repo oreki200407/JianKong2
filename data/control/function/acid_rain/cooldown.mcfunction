@@ -1,8 +1,8 @@
 ###################################################
 # 釋放酸雨冷卻中
 # 
-# Name   : acid_rain.mcfunction
-# Path   : control:cooldown/
+# Name   : cooldown.mcfunction
+# Path   : control:acid_rain/
 # As     : 世界重生點
 # At     : As
 # Loop   : 是，每一秒

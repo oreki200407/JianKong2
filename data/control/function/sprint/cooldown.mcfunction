@@ -1,8 +1,8 @@
 ###################################################
 # 禁止奔跑冷卻中
 # 
-# Name   : sprint.mcfunction
-# Path   : control:cooldown/
+# Name   : cooldown.mcfunction
+# Path   : control:sprint/
 # As     : 世界重生點
 # At     : As
 # Loop   : 是，每一秒

@@ -1,8 +1,8 @@
 ###################################################
 # 鐵門上鎖冷卻中
 # 
-# Name   : lock_door.mcfunction
-# Path   : control:cooldown/
+# Name   : cooldown.mcfunction
+# Path   : control:lock_door/
 # As     : 世界重生點
 # At     : As
 # Loop   : 是，每一秒

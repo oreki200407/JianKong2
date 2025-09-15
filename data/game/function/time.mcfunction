@@ -26,12 +26,12 @@ execute if score 水管爆裂 info_monitor matches 0 run function box:use/succes
 execute if score 禁止監控 info_monitor matches 1.. run scoreboard players remove 禁止監控 info_monitor 1
 execute if score 禁止監控 info_monitor matches 0 run function box:use/success/monitor/end
 
-execute if score #acid_rain_cd system matches 1.. run function control:cooldown/acid_rain
-execute if score #poison_cd system matches 1.. run function control:cooldown/poison
-execute if score #lock_door_cd system matches 1.. run function control:cooldown/lock_door
-execute if score #switch_box_cd system matches 1.. run function control:cooldown/switch_box
-execute if score #box_off_cd system matches 1.. run function control:cooldown/box_off
-execute if score #sprint_cd system matches 1.. run function control:cooldown/sprint
+execute if score #acid_rain_cd system matches 1.. run function control:acid_rain/cooldown
+execute if score #poison_cd system matches 1.. run function control:poison/cooldown
+execute if score #lock_door_cd system matches 1.. run function control:lock_door/cooldown
+execute if score #switch_box_cd system matches 1.. run function control:switch_box/cooldown
+execute if score #box_off_cd system matches 1.. run function control:box_off/cooldown
+execute if score #sprint_cd system matches 1.. run function control:sprint/cooldown
 
 execute if score 酸雨 info_survivor matches 1.. run scoreboard players remove 酸雨 info_survivor 1
 execute if score 毒氣 info_survivor matches 1.. run scoreboard players remove 毒氣 info_survivor 1
