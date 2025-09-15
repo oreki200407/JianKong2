@@ -10,6 +10,7 @@
 ###################################################
 
 tellraw @s ["◎ 你成功掙脫了", {text: "捕獸夾", color: "gold"}]
+title @s actionbar ""
 
 scoreboard players operation #check_marker bear_trap = @s bear_trap
 execute if entity @s[type=player] as @e[type=marker, tag=bear_trap_marker] if score @s bear_trap = #check_marker bear_trap run kill
