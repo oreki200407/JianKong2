@@ -12,7 +12,7 @@
 execute as @a[tag=lobby_death,scores={health=20..}] at @s if entity @e[type=marker, tag=lobby_spawn, limit=1, distance=..0.1] run function system:death
 
 #forceload
-execute as @e[tag=load_chunk] at @s run function edit:load_chunk
+execute as @e[type=armor_stand, tag=load_chunk] at @s run function edit:load_chunk
 
 #刪除盔甲座
 execute as @e[type=armor_stand, tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill

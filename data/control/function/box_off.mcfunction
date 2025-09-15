@@ -1,3 +1,14 @@
+###################################################
+# 關閉電箱
+# 
+# Name   : box_off.mcfunction
+# Path   : control:
+# As     : 點擊關閉電箱的監控者
+# At     : 關閉電箱告示牌
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail
 

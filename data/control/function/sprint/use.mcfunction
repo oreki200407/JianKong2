@@ -1,3 +1,14 @@
+###################################################
+# 禁止奔跑
+# 
+# Name   : use.mcfunction
+# Path   : control:sprint/
+# As     : 點擊禁止奔跑的監控者
+# At     : 禁止奔跑告示牌
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail
 

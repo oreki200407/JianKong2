@@ -1,3 +1,14 @@
+###################################################
+# 鐵門上鎖
+# 
+# Name   : use.mcfunction
+# Path   : control:lock_door/
+# As     : 點擊鐵門上鎖的監控者
+# At     : 鐵門上鎖告示牌
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail
 

@@ -1,3 +1,14 @@
+###################################################
+# 釋放毒氣
+# 
+# Name   : use.mcfunction
+# Path   : control:poison/
+# As     : 點擊釋放毒氣的監控者
+# At     : 釋放毒氣告示牌
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 #毒氣
 execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail

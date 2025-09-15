@@ -3,8 +3,8 @@
 # 
 # Name   : switch_box.mcfunction
 # Path   : control:
-# As     : 世界重生點
-# At     : As
+# As     : 點擊更換電箱的監控者
+# At     : 更換電箱告示牌
 # Loop   : 否
 # Author : oreki20, Alex_Cai
 ###################################################

@@ -1,3 +1,14 @@
+###################################################
+# 釋放酸雨
+# 
+# Name   : use.mcfunction
+# Path   : control:acid_rain/
+# As     : 點擊釋放酸雨的監控者
+# At     : 釋放酸雨告示牌
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 #酸雨
 execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail

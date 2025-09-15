@@ -1,3 +1,14 @@
+###################################################
+# 每一秒
+# 
+# Name   : time.mcfunction
+# Path   : game:
+# As     : 世界重生點
+# At     : As
+# Loop   : 是，每一秒
+# Author : oreki20
+###################################################
+
 schedule function game:time 1s
 execute if score #mode system matches 4 store result bossbar jk2:prepare value run return run scoreboard players add #prepare system 1
 execute if score #mode system matches 3 store result bossbar jk2:time value run scoreboard players add #time system 1

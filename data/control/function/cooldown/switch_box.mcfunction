@@ -1,3 +1,14 @@
+###################################################
+# 更換電箱冷卻中
+# 
+# Name   : switch_off.mcfunction
+# Path   : control:cooldown/
+# As     : 世界重生點
+# At     : As
+# Loop   : 是，每一秒
+# Author : oreki20
+###################################################
+
 scoreboard players remove #switch_box_cd system 1
 execute if score #switch_box_cd system matches 1.. at @e[tag=control_switch_box] run return run data modify block ~ ~ ~ front_text.messages[2] set value [{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#switch_box_cd",objective:"system"}}]
 
