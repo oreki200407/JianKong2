@@ -32,6 +32,14 @@ execute at @e[type=marker, tag=lobby, limit=1] run playsound block.sculk_shrieke
 
 execute as @a run function game:player_setting/root
 
+gamemode adventure @a[team=!spec]
+effect give @a[team=!spec] invisibility 3 0 true
+effect give @a[team=!spec] hunger 3 255 true
+effect give @a[team=!spec] regeneration 3 100 true
+effect give @a[team=!spec] resistance 3 100 true
+effect give @a[team=!spec] night_vision 3 0 true
+effect give @a[team=!spec] absorption 1 0 true
+
 scoreboard objectives setdisplay sidebar.team.blue info_monitor
 scoreboard objectives setdisplay sidebar.team.red money
 scoreboard objectives setdisplay sidebar info_survivor

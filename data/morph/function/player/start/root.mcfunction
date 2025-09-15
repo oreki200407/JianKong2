@@ -13,20 +13,20 @@ tp @s ~ ~ ~-1
 
 execute if score #switching system matches 1 run return fail
 
-#免費
-execute at @e[type=marker, tag=morph_machine, limit=1] if block ~ ~-1 ~-2 air run scoreboard players add 電力 info_monitor 50
-
-execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
-
 #execute store出monsters的長度
 execute store result score #availables morph store result storage jk2:data root.morph.start.availables int 1 if data storage jk2:data root.morph.monsters[]
 
 #沒有可變怪物時失敗
 execute if score #availables morph matches 0 run return run tellraw @s ["◎ 目前沒有", {text: "可變的怪物", color: "gold"}]
 
+#免費
+execute at @e[type=marker, tag=morph_machine, limit=1] if block ~ ~-1 ~-2 air run scoreboard players add 電力 info_monitor 50
+
+execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
+
 #變型成功
-clear @s white_dye
 scoreboard players remove 電力 info_monitor 50
+clear @s white_dye
 
 #隨機選擇
 execute store result storage jk2:data root.morph.start.index int 1 run function morph:player/start/random with storage jk2:data root.morph.start
