@@ -5,9 +5,9 @@ execute if score #switching system matches 1 run return fail
 execute unless score 電力 info_monitor matches 60.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "釋放酸雨", "color":"gold"}]
 
 scoreboard players remove 電力 info_monitor 60
-scoreboard players add 釋放酸雨-冷卻 info_monitor 360
+scoreboard players add #acid_rain_cd system 360
 
-setblock ~ ~ ~ air destroy
+setblock ~ ~ ~ dark_oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,color:"white",text:"釋放酸雨"},[{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#acid_rain_cd",objective:"system"}}],""]},is_waxed:1b}
 playsound block.piston.extend
 
 tellraw @a ["◎ 場上將在10秒後",{"text": "釋放酸雨", "color":"gold"},"3分鐘"]

@@ -9,4 +9,4 @@
 # Author : Alex_Cai
 ###################################################
 
-give @s wind_charge[item_name={translate: "item.minecraft.wind_charge"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate:"entity.minecraft.wind_charge"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1b}]
+give @s wind_charge[item_name={translate: "item.minecraft.wind_charge", color: "gold"}, lore=[[{text: "往前射一發", color: "white", italic: false}, {translate:"entity.minecraft.wind_charge"}], {text: "冷卻6秒", color: "aqua", italic: false}], custom_data={skill: 1b}]

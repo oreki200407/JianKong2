@@ -19,12 +19,12 @@ schedule clear monster:boss/warden/tick
 schedule clear monster:boss/creeper/tick
 schedule clear monster:boss/creeper/tick
 
-scoreboard players reset 釋放酸雨-冷卻 info_monitor
-scoreboard players reset 釋放毒氣-冷卻 info_monitor
-scoreboard players reset 鐵門上鎖-冷卻 info_monitor
-scoreboard players reset 更換電箱-冷卻 info_monitor
-scoreboard players reset 關閉電箱-冷卻 info_monitor
-scoreboard players reset 禁止奔跑-冷卻 info_monitor
+scoreboard players reset #acid_rain_cd system
+scoreboard players reset #poison_cd system
+scoreboard players reset #lock_door_cd system
+scoreboard players reset #switch_box_cd system
+scoreboard players reset #box_off_cd system
+scoreboard players reset #sprint_cd system
 scoreboard players reset 電箱位置 info_survivor
 
 execute if score 酸雨 info_survivor matches 1.. run function control:acid_rain/end

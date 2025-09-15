@@ -4,9 +4,9 @@ execute if score #switching system matches 1 run return fail
 execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法", {"text": "關閉電箱", "color":"gold"}]
 
 scoreboard players remove 電力 info_monitor 50
-scoreboard players add 關閉電箱-冷卻 info_monitor 180
+scoreboard players add #box_off_cd system 180
 
-setblock ~ ~ ~ air destroy
+setblock ~ ~ ~ dark_oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,color:"white",text:"關閉電箱"},[{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#box_off_cd",objective:"system"}}],""]},is_waxed:1b}
 playsound block.piston.extend
 
 tag @e[type=armor_stand, tag=box] add box_off
