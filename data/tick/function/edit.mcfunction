@@ -11,15 +11,15 @@
 
 execute as @a[tag=lobby_death,scores={health=20..}] at @s if entity @e[type=marker, tag=lobby_spawn, limit=1, distance=..0.1] run function system:death
 
+#forceload
+execute as @e[tag=load_chunk] at @s run function edit:load_chunk
+
 #刪除盔甲座
 execute as @e[type=armor_stand, tag=edit] if items entity @s armor.head *[custom_data~{delete: true}] run kill
 
 #超過一個重生點
 execute store result score 求生者重生點 edit if entity @e[type=armor_stand, tag=spawn_survivor]
 execute if score 求生者重生點 edit matches 2.. run function edit:spawn
-
-#forceload
-execute as @e[tag=load_chunk] at @s run function edit:load_chunk
 
 #沒有告示牌就重新放
 execute as @e[type=armor_stand,tag=box_point] at @s unless block ~ ~1 ~ oak_sign run setblock ~ ~1 ~ oak_sign{back_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]},front_text:{messages:["","↑↑↑↑","請在第一行","輸入電箱名稱"]}}
