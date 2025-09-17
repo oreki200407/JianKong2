@@ -1,6 +1,17 @@
-scoreboard players operation @n[type=marker,tag=contain_marker] contain_temperature = @s contain_temperature
-scoreboard players operation @n[type=marker,tag=contain_marker] contain_food = @s contain_food
-scoreboard players operation @n[type=marker,tag=contain_marker] contain_health = @s contain_health
+###################################################
+# 收容失效，怪物突破收容
+# 
+# Name   : root.mcfunction
+# Path   : contain:escape/
+# As     : 出逃的怪物
+# At     : As
+# Loop   : 否
+# Author : oreki20
+###################################################
+
+scoreboard players operation @n[type=marker,tag=contain_marker,distance=..1] contain_temperature = @s contain_temperature
+scoreboard players operation @n[type=marker,tag=contain_marker,distance=..1] contain_food = @s contain_food
+scoreboard players operation @n[type=marker,tag=contain_marker,distance=..1] contain_health = @s contain_health
 
 scoreboard players reset @s contain_temperature
 scoreboard players reset @s contain_food

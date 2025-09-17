@@ -1,3 +1,14 @@
+###################################################
+# 收容成功
+# 
+# Name   : success.mcfunction
+# Path   : contain:escape/
+# As     : 收容箱內的標記，tag=contain_marker
+# At     : As
+# Loop   : 否
+# Author : oreki20
+###################################################
+
 tellraw @a[team=monitor] ["◎ 成功收容",{selector:"@s", color:gold}]
 
 function contain:summon
