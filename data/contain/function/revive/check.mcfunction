@@ -16,4 +16,4 @@ playsound block.bell.use master @a[team=monitor]
 scoreboard players remove 電力 info_monitor 30
 
 fill ~1 ~1 ~ ~1 ~2 ~ glass_pane
-execute as @n[type=marker,tag=contain_marker, distance=..2] at @s run function contain:revive/success
+execute as @n[type=marker,tag=contain_marker, distance=..3] at @s run function contain:revive/success
