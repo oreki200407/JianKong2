@@ -110,7 +110,7 @@
 當求生者的血量耗盡時，會進入倒地狀態，需等待隊友救援，並增加監控者 **50分**。<br>
 其他求生者可在倒地隊友旁長按蹲下鍵進行救援。<br>
 被救援成功後，求生者將獲得 **10秒** 回復 II 和 抗性 V 效果。<br>
-若 **60秒內** 無人救援，該求生者將會死亡，後在原地重生，並增加監控者 **70分**。<br>
+若 **60秒內** 無人救援，該求生者將會死亡，後在原地重生，並增加監控者 **100分**。<br>
 死亡重生後，求生者將獲得 **30秒** 力量 I 和 抗性 V 效果。
 
 ### ⚡ 電箱
@@ -262,12 +262,24 @@
 - 被打到會凋零
 - 死後會滯留凋零效果
 
+## 🔧 自定義地圖
+本作有提供 **資料包**，可做出專屬於你的地圖。<br>
+資料包不需要解壓縮，只要把資料包安裝在你的地圖檔內的datapacks資料夾，並設定好以下需求：
+- 求生者重生點（限定1個）
+- 生怪點（必須遍佈整張地圖，建議50~150個）
+- 門（必須放在地圖中所有門的位置）
+- 電箱（至少1個，建議3~6個）
+- 毒氣（至少1個，建議3~6個）
+歡迎在本篇文章下回覆，提供你的自定義地圖。
+
 ## 🔻 下載
-地圖（神社）：[點我](https://drive.usercontent.google.com/u/0/uc?id=1DqR3tsgh_-jNF-rmaVfak_eM0GCqpWWS&export=download)<br>
-地圖（西部）：[點我](https://drive.usercontent.google.com/uc?id=1oNzBnzscrVx4qHQV8inO0MsBpaTLteQ8&export=download)<br>
-地圖（木屋）：[點我](https://drive.usercontent.google.com/uc?id=1jW6G8e5YEAKtbEWuGyKpzX2-UzZZ7Ga2&export=download)<br>
-地圖（村莊）：[點我](https://drive.usercontent.google.com/uc?id=1RaTu334eztXtaqfRhyxq4nrLrsTsWjwv&export=download)<br>
-資源包：[點我](https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download)
+地圖-日式神社：[點我](https://drive.usercontent.google.com/uc?id=13ayGBD0EQQGx7KL7mWnmJOcOpjAXC5BT&export=download)<br>
+地圖-噴泉廣場：[點我](https://drive.usercontent.google.com/uc?id=1849vMgLMw3EH1nw8AumvE8j4boNcqySZ&export=download)<br>
+地圖-西部小鎮：[點我](https://drive.usercontent.google.com/uc?id=1EAOPAIQVNZwqzHSO_P0ACat3mCViq2DV&export=download)<br>
+地圖-林中木屋：[點我](https://drive.usercontent.google.com/uc?id=17HRSA7QCdLKKWxeXJbgAEVm-As_csLAl&export=download)<br>
+地圖-麥穗村莊：[點我](https://drive.usercontent.google.com/uc?id=1VcUeaxhzvTgHlMAMZtWjJz8-FUUwbdDq&export=download)<br>
+資料包 Data Pack：[點我](https://drive.usercontent.google.com/uc?id=1Z0C9xa0vaVmt2nn0oNmU377gKITgruwV&export=download)<br>
+資源包 Resource Pack：[點我](https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download)
 
 ## 🎨 資源包
 本地圖提供 **專屬資源包**。強烈建議安裝以獲得更好的遊戲體驗。<br>
@@ -282,4 +294,15 @@ resource-pack=https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0
 企劃：惡靈<br>
 指令：惡靈、AC<br>
 材質：惡靈、姆咪<br>
-建築：惡靈、杏奈、姆咪、AC、狗燈、無尾熊、玫瑰、野路、五百、檸檬、愛蘿喵、香榭
+建築：惡靈、杏奈、姆咪、檸檬、五百、AC、玫瑰、野路、拉凡、狗燈、無尾熊、愛蘿喵、香榭
+
+
+## 📞 聯絡作者
+Email：oreki200407@gmail.com
+Discord：oreki20
+Youtube：[惡靈oreki](https://www.youtube.com/channel/UCHir2DYN4kcH-MpPIT6sXTQ)<br>
+Facebook：[5420 我是惡靈](https://www.facebook.com/oreki200407)
+- [亡國之戰](https://forum.gamer.com.tw/C.php?bsn=18673&snA=151337&tnum=10&subbsn=15)
+- [亡國之戰 II](https://forum.gamer.com.tw/C.php?bsn=18673&snA=190225) 
+- [監控圍城](https://forum.gamer.com.tw/C.php?bsn=18673&snA=185939)
+- [花色狼人殺](https://forum.gamer.com.tw/C.php?bsn=18673&snA=202317)
