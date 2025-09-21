@@ -270,6 +270,7 @@
 - 門（必須放在地圖中所有門的位置）
 - 電箱（至少1個，建議3~6個）
 - 毒氣（至少1個，建議3~6個）
+
 歡迎在本篇文章下回覆，提供你的自定義地圖。
 
 ## 🔻 下載
@@ -296,10 +297,9 @@ resource-pack=https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0
 材質：惡靈、姆咪<br>
 建築：惡靈、杏奈、姆咪、檸檬、五百、AC、玫瑰、野路、拉凡、狗燈、無尾熊、愛蘿喵、香榭
 
-
 ## 📞 聯絡作者
-Email：oreki200407@gmail.com
-Discord：oreki20
+Email：oreki200407@gmail.com<br>
+Discord：oreki20<br>
 Youtube：[惡靈oreki](https://www.youtube.com/channel/UCHir2DYN4kcH-MpPIT6sXTQ)<br>
 Facebook：[5420 我是惡靈](https://www.facebook.com/oreki200407)
 - [亡國之戰](https://forum.gamer.com.tw/C.php?bsn=18673&snA=151337&tnum=10&subbsn=15)
