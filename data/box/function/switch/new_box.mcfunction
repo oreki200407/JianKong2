@@ -19,3 +19,5 @@ execute as @e[type=armor_stand, tag=box] at @s run function box:switch/remove_bo
 function box:switch/set
 
 tellraw @a ["◎ 電箱已被更換至", {"selector": "@s", color:gold}]
+
+execute as @a[team=survivor] if items entity @s enderchest.10 * run function box:switch/give with entity @s EnderItems[{Slot: 10b}]

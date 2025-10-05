@@ -11,7 +11,7 @@ place template game:tutorial ~-10 ~7 ~-10
 
 function system:install
 execute at @e[tag=control_panel] run function edit:enter
-difficulty hard
+difficulty normal
 time set day
 clear @a
 tellraw @a ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n◎ ", {text: "大廳", "color":"gold"}, "已生成完畢"]

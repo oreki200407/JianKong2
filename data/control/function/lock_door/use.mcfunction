@@ -22,3 +22,5 @@ playsound block.piston.extend
 
 execute as @e[type=marker,tag=door] at @s run function control:lock_door/lock with entity @s data
 tellraw @a ["◎ 所有門已被", {"text": "上鎖", "color":"gold"}]
+
+give @r[team=survivor] tripwire_hook[item_name="開鎖器",lore=[[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]], consumable={consume_seconds: 99999}, custom_model_data={strings:["lockpick"]}] 1

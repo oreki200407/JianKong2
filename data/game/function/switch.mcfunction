@@ -40,9 +40,9 @@ kill @e[type=area_effect_cloud,tag=camera]
 execute as @e[type=item] if items entity @s contents #game:loot run kill
 
 #重置怪物
-scoreboard players reset #summon_pick_release summon_monster
-execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
 scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_cooldown=1..}] summon_cooldown
 scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] summon_shuffle
+scoreboard players reset #summon_pick_release summon_monster
+execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
 
 schedule function game:prepare 3s
