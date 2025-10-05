@@ -1,1 +1,2 @@
 $loot give @s loot {"pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","weight": 1,"name": "$(id)","functions": [{"function": "minecraft:set_components","components": $(components)},{"function": "minecraft:set_count","count": $(count)}]}]}]}
+item replace entity @s enderchest.10 with air

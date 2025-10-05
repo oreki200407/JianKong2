@@ -360,7 +360,7 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	"其他求生者可在倒地隊友旁長按", {keybind: "key.sneak", bold: true}, "進行救援。\n",\
 	"被救援成功後，求生者將獲得10秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.regeneration"}, {translate: "potion.potency.1"}], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。\n",\
 	"若60秒內無人救援，該求生者將會死亡，後在原地重生，並增加監控者100分。\n",\
-	"死亡重生後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。"\
+	"死亡重生後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.speed"}, {translate: "potion.potency.1"}], bold: true}, "效果。"\
 ],\
 [\
 	{text: "", font: "uniform"},\

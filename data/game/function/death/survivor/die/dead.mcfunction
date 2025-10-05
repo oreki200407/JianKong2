@@ -22,5 +22,6 @@ scoreboard players add @s st_death 1
 playsound entity.zombie.death master @s
 effect give @s resistance 30 4
 effect give @s strength 30 0
+effect give @s speed 30 1
 
 function game:death/survivor/up
