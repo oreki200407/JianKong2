@@ -3,6 +3,7 @@ scoreboard players set #switching system 1
 
 #電箱
 execute at @e[type=armor_stand,tag=box_point] run fill ~ ~ ~ ~ ~1 ~ air
+execute as @e[type=text_display,tag=one_box] at @s run function gadget:box/end
 execute at @e[type=marker,tag=monitor_ender_chest] run setblock ~ ~ ~ air
 
 schedule clear contain:second

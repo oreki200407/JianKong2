@@ -1,4 +1,5 @@
 execute at @e[type=armor_stand, tag=box] run function box:use/reset
+execute at @e[type=text_display, tag=one_box] run function box:use/reset
 execute at @e[type=armor_stand, tag=box_off] run function box:use/box_off
 
 execute if entity @s[team=monitor] run return run clear @s redstone[custom_data~{type:"box"}]

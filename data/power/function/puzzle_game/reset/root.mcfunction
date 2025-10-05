@@ -18,19 +18,23 @@ item replace block ~ ~ ~ container.7 with echo_shard[custom_model_data={strings:
 item replace block ~ ~ ~ container.8 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.9 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.10 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+item replace block ~ ~ ~ container.15 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.16 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.17 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.18 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.19 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+item replace block ~ ~ ~ container.24 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.25 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~ ~ ~ container.26 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 
 item replace block ~1 ~ ~ container.0 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.1 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+item replace block ~1 ~ ~ container.6 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.7 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.8 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.9 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.10 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
+item replace block ~1 ~ ~ container.15 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.16 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.17 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.18 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
@@ -43,7 +47,7 @@ item replace block ~1 ~ ~ container.24 with echo_shard[custom_model_data={string
 item replace block ~1 ~ ~ container.25 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 item replace block ~1 ~ ~ container.26 with echo_shard[custom_model_data={strings:["none"]},tooltip_display={hide_tooltip: true}]
 
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:0,Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Duration:0,Passengers:[{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]},{id:"marker",Tags:["puzzle"]}]}
 
 execute as @e[type=marker,tag=puzzle] store result entity @s data.number int 1 run scoreboard players add #puzzle puzzle_game 1
 

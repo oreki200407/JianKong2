@@ -1,5 +1,6 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
+#教學區
 execute as @a[tag=tutorial_fixing_box] run function tutorial:box/fix/fix_mode/leave
 execute as @a[tag=tutorial_unlock] run function tutorial:unlock/fail
 execute as @a[tag=tutorial_trapped] run function tutorial:bear_trap/release
@@ -7,13 +8,23 @@ execute as @a[tag=tutorial_trapped] run function tutorial:bear_trap/release
 kill @e[tag=tutorial_marker]
 execute at @e[type=marker,tag=lobby,limit=1] run fill ~-10 ~7 ~-10 ~10 ~14 ~10 air
 
-execute at @e[type=armor_stand,tag=door] run summon marker ~ ~ ~ {Tags: ["door"]}
+#地圖
 execute at @e[type=armor_stand,tag=point] run summon marker ~ ~ ~ {Tags: ["point"]}
 execute at @e[type=armor_stand,tag=spawn_survivor] run summon marker ~ ~ ~ {Tags: ["spawn_survivor"]}
+#門
+execute at @e[type=armor_stand,tag=door] run summon marker ~ ~ ~ {Tags: ["door"]}
+execute as @e[type=marker,tag=door] at @s run function gadget:unlock/store
+#毒氣
+execute as @e[type=armor_stand,tag=poison_point] run data merge entity @s {DisabledSlots:4144959}
+#電箱
+execute as @e[type=armor_stand,tag=box_point] run data merge entity @s {DisabledSlots:4144959}
+tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
+
 kill @e[type=armor_stand,tag=edit_kill]
 kill @e[tag=check_display]
-execute as @e[type=armor_stand,tag=box_point] run data merge entity @s {DisabledSlots:4144959}
-execute as @e[type=armor_stand,tag=poison_point] run data merge entity @s {DisabledSlots:4144959}
+
+#難度
+execute as @e[tag=selected_difficulty] run function game:difficulty
 
 time set midnight
 tag @a[team=monitor] add monitor_tag
@@ -54,12 +65,6 @@ scoreboard objectives setdisplay list kill_score
 
 scoreboard players operation #switch_box_second system = 更換電箱 lobby
 scoreboard players operation #switch_box_second system *= #60 constant
-
-#決定初始電箱
-tag @e[type=armor_stand,tag=box_point,sort=random,limit=1] add box_default
-
-#門
-execute as @e[type=marker,tag=door] at @s run function gadget:unlock/store
 
 #抽怪物
 execute at @e[type=marker,tag=lobby,limit=1] run function summon:pick/armor_stand

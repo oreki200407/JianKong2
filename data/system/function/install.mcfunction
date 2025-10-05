@@ -192,9 +192,8 @@ team modify monitor seeFriendlyInvisibles true
 team modify survivor friendlyFire false
 team modify monitor friendlyFire false
 
-
 #記分板設定
-scoreboard players set 更新 system 1
+scoreboard players set 更新 system 2
 scoreboard players set #2 constant 2
 scoreboard players set #10 constant 10
 scoreboard players set #20 constant 20

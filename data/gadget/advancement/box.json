@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"bear_trap":
+		"box":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":
@@ -14,7 +14,7 @@
 						{
 							"items": "minecraft:tripwire_hook",
 							"components": {
-								"minecraft:item_name": "捕獸夾"
+								"minecraft:item_name": "一分鐘電箱"
 							}
 						}
 					}
@@ -24,6 +24,6 @@
 	},
 	"rewards":
 	{
-		"function": "gadget:bear_trap/use"
+		"function": "gadget:box/use"
 	}
 }

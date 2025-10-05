@@ -39,4 +39,6 @@ execute if score 禁止奔跑 info_survivor matches 1.. run scoreboard players r
 
 execute unless entity @e[type=interaction, tag=freeze] as @e[tag=contain] run function contain:value/random
 
-execute if entity @e[team=monitor, tag=monster] run function game:strength
+execute if entity @e[team=monitor, tag=monster] run function game:resistance
+
+execute as @e[type=text_display,tag=one_box] at @s run function gadget:box/time
