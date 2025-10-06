@@ -20,6 +20,7 @@ function contain:update_text/all
 
 tellraw @a[team=monitor] ["◎ ",{selector:"@s"},"從收容櫃",{"text":"逃出來了","color":"gold"}]
 tp @s ~ ~-999 ~
+kill
 fill ~-1 ~ ~ ~-1 ~1 ~ air destroy
 
 execute if entity @s[tag=contain_zombie] run return run summon zombie ~-1.5 ~ ~ {Tags:["contain_zombie","contain_escape"],Silent:1b,DeathLootTable:"summon:empty",PersistenceRequired:1b}

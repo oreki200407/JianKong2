@@ -3,9 +3,9 @@ data remove storage jk2:data root.monitor.puzzle_game.chest2
 data remove storage jk2:data root.monitor.puzzle_game.piece
 
 #找空白格
-execute store result score #random_move puzzle_game run data get block ~ ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["20"]}}}].Slot
-execute if data block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["20"]}}}].Slot store result score #random_move puzzle_game run data get block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["20"]}}}].Slot
-execute if data block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["20"]}}}] run data modify storage jk2:data root.monitor.puzzle_game.chest2 set value 1
+execute store result score #random_move puzzle_game run data get block ~ ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["16"]}}}].Slot
+execute if data block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["16"]}}}].Slot store result score #random_move puzzle_game run data get block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["16"]}}}].Slot
+execute if data block ~1 ~ ~ Items[{components:{"minecraft:custom_model_data":{strings:["16"]}}}] run data modify storage jk2:data root.monitor.puzzle_game.chest2 set value 1
 
 #抽選
 execute store result score #random puzzle_game run random value 1..4

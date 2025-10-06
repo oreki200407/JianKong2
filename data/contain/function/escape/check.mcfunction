@@ -20,6 +20,7 @@ tp @e[tag=contain_escape, distance=..1.5] ~-1.5 ~ ~
 
 execute if entity @s[tag=contain_creeper] run tp @e[tag=contain_creeper_riding] ~ ~-999 ~
 tp @s ~ ~-999 ~
+kill
 fill ~-1 ~ ~ ~-1 ~1 ~ glass_pane
 playsound block.piston.contract master @a[team=monitor]
 
