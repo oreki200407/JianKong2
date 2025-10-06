@@ -36,7 +36,7 @@ execute as @e[type=item_display, tag=bear_trap] run function gadget:bear_trap/tr
 execute as @e[tag=trapped] run function gadget:bear_trap/trapped/root
 
 #開鎖器
-execute as @a[tag=using_unlock] run function gadget:unlock/unlocking
+execute as @a[tag=using_unlock] run function gadget:unlock/lockpick/unlocking
 
 #錘子
 execute as @a[team=survivor] if items entity @s weapon tripwire_hook[item_name="錘子"] run scoreboard players add @s hammer_hold 1

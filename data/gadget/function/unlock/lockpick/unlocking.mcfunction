@@ -10,15 +10,14 @@
 ###################################################
 
 #移動了就失敗
-execute unless predicate game:keyboard/no_input run return run function gadget:unlock/fail
+execute unless predicate game:keyboard/no_input run return run function gadget:unlock/lockpick/fail
 
 #沒有在移動 就可以繼續
 execute store result score @s selected_slot run data get entity @s SelectedItemSlot
 execute if score @s selected_slot = @s unlock_slot run function gadget:unlock/progress/add
 
 #進度
-execute if score @s unlock_progess matches 0..4 run return run function gadget:unlock/progress/upper_half
-execute if score @s unlock_progess matches 5..9 run return run function gadget:unlock/progress/lower_half
+execute if score @s unlock_progess matches 0..6 run return run function gadget:unlock/progress/upper_half
+execute if score @s unlock_progess matches 7..13 run return run function gadget:unlock/progress/lower_half
 
-#達到100%後 要拿著才會繼續
-execute if items entity @s weapon tripwire_hook[item_name="開鎖器"] at @s run function gadget:unlock/success
+execute if score @s unlock_progess matches 14 at @s run function gadget:unlock/lockpick/success

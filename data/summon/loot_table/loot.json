@@ -582,56 +582,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 3,
-					"name": "minecraft:tripwire_hook",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						},
-						{
-							"function": "minecraft:set_name",
-							"entity": "this",
-							"name": "開鎖器",
-							"target": "item_name"
-						},
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:consumable": {
-									"consume_seconds": 99999
-								}
-							}
-						},
-						{
-							"function": "minecraft:set_lore",
-							"mode": "append",
-							"entity": "this",
-							"lore": [[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]]
-						},
-						{
-							"function": "minecraft:set_custom_model_data",
-							"strings": {
-								"mode": "append",
-								"values": ["lockpick"]
-							}
-						},
-						{
-							"function": "minecraft:enchanted_count_increase",
-							"enchantment": "minecraft:looting",
-							"count": {
-								"min": 1,
-								"max": 2
-							},
-							"limit": 0
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"weight": 4,
 					"name": "minecraft:oak_pressure_plate",
 					"functions": [

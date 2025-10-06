@@ -17,8 +17,8 @@ execute store result score @s selected_slot run data get entity @s SelectedItemS
 execute if score @s selected_slot = @s unlock_slot run function gadget:unlock/progress/add
 
 #進度
-execute if score @s unlock_progess matches 0..4 run return run function gadget:unlock/progress/upper_half
-execute if score @s unlock_progess matches 5..9 run return run function gadget:unlock/progress/lower_half
+execute if score @s unlock_progess matches 0..6 run return run function gadget:unlock/progress/upper_half
+execute if score @s unlock_progess matches 7..13 run return run function gadget:unlock/progress/lower_half
 
 #達到100%後 要拿著才會繼續
 execute if items entity @s weapon diamond[item_name="開鎖器"] at @s run function tutorial:unlock/success

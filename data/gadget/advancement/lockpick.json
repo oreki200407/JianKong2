@@ -1,7 +1,7 @@
 {
 	"criteria":
 	{
-		"unlock":
+		"lockpick":
 		{
 			"trigger": "minecraft:using_item",
 			"conditions":

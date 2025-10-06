@@ -1,0 +1,29 @@
+{
+	"criteria":
+	{
+		"key":
+		{
+			"trigger": "minecraft:using_item",
+			"conditions":
+			{
+				"player":
+				{
+					"equipment": 
+					{
+						"mainhand":
+						{
+							"items": "minecraft:tripwire_hook",
+							"components": {
+								"minecraft:item_name": "鑰匙"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":
+	{
+		"function": "gadget:unlock/key"
+	}
+}

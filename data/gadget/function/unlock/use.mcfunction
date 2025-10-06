@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-advancement revoke @s only gadget:unlock
+advancement revoke @s only gadget:lockpick
 
 execute if entity @s[tag=using_unlock] run return fail
 execute unless block ~ ~ ~ iron_door unless block ~1 ~ ~ iron_door unless block ~-1 ~ ~ iron_door unless block ~ ~ ~1 iron_door unless block ~ ~ ~-1 iron_door run return fail
