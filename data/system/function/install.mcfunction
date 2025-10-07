@@ -386,8 +386,8 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 	{text: "", font: "uniform"},\
 	{text: "窗戶和門\n", color: "red", bold: true},\
 	"在遊戲中，所有怪物皆可破壞窗戶與開門。\n",\
-	"求生者可前往商店購買", {text: "錘子", bold: true}, "與", {text: "木板", bold: true}, "，用來加固窗戶。完成加固後，該窗戶將無法被怪物破壞。\n",\
-	"在遊戲中，", {text: "監控者", bold: true}, "可能會鎖上所有門。求生者可使用", {text: "開鎖器", bold: true}, "解鎖。在", {translate: "block.minecraft.iron_door"}, "旁手持開鎖器點擊", {keybind: "key.use"}, "，接著持續", {text: "上下滾動", bold: true}, "滑鼠滾輪，進行解鎖操作。完成解鎖後，該", {translate: "block.minecraft.iron_door"}, "將會轉換為木門。"\
+	"求生者可在商店購買", {text: "錘子", bold: true}, "與", {text: "木板", bold: true}, "，用來加固窗戶。完成加固後，該窗戶將無法被怪物破壞。\n",\
+	"在遊戲中，", {text: "監控者", bold: true}, "可能會鎖上所有門。求生者可在商店購買", {text: "鑰匙", bold: true}, "直接解鎖鐵門，或使用", {text: "開鎖器", bold: true}, "進行解鎖。在", {translate: "block.minecraft.iron_door"}, "旁手持開鎖器點擊", {keybind: "key.use"}, "，接著持續", {text: "上下滾動", bold: true}, "滑鼠滾輪。"\
 ]], author: "監控局局長", title: "遊戲介紹"}}}}
 
 execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{pages: [\
