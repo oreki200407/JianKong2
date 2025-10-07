@@ -355,11 +355,11 @@ execute at @e[type=marker, tag=map_info, limit=1] run data merge block ~ ~ ~ {Bo
 [\
 	{text: "", font: "uniform"},\
 	{text: "倒地\n", color: "red", bold: true},\
-	"當求生者的血量耗盡時，會進入", {text: "倒地狀態", bold: true}, "，需等待隊友救援，並增加監控者50分。\n",\
-	"其他求生者可在倒地隊友旁長按", {keybind: "key.sneak", bold: true}, "進行救援。\n",\
-	"被救援成功後，求生者將獲得10秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.regeneration"}, {translate: "potion.potency.1"}], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。\n",\
-	"若60秒內無人救援，該求生者將會死亡，後在原地重生，並增加監控者100分。\n",\
-	"死亡重生後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.speed"}, {translate: "potion.potency.1"}], bold: true}, "效果。"\
+	"當求生者血量耗盡時，會進入", {text: "倒地狀態", bold: true}, "，並增加監控者50分。\n",\
+	"其他求生者可在倒地隊友旁長按", {keybind: "key.sneak", bold: true}, "救援。\n",\
+	"救援後，求生者將獲得10秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.regeneration"}, {translate: "potion.potency.1"}], bold: true}, "和", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "效果。\n",\
+	"若60秒內無人救援，該求生者將會死亡，並增加監控者100分。\n",\
+	"死亡後，求生者將獲得30秒", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.strength"}, "I"], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.resistance"}, {translate: "potion.potency.4"}], bold: true}, "、", {translate: "potion.withAmplifier", with: [{translate: "effect.minecraft.speed"}, {translate: "potion.potency.1"}], bold: true}, "效果。"\
 ],\
 [\
 	{text: "", font: "uniform"},\
@@ -520,5 +520,9 @@ execute at @e[type=marker, tag=monster_info, limit=1] run data merge block ~ ~ ~
 	"●被打到會凋零\n",\
 	"●死後會滯留凋零效果"\
 ]],author:"監控局局長",title:"怪物介紹"}}}}
+
+tag @e[tag=tutorial_power1] remove puzzle_game
+tag @e[tag=tutorial_power2] remove netwalk_game
+tag @e[tag=tutorial_power3] remove light_game
 
 tellraw @a ["◎ ", {"text": "資料包", "color": "gold"}, "已更新至", {"text": "最新版", "color": "gold"}]

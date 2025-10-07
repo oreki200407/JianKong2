@@ -1,4 +1,6 @@
 advancement revoke @s only gadget:box
+
+execute unless score #mode system matches 3 run return fail
 execute if score #switching system matches 1 run return fail
 
 execute if score @s gun_cooldown matches 1.. run return fail

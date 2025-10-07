@@ -41,4 +41,4 @@ execute unless entity @e[type=interaction, tag=freeze] as @e[tag=contain] run fu
 
 execute if entity @e[team=monitor, tag=monster] run function game:resistance
 
-execute as @e[type=text_display,tag=one_box] at @s run function gadget:box/time
+execute as @e[type=text_display,tag=one_box] run function gadget:box/time
