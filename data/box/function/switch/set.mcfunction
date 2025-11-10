@@ -21,3 +21,4 @@ execute if entity @s[tag=box_off] run function box:use/box_off
 
 tag @s add box
 scoreboard players display numberformat 電箱位置 info_survivor fixed {selector: "@s"}
+scoreboard players display numberformat 電箱位置 info_monitor fixed {selector: "@s"}

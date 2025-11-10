@@ -6,6 +6,6 @@ item replace block ~ ~ ~ container.3 with redstone[item_name={"text":"轉移怪�
 item replace block ~ ~ ~ container.4 with redstone[tooltip_display={hide_tooltip: true},item_model=light_gray_stained_glass_pane,custom_data={type:"box",box:"none"}]
 
 item replace block ~ ~ ~ container.5 with redstone[item_name={"text":"鐵門解鎖","color":"gold"},item_model=iron_door,custom_data={type:"box"},lore=[{"text":"解開所有上鎖的鐵門","color":"white","italic":false},{"text":"所需經驗: 60等級","color":"aqua","italic":false}]]
-item replace block ~ ~ ~ container.6 with redstone[item_name={"text":"雙倍血量","color":"gold"},item_model=golden_apple,custom_data={type:"box"},lore=[{"text":"所有求生者額外獲得20血量2分鐘","color":"white","italic":false},{"text":"所需經驗: 80等級","color":"aqua","italic":false}]]
+item replace block ~ ~ ~ container.6 with redstone[item_name={"text":"雙倍血量","color":"gold"},item_model=golden_apple,custom_data={type:"box"},lore=[{"text":"所有求生者額外獲得20血量 (1:30)","color":"white","italic":false},{"text":"所需經驗: 80等級","color":"aqua","italic":false}]]
 item replace block ~ ~ ~ container.7 with redstone[item_name={"text":"立即救援","color":"gold"},item_model=totem_of_undying,custom_data={type:"box"},lore=[{"text":"救起所有倒地的求生者","color":"white","italic":false},{"text":"所需經驗: 100等級","color":"aqua","italic":false}]]
 item replace block ~ ~ ~ container.8 with redstone[item_name={"text":"範圍清怪","color":"gold"},item_model=diamond_sword,custom_data={type:"box"},lore=[{"text":"殺死所有求生者周圍10格內的怪物","color":"white","italic":false},{"text":"所需經驗: 120等級","color":"aqua","italic":false}]]

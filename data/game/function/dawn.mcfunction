@@ -27,6 +27,7 @@ scoreboard players reset #switch_box_cd system
 scoreboard players reset #box_off_cd system
 scoreboard players reset #sprint_cd system
 scoreboard players reset 電箱位置 info_survivor
+scoreboard players reset 電箱位置 info_monitor
 
 execute if score 酸雨 info_survivor matches 1.. run function control:acid_rain/end
 execute if score 毒氣 info_survivor matches 1.. run function control:poison/end
