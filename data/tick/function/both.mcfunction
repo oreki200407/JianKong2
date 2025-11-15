@@ -14,6 +14,7 @@ execute as @a[team=] run function game:join/spectate
 #中途離開回來
 execute as @a[scores={leave=1..}] run function game:join/rejoin
 
+execute as @e[type=item] at @s run function game:drop
 #-----------------------道具-----------------------
 clear @a[team=survivor] glass_bottle
 
