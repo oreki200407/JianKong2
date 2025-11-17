@@ -304,7 +304,8 @@
 地圖-西部小鎮：[點我](https://drive.usercontent.google.com/uc?id=1EAOPAIQVNZwqzHSO_P0ACat3mCViq2DV&export=download)<br>
 地圖-林中木屋：[點我](https://drive.usercontent.google.com/uc?id=17HRSA7QCdLKKWxeXJbgAEVm-As_csLAl&export=download)<br>
 地圖-麥穗村莊：[點我](https://drive.usercontent.google.com/uc?id=1VcUeaxhzvTgHlMAMZtWjJz8-FUUwbdDq&export=download)<br>
-資料包 Data Pack：[點我](https://drive.usercontent.google.com/uc?id=1Z0C9xa0vaVmt2nn0oNmU377gKITgruwV&export=download)<br>
+地圖-河畔營地：[點我](https://drive.usercontent.google.com/uc?id=13C_Ubu7lPLUr3L-_HaZ76-FdOrETUMRI&export=download)<br>
+資料包 Data Pack：[點我](https://drive.usercontent.google.com/uc?id=1TJNo-u4bmnyaUBIsJAk97Gq804_GWS4K&export=download)<br>
 資源包 Resource Pack：[點我](https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download)
 
 ## 🎨 資源包
@@ -320,7 +321,7 @@ resource-pack=https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0
 企劃：惡靈<br>
 指令：惡靈、AC<br>
 材質：惡靈、姆咪<br>
-建築：惡靈、杏奈、姆咪、檸檬、五百、AC、玫瑰、野路、拉凡、狗燈、無尾熊、愛蘿喵、香榭
+建築：惡靈、杏奈、姆咪、檸檬、五百、AC、玫瑰、野路、拉凡、狗燈、無尾熊、愛蘿喵、香榭、餅乾
 | | 測試 | |
 | - | - | - |
 | Alex_Cai | champs1 | nightevil_tw |
