@@ -19,8 +19,8 @@ execute if score 禁止監控 info_monitor matches 1.. run return run tellraw @s
 
 #尋找目標監視器
 execute store result score #teleport_camera camera run data get entity @s SelectedItem.components."minecraft:custom_model_data".floats[]
-execute as @e[type=area_effect_cloud, tag=camera] if score @s camera = #teleport_camera camera run tag @s add camera_destination
-execute unless entity @e[type=area_effect_cloud, tag=camera_destination] run return run tellraw @s ["◎ 監視器", {score: {name: "#teleport_camera", objective: "camera"}}, {text: "已損壞", color: "gold"}]
+execute as @e[type=armor_stand, tag=camera] if score @s camera = #teleport_camera camera run tag @s add camera_destination
+execute unless entity @e[type=armor_stand, tag=camera_destination] run return run tellraw @s ["◎ 監視器", {score: {name: "#teleport_camera", objective: "camera"}}, {text: "已損壞", color: "gold"}]
 
 #儲存位置
 scoreboard players operation @s camera = #teleport_camera camera
@@ -28,7 +28,7 @@ data modify storage jk2:data root.monitor.observe.player.uuid0 set from entity @
 execute if entity @s[tag=!using_camera] run function monitor:observe/player/enter
 
 #傳送到目標監視器
-execute rotated as @e[type=area_effect_cloud, tag=camera_destination, limit=1] run rotate @s ~ ~
+execute rotated as @e[type=armor_stand, tag=camera_destination, limit=1] run rotate @s ~ ~
 ride @s dismount
-ride @s mount @e[type=area_effect_cloud, tag=camera_destination, limit=1]
-tag @e[type=area_effect_cloud, tag=camera_destination] remove camera_destination
+ride @s mount @e[type=armor_stand, tag=camera_destination, limit=1]
+tag @e[type=armor_stand, tag=camera_destination] remove camera_destination

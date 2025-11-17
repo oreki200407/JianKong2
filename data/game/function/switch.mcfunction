@@ -36,7 +36,7 @@ execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #f
 execute at @e[type=marker,tag=plank] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_sign
 kill @e[type=marker, tag=fire]
 kill @e[type=marker, tag=plank]
-kill @e[type=area_effect_cloud,tag=camera]
+kill @e[type=armor_stand,tag=camera]
 execute as @e[type=item] if items entity @s contents #game:loot run kill
 
 #重置怪物
