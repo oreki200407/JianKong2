@@ -61,8 +61,6 @@ execute as @a[tag=using_camera] at @s run function monitor:observe/player/tick
 scoreboard players remove @a[scores={camera_cooldown=1..}] camera_cooldown 1
 #監視器
 execute as @e[type=armor_stand, tag=camera] run function monitor:observe/camera/tick
-#拍攝
-#scoreboard players remove @a[scores={photo_cooldown=1..}] photo_cooldown 1
 
 #終界箱
 execute as @a[team=monitor] at @s run function summon:root

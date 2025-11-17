@@ -91,8 +91,6 @@ scoreboard objectives remove cost_time
 scoreboard objectives remove heat
 scoreboard objectives remove trap
 scoreboard objectives remove trap_cooldown
-scoreboard objectives remove photo
-scoreboard objectives remove photo_cooldown
 
 #毒氣
 scoreboard objectives remove poison_point

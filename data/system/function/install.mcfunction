@@ -122,8 +122,6 @@ scoreboard objectives add cost_time dummy
 scoreboard objectives add heat dummy "過熱"
 scoreboard objectives add trap dummy
 scoreboard objectives add trap_cooldown dummy
-scoreboard objectives add photo dummy
-scoreboard objectives add photo_cooldown dummy
 
 #機關
 scoreboard objectives add poison_point dummy
@@ -175,9 +173,9 @@ scoreboard objectives add boss_time dummy "Boss時間"
 scoreboard objectives add boss_status dummy "Boss狀態"
 
 #隊伍
-team add survivor
-team add monitor
-team add spec
+team add survivor "[求生者]"
+team add monitor "[監控者]"
+team add spec "[旁觀者]"
 
 team modify survivor color red
 team modify monitor color blue
