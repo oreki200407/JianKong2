@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-data merge entity @s {Marker:1b,Invisible:1b,NoBasePlate:1b,attributes:[{id:"scale",base:0.0625}],Tags: ["camera"]}
+data merge entity @s {Marker: true, Invisible: true, NoBasePlate: true, attributes: [{id: "scale", base: 0.0625}], Tags: ["camera"]}
 scoreboard players operation @s camera = #camera_installer camera
 #不要把這個tp改成rotate 它有傳送的
 tp @s ~ ~1 ~ ~ ~

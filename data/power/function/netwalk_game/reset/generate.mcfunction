@@ -45,13 +45,13 @@ data modify storage jk2:data root.monitor.netwalk_game.vector2.addend_vec2 set f
 function power:netwalk_game/vector2/add
 #和要拿去檢查範圍
 data modify storage jk2:data root.monitor.netwalk_game.vector2.check_bound_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.sum_vec2
-#超過範圍就下一個 用schedule避免遞迴太深
+#超過範圍就下一個
 execute unless function power:netwalk_game/vector2/is_in_bound run return run function power:netwalk_game/reset/generate
 
 #如果新的點位在範圍內的話
 #獲得新點位連了多少個格子數
 data modify storage jk2:data root.monitor.netwalk_game.cell_vec2 set from storage jk2:data root.monitor.netwalk_game.vector2.sum_vec2
-#已經有連了就下一個 用schedule避免遞迴太深
+#已經有連了就下一個
 execute unless function power:netwalk_game/reset/cell/is_empty run return run function power:netwalk_game/reset/generate
 
 #如果以上的每一個關卡都通過了，那就可以真正開始連接了

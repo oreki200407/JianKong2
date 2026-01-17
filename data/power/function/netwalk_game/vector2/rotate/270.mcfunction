@@ -1,7 +1,7 @@
 ###################################################
-# 旋轉27度
+# 旋轉270度
 # 
-# Name   : 90.mcfunction
+# Name   : 270.mcfunction
 # Path   : power:netwalk_game/vector2/rotate/
 # As     : 發電機標記，tag=netwalk_game
 # At     : As
