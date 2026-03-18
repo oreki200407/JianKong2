@@ -9,8 +9,13 @@
 # Author : oreki20
 ###################################################
 
-execute if entity @s[tag=freeze] run return run function contain:control/freeze/unfreeze
+scoreboard players set @s contain_freeze 0
+scoreboard players enable @s contain_freeze
 
-data merge entity @e[type=text_display,limit=1,tag=contain_freeze_text] {text:{color:"gold",text:"解凍生物",bold:1b}}
-tag @s add freeze
-tellraw @a[team=monitor] ["◎ 生物已被",{text:"凍結","color":"gold"}, ", 凍結期間不會生產材料"]
+tag @s add temp
+execute as @e[type=villager, tag=contain_villager, tag=contain] run function contain:control/freeze/tellraw {freeze:1,unfreeze:2}
+execute as @e[type=skeleton, tag=contain_skeleton, tag=contain] run function contain:control/freeze/tellraw {freeze:3,unfreeze:4}
+execute as @e[type=cave_spider, tag=contain_spider, tag=contain] run function contain:control/freeze/tellraw {freeze:5,unfreeze:6}
+execute as @e[type=zombie, tag=contain_zombie, tag=contain] run function contain:control/freeze/tellraw {freeze:7,unfreeze:8}
+execute as @e[type=creeper, tag=contain_creeper, tag=contain] run function contain:control/freeze/tellraw {freeze:9,unfreeze:10}
+tag @s remove temp

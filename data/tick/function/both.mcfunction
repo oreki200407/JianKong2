@@ -69,6 +69,10 @@ execute as @a[team=monitor] at @s run function summon:root
 execute as @a[team=monitor] run function power:root
 execute as @e[type=area_effect_cloud, tag=power_time, nbt={PortalCooldown: 0}] at @s run function power:light_off
 execute as @e[type=marker,tag=power_auto, predicate=tick:2_seconds] at @s run function power:success
+clear @a echo_shard
+clear @a magenta_glazed_terracotta
+clear @a coal
 
 #收容
 execute as @e[type=interaction,tag=contain_control] at @s if data entity @s interaction run function contain:control/root
+execute as @a[team=monitor] if score @s contain_freeze matches 1.. run function contain:control/freeze/check

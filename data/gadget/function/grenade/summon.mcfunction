@@ -10,5 +10,5 @@
 ###################################################
 
 summon item ~ ~ ~ {PortalCooldown:40,Item:{id:"snowball",count:1,components:{"custom_model_data":{strings:["bomb"]}}},Invulnerable:1b,PickupDelay:32767,Age:-32768,Tags:["grenade"]}
-playsound entity.tnt.primed master @a
+playsound entity.tnt.primed master @a ~ ~ ~ 0.4
 kill @s[type=marker]

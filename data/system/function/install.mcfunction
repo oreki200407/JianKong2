@@ -131,6 +131,7 @@ scoreboard objectives add contain_temperature dummy
 scoreboard objectives add contain_health dummy
 scoreboard objectives add contain_food dummy
 scoreboard objectives add contain_second dummy
+scoreboard objectives add contain_freeze trigger
 
 #發電機
 scoreboard objectives add power dummy
@@ -191,7 +192,7 @@ team modify survivor friendlyFire false
 team modify monitor friendlyFire false
 
 #記分板設定
-scoreboard players set 更新 system 2
+scoreboard players set 更新 system 3
 scoreboard players set #2 constant 2
 scoreboard players set #10 constant 10
 scoreboard players set #20 constant 20

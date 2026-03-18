@@ -1,0 +1,2 @@
+$execute if entity @s[tag=freeze] run return run tellraw @a[tag=temp,team=monitor] ["▻ ",{selector:"@s"},"  ",{"text":"<解凍>","color":"gold",click_event:{"action":"run_command","command":"/trigger freeze set $(freeze)"}}] 
+$tellraw @a[tag=temp,team=monitor] ["▻ ",{selector:"@s"},"  ",{"text":"<凍結>","color":"gold",click_event:{"action":"run_command","command":"/trigger freeze set $(unfreeze)"}}] 

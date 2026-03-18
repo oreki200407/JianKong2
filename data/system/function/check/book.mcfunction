@@ -1,6 +1,6 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative","color":"gold"},"來操作"]
 
-tellraw @s ["——————————\n",{"text":"電箱",color:gold},": ",{"selector": "@e[type=armor_stand, tag=box_point]"},"\n",{"text":"毒氣點",color:gold},": ",{"selector": "@e[type=armor_stand, tag=poison_point]"},"\n——————————"]
+tellraw @a ["——————————\n",{"text":"電箱",color:gold},": ",{"selector": "@e[type=armor_stand, tag=box_point]"},"\n",{"text":"毒氣點",color:gold},": ",{"selector": "@e[type=armor_stand, tag=poison_point]"},"\n——————————"]
 
 clear @s written_book[written_book_content~{title:"查看場地"}]
 give @s written_book[written_book_content={pages:\
