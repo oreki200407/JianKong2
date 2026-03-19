@@ -10,5 +10,4 @@
 ###################################################
 
 tag @s add freeze
-tellraw @a[team=monitor] ["◎ ",{selector:"@s", color:gold},"生物已被",{text:"凍結","color":"gold"}, ", 凍結期間不會生產材料"]
-function contain:update_text/all
+tellraw @a[team=monitor] ["◎ ",{selector:"@s", color:gold},"已被",{text:"凍結","color":"gold"}, ", 凍結期間不會生產材料"]
