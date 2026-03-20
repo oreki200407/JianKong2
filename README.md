@@ -305,8 +305,11 @@
 地圖-林中木屋：[點我](https://drive.usercontent.google.com/uc?id=17HRSA7QCdLKKWxeXJbgAEVm-As_csLAl&export=download)<br>
 地圖-麥穗村莊：[點我](https://drive.usercontent.google.com/uc?id=1VcUeaxhzvTgHlMAMZtWjJz8-FUUwbdDq&export=download)<br>
 地圖-河畔營地：[點我](https://drive.usercontent.google.com/uc?id=13C_Ubu7lPLUr3L-_HaZ76-FdOrETUMRI&export=download)<br>
-資料包 Data Pack：[點我](https://drive.usercontent.google.com/uc?id=1TJNo-u4bmnyaUBIsJAk97Gq804_GWS4K&export=download)<br>
+資料包 Data Pack：[點我](https://drive.usercontent.google.com/uc?id=1U-j5el_78k3AqIuatuBtPsg8Hgk79gm8&export=download)<br>
 資源包 Resource Pack：[點我](https://drive.usercontent.google.com/uc?id=10tvdQ2MIlbwX_xjLDN8GU0ItzRSVXRPu&export=download)
+
+更新記錄：[點我](https://docs.google.com/spreadsheets/d/1Hr6o3SIB4kHeGiy-nnlChYbqbTnh672mgvZiXQ4E_N0/edit?usp=sharing)<br>
+（最後更新：2026/3/20）
 
 ## 🎨 資源包
 本地圖提供 **專屬資源包**。強烈建議安裝以獲得更好的遊戲體驗。<br>
