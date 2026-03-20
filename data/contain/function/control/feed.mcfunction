@@ -9,6 +9,6 @@
 # Author : oreki20
 ###################################################
 
-scoreboard players add @e[tag=contain] contain_food 1
+scoreboard players add @e[tag=contain,tag=!freeze] contain_food 1
 
 function contain:update_text/food
