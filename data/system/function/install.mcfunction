@@ -193,6 +193,7 @@ team modify monitor friendlyFire false
 
 #記分板設定
 scoreboard players set 更新 system 3
+scoreboard players set #difficulty system 2
 scoreboard players set #2 constant 2
 scoreboard players set #10 constant 10
 scoreboard players set #20 constant 20
@@ -203,7 +204,6 @@ scoreboard players set #power1 power 0
 scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 scoreboard players set #box fix_progress 0
-scoreboard players set #difficulty morph 2
 
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"

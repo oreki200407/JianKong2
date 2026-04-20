@@ -12,7 +12,7 @@
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
 $difficulty $(difficulty)
-execute store result score #difficulty morph run difficulty
+execute store result score #difficulty system run difficulty
 
 #設定好選擇的互動實體
 tag @e[tag=selected_difficulty, type=interaction, limit=1] remove selected_difficulty

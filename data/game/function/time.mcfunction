@@ -39,6 +39,7 @@ execute if score 禁止奔跑 info_survivor matches 1.. run scoreboard players r
 
 execute as @e[tag=contain, tag=!freeze] run function contain:value/random
 
-execute if entity @e[team=monitor, tag=monster] run function game:resistance
+#非困難模式下 會根據怪物數量給予玩家抗性
+execute unless score #difficulty system matches 3 if entity @e[team=monitor, tag=monster, limit=1, y=0] run function game:resistance
 
 execute as @e[type=text_display,tag=one_box] run function gadget:box/time
