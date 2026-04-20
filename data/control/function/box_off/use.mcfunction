@@ -20,7 +20,7 @@ scoreboard players add #box_off_cd system 180
 setblock ~ ~ ~ dark_oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,color:"white",text:"關閉電箱"},[{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#box_off_cd",objective:"system"}}],""]},is_waxed:1b}
 playsound block.piston.extend
 
-tag @e[type=armor_stand, tag=box] add box_off
+tag @e[tag=box, type=armor_stand] add box_off
 scoreboard players set #box fix_progress 0
-execute at @e[type=armor_stand, tag=box_off] run function box:use/box_off
+execute at @e[tag=box_off, type=armor_stand] run function box:use/box_off
 tellraw @a ["◎ 電箱已被", {"text": "關閉", "color":"gold"}, ", 求生者無法使用",{"text": "電箱", "color":"gold"}]

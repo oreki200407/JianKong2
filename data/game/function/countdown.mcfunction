@@ -13,9 +13,9 @@ execute as @a[team=monitor] run function monitor:observe/player/give/root
 execute as @a[team=monitor] run attribute @s attack_knockback modifier add jk2:attack_knockback 1 add_value
 execute as @a[team=survivor] run attribute @s attack_knockback modifier remove jk2:attack_knockback
 
-tag @e[type=armor_stand,tag=box] remove box
-tellraw @a[team=!monitor] ["◎ 初始電箱在", {"color":"gold","selector": "@e[type=armor_stand,tag=box_default]"}]
-execute as @e[type=armor_stand, tag=box_default] at @s run function box:switch/set
+tag @e[tag=box,type=armor_stand] remove box
+tellraw @a[team=!monitor] ["◎ 初始電箱在", {"color":"gold","selector": "@e[tag=box_default,type=armor_stand]"}]
+execute as @e[tag=box_default, type=armor_stand] at @s run function box:switch/set
 
 function summon:pick/new
 function summon:pick/new

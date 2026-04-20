@@ -9,12 +9,12 @@
 # Author : oreki20
 ###################################################
 
-data modify entity @e[type=text_display, tag=contain_value_food,limit=1] text set value \
+data modify entity @e[tag=contain_value_food, type=text_display, limit=1] text set value \
 [\
 	"飽食度\n",\
-	{score:{name:"@e[type=villager, tag=contain_villager,limit=1,tag=contain,tag=!freeze]",objective:"contain_food"}}, "\n",\
-	{score:{name:"@e[type=skeleton, tag=contain_skeleton,limit=1,tag=contain,tag=!freeze]",objective:"contain_food"}}, "\n",\
-	{score:{name:"@e[type=cave_spider, tag=contain_spider,limit=1,tag=contain,tag=!freeze]",objective:"contain_food"}}, "\n",\
-	{score:{name:"@e[type=zombie, tag=contain_zombie,limit=1,tag=contain,tag=!freeze]",objective:"contain_food"}}, "\n",\
-	{score:{name:"@e[type=creeper, tag=contain_creeper,limit=1,tag=contain,tag=!freeze]",objective:"contain_food"}}\
+	{score:{name:"@e[tag=contain_villager, tag=contain, tag=!freeze, type=villager,    limit=1]",objective:"contain_food"}}, "\n",\
+	{score:{name:"@e[tag=contain_skeleton, tag=contain, tag=!freeze, type=skeleton,    limit=1]",objective:"contain_food"}}, "\n",\
+	{score:{name:"@e[tag=contain_spider,   tag=contain, tag=!freeze, type=cave_spider, limit=1]",objective:"contain_food"}}, "\n",\
+	{score:{name:"@e[tag=contain_zombie,   tag=contain, tag=!freeze, type=zombie,      limit=1]",objective:"contain_food"}}, "\n",\
+	{score:{name:"@e[tag=contain_creeper,  tag=contain, tag=!freeze, type=creeper,     limit=1]",objective:"contain_food"}}\
 ]

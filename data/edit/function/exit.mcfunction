@@ -12,15 +12,15 @@
 playsound ui.button.click master @s
 execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切換", {translate: "gameMode.creative", "color":"gold"}, "來操作"]
 
-execute as @e[type=armor_stand,tag=box_point] at @s run function edit:name
-execute as @e[type=armor_stand,tag=poison_point] at @s run function edit:name
+execute as @e[tag=box_point,type=armor_stand] at @s run function edit:name
+execute as @e[tag=poison_point,type=armor_stand] at @s run function edit:name
 
-execute as @e[type=armor_stand,tag=box_point] unless data entity @s CustomName run return run tellraw @a ["◎ 仍有未命名的", {"text": "電箱","color":"gold"}]
-execute as @e[type=armor_stand,tag=poison_point] unless data entity @s CustomName run return run tellraw @a ["◎ 仍有未命名的", {"text": "毒氣點","color":"gold"}]
+execute as @e[tag=box_point,type=armor_stand] unless data entity @s CustomName run return run tellraw @a ["◎ 仍有未命名的", {"text": "電箱","color":"gold"}]
+execute as @e[tag=poison_point,type=armor_stand] unless data entity @s CustomName run return run tellraw @a ["◎ 仍有未命名的", {"text": "毒氣點","color":"gold"}]
 
 scoreboard objectives setdisplay sidebar lobby
 scoreboard players set #mode system 2
-execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Invisible:1b}
+execute as @e[tag=edit,type=armor_stand] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Invisible:1b}
 kill @e[tag=edit_setting]
 kill @e[tag=lobby_setting]
 

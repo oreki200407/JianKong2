@@ -13,7 +13,7 @@ advancement revoke @s only gadget:defibrillator
 execute if score @s medical_cooldown matches 1.. run return fail
 scoreboard players set @s medical_cooldown 10
 
-execute unless entity @e[type=item_display, tag=tomb, distance=..5] run return run tellraw @s ["◎ 使用", {"text": "失敗", "color":"gold"},", 周圍沒有", {"text": "倒地的玩家", "color":"gold"}]
-execute as @n[type=item_display, tag=tomb, distance=..5] run function game:death/tomb/revive
+execute unless entity @e[tag=tomb, type=item_display, distance=..5, limit=1] run return run tellraw @s ["◎ 使用", {"text": "失敗", "color":"gold"},", 周圍沒有", {"text": "倒地的玩家", "color":"gold"}]
+execute as @n[tag=tomb, type=item_display, distance=..5] run function game:death/tomb/revive
 
 clear @s paper[item_name="電擊器"] 1

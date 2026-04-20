@@ -9,11 +9,11 @@
 # Author : oreki20
 ###################################################
 
-execute if entity @s[tag=contain_skeleton] unless entity @e[type=marker, distance=..0.01,tag=contain_skeleton_marker] run return fail
-execute if entity @s[tag=contain_creeper] unless entity @e[type=marker, distance=..0.01,tag=contain_creeper_marker] run return fail
-execute if entity @s[tag=contain_spider] unless entity @e[type=marker, distance=..0.01,tag=contain_spider_marker] run return fail
-execute if entity @s[tag=contain_villager] unless entity @e[type=marker, distance=..0.01,tag=contain_villager_marker] run return fail
-execute if entity @s[tag=contain_zombie] unless entity @e[type=marker, distance=..0.01,tag=contain_zombie_marker] run return fail
+execute if entity @s[tag=contain_skeleton] unless entity @e[tag=contain_skeleton_marker, type=marker, distance=..0.01, limit=1] run return fail
+execute if entity @s[tag=contain_creeper ] unless entity @e[tag=contain_creeper_marker , type=marker, distance=..0.01, limit=1] run return fail
+execute if entity @s[tag=contain_spider  ] unless entity @e[tag=contain_spider_marker  , type=marker, distance=..0.01, limit=1] run return fail
+execute if entity @s[tag=contain_villager] unless entity @e[tag=contain_villager_marker, type=marker, distance=..0.01, limit=1] run return fail
+execute if entity @s[tag=contain_zombie  ] unless entity @e[tag=contain_zombie_marker  , type=marker, distance=..0.01, limit=1] run return fail
 
 #把其他生物送出去
 tp @e[tag=contain_escape, distance=..1.5] ~-1.5 ~ ~

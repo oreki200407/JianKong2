@@ -1,7 +1,7 @@
 execute unless entity @s[level=120..] run return run function box:use/fail
 xp add @s -120 levels
 
-execute at @e[type=armor_stand, tag=box] as @e[type=!player, team=monitor, distance=..15] run function box:use/success/transfer/radius
+execute at @e[tag=box, type=armor_stand] as @e[type=!player, team=monitor, distance=..15] run function box:use/success/transfer/radius
 
 tellraw @a[team=monitor] ["◎ 求生者使用了電箱-", {"text": "轉移怪物", "color":"gold"},", 有怪物進入了", {"text": "監控室", "color":"gold"}]
 

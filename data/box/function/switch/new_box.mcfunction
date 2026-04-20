@@ -10,10 +10,10 @@
 ###################################################
 
 #上鎖的電箱繼續上鎖
-execute if entity @e[type=armor_stand, tag=box_off] run tag @s add box_off
+execute if entity @e[tag=box_off, type=armor_stand, limit=1] run tag @s add box_off
 
 #刪除舊的
-execute as @e[type=armor_stand, tag=box] at @s run function box:switch/remove_box
+execute as @e[tag=box, type=armor_stand] at @s run function box:switch/remove_box
 
 #放上新的
 function box:switch/set

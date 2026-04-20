@@ -14,9 +14,9 @@ title @s actionbar {text: "你正在被捕獸夾卡住", color: "red", bold: tru
 execute if score @s jump_break matches 1.. run return run function gadget:bear_trap/trapped/progress
 execute if score @s bear_trap_release matches 10 run return run function gadget:bear_trap/release/root
 
-execute at @s if entity @e[type=marker, tag=bear_trap_marker, distance=..0.01] run return fail
+execute at @s if entity @e[tag=bear_trap_marker, type=marker, distance=..0.01, limit=1] run return fail
 
 tag @s add temp
 scoreboard players operation #check_marker bear_trap = @s bear_trap
-execute as @e[type=marker, tag=bear_trap_marker] at @s if score @s bear_trap = #check_marker bear_trap run tp @a[tag=temp] ~ ~ ~
+execute as @e[tag=bear_trap_marker, type=marker] at @s if score @s bear_trap = #check_marker bear_trap run tp @a[tag=temp] ~ ~ ~
 tag @s remove temp

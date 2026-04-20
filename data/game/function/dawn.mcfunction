@@ -2,9 +2,9 @@ title @a title {"text":"早上來臨","bold":true,"color":"gold"}
 scoreboard players set #switching system 1
 
 #電箱
-execute at @e[type=armor_stand,tag=box_point] run fill ~ ~ ~ ~ ~1 ~ air
-execute as @e[type=text_display,tag=one_box] at @s positioned ~ ~-2.2 ~ run function gadget:box/end
-execute at @e[type=marker,tag=monitor_ender_chest] run setblock ~ ~ ~ air
+execute at @e[tag=box_point,type=armor_stand] run fill ~ ~ ~ ~ ~1 ~ air
+execute as @e[tag=one_box,type=text_display] at @s positioned ~ ~-2.2 ~ run function gadget:box/end
+execute at @e[tag=monitor_ender_chest,type=marker] run setblock ~ ~ ~ air
 
 schedule clear contain:second
 schedule clear control:acid_rain/start
@@ -40,7 +40,7 @@ execute as @a[tag=using_unlock] run function gadget:unlock/lockpick/fail
 execute as @a[tag=fixing_box] run function box:fix/fix_mode/leave
 execute as @a[tag=fractured] run function gadget:medical/fracture/heal
 execute as @a[tag=trapped] run function gadget:bear_trap/release/root
-execute as @e[type=item_display, tag=tomb] run function game:death/tomb/revive
+execute as @e[tag=tomb, type=item_display] run function game:death/tomb/revive
 execute as @a[tag=using_camera] run function monitor:observe/player/back/root
 execute as @a[team=monitor, scores={morph=1..}] at @s run function morph:player/end with entity @s equipment.head.components."minecraft:custom_data"
 
@@ -54,7 +54,7 @@ kill @e[tag=box_transfer]
 kill @e[tag=monster_ride]
 kill @e[tag=monster_being_ride]
 kill @e[type=!player, team=monitor, tag=monster]
-kill @e[type=block_display, tag=morph_grass_block]
+kill @e[tag=morph_grass_block, type=block_display]
 
 #分數
 execute as @a[team=survivor] run function game:end/damage

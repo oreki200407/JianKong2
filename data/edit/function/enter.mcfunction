@@ -13,7 +13,7 @@ execute if entity @s[gamemode=!creative] run return run tellraw @s ["◎ 請切�
 scoreboard objectives setdisplay sidebar edit
 
 scoreboard players set #mode system 1
-execute as @e[type=armor_stand,tag=edit] run data merge entity @s {Glowing:1b,CustomNameVisible:1b,Invisible:0b}
+execute as @e[tag=edit,type=armor_stand] run data merge entity @s {Glowing:1b,CustomNameVisible:1b,Invisible:0b}
 
 kill @e[tag=edit_setting]
 kill @e[tag=lobby_setting]

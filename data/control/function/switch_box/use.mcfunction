@@ -20,4 +20,4 @@ scoreboard players add #switch_box_cd system 300
 setblock ~ ~ ~ dark_oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,color:"white",text:"更換電箱"},[{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#switch_box_cd",objective:"system"}}],""]},is_waxed:1b}
 playsound block.piston.extend
 #從所有電箱點位中挑一個新的出來
-execute as @e[type=armor_stand, tag=box_point, tag=!box, sort=random, limit=1] at @s run function box:switch/new_box
+execute as @e[tag=box_point, tag=!box, type=armor_stand, sort=random, limit=1] at @s run function box:switch/new_box

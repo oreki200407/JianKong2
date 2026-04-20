@@ -20,7 +20,7 @@ scoreboard players add #lock_door_cd system 180
 setblock ~ ~ ~ dark_oak_wall_sign[facing=north]{front_text:{messages:["",{bold:1b,color:"white",text:"鐵門上鎖"},[{text:"冷卻時間: ",color:"red",bold:1b},{score:{name:"#lock_door_cd",objective:"system"}}],""]},is_waxed:1b}
 playsound block.piston.extend
 
-execute as @e[type=marker,tag=door] at @s run function control:lock_door/lock with entity @s data
+execute as @e[tag=door, type=marker] at @s run function control:lock_door/lock with entity @s data
 tellraw @a ["◎ 所有門已被", {"text": "上鎖", "color":"gold"}]
 
 execute as @a[team=survivor] unless items entity @s container.* tripwire_hook[item_name="開鎖器"] run give @s tripwire_hook[item_name="開鎖器",lore=[[{"text": "點擊", "color": "gray", "italic": false}, {"keybind": "key.use"}, "使用"]], consumable={consume_seconds: 99999}, custom_model_data={strings:["lockpick"]}] 1

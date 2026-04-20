@@ -11,4 +11,4 @@
 
 scoreboard players add #room contain_temperature 1
 execute if score #room contain_temperature matches 31.. run scoreboard players set #room contain_temperature 30
-data merge entity @e[type=text_display,tag=contain_temperature,limit=1] {text:[{"score":{"name":"#room","objective":"contain_temperature"}, color:gold, bold:1b}]}
+data merge entity @e[tag=contain_temperature,type=text_display,limit=1] {text:[{"score":{"name":"#room","objective":"contain_temperature"}, color:gold, bold:1b}]}
