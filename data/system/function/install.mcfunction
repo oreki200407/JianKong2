@@ -203,6 +203,7 @@ scoreboard players set #power1 power 0
 scoreboard players set #power2 power 0
 scoreboard players set #power3 power 0
 scoreboard players set #box fix_progress 0
+scoreboard players set #difficulty morph 2
 
 bossbar add jk2:boss "BOSS血條"
 bossbar add jk2:time "遊戲時間"

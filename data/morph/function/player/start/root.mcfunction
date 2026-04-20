@@ -19,13 +19,10 @@ execute store result score #availables morph store result storage jk2:data root.
 #沒有可變怪物時失敗
 execute if score #availables morph matches 0 run return run tellraw @s ["◎ 目前沒有", {text: "可變的怪物", color: "gold"}]
 
-#免費
-execute at @e[type=marker, tag=morph_machine, limit=1] if block ~ ~-1 ~-2 air run scoreboard players add 電力 info_monitor 50
-
-execute unless score 電力 info_monitor matches 50.. run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
+#扣電力 如果失敗就return
+execute unless function morph:player/start/electricity run return run tellraw @s ["◎ 電力不足, 無法使用", {text: "人體變型", color: "gold"}]
 
 #變型成功
-scoreboard players remove 電力 info_monitor 50
 clear @s white_dye
 
 #隨機選擇
