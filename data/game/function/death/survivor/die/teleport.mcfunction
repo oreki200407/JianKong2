@@ -13,5 +13,5 @@ scoreboard players operation #dying_player uuid0 = @s uuid0
 
 #找到儲存了玩家的UUID的展示實體
 tag @s add dying
-execute as @e[type=item_display, tag=tomb] if score @s uuid0_match = #dying_player uuid0 at @s run tp @a[tag=dying] ~ ~ ~
+execute as @e[tag=tomb, type=item_display] if score @s uuid0_match = #dying_player uuid0 at @s run tp @a[tag=dying] ~ ~ ~
 tag @s remove dying

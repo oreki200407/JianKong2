@@ -27,22 +27,22 @@ scoreboard objectives setdisplay sidebar.team.blue money
 #復原場地
 execute as @e[type=!player, team=monitor, tag=monster] run data merge entity @s {DeathLootTable:"summon:empty"}
 kill @e[type=experience_orb]
-kill @e[type=area_effect_cloud, tag=power_time]
-kill @e[type=item_display, tag=bear_trap]
-tag @e[type=armor_stand, tag=box_off] remove box_off
-execute as @e[type=marker,tag=door] at @s run function gadget:unlock/door with entity @s data
-execute as @e[type=marker,tag=glass_broken] at @s run function monster:break_glass/restore with entity @s data
-execute at @e[type=marker,tag=fire] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
-execute at @e[type=marker,tag=plank] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_sign
+kill @e[tag=power_time, type=area_effect_cloud]
+kill @e[tag=bear_trap, type=item_display]
+tag @e[tag=box_off, type=armor_stand] remove box_off
+execute as @e[tag=door,type=marker] at @s run function gadget:unlock/door with entity @s data
+execute as @e[tag=glass_broken,type=marker] at @s run function monster:break_glass/restore with entity @s data
+execute at @e[tag=fire,type=marker] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace #fire
+execute at @e[tag=plank,type=marker] run fill ~ ~ ~ ~ ~ ~ air replace oak_wall_sign
 kill @e[type=marker, tag=fire]
 kill @e[type=marker, tag=plank]
 kill @e[type=armor_stand,tag=camera]
 execute as @e[type=item] if items entity @s contents #game:loot run kill
 
 #重置怪物
-scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_cooldown=1..}] summon_cooldown
-scoreboard players reset @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] summon_shuffle
+scoreboard players reset @e[tag=summon_picked,type=armor_stand,scores={summon_cooldown=1..}] summon_cooldown
+scoreboard players reset @e[tag=summon_picked,type=armor_stand,scores={summon_shuffle=1..}] summon_shuffle
 scoreboard players reset #summon_pick_release summon_monster
-execute as @e[type=armor_stand,tag=summon_picked] run function summon:pick/reset
+execute as @e[tag=summon_picked,type=armor_stand] run function summon:pick/reset
 
 schedule function game:prepare 3s

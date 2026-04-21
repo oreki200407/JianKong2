@@ -15,4 +15,4 @@ function morph:warden/distance/root
 bossbar set jk2:distance name ["", {text: "距離 ", color: "white"}, {selector: "@p[team=survivor, gamemode=adventure]"}, " ", {score: {name: "#distance_integer", objective: "morph"}, color: "red", extra: [".", {score: {name: "#distance_decimal", objective: "morph"}}]}, {text: " 格", color: "white"}]
 
 #音爆攻擊
-execute as @e[type=marker, tag=sonic_boom] at @s run function morph:warden/skill/1/sonic_boom
+execute as @e[tag=sonic_boom, type=marker] at @s run function morph:warden/skill/1/sonic_boom

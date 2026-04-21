@@ -9,7 +9,7 @@
 # Author : Alex_Cai
 ###################################################
 
-execute unless entity @e[type=item_display, tag=tomb, distance=..0.01, limit=1] run function game:death/survivor/die/teleport
+execute unless entity @e[tag=tomb, type=item_display, distance=..0.01, limit=1] run function game:death/survivor/die/teleport
 
 #60秒死透
 scoreboard players add @s death_time 1

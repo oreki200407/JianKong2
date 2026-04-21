@@ -10,4 +10,4 @@
 ###################################################
 
 #苦力怕TNT
-execute as @e[type=tnt, tag=morph_tnt] at @s run function morph:creeper/skill/2/tnt_explode
+execute as @e[tag=morph_tnt, type=tnt] at @s run function morph:creeper/skill/2/tnt_explode

@@ -50,7 +50,7 @@ tellraw @s \
 	{text: "\n——————————"}\
 ]
 
-execute at @a[team=survivor] run tag @e[type=marker,tag=point,distance=..25] add morph_teleport
-execute unless entity @e[type=marker, tag=morph_teleport] run return run tp @s @e[type=marker, tag=point, sort=random, limit=1]
-tp @s @e[type=marker,tag=morph_teleport,sort=random,limit=1]
-tag @e[type=marker,tag=morph_teleport] remove morph_teleport
+execute at @a[team=survivor] run tag @e[tag=point,type=marker,distance=..25] add morph_teleport
+execute unless entity @e[tag=morph_teleport,type=marker, limit=1] run return run tp @s @e[tag=point, type=marker, sort=random, limit=1]
+tp @s @e[tag=morph_teleport,type=marker,sort=random,limit=1]
+tag @e[tag=morph_teleport,type=marker] remove morph_teleport

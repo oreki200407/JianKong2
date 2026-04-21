@@ -9,6 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute if entity @e[type=!player, team=monitor, tag=monster, dx=0, dy=0, dz=0] run return 100
-execute if entity @a[gamemode=!spectator, team=monitor, tag=monster, dx=0, dy=0, dz=0] run return 100
+execute if entity @e[type=!player, team=monitor, tag=monster, dx=0, dy=0, dz=0, limit=1] run return 100
+execute if entity @a[gamemode=!spectator, team=monitor, tag=monster, dx=0, dy=0, dz=0, limit=1] run return 100
 return fail

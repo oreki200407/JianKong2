@@ -4,7 +4,7 @@ scoreboard players set #mode system 3
 effect clear @a[team=survivor] saturation
 effect give @a[team=survivor] hunger 3 255 true
 
-execute at @e[type=marker,tag=spawn_survivor,limit=1] run setblock ~ ~ ~ air
+execute at @e[tag=spawn_survivor,type=marker,limit=1] run setblock ~ ~ ~ air
 item replace entity @a[team=survivor] enderchest.10 with air
 clear @a[team=monitor] black_dye
 execute as @a[scores={camera_interface=0..}] run function monitor:install/camera_interface/exit

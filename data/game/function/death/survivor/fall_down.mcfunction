@@ -10,7 +10,7 @@
 ###################################################
 
 #如果玩家死得太低就回重生點
-execute if predicate game:too_low at @e[type=marker, tag=spawn_survivor, limit=1] run return run function game:death/survivor/fall_down
+execute if predicate game:too_low at @e[tag=spawn_survivor, type=marker, limit=1] run return run function game:death/survivor/fall_down
 
 #轉旁觀
 gamemode spectator @s
@@ -44,6 +44,6 @@ summon armor_stand ~ ~ ~ \
 }
 
 #讓展示實體記住對應的玩家
-scoreboard players operation @e[type=item_display, tag=tomb_temp, distance=..1] uuid0_match = @s uuid0
-item modify entity @e[type=item_display, tag=tomb_temp, distance=..1, limit=1] contents {function: "fill_player_head", entity: "this"}
-tag @e[type=item_display, tag=tomb_temp, distance=..1, limit=1] remove tomb_temp
+scoreboard players operation @e[tag=tomb_temp, type=item_display, distance=..1] uuid0_match = @s uuid0
+item modify entity @e[tag=tomb_temp, type=item_display, distance=..1, limit=1] contents {function: "fill_player_head", entity: "this"}
+tag @e[tag=tomb_temp, type=item_display, distance=..1, limit=1] remove tomb_temp

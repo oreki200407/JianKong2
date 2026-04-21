@@ -9,8 +9,6 @@
 # Author : Alex_Cai
 ###################################################
 
-execute unless entity @s[type=marker] run return run execute as @e[type=marker, tag=netwalk_game] at @s run function power:netwalk_game/reset/generate
-
 execute store result score #nodes_size netwalk_game run data get storage jk2:data root.monitor.netwalk_game.nodes_vec2arr
 #已經滿了 不生成了
 execute if score #nodes_size netwalk_game matches 0 run return run function power:netwalk_game/reset/after_generate/root

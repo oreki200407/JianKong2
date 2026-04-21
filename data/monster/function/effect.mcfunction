@@ -21,36 +21,41 @@ execute as @e[tag=monster_delay] run function monster:delay/root
 execute as @e[scores={monster_delay=1..}] run function monster:delay/tick
 
 #怪物看著未受保護的玻璃會裂開
-tag @e[type=marker, tag=being_watched] remove being_watched
+tag @e[tag=being_watched, type=marker] remove being_watched
 execute as @e[type=!player, tag=monster, team=monitor] at @s anchored eyes run function monster:break_glass/raycast
-scoreboard players reset @e[type=marker, tag=glass_marker, tag=!being_watched, scores={glass_break=1..}] glass_break
+scoreboard players reset @e[tag=glass_marker, tag=!being_watched, type=marker, scores={glass_break=1..}] glass_break
 
 #怪物開門
-execute as @e[type=marker, tag=door] at @s run function monster:break_door/door_marker
+execute as @e[tag=door, type=marker] at @s run function monster:break_door/door_marker
 
 #史萊姆
-execute as @e[type=armor_stand, tag=slime_ride, predicate=!game:riding] at @s run function monster:effect/slime/split
-execute as @e[type=slime,tag=slime_split] at @s run function monster:effect/slime/splited
+execute as @e[tag=slime_ride, type=armor_stand, predicate=!game:riding] at @s run function monster:effect/slime/split
+execute as @e[tag=slime_split,type=slime] at @s run function monster:effect/slime/splited
 
 #熾足獸
-execute as @e[type=strider,tag=strider,team=monitor] at @s unless score @s monster_delay matches 1.. run effect give @a[team=survivor,distance=..1] poison 1 4
-execute as @e[type=zombie,tag=strider_ride, predicate=game:flag/on_ground] at @s run function monster:effect/strider
+execute as @e[tag=strider,type=strider,team=monitor] at @s unless score @s monster_delay matches 1.. run effect give @a[team=survivor,distance=..1] poison 1 4
+execute as @e[tag=strider_ride, type=zombie,predicate=game:flag/on_ground] at @s run function monster:effect/strider
 
 #女巫
-execute at @e[type=witch,tag=witch,team=monitor] run effect give @a[team=survivor,distance=..3] weakness 1
+execute at @e[tag=witch,type=witch,team=monitor] run effect give @a[team=survivor,distance=..3] weakness 1
 
 #狼
-execute as @e[type=wolf,tag=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
-execute as @e[type=armor_stand, tag=wolf_ride, predicate=!game:riding] at @s run function monster:effect/wolf/death
+execute as @e[tag=wolf,type=wolf,team=monitor] at @s unless data entity @s AngryAt run data modify entity @s AngryAt set from entity @p[team=survivor] UUID
+execute as @e[tag=wolf_ride, type=armor_stand, predicate=!game:riding] at @s run function monster:effect/wolf/death
 
 #鐵巨人
 execute as @a[scores={monster_golem=1..}] run function monster:effect/golem/fly
 
 #喚魔者
-execute as @e[type=vex, tag=!vex] run data merge entity @s {equipment: {mainhand: {id: "iron_sword", components: {"minecraft:attribute_modifiers": [{type: "attack_damage", id: "base_attack_damage", amount: -2, operation: "add_value", slot: "mainhand"}]}}}, drop_chances: {mainhand: 0.0, offhand: 0.0}, Team:"monitor",DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex"], life_ticks: 200}
+execute as @e[tag=!vex, type=vex] run data merge entity @s \
+{\
+	equipment: {mainhand: {id: "iron_sword", components: {"minecraft:attribute_modifiers": [{type: "attack_damage", id: "base_attack_damage", amount: -2, operation: "add_value", slot: "mainhand"}]}}},\
+	drop_chances: {mainhand: 0.0, offhand: 0.0}, Team:"monitor",\
+	DeathLootTable: "summon:empty", PersistenceRequired: 1b, Tags:["monster", "vex"], life_ticks: 200\
+}
 
 #蜘蛛
-execute as @e[type=area_effect_cloud, tag=cobweb,nbt={PortalCooldown:0}] at @s run function monster:effect/spider/cobweb
+execute as @e[tag=cobweb,type=area_effect_cloud, nbt={PortalCooldown:0}] at @s run function monster:effect/spider/cobweb
 
 #凋零骷髏
-execute as @e[type=armor_stand, tag=wither_skeleton_ride, predicate=game:flag/on_ground] at @s run function monster:effect/wither_skeleton
+execute as @e[tag=wither_skeleton_ride, type=armor_stand, predicate=game:flag/on_ground] at @s run function monster:effect/wither_skeleton

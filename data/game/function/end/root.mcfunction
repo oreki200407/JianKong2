@@ -1,13 +1,13 @@
 title @a title {"text":"遊戲結束","bold":true,"color":"green"}
 
-execute at @e[type=marker, tag=power] run setblock ~ ~ ~ air
-execute at @e[type=marker, tag=power] run setblock ~1 ~ ~ air
+execute at @e[tag=power, type=marker] run setblock ~ ~ ~ air
+execute at @e[tag=power, type=marker] run setblock ~1 ~ ~ air
 
 kill @e[tag=contain]
 kill @e[tag=contain_escape]
 kill @e[tag=monitor_marker]
 
-execute at @e[type=marker,tag=lobby,limit=1] run place template game:lobby ~-10 ~-1 ~-10
+execute at @e[tag=lobby,type=marker,limit=1] run place template game:lobby ~-10 ~-1 ~-10
 
 #計算
 execute as @a[team=!spec] run function game:end/score

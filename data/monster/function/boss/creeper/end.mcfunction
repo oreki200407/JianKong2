@@ -10,4 +10,4 @@
 ###################################################
 
 bossbar set jk2:boss players
-kill @e[type=husk, tag=riding_boss]
+kill @e[tag=riding_boss, type=husk]

@@ -13,4 +13,4 @@ effect clear @s blindness
 effect clear @s strength
 bossbar set jk2:distance players
 attribute @s movement_speed modifier remove jk2:warden
-kill @e[type=marker, tag=sonic_boom]
+kill @e[tag=sonic_boom, type=marker]

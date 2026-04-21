@@ -1,10 +1,10 @@
 scoreboard objectives setdisplay sidebar.team.red
 scoreboard objectives setdisplay sidebar.team.blue
 scoreboard objectives setdisplay sidebar end
-tp @a @e[type=marker, tag=lobby_spawn, limit=1]
+tp @a @e[tag=lobby_spawn, type=marker, limit=1]
 gamemode adventure @a
 scoreboard players set #mode system 2
-execute at @e[type=marker, tag=lobby_spawn, limit=1] run spawnpoint @s ~ ~ ~
+execute at @e[tag=lobby_spawn, type=marker, limit=1] run spawnpoint @s ~ ~ ~
 
 effect clear @a
 effect give @a resistance infinite 4 true

@@ -5,9 +5,9 @@ execute as @e[type=armor_stand,tag=summon_picked] if score @s summon_monster = @
 
 execute if score @e[tag=summon_shuffle,limit=1] summon_shuffle matches 1.. run return run function summon:operation/shuffle/fail
 
-execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_easy] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_easy,sort=random,limit=1] run function summon:operation/shuffle/monster
-execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_medium] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_medium,sort=random,limit=1] run function summon:operation/shuffle/monster
-execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_hard] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_hard,sort=random,limit=1] run function summon:operation/shuffle/monster
+execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_easy, limit=1] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_easy,sort=random,limit=1] run function summon:operation/shuffle/monster
+execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_medium, limit=1] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_medium,sort=random,limit=1] run function summon:operation/shuffle/monster
+execute if entity @e[type=armor_stand,tag=summon_shuffle,tag=summon_pick_hard, limit=1] as @e[type=armor_stand,tag=!summon_picked,tag=summon_pick_hard,sort=random,limit=1] run function summon:operation/shuffle/monster
 execute as @e[type=armor_stand,tag=summon_shuffle] run function summon:pick/reset
 
 tellraw @s ["◎ 你已成功", {"text": "刷新怪物", "color":"gold"}]

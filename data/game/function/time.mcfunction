@@ -13,8 +13,8 @@ schedule function game:time 1s
 execute if score #mode system matches 4 store result bossbar jk2:prepare value run return run scoreboard players add #prepare system 1
 execute if score #mode system matches 3 store result bossbar jk2:time value run scoreboard players add #time system 1
 
-execute as @e[type=armor_stand,tag=summon_picked,scores={summon_cooldown=1..}] run function summon:head/cooldown
-execute as @e[type=armor_stand,tag=summon_picked,scores={summon_shuffle=1..}] run function summon:operation/shuffle/cooldown
+execute as @e[tag=summon_picked,type=armor_stand,scores={summon_cooldown=1..}] run function summon:head/cooldown
+execute as @e[tag=summon_picked,type=armor_stand,scores={summon_shuffle=1..}] run function summon:operation/shuffle/cooldown
 
 execute as @a[team=monitor, scores={morph=1..}] run function morph:player/second
 
@@ -40,6 +40,6 @@ execute if score 禁止奔跑 info_survivor matches 1.. run scoreboard players r
 execute as @e[tag=contain, tag=!freeze] run function contain:value/random
 
 #非困難模式下 會根據怪物數量給予玩家抗性
-execute unless score #difficulty system matches 3 if entity @e[team=monitor, tag=monster, limit=1, y=0] run function game:resistance
+execute unless score #difficulty system matches 3 if entity @e[team=monitor, tag=monster, limit=1] run function game:resistance
 
-execute as @e[type=text_display,tag=one_box] run function gadget:box/time
+execute as @e[tag=one_box,type=text_display] run function gadget:box/time

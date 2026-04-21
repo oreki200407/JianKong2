@@ -22,5 +22,5 @@ execute unless score @s camera = @s camera run return run tellraw @s ["◎ 所�
 #允許使用監視器介面
 gamemode spectator
 scoreboard players enable @s camera_interface
-tp @s @e[type=marker, tag=spawn_survivor, limit=1]
+tp @s @e[tag=spawn_survivor, type=marker, limit=1]
 tellraw @s ["——————————\n", {text:"監視器", color: "gold", extra: [{score: {name: "@s", objective: "camera"}}]}, "\n", {text: "✔", color: "green", click_event: {action: "run_command", command: "/trigger camera_interface set 1"}}, "        ", {text: "✘", color: "red", click_event: {action: "run_command", command: "/trigger camera_interface set 2"}}, "\n——————————"]
