@@ -23,6 +23,9 @@ tag @e[tag=box_point,type=armor_stand,sort=random,limit=1] add box_default
 kill @e[tag=edit_kill,type=armor_stand]
 kill @e[tag=check_display]
 
+#難度
+function game:difficulty
+
 time set midnight
 tag @a[team=monitor] add monitor_tag
 tag @a[team=survivor] add survivor_tag
