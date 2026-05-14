@@ -22,8 +22,8 @@ item replace entity @s enderchest.18 with emerald[item_model=gray_stained_glass_
 item replace entity @s enderchest.19 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.20 with nether_brick[item_name="手槍彈夾",lore=[[{"text": "價格：3", "color": "gold", "italic": false}]],custom_data={type:"shop",price:3}] 1
 item replace entity @s enderchest.21 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.22 with brick[item_name="散彈槍子彈",lore=[[{"text": "價格：3", "color": "gold", "italic": false}]],custom_data={type:"shop",price:3}] 3
+item replace entity @s enderchest.22 with brick[item_name="散彈槍子彈",lore=[[{"text": "價格：3", "color": "gold", "italic": false}]],custom_data={type:"shop",price:3}] 5
 item replace entity @s enderchest.23 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
-item replace entity @s enderchest.24 with iron_ingot[item_name="衝鋒槍彈夾",lore=[[{"text": "價格：3", "color": "gold", "italic": false}]],custom_data={type:"shop",price:3}] 2
+item replace entity @s enderchest.24 with iron_ingot[item_name="衝鋒槍彈夾",lore=[[{"text": "價格：3", "color": "gold", "italic": false}]],custom_data={type:"shop",price:3}] 1
 item replace entity @s enderchest.25 with emerald[item_model=gray_stained_glass_pane,tooltip_display={hide_tooltip: true},custom_data={type:"shop"}]
 item replace entity @s enderchest.26 with emerald[item_model=compass,item_name="返回主選單",custom_data={price:0,type:"shop"}]
